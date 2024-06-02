@@ -9,25 +9,14 @@ function App() {
   return (
     <>
       <div>
+        <a href="#" target="_blank">
+          <img src='../public/img/02-logos/puchulitamusicainfantil1.png' className="logo" alt="puchulitalogo" />
+        </a>
         <a href="https://alejandrobavaro.github.io/gondraworld/" target="_blank">
-          <img src='../public/img/02-logos/puchulitamusicainfantil1.png' className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+          <img src='../public/img/02-logos/logogondraworld2.png' className="logo react" alt="gondraworldlogo"/>
         </a>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+         
     </>
   )
 }

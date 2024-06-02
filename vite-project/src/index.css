@@ -23,6 +23,7 @@ a:hover {
 }
 
 body {
+  background-image: url(../public/img/00-fondos/fondo3.jpg);
   margin: 0;
   display: flex;
   place-items: center;
