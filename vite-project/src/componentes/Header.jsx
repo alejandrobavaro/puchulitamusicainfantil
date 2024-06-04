@@ -23,41 +23,33 @@ function Header () {
         >
           <span className="navbar-toggler-icon" />
           <img
-            alt="Logo"
-            className="menu-logo"
-            src="../public/img/02-logos/logoheader1.png"
-          />
+                  alt="icono"
+                  className="container-fluid menu-logo"
+                  src="../../public/img/05-img-costados-larga/16aicono.png"
+                />
         </button>
         <div
           className="collapse navbar-collapse"
           id="navbarNavAltMarkup"
         >
           <div className="navbar-nav">
-            <div className="imagenHeader1">
-              <a href="./index.html">
-                {/* <img
-                  alt="."
-                  className="container-fluid menu-logo"
-                  src="../"
-                /> */}
-              </a>
-            </div>
+           
             <a
               aria-current="page"
               className="nav-link menu-link"
-              href="./index.html"
+              href="#"
             >
               Home
             </a>
             <a
               className="nav-link menu-link"
-              href="./pages/contacto.html"
+              href="#"
             >
               Contacto
             </a>
             <a
               className="nav-link menu-link"
-              href="./pages/tienda.html"
+              href="#"
             >
               Tienda
             </a>

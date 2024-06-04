@@ -3,11 +3,12 @@
 
 /* Estilos para las imágenes limitadas */
 .imagen-limitada1 {
-  width: 80%;
+  width: 90%;
   height: auto;
   border: 1px solid rgba(245, 222, 179, 0.434);
   border-radius: 20px;
-  padding: 40px;
+  padding: 0px;
+  box-shadow: 0 0 80px rgb(248, 187, 237);
 }
 
 /* Estilos para las imágenes limitadas */
@@ -24,7 +25,7 @@
 
 /* Estilos para las imágenes limitadas */
 .imagen-limitada3 {
-  width: 55%;
+  width: 65%;
   /* Ancho */
   height: auto;
   /* Altura automática */
@@ -33,7 +34,7 @@
   border-radius: 20px;
   /* Radio del borde */
   // background-color: rgba(255, 0, 140, 0.729);
-  box-shadow: 0 0 80px rgba(255, 0, 140, 0.729);
+  // box-shadow: 0 0 80px rgba(255, 0, 140, 0.729);
 }
 
 /* Estilos para las imágenes limitadas */
@@ -58,12 +59,20 @@
 
 /* Estilos para las imágenes limitadas */
 .imagen-limitada6 {
-  width: 100%;
+  width: 70%;
   height: auto;
   object-fit: cover;
-  aspect-ratio: 2/1;
   transition: 1s;
 }
+
+/* Estilos para las imágenes limitadas */
+.imagen-limitada7 {
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+  transition: 1s;
+}
+
 //-----------------------------------------------------------------/
 
 

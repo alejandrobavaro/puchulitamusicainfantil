@@ -1,56 +1,66 @@
-import React from 'react';
-import { useState } from 'react';
-import '../assets/scss/estilo.scss'; 
+import React from "react";
+import { useState } from "react";
+import "../assets/scss/estilo.scss";
 
-
-function MainContent () {
-  const [count, setCount] = useState(0)
+function MainContent() {
+  const [count, setCount] = useState(0);
 
   return (
     <>
-
-      
-
-<div>
-  <main>
-    
-    <div className="objetoCentrado1">
-      <img
-        alt="imagen"
-        className="container-fluid imagen-limitada3"
-        src="../public/img/02-logos/puchulitamusicainfantil1.png"
-      />
-    </div>
-   
-    <div className="gridPadre">
-      <div className="objetoCentrado1">
-        <p>
-          Aquí podrás escuchar nuestras canciónes! Somos un grupo de músicos que nos divertimos componiendo canciones! Gracias por visitarnos! Música infantil, sin fronteras! Para toda la familia. 
-        </p>
-      </div>
       <div>
-        <h1 className="h1Titulo textoCentrado1 textoMovimiento">
-
-            {' '} <img src="../../public/img/05-img-costados-larga/1.png" alt="" /> {' '}
-         
-       
-        </h1>
-    
-  
-      
-      </div>
-
+        <main>
           <div className="objetoCentrado1">
-            <p>
-            Canciones divertidas para aprender cantando! Descubrí nuestros canales, y nuestras redes sociales! Buscanos y seguinos para mas contenido! Actualmente estamos trabajando en nuevas canciones para regalarte a vos y a tus hijos! 
-            </p>
+            <img
+              alt="imagen"
+              className="container-fluid imagen-limitada3"
+              src="../public/img/02-logos/puchulitamusicainfantil1.png"
+            />
           </div>
-    
-    </div>
-  
-   
-  </main>
 
+          <div className="gridPadre">
+            <div className="objetoCentrado1">
+              <p>
+                <a href="#">
+                  <img
+                    alt="icono"
+                    className="container-fluid objetoCentrado1 imagen-limitada7 textoMovimiento"
+                    src="../../public/img/05-img-costados-larga/20.png"
+                  />
+                </a>
+                Aquí podrás escuchar nuestras canciónes! Somos un grupo de
+                músicos que nos divertimos componiendo canciones! Gracias por
+                visitarnos! Música infantil, sin fronteras! Para toda la
+                familia.
+              </p>
+            </div>
+            <div>
+              <h1 className="objetoCentrado1 textoMovimiento">
+                {" "}
+                <img
+                  className="container-fluid"
+                  src="../../public/img/05-img-costados-larga/1a.png"
+                  alt=""
+                />{" "}
+              </h1>
+            </div>
+
+            <div className="objetoCentrado1">
+              <p>
+              <a href="#">
+                  <img
+                    alt="icono"
+                    className="container-fluid imagen-limitada6 objetoCentrado1 textoMovimiento"
+                    src="../../public/img/05-img-costados-larga/16aicono.png"
+                  />
+                </a>
+                Canciones divertidas para aprender cantando! Descubrí nuestros
+                canales, y nuestras redes sociales! Buscanos y seguinos para mas
+                contenido! Actualmente estamos trabajando en nuevas canciones
+                para regalarte a vos y a tus hijos!
+              </p>
+            </div>
+          </div>
+        </main>
 
         <p id="telefonoWhattsapp">
           <a
@@ -65,13 +75,7 @@ function MainContent () {
             />
           </a>
         </p>
-   
-</div>
-
-
-
-
-
+      </div>
     </>
   );
 }

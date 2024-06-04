@@ -65,9 +65,7 @@ function Footer () {
           <i className="bi bi-person-arms-up" />
         </h6>
       </div>
-      <div className="img2Footer">
-       
-      </div>
+ 
     </div>
   </footer>
 </div>
