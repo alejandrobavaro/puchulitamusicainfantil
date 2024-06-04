@@ -24,7 +24,7 @@
 
 /* Estilos para las imágenes limitadas */
 .imagen-limitada3 {
-  width: 35%;
+  width: 55%;
   /* Ancho */
   height: auto;
   /* Altura automática */
@@ -32,6 +32,8 @@
   /* Borde */
   border-radius: 20px;
   /* Radio del borde */
+  background-color: rgba(0, 0, 0, 0.096);
+  box-shadow: 0 0 40px rgb(255, 0, 208);
 }
 
 /* Estilos para las imágenes limitadas */

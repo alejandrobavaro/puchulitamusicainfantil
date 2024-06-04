@@ -12,15 +12,11 @@ function Footer () {
 
 
      <div>
-  <hr className="border border border-1 opacity-2" />
+
   <footer className="gridPadre">
     <div className="footerElements">
       <div className="img1Footer">
-        <img
-          alt="footerimagen1"
-          className="imagen-limitada2 img-fluid"
-          src="../assets/img/08-favicon/logopequeño1.png"
-        />
+ 
       </div>
       <div className="linksFooter">
         <div className="textoMovimiento">
@@ -70,11 +66,7 @@ function Footer () {
         </h6>
       </div>
       <div className="img2Footer">
-        <img
-          alt="footerimagen2"
-          className="imagen-limitada2 img-fluid"
-          src="../assets/img/08-favicon/logopequeño2.png"
-        />
+       
       </div>
     </div>
   </footer>

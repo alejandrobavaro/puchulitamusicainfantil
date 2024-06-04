@@ -25,7 +25,7 @@ function Header () {
           <img
             alt="Logo"
             className="menu-logo"
-            src="../assets/img/02-logos/logoheader1.png"
+            src="../public/img/02-logos/logoheader1.png"
           />
         </button>
         <div
@@ -35,11 +35,11 @@ function Header () {
           <div className="navbar-nav">
             <div className="imagenHeader1">
               <a href="./index.html">
-                <img
+                {/* <img
                   alt="."
                   className="container-fluid menu-logo"
-                  src="../assets/img/img/02-logos/logoheader1.png"
-                />
+                  src="../"
+                /> */}
               </a>
             </div>
             <a
