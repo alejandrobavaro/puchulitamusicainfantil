@@ -38,6 +38,8 @@ const CarritoTienda = ({ cart }) => {
         </section>
   
 
+
+
     {/*-------------------CARRITO DE COMPRAS - TIENDA---------------------------*/}
     <div className="col">
       <div className="card-container">
@@ -87,7 +89,7 @@ const CarritoTienda = ({ cart }) => {
                 </button>
               </div>
               <button
-                className="btn botonSecundario botonEliminar"
+                className="btn botonSecundario btnVaciarCarrito"
                 id="btnVaciarCarrito"
               >
                 <i className="bi bi-shift-fill" /> VACIAR CARRITO{" "}
@@ -126,8 +128,8 @@ const CarritoTienda = ({ cart }) => {
 
       {/* Botón para realizar el pago */}
       <div className="objetoCentrado1">
-        <button id="btnPagar" className="btn btn-success">
-          <h3 className="tituloImportante2 textoMovimiento">
+        <button id="btnPagar" className="btn botonComprar">
+          <h3 className="tituloImportante1 textoMovimiento">
             <i className="bi bi-shift-fill" /> PAGAR
           </h3>
         </button>
@@ -139,7 +141,7 @@ const CarritoTienda = ({ cart }) => {
       <div className="objetoCentrado1">
         <button className="botonSeguirComprando1">
           <a href="./tienda.html">
-            <h3 className="tituloImportante2">
+            <h3 className="tituloImportante1">
               <i className="bi bi-shift-fill" /> SEGUIR COMPRANDO <i className="bi bi-shift-fill" />
             </h3>
           </a>

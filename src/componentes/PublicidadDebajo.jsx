@@ -10,8 +10,11 @@ function PublicidadDebajo () {
     <>
 <>
 <>
-  {/*--------CARRUSELL PUBLICIDAD ANTES DEL FOOTER ABAJO----------*/}
-  <hr className="border border border-1 opacity-2" />
+
+
+
+  {/* --------CARRUSELL PUBLICIDAD ANTES DEL FOOTER ABAJO----------*/}
+  {/* <hr className="border border border-1 opacity-2" />
   <div className="container text-center imagen-limitada2">
     <div className="col">
       <div
@@ -44,8 +47,42 @@ function PublicidadDebajo () {
         </div>
       </div>
     </div>
-  </div>
-  {/*-------------------------FIN CARRUSELL-----------------------------------*/}
+  </div> */}
+  {/*-------------------------FIN CARRUSELL----------------------------------- */}
+
+  <div className="gridPadre">
+        <div className="objetoCentrado1">
+          <a href="#">
+            <img
+              alt="icono"
+              className="container-fluid imagen-limitada6 objetoCentrado1 textoMovimiento"
+              src="../../public/img/05-img-costados-larga/1a.png"
+            />
+          </a>
+          <a href="#">
+            <img
+              alt="icono"
+              className="container-fluid imagen-limitada6 objetoCentrado1 textoMovimiento"
+              src="../../public/img/05-img-costados-larga/2.png"
+            />
+          </a>
+          <a href="#">
+            <img
+              alt="icono"
+              className="container-fluid imagen-limitada6 objetoCentrado1 textoMovimiento"
+              src="../../public/img/05-img-costados-larga/16aicono.png"
+            />
+          </a>
+          <a href="#">
+            <img
+              alt="icono"
+              className="container-fluid imagen-limitada6 objetoCentrado1 textoMovimiento"
+              src="../../public/img/05-img-costados-larga/20.png"
+            />
+          </a>
+        </div>
+      </div>
+
   {/*-----------------------------------------------------------------------*/}
 </>
 

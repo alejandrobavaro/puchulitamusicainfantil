@@ -51,19 +51,7 @@ function Contacto() {
               </a>
             </span>
           </p>
-          
-          <p id="telefonoWhattsapp" className="objetoCentrado1 estiloContacto1">
-            <a href="https://api.whatsapp.com/send?phone=............&text=Hola!,%20en%20que%20puedo%20ayudarte?" target="_blank" rel="noopener noreferrer">
-              <img className="logoWhats textoMovimiento" src="../img/02-logos/logowhattsapp1.png" alt="WhatsApp Logo" />
-              TELEFONO: .................
-            </a>
-          </p>
-          
-          <a href="https://api.whatsapp.com/send?phone=2235455451&text=Hola!,%20en%20que%20puedo%20ayudarte?" target="_blank" rel="noopener noreferrer">
-            <p className="objetoCentrado1 textoMovimiento tituloPequeño2">
-              <i className="bi bi-activity" /> Contacto directo <i className="bi bi-activity" />
-            </p>
-          </a>
+
 
           <hr className="border border-1 opacity-5" />
           
@@ -81,6 +69,9 @@ function Contacto() {
         </div>
       </div>
       </div>
+
+
+
 
       {/* FORMULARIO */}
       <div className="contenedorFormulario">

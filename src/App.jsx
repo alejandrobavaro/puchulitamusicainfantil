@@ -27,12 +27,15 @@ function App() {
     <>
       <Header />
       <hr className="border border border-0 opacity-20" />
-      <CarritoTienda cart={cart} />
-      <hr className="border border border-0 opacity-20" />
+     
       <MainContent />
       <hr className="border border border-0 opacity-20" />
+      
       <ProductosTienda products={products} addToCart={addToCart} />
       <hr className="border border border-0 opacity-20" />
+      <CarritoTienda cart={cart} />
+      <hr className="border border border-0 opacity-20" />
+
       <Contacto />
       <hr className="border border border-0 opacity-20" />
       <PublicidadDebajo />

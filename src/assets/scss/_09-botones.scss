@@ -19,14 +19,14 @@
 
 /*----------------Botón Comprar----------------*/
 .botonComprar {
-  background-color: #636767;
+  background-color: #ff00c8;
   color: rgba(255, 255, 255, 0.665);
   border: none;
   border-radius: 10px;
  }
 
 .botonComprar:hover {
-  background-color: rgba(95, 96, 96, 0.563);
+  background-color: rgb(250, 119, 211);
   color: #ffffff;
   border: none;
 }
@@ -46,17 +46,27 @@
 
 /*----------------Botón "Vaciar Carrito"----------------*/
 #btnVaciarCarrito {
-  background-color: #00000073;
-  color: rgba(254, 254, 232, 0.665);
+  padding: 8px 16px;
+  font-size: small;
   border: none;
   border-radius: 10px;
-  padding: 16px;
+  background-color: #ff00b381;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  // float: right;
+  // margin-top: 10px;
 }
 
 #btnVaciarCarrito:hover {
-  background-color: rgba(255, 0, 187, 0.563);
+  background-color: rgb(188, 55, 146);
   color: #ffffff;
+  border: none;
+  animation: shake 0.5s ease;
 }
+
+
+
 
 /*----------------Botón Encargar----------------*/
 .botonEncargar {
@@ -64,37 +74,40 @@
   font-size: small;
   border: none;
   border-radius: 10px;
-  background-color: #cd8f2b9d;
-  color: rgba(254, 254, 232, 0.665);
+  background-color: #ff00b381;
+  color: rgb(255, 255, 255);
   cursor: pointer;
   transition: all 0.3s ease;
-  float: right;
-  margin-top: 10px;
+  // float: right;
+  // margin-top: 10px;
 }
 
 .botonEncargar:hover {
-  background-color: rgba(156, 156, 48, 0.754);
+  background-color: rgb(188, 55, 146);
   color: #ffffff;
   border: none;
+  animation: shake 0.5s ease;
 }
 
 /*----------------Boton Seguir comprando----------------*/
 .botonSeguirComprando1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  font-size: large;
+  padding: 8px 16px;
+  font-size: small;
   border: none;
   border-radius: 10px;
-  background-color: #296c7273;
-  color: rgba(254, 254, 232, 0.665);
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  // float: right;
+  // margin-top: 10px;
 }
 
 .botonSeguirComprando1:hover {
-  background-color: rgba(156, 100, 48, 0.563);
+  background-color: rgb(247, 72, 192);
   color: #ffffff;
   border: none;
+  animation: shake 0.5s ease;
 }
 
 /*----------------Botón de eliminar----------------*/
@@ -108,7 +121,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   // float: right;
-  margin-top: 10px;
+  // margin-top: 10px;
 }
 
 .botonEliminar:hover {
@@ -122,12 +135,12 @@
   font-size: small;
   border: none;
   border-radius: 10px;
-  background-color: #ff00b381;
+  // background-color: #ff00b381;
   color: rgb(255, 255, 255);
   cursor: pointer;
   transition: all 0.3s ease;
   // float: right;
-  margin-top: 10px;
+  // margin-top: 10px;
 }
 
 .btn:hover {
@@ -136,3 +149,24 @@
   border: none;
   animation: shake 0.5s ease;
 }
+
+#btnComprar {
+  padding: 8px 16px;
+  font-size: small;
+  border: none;
+  border-radius: 10px;
+  // background-color: #ff00b381;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  // float: right;
+  // margin-top: 10px;
+}
+
+#btnComprar:hover {
+  background-color: rgb(188, 55, 146);
+  color: #ffffff;
+  border: none;
+  animation: shake 0.5s ease;
+}
+

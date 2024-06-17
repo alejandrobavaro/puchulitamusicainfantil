@@ -107,3 +107,18 @@ select.form-select option {
   padding: 5px 10px;
   border-radius: 3px;
 }
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.oferta {
+  font-size: large;
+  font-family: "Caveat", cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
