@@ -46,7 +46,7 @@
 
 /*----------------Botón "Vaciar Carrito"----------------*/
 #btnVaciarCarrito {
-  background-color: #72562973;
+  background-color: #00000073;
   color: rgba(254, 254, 232, 0.665);
   border: none;
   border-radius: 10px;
@@ -54,7 +54,7 @@
 }
 
 #btnVaciarCarrito:hover {
-  background-color: rgba(156, 48, 77, 0.563);
+  background-color: rgba(255, 0, 187, 0.563);
   color: #ffffff;
 }
 
@@ -103,8 +103,8 @@
   font-size: small;
   border: none;
   border-radius: 10px;
-  background-color: #4d4b1693;
-  color: rgba(254, 254, 232, 0.665);
+  background-color: #fff700;
+  color: rgba(0, 0, 0, 0.665);
   cursor: pointer;
   transition: all 0.3s ease;
   // float: right;
@@ -112,7 +112,7 @@
 }
 
 .botonEliminar:hover {
-  background-color: rgba(156, 122, 48, 0.563);
+  background-color: rgb(241, 155, 214);
   color: #ffffff;
   border: none;
 }
@@ -122,8 +122,8 @@
   font-size: small;
   border: none;
   border-radius: 10px;
-  background-color: #4d4b1693;
-  color: rgba(254, 254, 232, 0.665);
+  background-color: #ff00b381;
+  color: rgb(255, 255, 255);
   cursor: pointer;
   transition: all 0.3s ease;
   // float: right;
@@ -131,7 +131,7 @@
 }
 
 .btn:hover {
-  background-color: rgba(156, 122, 48, 0.563);
+  background-color: rgb(188, 55, 146);
   color: #ffffff;
   border: none;
   animation: shake 0.5s ease;

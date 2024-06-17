@@ -5,7 +5,7 @@ html {
 
 //-------------------------ESTILOS BODY----------------------------//
 body {
-  background: rgba(103, 12, 85, 0.732);
+  background-color: white;
   // background-image: url(../img/00-fondos/fondo3.jpg); /* Imagen de fondo */
   background-repeat:repeat; /* No repetir la imagen de fondo */
   background-position: center; /* Posición de la imagen de fondo */
@@ -17,8 +17,9 @@ body {
 
 //---------------ESTILOS GENERALES P-H1/H6---------------------//
 p {
-  color: rgb(248, 208, 244);
-   font-size: medium;
+  color:  rgb(254, 88, 179);;
+   font-size: small;
+   padding: 20px;
 }
 
 h1 {
@@ -71,7 +72,7 @@ a {
 
   /* Enlace sin visitar */
   &:link {
-    color: rgb(255, 255, 255);
+    color: rgb(253, 137, 215);
       text-decoration: none;
     /* Sin subrayado */
   }
@@ -79,7 +80,7 @@ a {
 
   /* Enlace visitado */
   &:visited {
-    color: rgb(254, 194, 251);
+    color: rgb(248, 134, 210);
     text-decoration: none;
     /* Sin subrayado */
   }
