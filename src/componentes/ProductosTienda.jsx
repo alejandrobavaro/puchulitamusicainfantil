@@ -1,61 +1,70 @@
-import React, { useState, useEffect } from "react";
-import "../assets/scss/estilo.scss";
+import React, { useEffect, useState } from 'react';
 
-function ProductosTienda() {
+function ProductosTienda({ products, addToCart }) {
   const [productos, setProductos] = useState([]);
 
   useEffect(() => {
-    fetch('/productos.json') // Ruta relativa a la carpeta 'public'
+    // Cargar los productos desde el JSON
+    fetch('/productos.json')
       .then(response => response.json())
       .then(data => setProductos(data))
       .catch(error => console.error('Error al cargar los productos:', error));
   }, []);
 
   return (
-    <>
-      {/*---------------- TIENDA PRODUCTOS ---------------*/}
-
-      {/*---------------- BUSCADOR ---------------*/}
-      <div className="gridPadre">
-        {/* Agregar un campo de búsqueda */}
-        <input
-          type="text"
-          className="form-control objetoCentrado1"
-          id="buscarProducto"
-          placeholder="Buscar producto..."
-          required
-        />
-        {/* Agregar filtros por categoría */}
-        <select className="form-control " id="filtroCategoria">
-          <option value="">Todas las categorías</option>
-          <option value="ropa">Ropa</option>
-          <option value="calzado">Calzado</option>
-          {/* Agregar más opciones de filtro según tus necesidades */}
-        </select>
-      </div>
-
-      <hr className="border border border-0 opacity-20" />
-
-      {/* PRODUCTOS--------------------------------- */}
-      <div className="gridPadreProductos">
-        {productos.map(producto => (
-          <div className="producto" key={producto.id} id={`producto${producto.id}`} data-id={producto.id}>
-            <img src={producto.imagen} alt={producto.nombre} />
-            <div className="oferta">{producto.oferta ? `Oferta! ${producto.oferta}` : ''}</div>
+    <div className="row row-cols-1 row-cols-md-4 g-4">
+      {productos.map(producto => (
+        <div className="col producto" id={`producto${producto.id}`} key={producto.id}>
+          <div className="card">
+            <div className="card-body card4">
+              <section>
+                <h5 className="objetoCentrado1">
+                  <i className="bi bi-activity"></i> (Producto por encargo) <i className="bi bi-activity"></i>
+                </h5>
+              </section>
+              <img src={producto.imagen} className="card-img-top img-fluid" alt={producto.nombre} />
+              <h5 className="card-title">{producto.nombre}</h5>
+              <h4 className="objetoCentrado1 tituloPrecio1">
+                Precio:<span>
+                  <h3 className="tituloImportante2 objetoCentrado1"> ${producto.precio.toFixed(2)} </h3>
+                </span>
+              </h4>
+              <label htmlFor={`selectColor${producto.id}`} className="objetoCentrado1 tituloPequeño1">
+                <i className="bi bi-activity"></i> ELIGE COLOR <i className="bi bi-activity"></i>
+              </label>
+              <select id={`selectColor${producto.id}`} className="form-select mb-3 tituloPequeño4">
+                <option value="Negro">Negro</option>
+                <option value="Blanco">Blanco</option>
+                <option value="Gris-claro">Gris Claro</option>
+                <option value="Gris-oscuro">Gris Oscuro</option>
+                <option value="Rojo">Rojo</option>
+                <option value="Naranja">Naranja</option>
+              </select>
+              <label htmlFor={`selectTalla${producto.id}`} className="objetoCentrado1 tituloPequeño1">
+                <i className="bi bi-activity"></i> ELIGE TALLE <i className="bi bi-activity"></i>
+              </label>
+              <select id={`selectTalla${producto.id}`} className="form-select tituloPequeño4">
+                <option value="x-small">X-Small</option>
+                <option value="xx-small">XX-Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="x-large">X-Large</option>
+                <option value="xx-large">XX-Large</option>
+              </select>
+              <div className="d-grid gap-2 col-6 mx-auto">
+                <button className="botonEncargar btn btn-primary" onClick={() => {
+                  const color = document.getElementById(`selectColor${producto.id}`).value;
+                  const talla = document.getElementById(`selectTalla${producto.id}`).value;
+                  addToCart({ ...producto, color, talla });
+                }}>
+                  <i className="bi bi-shift-fill"></i> Encargar 
+                </button>
+              </div>
+            </div>
           </div>
-        ))}
-      </div>
-
-      {/* -------------LINK SEGUIR COMPRANDO------------------ */}
-      <hr className="border border border-1 opacity-20" />
-      <section className="objetoCentrado1 btn botonSeguirComprando1">
-        <a href="#">
-          <i className="bi bi-shift-fill" /> Seguir Comprando
-          <i className="bi bi-shift-fill" />
-        </a>
-      </section>
-      <hr className="border border-1 opacity-20 " />
-    </>
+        </div>
+      ))}
+    </div>
   );
 }
 

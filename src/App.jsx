@@ -1,47 +1,61 @@
-import React, { useState } from "react";
-import Header from "./componentes/Header";
-import CarritoTienda from "./componentes/CarritoTienda";
-import MainContent from "./componentes/MainContent";
-import ProductosTienda from "./componentes/ProductosTienda";
-import Contacto from "./componentes/Contacto";
-import PublicidadDebajo from "./componentes/PublicidadDebajo";
-import Footer from "./componentes/Footer";
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './componentes/Header';
+import MainContent from './componentes/MainContent';
+import Contacto from './componentes/Contacto';
+import PublicidadDebajo from './componentes/PublicidadDebajo';
+import Footer from './componentes/Footer';
+import Tienda from './componentes/Tienda';
+import CarritoCompleto from './componentes/CarritoCompleto';
 
 function App() {
-  // Estado para los productos
-  const [products, setProducts] = useState([
-    // Ejemplo de productos
-    { id: 1, name: "Producto 1", price: 10 },
-    { id: 2, name: "Producto 2", price: 20 },
-  ]);
-
-  // Estado para el carrito
   const [cart, setCart] = useState([]);
 
-  // Función para agregar productos al carrito
   const addToCart = (product) => {
     setCart([...cart, product]);
   };
 
-  return (
-    <>
-      <Header />
-      <hr className="border border border-0 opacity-20" />
-     
-      <MainContent />
-      <hr className="border border border-0 opacity-20" />
-      
-      <ProductosTienda products={products} addToCart={addToCart} />
-      <hr className="border border border-0 opacity-20" />
-      <CarritoTienda cart={cart} />
-      <hr className="border border border-0 opacity-20" />
+  const removeFromCart = (id) => {
+    if (id === null) {
+      setCart([]);
+    } else {
+      setCart(cart.filter((product) => product.id !== id));
+    }
+  };
 
-      <Contacto />
+  const handlePagar = () => {
+    Swal.fire({
+      title: 'Proceso de Pago',
+      text: 'Ahora vamos a realizar todo el proceso de tu pago. ¿Deseas continuar?',
+      icon: 'question',
+      showCancelButton: true,
+      confirmButtonText: 'Sí, continuar',
+      cancelButtonText: 'No, volver a la tienda',
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.open(
+          'https://www.paypal.com/paypalme/alegondramusic?country.x=AR&locale.x=es_XC',
+          '_blank'
+        );
+      }
+    });
+  };
+
+  return (
+    <Router>
+      <Header cart={cart} />
+      <hr className="border border border-0 opacity-20" />
+      <Routes>
+        <Route path="/" element={<MainContent />} />
+        <Route path="/contacto" element={<Contacto />} />
+        <Route path="/tienda" element={<Tienda setCart={setCart} cart={cart} addToCart={addToCart} removeFromCart={removeFromCart} />} />
+        <Route path="/carrito" element={<CarritoCompleto cart={cart} removeFromCart={removeFromCart} handlePagar={handlePagar} />} />
+      </Routes>
       <hr className="border border border-0 opacity-20" />
       <PublicidadDebajo />
       <hr className="border border border-0 opacity-20" />
       <Footer />
-    </>
+    </Router>
   );
 }
 

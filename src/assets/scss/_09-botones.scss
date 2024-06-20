@@ -20,7 +20,7 @@
 /*----------------Botón Comprar----------------*/
 .botonComprar {
   background-color: #ff00c8;
-  color: rgba(255, 255, 255, 0.665);
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 10px;
  }
@@ -70,7 +70,7 @@
 
 /*----------------Botón Encargar----------------*/
 .botonEncargar {
-  padding: 8px 16px;
+  padding: 16px;
   font-size: small;
   border: none;
   border-radius: 10px;
@@ -78,8 +78,8 @@
   color: rgb(255, 255, 255);
   cursor: pointer;
   transition: all 0.3s ease;
-  // float: right;
-  // margin-top: 10px;
+  float: right;
+  margin-top: 10px;
 }
 
 .botonEncargar:hover {
@@ -111,7 +111,7 @@
 }
 
 /*----------------Botón de eliminar----------------*/
-.botonEliminar {
+.btnEliminar {
   padding: 8px 16px;
   font-size: small;
   border: none;
@@ -124,7 +124,7 @@
   // margin-top: 10px;
 }
 
-.botonEliminar:hover {
+.btnEliminar:hover {
   background-color: rgb(241, 155, 214);
   color: #ffffff;
   border: none;
@@ -135,7 +135,7 @@
   font-size: small;
   border: none;
   border-radius: 10px;
-  // background-color: #ff00b381;
+  background-color: #ff00b381;
   color: rgb(255, 255, 255);
   cursor: pointer;
   transition: all 0.3s ease;

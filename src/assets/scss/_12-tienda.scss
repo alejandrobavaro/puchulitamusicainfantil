@@ -2,13 +2,13 @@
 
 .tituloPrecio1 {
   // text-decoration: underline;
-  color: rgba(255, 221, 0, 0.825);
+  color: rgb(255, 0, 217);
   font-size: medium;
 }
 
 .tituloPrecioCarrito {
   text-decoration: dotted;
-  color: rgb(172, 45, 22);
+  color: rgb(255, 38, 0);
   font-size: xx-large;
 }
 
@@ -31,16 +31,16 @@
 .listaMiniCarrito3 {
   background-color: transparent;
   box-shadow: 0 0 2px wheat;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 10px;
 }
 
 //-----------------SELECTOR DENTRO DE PRODUCTO TALLE-COLOR------------------//
 .form-select {
-  background-color: #616359a9;
-  color: rgba(255, 191, 0, 0.668);
+  background-color: #593c53d3;
+  color: rgb(255, 255, 255);
   border: none;
-  padding: 0px;
+  padding: 5px;
 }
 
 /* Estilos para centrar y cambiar el color de fondo de las opciones de los selects */
@@ -48,6 +48,7 @@ select.form-select option {
   text-align: center;
   background-color: #3e2c00;
   color: rgb(255, 255, 255);
+  
 }
 
 
@@ -63,7 +64,7 @@ select.form-select option {
 }
 
 .sidebar h3 {
-  color: #00FF7F; /* Verde jade */
+  color: #bf00ff; /* Verde jade */
 }
 
 /* Estilos del banner de publicidad */
@@ -83,7 +84,7 @@ select.form-select option {
 }
 
 .product-card {
-  border: 1px solid #dddddd;
+  border: 1px solid #ff00ae;
   border-radius: 5px;
   padding: 10px;
   text-align: center;
@@ -102,8 +103,8 @@ select.form-select option {
 }
 
 .product-card .promotion {
-  background-color: aqua; /* Gama similar a aqua */
-  color: #ffffff;
+  background-color: rgb(255, 0, 225); /* Gama similar a aqua */
+  color: #000000;
   padding: 5px 10px;
   border-radius: 3px;
 }
