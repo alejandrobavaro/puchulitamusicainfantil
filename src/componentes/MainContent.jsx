@@ -13,7 +13,7 @@ function MainContent() {
             <img
               alt="imagen"
               className="container-fluid imagen-limitada3"
-              src="../../public/img/02-logos/puchulitamusicainfantil1.png"
+              src="/img/02-logos/puchulitamusicainfantil1.png"
             />
           </div>
 
@@ -24,7 +24,7 @@ function MainContent() {
                   <img
                     alt="icono"
                     className="container-fluid objetoCentrado1 imagen-limitada7 textoMovimiento"
-                    src="../../public/img/05-img-costados-larga/20.png"
+                    src="/img/05-img-costados-larga/20.png"
                   />
                 </a>
                 Aquí podrás escuchar nuestras canciónes! Somos un grupo de
@@ -38,7 +38,7 @@ function MainContent() {
                 {" "}
                 <img
                   className="container-fluid"
-                  src="../../public/img/05-img-costados-larga/1a.png"
+                  src="/img/05-img-costados-larga/1a.png"
                   alt=""
                 />{" "}
               </h1>
@@ -50,7 +50,7 @@ function MainContent() {
                   <img
                     alt="icono"
                     className="container-fluid imagen-limitada6 objetoCentrado1 textoMovimiento"
-                    src="../../public/img/05-img-costados-larga/16aicono.png"
+                    src="/img/05-img-costados-larga/16aicono.png"
                   />
                 </a>
                 Canciones divertidas para aprender cantando! Descubrí nuestros
@@ -71,7 +71,7 @@ function MainContent() {
             <img
               alt="imgwhattsapp1"
               className="logoWhats textoMovimiento"
-              src="../../public/img/02-logos/logowhattsapp1.png"
+              src="/img/02-logos/logowhattsapp1.png"
             />
           </a>
         </p>
