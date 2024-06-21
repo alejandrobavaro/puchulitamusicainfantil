@@ -13,7 +13,7 @@ function MainContent() {
             <img
               alt="imagen"
               className="container-fluid imagen-limitada3"
-              src="../public/img/02-logos/puchulitamusicainfantil1.png"
+              src="../../public/img/02-logos/puchulitamusicainfantil1.png"
             />
           </div>
 
@@ -71,7 +71,7 @@ function MainContent() {
             <img
               alt="imgwhattsapp1"
               className="logoWhats textoMovimiento"
-              src="../public/img/02-logos/logowhattsapp1.png"
+              src="../../public/img/02-logos/logowhattsapp1.png"
             />
           </a>
         </p>

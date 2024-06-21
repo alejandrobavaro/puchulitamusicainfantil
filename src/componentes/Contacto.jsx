@@ -11,6 +11,7 @@ function Contacto() {
       </div>
    
       <div className='gridPadreContacto'>
+
       {/* DATOS DE CONTACTO */}
       <div className="objetoCentrado1">
         <div>
@@ -18,25 +19,25 @@ function Contacto() {
           
           <p className="objetoCentrado1 estiloContacto1">
             <a href="https://www.facebook.com/alegondramusic" target="_blank" rel="noopener noreferrer">
-              <i className="bi bi-facebook" /> Facebook: ......... <i className="bi bi-facebook" />
+              <i className="bi bi-facebook" /> Facebook <i className="bi bi-facebook" />
             </a>
           </p>
           
           <p className="objetoCentrado1 estiloContacto1">
             <a href="https://www.instagram.com/alegondramusic/?hl=es" target="_blank" rel="noopener noreferrer">
-              <i className="bi bi-instagram" /> Instagram: @............. <i className="bi bi-instagram" />
+              <i className="bi bi-instagram" /> Instagram <i className="bi bi-instagram" />
             </a>
           </p>
           
           <p className="objetoCentrado1 estiloContacto1">
             <a href="https://www.youtube.com/channel/UCBhJkysp3SnHU1tR3qAA5pQ" target="_blank" rel="noopener noreferrer">
-              <i className="bi bi-youtube" /> Youtube: ........... <i className="bi bi-youtube" />
+              <i className="bi bi-youtube" /> Youtube <i className="bi bi-youtube" />
             </a>
           </p>
           
           <p className="objetoCentrado1 estiloContacto1">
             <a href="https://open.spotify.com/artist/7qo7PxAcvyyyZb6XztH7zE" target="_blank" rel="noopener noreferrer">
-              <i className="bi bi-spotify" /> SPOTIFY: ............... <i className="bi bi-spotify" />
+              <i className="bi bi-spotify" /> Spotify<i className="bi bi-spotify" />
             </a>
           </p>
 
@@ -45,9 +46,9 @@ function Contacto() {
           <p className="objetoCentrado1 estiloContacto1 textoMovimiento">
             <i className="bi bi-envelope objetoCentrado1" />
             <span className="card1">
-              Escribinos un mail a: 
+              Escribinos un mail 
               <a href="mailto:bavaroalejandro@gmail.com" target="_blank" rel="noopener noreferrer">
-                <i className="bi bi-person-arms-up" /> bavaroalejandro@gmail.com <i className="bi bi-person-arms-up" />
+                <i className="bi bi-person-arms-up" /> <i className="bi bi-person-arms-up" />
               </a>
             </span>
           </p>
@@ -55,13 +56,13 @@ function Contacto() {
 
           <hr className="border border-1 opacity-5" />
           
-          <p className="objetoCentrado1 textoMovimiento">
+          <p className="objetoCentrado1 textoMovimiento estiloContacto1 ">
             <a href="https://api.whatsapp.com/send?phone=2235455451&text=Hola!%20Quisiera,%20contratar%20a%20Almango%20Pop" target="_blank" rel="noopener noreferrer">
               <i className="bi bi-person-arms-up" /> CONTRATACIONES AQUÍ <i className="bi bi-person-arms-up" />
             </a>
           </p>
           
-          <p className="objetoCentrado1">
+          <p className="objetoCentrado1 estiloContacto1 ">
             <a className="logoPaypal" href="https://www.paypal.com/paypalme/alegondramusic?country.x=AR&locale.x=es_XC" target="_blank" rel="noopener noreferrer">
               <i className="bi bi-paypal" /> COLABORÁ CON NOSOTROS <i className="bi bi-paypal" />
             </a>
@@ -72,6 +73,7 @@ function Contacto() {
 
 
 
+      <hr className="border border-1 opacity-5" />
 
       {/* FORMULARIO */}
       <div className="contenedorFormulario">
