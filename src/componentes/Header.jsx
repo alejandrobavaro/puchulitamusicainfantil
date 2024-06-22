@@ -27,7 +27,7 @@ const Header = ({ cart }) => {
                 <img
                   alt="icono"
                   className="container-fluid menu-logo"
-                  src="../../public/img/05-img-costados-larga/16aicono.png"
+                  src="/img/05-img-costados-larga/16aicono.png"
                 />
               </button>
               <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
