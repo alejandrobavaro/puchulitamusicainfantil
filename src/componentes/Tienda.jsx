@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import Toastify from 'toastify-js';
+import "toastify-js/src/toastify.css";
 import Swal from 'sweetalert2';
 import ProductosTienda from './ProductosTienda';
 import CarritoTienda from './CarritoTienda';
@@ -23,6 +25,19 @@ function Tienda({ cart, setCart, addToCart, removeFromCart }) {
     cargarProductosDesdeJSON();
   }, []);
 
+  const handleAddToCart = (producto) => {
+    addToCart(producto);
+    Toastify({
+      text: `Añadiste ${producto.nombre} al carrito.`,
+      duration: 3000,
+      close: true,
+      gravity: "top",
+      position: "right",
+      backgroundColor: "#4CAF50",
+      className: "toastify-total"
+    }).showToast();
+  };
+
   const handlePagar = () => {
     Swal.fire({
       title: 'Proceso de Pago',
@@ -43,9 +58,8 @@ function Tienda({ cart, setCart, addToCart, removeFromCart }) {
 
   return (
     <div className="tienda">
-      <ProductosTienda products={products} addToCart={addToCart} />
+      <ProductosTienda products={products} addToCart={handleAddToCart} />
       <CarritoTienda cart={cart} />
-     
       <DetalleProducto detalle={detalle} />
     </div>
   );

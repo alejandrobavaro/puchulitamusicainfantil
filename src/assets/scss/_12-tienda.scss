@@ -1,7 +1,6 @@
 //------------------------TIENDA-ESTILOS-------------------------//
 
 .tituloPrecio1 {
-  // text-decoration: underline;
   color: rgb(255, 0, 217);
   font-size: medium;
 }
@@ -14,14 +13,12 @@
 
 //------------------------MINI CARRITO COMPRAS-------------------------//
 .mini-carrito {
-  // border: 1px solid white;
   border-radius: 20px;
   background-color: transparent;
   box-shadow: 0 0 40px wheat;
 }
 
 .mini-carrito2 {
-  // border: 1px solid rgba(255, 255, 255, 0.406);
   border-radius: 20px;
   background-color: transparent;
   box-shadow: 0 0 5px wheat;
@@ -48,11 +45,7 @@ select.form-select option {
   text-align: center;
   background-color: #745a736d;
   color: rgb(255, 255, 255);
-  
 }
-
-
-//-------------------------------------------------------//
 
 /* Estilos generales */
 
@@ -122,4 +115,33 @@ select.form-select option {
   align-items: center;
   justify-content: center;
   white-space: nowrap;
+}
+
+//---------------------------------------//
+
+.flota-carrito {
+  position: fixed;
+  top: 20%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: #ff00c3bc;
+  padding: 5px 0; // Reducido para achicar el recuadro
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(251, 0, 255); // Ajuste de sombra
+  z-index: 1000;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.flota-carrito .nav-link {
+  color: #fdfdfd;
+  text-decoration: none;
+
+  padding: 10px 5px; // Reducido para achicar el recuadro
+}
+
+.flota-carrito .nav-link:hover {
+  color: #eedaff;
+    font-weight: bold;
+  box-shadow: 0 0 10px rgba(255, 0, 242, 0.573); // Ajuste de sombra
 }

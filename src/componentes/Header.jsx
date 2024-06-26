@@ -1,16 +1,22 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import '../assets/scss/estilo.scss';
 
 const Header = ({ cart }) => {
+  const location = useLocation();
+  const showCartLink = location.pathname.startsWith('/tienda') || location.pathname.startsWith('/carrito');
+
   return (
     <div className="header">
       <div className="container">
-        <nav className="nav objetoCostadoDerecho1">
-          <Link to="/carrito" className="nav-link carrito-link">
-            <i className="bi bi-cart"> Carrito de Compras </i> ({cart.length} Productos Agregados)
-          </Link>
-        </nav>
+        {showCartLink && (
+          <nav className="nav flota-carrito">
+            <Link to="/carrito" className="nav-link carrito-link">
+              <i className="bi bi-cart"></i> {cart.length} Productos
+            </Link>
+          </nav>
+        )}
+        
         <header className="encabezado">
           <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
