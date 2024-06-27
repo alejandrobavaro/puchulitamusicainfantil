@@ -1,22 +1,28 @@
-import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import '../assets/scss/estilo.scss';
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
+import "../assets/scss/estilo.scss";
 
 const Header = ({ cart }) => {
   const location = useLocation();
-  const showCartLink = location.pathname.startsWith('/tienda');
+  const showCartLink = location.pathname.startsWith("/tienda");
 
   return (
     <div className="header">
       <div className="container">
+
         {showCartLink && (
-          <nav className="nav flota-carrito">
+          
+          <div className=" flota-carrito">
+            <div className="card3">
             <Link to="/carrito" className="nav-link carrito-link">
-            <i className="bi bi-cart"></i> <hr /> <span className='card2'>{cart.length} </span><hr /> Productos en el carrito
+              <i className="bi bi-cart"></i> <hr />{" "}
+              <span className="card2">{cart.length} </span>
+              <hr /> Productos en el carrito
             </Link>
-          </nav>
+            </div>
+          </div>
         )}
-        
+
         <header className="encabezado">
           <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">

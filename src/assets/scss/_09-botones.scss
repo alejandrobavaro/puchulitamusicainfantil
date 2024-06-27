@@ -144,7 +144,7 @@
   background-color: #ff00c8;
   color: rgb(255, 255, 255);
   border: none;
-  padding: 15px 0px 10px 0px;
+  padding: 10px 20px;
  }
 
 .botonComprar:hover {
@@ -153,6 +153,19 @@
   border: none;
 }
 
+.botonComprar1 {
+  background-color: #ff00c839;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 20px;
+  padding: 15px 0px 10px 0px;
+ }
+
+.botonComprar1:hover {
+  background-color: rgba(210, 43, 160, 0.55);
+  color: #ffffff;
+  border: none;
+}
 
 #btnComprar {
   padding: 8px 16px;

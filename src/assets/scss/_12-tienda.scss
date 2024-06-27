@@ -53,7 +53,7 @@ select.form-select option {
 }
 
 .sidebar h3 {
-  color: #bf00ff; 
+  color: #bf00ff;
 }
 
 .banner {
@@ -90,7 +90,7 @@ select.form-select option {
 }
 
 .product-card .promotion {
-  background-color: rgb(255, 0, 225); 
+  background-color: rgb(255, 0, 225);
   color: #000000;
   padding: 5px 10px;
   border-radius: 3px;
@@ -113,7 +113,9 @@ select.form-select option {
 
 // Contenedor de los productos
 .productos-contenedor {
-  max-width: calc(100vw - 48px); // Ajusta el ancho máximo para no tapar los productos
+  max-width: calc(
+    100vw - 48px
+  ); // Ajusta el ancho máximo para no tapar los productos
   margin: 0 auto; // Centra el contenedor
 }
 
@@ -124,14 +126,15 @@ select.form-select option {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  // width: 24px;
-
+  width: 50px;
   background-color: #ff00c368;
-  padding: 15px; 
+  padding: 30px;
   border-radius: 10px;
-  // box-shadow: 5px 5px 5px 5px rgb(255, 0, 195); /* Sombra */
   z-index: 1000; /* Asegurar que estén en frente */
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .flota-carrito-izquierda {
   left: 0;
@@ -143,24 +146,23 @@ select.form-select option {
   writing-mode: vertical-rl;
 }
 
-.flota-carrito .nav-link, .flota-carrito-izquierda .link-carrito {
+.flota-carrito .nav-link,
+.flota-carrito-izquierda .link-carrito {
   color: #fdfdfd;
   text-decoration: none;
-  padding: 3px; // Reducido para achicar el recuadro
   margin: 0; // Elimina cualquier margen
   display: flex;
-  align-items: center; 
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
 }
 
-.flota-carrito .nav-link:hover, .flota-carrito-izquierda .link-carrito:hover {
-  color: #eedaff;
-  font-weight: bold;
-  box-shadow: 0 0 10px rgba(251, 107, 244, 0.573); // Ajuste de sombra
+.flota-carrito .nav-link:hover,
+.flota-carrito-izquierda .link-carrito:hover {
+  color: #ffffff;
+  // font-weight: bold;
 }
 
 .flota-carrito-izquierda .link-carrito p {
   margin: 0;
-  padding: 3px; 
+  padding: 3px;
 }
-

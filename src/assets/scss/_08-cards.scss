@@ -42,11 +42,12 @@
 
 //-----------------CARDS-TITLE--------------------------//
 .card-title {
-  color: rgba(249, 246, 156, 0.627);
-  text-transform: uppercase;
-  font-size: xx-small;
-  text-align: center;
+  color: #707070; /* Cambia a negro u otro color visible */
+  text-align: center; /* Centrar el texto */
+  font-size: 1.2em; /* Ajusta el tamaño de la fuente según sea necesario */
+  margin-top: 10px; /* Añade un margen superior si es necesario */
 }
+
 
 .card-title1 {
   color: rgba(167, 156, 249, 0.86);

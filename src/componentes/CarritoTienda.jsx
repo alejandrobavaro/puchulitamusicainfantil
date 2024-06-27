@@ -12,28 +12,24 @@ const CarritoTienda = ({ cart }) => {
       {showLeftCartLink && (
         <div className="flota-carrito-izquierda">
           <Link to="/carrito" className="link-carrito">
-            <i className="bi bi-cart"></i>
-            <hr />
+            <h6> A Pagar </h6>
             <div>
               <section className="tituloPrecioCarrito card2">
                 ${total.toFixed(2)}
               </section>
             </div>
-            <hr />
-
-            <h2 className="tituloImportante4">A Pagar</h2>
 
             <div className="objetoCentrado1">
               <Link to="/carrito" className="link-carrito">
-                <button className="btn botonComprar">
+                <button className="botonComprar1">
                   <h3 className="tituloImportante1 textoMovimiento">
-                  Comprar  <i className="bi bi-paypal"></i>
+                    Comprar <i className="bi bi-paypal"></i>
                   </h3>
                 </button>
               </Link>
             </div>
+            <i className="bi bi-cart"></i>
           </Link>
-          <hr />
         </div>
       )}
     </div>

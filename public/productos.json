@@ -1,74 +1,434 @@
 [
   {
     "id": 1,
-    "nombre": "Producto 1",
-    "precio": 1000,
-    "imagen": "/img/06-tienda/tienda1-.png"
+    "nombre": "P-1-Remera - Negra - Logo Almango",
+    "precio": 10000,
+    "imagen": "/img/06-tienda/tienda1-.png",
+    "categoria": "remera",
+    "descripcion": "Remera negra con logo de Almango estampado en el frente."
   },
   {
     "id": 2,
-    "nombre": "Producto 2",
-    "precio": 2000,
-    "imagen": "/img/06-tienda/tienda2-.png"
+    "nombre": "P-2-Remera - Blanca - Logo Almango",
+    "precio": 20000,
+    "imagen": "/img/06-tienda/tienda2-.png",
+    "categoria": "remera",
+    "descripcion": "Remera blanca con logo de Almango estampado en el frente."
   },
   {
     "id": 3,
-    "nombre": "Producto 3",
-    "precio": 3000,
-    "imagen": "/img/06-tienda/tienda3-.png"
+    "nombre": "P-3-Buzo - Azul - Logo Pequeño",
+    "precio": 30000,
+    "imagen": "/img/06-tienda/tienda3-.png",
+    "categoria": "buzo",
+    "descripcion": "Buzo azul con un pequeño logo de Almango en el pecho."
   },
   {
     "id": 4,
-    "nombre": "Producto 4",
-    "precio": 4000,
-    "imagen": "/img/06-tienda/tienda4-.png"
+    "nombre": "P-4-Camisa - Blanca - Elegante",
+    "precio": 40000,
+    "imagen": "/img/06-tienda/tienda4-.png",
+    "categoria": "camisa",
+    "descripcion": "Camisa blanca elegante, ideal para eventos formales."
   },
   {
     "id": 5,
-    "nombre": "Producto 5",
-    "precio": 5000,
-    "imagen": "/img/06-tienda/tienda5-.png"
+    "nombre": "P-5-Pantalón - Negro - Clásico",
+    "precio": 50000,
+    "imagen": "/img/06-tienda/tienda5-.png",
+    "categoria": "pantalón",
+    "descripcion": "Pantalón negro clásico, cómodo y versátil."
   },
   {
     "id": 6,
-    "nombre": "Producto 6",
-    "precio": 6000,
-    "imagen": "/img/06-tienda/tienda6-.png"
+    "nombre": "P-6-Gorra - Roja - Logo Almango",
+    "precio": 60000,
+    "imagen": "/img/06-tienda/tienda6-.png",
+    "categoria": "gorra",
+    "descripcion": "Gorra roja con logo de Almango en la parte frontal."
   },
   {
     "id": 7,
-    "nombre": "Producto 7",
+    "nombre": "P-7-Bufanda - Gris - Invierno",
     "precio": 7000,
-    "imagen": "/img/06-tienda/tienda7-.png"
+    "imagen": "/img/06-tienda/tienda7-.png",
+    "categoria": "bufanda",
+    "descripcion": "Bufanda gris, perfecta para el invierno."
   },
   {
     "id": 8,
-    "nombre": "Producto 8",
+    "nombre": "P-8-Buzo - Verde - Logo Almango",
     "precio": 8000,
-    "imagen": "/img/06-tienda/tienda8-.png"
+    "imagen": "/img/06-tienda/tienda8-.png",
+    "categoria": "buzo",
+    "descripcion": "Buzo verde con logo de Almango estampado en el frente."
   },
   {
     "id": 9,
-    "nombre": "Producto 9",
+    "nombre": "P-9-Remera - Amarilla - Logo Pequeño",
     "precio": 9000,
-    "imagen": "/img/06-tienda/tienda9-.png"
+    "imagen": "/img/06-tienda/tienda9-.png",
+    "categoria": "remera",
+    "descripcion": "Remera amarilla con un pequeño logo de Almango en el pecho."
   },
   {
     "id": 10,
-    "nombre": "Producto 10",
+    "nombre": "P-10-Camisa - Azul - Casual",
     "precio": 10000,
-    "imagen": "/img/06-tienda/tienda10-.png"
+    "imagen": "/img/06-tienda/tienda10-.png",
+    "categoria": "camisa",
+    "descripcion": "Camisa azul casual, ideal para el día a día."
   },
   {
     "id": 11,
-    "nombre": "Producto 11",
+    "nombre": "P-11-Pantalón - Beige - Casual",
     "precio": 11000,
-    "imagen": "/img/06-tienda/tienda11-.png"
+    "imagen": "/img/06-tienda/tienda11-.png",
+    "categoria": "pantalón",
+    "descripcion": "Pantalón beige casual, cómodo y elegante."
   },
   {
     "id": 12,
-    "nombre": "Producto 12",
+    "nombre": "P-12-Gorra - Negra - Logo Puchulita",
     "precio": 12000,
-    "imagen": "/img/06-tienda/tienda12-.png"
+    "imagen": "/img/06-tienda/tienda12-.png",
+    "categoria": "gorra",
+    "descripcion": "Gorra negra con el logo de Puchulita en el frente."
+  },
+  {
+    "id": 13,
+    "nombre": "P-13-Remera - Verde - Logo Almango",
+    "precio": 13000,
+    "imagen": "/img/06-tienda/tienda13-.png",
+    "categoria": "remera",
+    "descripcion": "Remera verde con logo de Almango estampado en el frente."
+  },
+  {
+    "id": 14,
+    "nombre": "P-14-Buzo - Negro - Logo Pequeño",
+    "precio": 14000,
+    "imagen": "/img/06-tienda/tienda14-.png",
+    "categoria": "buzo",
+    "descripcion": "Buzo negro con un pequeño logo de Almango en el pecho."
+  },
+  {
+    "id": 15,
+    "nombre": "P-15-Camisa - Verde - Elegante",
+    "precio": 15000,
+    "imagen": "/img/06-tienda/tienda15-.png",
+    "categoria": "camisa",
+    "descripcion": "Camisa verde elegante, ideal para eventos formales."
+  },
+  {
+    "id": 16,
+    "nombre": "P-16-Pantalón - Azul - Clásico",
+    "precio": 16000,
+    "imagen": "/img/06-tienda/tienda16-.png",
+    "categoria": "pantalón",
+    "descripcion": "Pantalón azul clásico, cómodo y versátil."
+  },
+  {
+    "id": 17,
+    "nombre": "P-17-Gorra - Blanca - Logo Almango",
+    "precio": 17000,
+    "imagen": "/img/06-tienda/tienda17-.png",
+    "categoria": "gorra",
+    "descripcion": "Gorra blanca con logo de Almango en la parte frontal."
+  },
+  {
+    "id": 18,
+    "nombre": "P-18-Bufanda - Roja - Invierno",
+    "precio": 18000,
+    "imagen": "/img/06-tienda/tienda18-.png",
+    "categoria": "bufanda",
+    "descripcion": "Bufanda roja, perfecta para el invierno."
+  },
+  {
+    "id": 19,
+    "nombre": "P-19-Buzo - Gris - Logo Almango",
+    "precio": 19000,
+    "imagen": "/img/06-tienda/tienda19-.png",
+    "categoria": "buzo",
+    "descripcion": "Buzo gris con logo de Almango estampado en el frente."
+  },
+  {
+    "id": 20,
+    "nombre": "P-20-Remera - Negra - Logo Pequeño",
+    "precio": 20000,
+    "imagen": "/img/06-tienda/tienda20-.png",
+    "categoria": "remera",
+    "descripcion": "Remera negra con un pequeño logo de Almango en el pecho."
+  },
+  {
+    "id": 21,
+    "nombre": "P-21-Camisa - Roja - Casual",
+    "precio": 21000,
+    "imagen": "/img/06-tienda/tienda21-.png",
+    "categoria": "camisa",
+    "descripcion": "Camisa roja casual, ideal para el día a día."
+  },
+  {
+    "id": 22,
+    "nombre": "P-22-Pantalón - Verde - Casual",
+    "precio": 22000,
+    "imagen": "/img/06-tienda/tienda22-.png",
+    "categoria": "pantalón",
+    "descripcion": "Pantalón verde casual, cómodo y elegante."
+  },
+  {
+    "id": 23,
+    "nombre": "P-23-Gorra - Azul - Logo Puchulita",
+    "precio": 23000,
+    "imagen": "/img/06-tienda/tienda23-.png",
+    "categoria": "gorra",
+    "descripcion": "Gorra azul con el logo de Puchulita en el frente."
+  },
+  {
+    "id": 24,
+    "nombre": "P-24-Remera - Blanca - Logo Almango",
+    "precio": 24000,
+    "imagen": "/img/06-tienda/tienda24-.png",
+    "categoria": "remera",
+    "descripcion": "Remera blanca con logo de Almango estampado en el frente."
+  },
+  {
+    "id": 25,
+    "nombre": "P-25-Buzo - Amarillo - Logo Pequeño",
+    "precio": 25000,
+    "imagen": "/img/06-tienda/tienda25-.png",
+    "categoria": "buzo",
+    "descripcion": "Buzo amarillo con un pequeño logo de Almango en el pecho."
+  },
+  {
+    "id": 26,
+    "nombre": "P-26-Camisa - Gris - Elegante",
+    "precio": 26000,
+    "imagen": "/img/06-tienda/tienda26-.png",
+    "categoria": "camisa",
+    "descripcion": "Camisa gris elegante, ideal para eventos formales."
+  },
+  {
+    "id": 27,
+    "nombre": "P-27-Pantalón - Negro - Clásico",
+    "precio": 27000,
+    "imagen": "/img/06-tienda/tienda27-.png",
+    "categoria": "pantalón",
+    "descripcion": "Pantalón negro clásico, cómodo y versátil."
+  },
+  {
+    "id": 28,
+    "nombre": "P-28-Gorra - Verde - Logo Almango",
+    "precio": 28000,
+    "imagen": "/img/06-tienda/tienda28-.png",
+    "categoria": "gorra",
+    "descripcion": "Gorra verde con logo de Almango en la parte frontal."
+  },
+  {
+    "id": 29,
+    "nombre": "P-29-Bufanda - Negra - Invierno",
+    "precio": 29000,
+    "imagen": "/img/06-tienda/tienda29-.png",
+    "categoria": "bufanda",
+    "descripcion": "Bufanda negra, perfecta para el invierno."
+  },
+  {
+    "id": 30,
+    "nombre": "P-30-Buzo - Azul - Logo Almango",
+    "precio": 30000,
+    "imagen": "/img/06-tienda/tienda30-.png",
+    "categoria": "buzo",
+    "descripcion": "Buzo azul con logo de Almango estampado en el frente."
+  },
+  {
+    "id": 31,
+    "nombre": "P-31-Remera - Amarilla - Logo Pequeño",
+    "precio": 31000,
+    "imagen": "/img/06-tienda/tienda31-.png",
+    "categoria": "remera",
+    "descripcion": "Remera amarilla con un pequeño logo de Almango en el pecho."
+  },
+  {
+    "id": 32,
+    "nombre": "P-32-Camisa - Azul - Casual",
+    "precio": 32000,
+    "imagen": "/img/06-tienda/tienda32-.png",
+    "categoria": "camisa",
+    "descripcion": "Camisa azul casual, ideal para el día a día."
+  },
+  {
+    "id": 33,
+    "nombre": "P-33-Pantalón - Beige - Casual",
+    "precio": 33000,
+    "imagen": "/img/06-tienda/tienda33-.png",
+    "categoria": "pantalón",
+    "descripcion": "Pantalón beige casual, cómodo y elegante."
+  },
+  {
+    "id": 34,
+    "nombre": "P-34-Gorra - Roja - Logo Puchulita",
+    "precio": 34000,
+    "imagen": "/img/06-tienda/tienda34-.png",
+    "categoria": "gorra",
+    "descripcion": "Gorra roja con el logo de Puchulita en el frente."
+  },
+  {
+    "id": 35,
+    "nombre": "P-35-Remera - Verde - Logo Almango",
+    "precio": 35000,
+    "imagen": "/img/06-tienda/tienda35-.png",
+    "categoria": "remera",
+    "descripcion": "Remera verde con logo de Almango estampado en el frente."
+  },
+  {
+    "id": 36,
+    "nombre": "P-36-Buzo - Negro - Logo Pequeño",
+    "precio": 36000,
+    "imagen": "/img/06-tienda/tienda36-.png",
+    "categoria": "buzo",
+    "descripcion": "Buzo negro con un pequeño logo de Almango en el pecho."
+  },
+  {
+    "id": 37,
+    "nombre": "P-37-Camisa - Verde - Elegante",
+    "precio": 37000,
+    "imagen": "/img/06-tienda/tienda37-.png",
+    "categoria": "camisa",
+    "descripcion": "Camisa verde elegante, ideal para eventos formales."
+  },
+  {
+    "id": 38,
+    "nombre": "P-38-Pantalón - Azul - Clásico",
+    "precio": 38000,
+    "imagen": "/img/06-tienda/tienda38-.png",
+    "categoria": "pantalón",
+    "descripcion": "Pantalón azul clásico, cómodo y versátil."
+  },
+  {
+    "id": 39,
+    "nombre": "P-39-Gorra - Blanca - Logo Almango",
+    "precio": 39000,
+    "imagen": "/img/06-tienda/tienda39-.png",
+    "categoria": "gorra",
+    "descripcion": "Gorra blanca con logo de Almango en la parte frontal."
+  },
+  {
+    "id": 40,
+    "nombre": "P-40-Bufanda - Roja - Invierno",
+    "precio": 40000,
+    "imagen": "/img/06-tienda/tienda40-.png",
+    "categoria": "bufanda",
+    "descripcion": "Bufanda roja, perfecta para el invierno."
+  },
+  {
+    "id": 41,
+    "nombre": "P-41-Buzo - Gris - Logo Almango",
+    "precio": 41000,
+    "imagen": "/img/06-tienda/tienda41-.png",
+    "categoria": "buzo",
+    "descripcion": "Buzo gris con logo de Almango estampado en el frente."
+  },
+  {
+    "id": 42,
+    "nombre": "P-42-Remera - Negra - Logo Pequeño",
+    "precio": 42000,
+    "imagen": "/img/06-tienda/tienda42-.png",
+    "categoria": "remera",
+    "descripcion": "Remera negra con un pequeño logo de Almango en el pecho."
+  },
+  {
+    "id": 43,
+    "nombre": "P-43-Camisa - Roja - Casual",
+    "precio": 43000,
+    "imagen": "/img/06-tienda/tienda43-.png",
+    "categoria": "camisa",
+    "descripcion": "Camisa roja casual, ideal para el día a día."
+  },
+  {
+    "id": 44,
+    "nombre": "P-44-Pantalón - Verde - Casual",
+    "precio": 44000,
+    "imagen": "/img/06-tienda/tienda44-.png",
+    "categoria": "pantalón",
+    "descripcion": "Pantalón verde casual, cómodo y elegante."
+  },
+  {
+    "id": 45,
+    "nombre": "P-45-Gorra - Azul - Logo Puchulita",
+    "precio": 45000,
+    "imagen": "/img/06-tienda/tienda45-.png",
+    "categoria": "gorra",
+    "descripcion": "Gorra azul con el logo de Puchulita en el frente."
+  },
+  {
+    "id": 46,
+    "nombre": "P-46-Remera - Blanca - Logo Almango",
+    "precio": 46000,
+    "imagen": "/img/06-tienda/tienda46-.png",
+    "categoria": "remera",
+    "descripcion": "Remera blanca con logo de Almango estampado en el frente."
+  },
+  {
+    "id": 47,
+    "nombre": "P-47-Buzo - Amarillo - Logo Pequeño",
+    "precio": 47000,
+    "imagen": "/img/06-tienda/tienda47-.png",
+    "categoria": "buzo",
+    "descripcion": "Buzo amarillo con un pequeño logo de Almango en el pecho."
+  },
+  {
+    "id": 48,
+    "nombre": "P-48-Camisa - Gris - Elegante",
+    "precio": 48000,
+    "imagen": "/img/06-tienda/tienda48-.png",
+    "categoria": "camisa",
+    "descripcion": "Camisa gris elegante, ideal para eventos formales."
+  },
+  {
+    "id": 49,
+    "nombre": "P-49-Pantalón - Negro - Clásico",
+    "precio": 49000,
+    "imagen": "/img/06-tienda/tienda49-.png",
+    "categoria": "pantalón",
+    "descripcion": "Pantalón negro clásico, cómodo y versátil."
+  },
+  {
+    "id": 50,
+    "nombre": "P-50-Remera - Negra - Logo Almango",
+    "precio": 50000,
+    "imagen": "/img/06-tienda/tienda50-.png",
+    "categoria": "remera",
+    "descripcion": "Remera negra con logo de Almango estampado en la espalda."
+  },
+  {
+    "id": 51,
+    "nombre": "P-51-Buzo - Azul - Logo Grande",
+    "precio": 51000,
+    "imagen": "/img/06-tienda/tienda51-.png",
+    "categoria": "buzo",
+    "descripcion": "Buzo azul con un gran logo de Almango en el frente."
+  },
+  {
+    "id": 52,
+    "nombre": "P-52-Camisa - Blanca - Casual",
+    "precio": 52000,
+    "imagen": "/img/06-tienda/tienda52-.png",
+    "categoria": "camisa",
+    "descripcion": "Camisa blanca casual, perfecta para el día a día."
+  },
+  {
+    "id": 53,
+    "nombre": "P-53-Pantalón - Azul - Denim",
+    "precio": 53000,
+    "imagen": "/img/06-tienda/tienda53-.png",
+    "categoria": "pantalón",
+    "descripcion": "Pantalón azul de denim, cómodo y resistente."
+  },
+  {
+    "id": 54,
+    "nombre": "P-54-Gorra - Roja - Logo Lateral",
+    "precio": 54000,
+    "imagen": "/img/06-tienda/tienda54-.png",
+    "categoria": "gorra",
+    "descripcion": "Gorra roja con logo de Almango en el lateral."
   }
 ]
