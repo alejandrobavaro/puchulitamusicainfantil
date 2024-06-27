@@ -8,21 +8,28 @@ const CarritoTienda = ({ cart }) => {
 
   return (
     <div className="mini-carrito compacto">
-      <Link to="/carrito" className="link-carrito">
-        <hr />
+      <div className="flota-carrito-izquierda">
+       
 
-        <p className="tituloImportante2 objetoCentrado1">
-          Total: ${total.toFixed(2)} <i className="bi bi-cart"></i> (
-          {cart.length})
-        </p>
-        <div className="objetoCentrado1">
-        <button className="btn botonComprar ">
+        <Link to="/carrito" className="link-carrito">
+      
+          <div>
+            <section className="tituloPrecioCarrito card2"> ${total.toFixed(2)} </section>
+          </div>
+        
+          <hr />
+          <h2 className="tituloImportante4"> A Pagar</h2>
+        </Link>
+    
+
+      </div>
+      <div className="objetoCentrado1">
+        <button className="btn botonComprar">
           <h3 className="tituloImportante1 textoMovimiento">
             <i className="bi bi-paypal"></i> Comprar
           </h3>
         </button>
-        </div>
-      </Link>
+      </div>
     </div>
   );
 };

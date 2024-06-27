@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import '../assets/scss/estilo.scss';
 
 function ProductosTienda({ products, addToCart }) {
   const [productos, setProductos] = useState([]);
@@ -12,7 +13,7 @@ function ProductosTienda({ products, addToCart }) {
   }, []);
 
   return (
-    <div className="row row-cols-1 row-cols-md-4 g-4">
+    <div className="row row-cols-1 row-cols-md-5 g-4"> 
       {productos.map(producto => (
         <div className="col producto" id={`producto${producto.id}`} key={producto.id}>
           <div className="card">

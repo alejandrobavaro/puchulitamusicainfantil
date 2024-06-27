@@ -1,14 +1,20 @@
 //------------------------TIENDA-ESTILOS-------------------------//
 
+
+
+
+
 .tituloPrecio1 {
   color: rgb(255, 0, 217);
   font-size: medium;
 }
 
 .tituloPrecioCarrito {
-  text-decoration: dotted;
-  color: rgb(255, 38, 0);
-  font-size: xx-large;
+  // text-decoration: dotted;
+  color: rgb(255, 255, 255);
+  // font-weight: bold;
+  font-size: large;
+  // box-shadow: 0 0 40px rgb(255, 255, 255);
 }
 
 //------------------------MINI CARRITO COMPRAS-------------------------//
@@ -118,7 +124,6 @@ select.form-select option {
 }
 
 //---------------------------------------//
-
 .flota-carrito {
   position: fixed;
   top: 20%;
@@ -136,12 +141,51 @@ select.form-select option {
 .flota-carrito .nav-link {
   color: #fdfdfd;
   text-decoration: none;
-
-  padding: 10px 5px; // Reducido para achicar el recuadro
+  padding: 5px 5px; // Reducido para achicar el recuadro
 }
 
 .flota-carrito .nav-link:hover {
   color: #eedaff;
-    font-weight: bold;
+  font-weight: bold;
   box-shadow: 0 0 10px rgba(255, 0, 242, 0.573); // Ajuste de sombra
+}
+
+// Estilos para el carrito flotante en el lado izquierdo
+.flota-carrito-izquierda {
+  position: fixed;
+  top: 30%;
+  left: 0;
+  transform: translateY(-50%);
+  font-weight: bold;
+  background-color: #ff00c3bc;
+  padding: 3px ; // Reducido para achicar el recuadro
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(251, 0, 255); // Ajuste de sombra
+  z-index: 1000;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  display: flex;
+  align-items: center; // Alinea el contenido verticalmente
+  justify-content: center; // Alinea el contenido horizontalmente
+}
+
+.flota-carrito-izquierda .link-carrito {
+  color: #fdfdfd;
+  text-decoration: none;
+  padding: 3px; // Reducido para achicar el recuadro
+  margin: 0; // Elimina cualquier margen
+  display: flex;
+  align-items: center; // Alinea el contenido verticalmente
+  justify-content: center; // Alinea el contenido horizontalmente
+}
+
+.flota-carrito-izquierda .link-carrito p {
+  margin: 0; // Elimina cualquier margen
+  padding: 3px; // Reducido para achicar el recuadro
+}
+
+.flota-carrito-izquierda .link-carrito:hover {
+  color: #eedaff;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(251, 107, 244, 0.573); // Ajuste de sombra
 }
