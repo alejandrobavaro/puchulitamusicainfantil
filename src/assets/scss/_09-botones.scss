@@ -17,19 +17,7 @@
 }
 
 
-/*----------------Botón Comprar----------------*/
-.botonComprar {
-  background-color: #ff00c8;
-  color: rgb(255, 255, 255);
-  border: none;
-  border-radius: 10px;
- }
 
-.botonComprar:hover {
-  background-color: rgb(250, 119, 211);
-  color: #ffffff;
-  border: none;
-}
 
 /*----------------Botón Pagar----------------*/
 .botonPagar {
@@ -78,7 +66,7 @@
   color: rgb(255, 255, 255);
   cursor: pointer;
   transition: all 0.3s ease;
-  float: right;
+  // float: right;
   margin-top: 10px;
 }
 
@@ -131,7 +119,7 @@
 }
 
 .btn {
-  padding: 8px 16px;
+  padding: 3px 10px;
   font-size: small;
   border: none;
   border-radius: 10px;
@@ -149,6 +137,22 @@
   border: none;
   animation: shake 0.5s ease;
 }
+
+
+/*----------------Botón Comprar----------------*/
+.botonComprar {
+  background-color: #ff00c8;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 15px 0px 10px 0px;
+ }
+
+.botonComprar:hover {
+  background-color: rgba(226, 55, 175, 0.614);
+  color: #ffffff;
+  border: none;
+}
+
 
 #btnComprar {
   padding: 8px 16px;

@@ -13,10 +13,10 @@ function ProductosTienda({ products, addToCart }) {
   }, []);
 
   return (
-    <div className="row row-cols-1 row-cols-md-5 g-4"> 
+    <div className="productos-contenedor row row-cols-1 row-cols-md-6 g-4">
       {productos.map(producto => (
         <div className="col producto" id={`producto${producto.id}`} key={producto.id}>
-          <div className="card">
+          <div className="card producto-card">
             <div className="card-body card4">
               <section>
                 <h5 className="objetoCentrado1">

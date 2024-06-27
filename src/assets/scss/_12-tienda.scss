@@ -1,20 +1,13 @@
 //------------------------TIENDA-ESTILOS-------------------------//
 
-
-
-
-
 .tituloPrecio1 {
   color: rgb(255, 0, 217);
   font-size: medium;
 }
 
 .tituloPrecioCarrito {
-  // text-decoration: dotted;
   color: rgb(255, 255, 255);
-  // font-weight: bold;
   font-size: large;
-  // box-shadow: 0 0 40px rgb(255, 255, 255);
 }
 
 //------------------------MINI CARRITO COMPRAS-------------------------//
@@ -46,7 +39,6 @@
   padding: 5px;
 }
 
-/* Estilos para centrar y cambiar el color de fondo de las opciones de los selects */
 select.form-select option {
   text-align: center;
   background-color: #745a736d;
@@ -54,8 +46,6 @@ select.form-select option {
 }
 
 /* Estilos generales */
-
-/* Estilos del menú lateral */
 .sidebar {
   background-color: #111111;
   color: #ffffff;
@@ -63,10 +53,9 @@ select.form-select option {
 }
 
 .sidebar h3 {
-  color: #bf00ff; /* Verde jade */
+  color: #bf00ff; 
 }
 
-/* Estilos del banner de publicidad */
 .banner {
   margin: 20px 0;
 }
@@ -75,7 +64,6 @@ select.form-select option {
   max-width: 100%;
 }
 
-/* Estilos de la cuadrícula de productos */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -102,7 +90,7 @@ select.form-select option {
 }
 
 .product-card .promotion {
-  background-color: rgb(255, 0, 225); /* Gama similar a aqua */
+  background-color: rgb(255, 0, 225); 
   color: #000000;
   padding: 5px 10px;
   border-radius: 3px;
@@ -123,69 +111,56 @@ select.form-select option {
   white-space: nowrap;
 }
 
+// Contenedor de los productos
+.productos-contenedor {
+  max-width: calc(100vw - 48px); // Ajusta el ancho máximo para no tapar los productos
+  margin: 0 auto; // Centra el contenedor
+}
+
 //---------------------------------------//
-.flota-carrito {
-  position: fixed;
-  top: 20%;
-  right: 0;
-  transform: translateY(-50%);
-  background-color: #ff00c3bc;
-  padding: 5px 0; // Reducido para achicar el recuadro
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgb(251, 0, 255); // Ajuste de sombra
-  z-index: 1000;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-}
-
-.flota-carrito .nav-link {
-  color: #fdfdfd;
-  text-decoration: none;
-  padding: 5px 5px; // Reducido para achicar el recuadro
-}
-
-.flota-carrito .nav-link:hover {
-  color: #eedaff;
-  font-weight: bold;
-  box-shadow: 0 0 10px rgba(255, 0, 242, 0.573); // Ajuste de sombra
-}
-
-// Estilos para el carrito flotante en el lado izquierdo
+/* Estilos para las barras flotantes */
+.flota-carrito,
 .flota-carrito-izquierda {
   position: fixed;
-  top: 30%;
-  left: 0;
+  top: 50%;
   transform: translateY(-50%);
-  font-weight: bold;
-  background-color: #ff00c3bc;
-  padding: 3px ; // Reducido para achicar el recuadro
+  // width: 24px;
+
+  background-color: #ff00c368;
+  padding: 15px; 
   border-radius: 10px;
-  box-shadow: 0 0 10px rgb(251, 0, 255); // Ajuste de sombra
-  z-index: 1000;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  display: flex;
-  align-items: center; // Alinea el contenido verticalmente
-  justify-content: center; // Alinea el contenido horizontalmente
+  // box-shadow: 5px 5px 5px 5px rgb(255, 0, 195); /* Sombra */
+  z-index: 1000; /* Asegurar que estén en frente */
+    }
+
+.flota-carrito-izquierda {
+  left: 0;
+  writing-mode: vertical-lr;
 }
 
-.flota-carrito-izquierda .link-carrito {
+.flota-carrito {
+  right: 0;
+  writing-mode: vertical-rl;
+}
+
+.flota-carrito .nav-link, .flota-carrito-izquierda .link-carrito {
   color: #fdfdfd;
   text-decoration: none;
   padding: 3px; // Reducido para achicar el recuadro
   margin: 0; // Elimina cualquier margen
   display: flex;
-  align-items: center; // Alinea el contenido verticalmente
-  justify-content: center; // Alinea el contenido horizontalmente
+  align-items: center; 
+  justify-content: center; 
 }
 
-.flota-carrito-izquierda .link-carrito p {
-  margin: 0; // Elimina cualquier margen
-  padding: 3px; // Reducido para achicar el recuadro
-}
-
-.flota-carrito-izquierda .link-carrito:hover {
+.flota-carrito .nav-link:hover, .flota-carrito-izquierda .link-carrito:hover {
   color: #eedaff;
   font-weight: bold;
   box-shadow: 0 0 10px rgba(251, 107, 244, 0.573); // Ajuste de sombra
 }
+
+.flota-carrito-izquierda .link-carrito p {
+  margin: 0;
+  padding: 3px; 
+}
+

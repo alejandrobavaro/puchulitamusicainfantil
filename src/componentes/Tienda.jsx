@@ -31,8 +31,8 @@ function Tienda({ cart, setCart, addToCart, removeFromCart }) {
       text: `Añadiste ${producto.nombre} al carrito.`,
       duration: 3000,
       close: true,
-      gravity: "top",
-      position: "right",
+      gravity: "top", // Cambiado a "top"
+      position: "left", // Cambiado a "left"
       backgroundColor: "#4CAF50",
       className: "toastify-total",
     }).showToast();

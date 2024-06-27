@@ -1,35 +1,41 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../assets/scss/estilo.scss";
 
 const CarritoTienda = ({ cart }) => {
-  // Calcula el total del carrito
+  const location = useLocation();
   const total = cart.reduce((sum, product) => sum + product.precio, 0);
+  const showLeftCartLink = location.pathname.startsWith("/tienda");
 
   return (
     <div className="mini-carrito compacto">
-      <div className="flota-carrito-izquierda">
-       
+      {showLeftCartLink && (
+        <div className="flota-carrito-izquierda">
+          <Link to="/carrito" className="link-carrito">
+            <i className="bi bi-cart"></i>
+            <hr />
+            <div>
+              <section className="tituloPrecioCarrito card2">
+                ${total.toFixed(2)}
+              </section>
+            </div>
+            <hr />
 
-        <Link to="/carrito" className="link-carrito">
-      
-          <div>
-            <section className="tituloPrecioCarrito card2"> ${total.toFixed(2)} </section>
-          </div>
-        
+            <h2 className="tituloImportante4">A Pagar</h2>
+
+            <div className="objetoCentrado1">
+              <Link to="/carrito" className="link-carrito">
+                <button className="btn botonComprar">
+                  <h3 className="tituloImportante1 textoMovimiento">
+                  Comprar  <i className="bi bi-paypal"></i>
+                  </h3>
+                </button>
+              </Link>
+            </div>
+          </Link>
           <hr />
-          <h2 className="tituloImportante4"> A Pagar</h2>
-        </Link>
-    
-
-      </div>
-      <div className="objetoCentrado1">
-        <button className="btn botonComprar">
-          <h3 className="tituloImportante1 textoMovimiento">
-            <i className="bi bi-paypal"></i> Comprar
-          </h3>
-        </button>
-      </div>
+        </div>
+      )}
     </div>
   );
 };

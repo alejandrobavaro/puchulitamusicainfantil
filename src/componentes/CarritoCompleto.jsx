@@ -84,7 +84,6 @@ const CarritoCompleto = ({ cart, removeFromCart, handlePagar }) => {
                   <i className="bi bi-shift-fill" />
                 </button>
               </section>
-              
             </div>
           </div>
         </div>

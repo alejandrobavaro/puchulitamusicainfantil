@@ -4,7 +4,7 @@ import '../assets/scss/estilo.scss';
 
 const Header = ({ cart }) => {
   const location = useLocation();
-  const showCartLink = location.pathname.startsWith('/tienda') || location.pathname.startsWith('/carrito');
+  const showCartLink = location.pathname.startsWith('/tienda');
 
   return (
     <div className="header">
@@ -12,7 +12,7 @@ const Header = ({ cart }) => {
         {showCartLink && (
           <nav className="nav flota-carrito">
             <Link to="/carrito" className="nav-link carrito-link">
-              <i className="bi bi-cart"></i> {cart.length} Productos
+            <i className="bi bi-cart"></i> <hr /> <span className='card2'>{cart.length} </span><hr /> Productos en el carrito
             </Link>
           </nav>
         )}
