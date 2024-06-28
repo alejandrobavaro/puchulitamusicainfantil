@@ -40,6 +40,18 @@
   // border: 1px rgba(0, 255, 255, 0.419) solid;
 }
 
+.card-category {
+  text-align: justify;
+  // background: rgba(181, 121, 152, 0.194);
+  color: rgba(212, 39, 125, 0.718);
+  border-radius: 20px;
+  border: 1px solid rgba(147, 46, 170, 0.162);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    box-shadow: 0 0 5px rgba(255, 0, 238, 0.353);
+}
+
 //-----------------CARDS-TITLE--------------------------//
 .card-title {
   color: #707070; /* Cambia a negro u otro color visible */

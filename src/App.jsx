@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Swal from 'sweetalert2';
 import Header from './componentes/Header';
 import MainContent from './componentes/MainContent';
 import Contacto from './componentes/Contacto';

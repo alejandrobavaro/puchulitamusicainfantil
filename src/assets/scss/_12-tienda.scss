@@ -166,3 +166,41 @@ select.form-select option {
   margin: 0;
   padding: 3px;
 }
+
+
+//------------------SEARCH-BAR------------------//
+
+// src/assets/scss/estilo.scss
+.search-navbar {
+  margin-bottom: 20px;
+  text-align: center;
+
+  h3 {
+    margin-bottom: 10px;
+    color: #ffffff; // Color de texto para el título
+  }
+
+  .btn-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .btn-category {
+      background-color: #bc22be; // Mismo color de background
+      color: #ffffff; // Color de texto blanco
+      margin: 5px;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #ff008cb1; // Color de hover
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

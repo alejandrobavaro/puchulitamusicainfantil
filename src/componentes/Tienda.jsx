@@ -5,16 +5,18 @@ import Swal from "sweetalert2";
 import ProductosTienda from "./ProductosTienda";
 import CarritoTienda from "./CarritoTienda";
 import DetalleProducto from "./DetalleProducto";
+import SearchBar from "./SearchBar";
 import "../assets/scss/estilo.scss";
 
 function Tienda({ cart, setCart, addToCart, removeFromCart }) {
   const [products, setProducts] = useState([]);
   const [detalle, setDetalle] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState('Todos');
 
   useEffect(() => {
     const cargarProductosDesdeJSON = async () => {
       try {
-        const response = await fetch("../public/productos.json");
+        const response = await fetch("/productos.json");
         const productos = await response.json();
         setProducts(productos);
       } catch (error) {
@@ -31,8 +33,8 @@ function Tienda({ cart, setCart, addToCart, removeFromCart }) {
       text: `Añadiste ${producto.nombre} al carrito.`,
       duration: 3000,
       close: true,
-      gravity: "top", // Cambiado a "top"
-      position: "left", // Cambiado a "left"
+      gravity: "top",
+      position: "left",
       backgroundColor: "#4CAF50",
       className: "toastify-total",
     }).showToast();
@@ -56,10 +58,17 @@ function Tienda({ cart, setCart, addToCart, removeFromCart }) {
     });
   };
 
+  const categories = ['Todos', ...new Set(products.map((producto) => producto.categoria))];
+
+  const filteredProducts = selectedCategory === 'Todos'
+    ? products
+    : products.filter((producto) => producto.categoria === selectedCategory);
+
   return (
     <div className="tienda">
       <CarritoTienda cart={cart} />
-      <ProductosTienda products={products} addToCart={handleAddToCart} />
+      <SearchBar categories={categories} onCategoryChange={setSelectedCategory} />
+      <ProductosTienda products={filteredProducts} addToCart={handleAddToCart} />
       <DetalleProducto detalle={detalle} />
     </div>
   );

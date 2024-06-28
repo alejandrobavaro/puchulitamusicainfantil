@@ -1,20 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import '../assets/scss/estilo.scss';
 
 function ProductosTienda({ products, addToCart }) {
-  const [productos, setProductos] = useState([]);
-
-  useEffect(() => {
-    // Cargar los productos desde el JSON
-    fetch('/productos.json')
-      .then(response => response.json())
-      .then(data => setProductos(data))
-      .catch(error => console.error('Error al cargar los productos:', error));
-  }, []);
-
   return (
     <div className="productos-contenedor row row-cols-1 row-cols-md-6 g-4">
-      {productos.map(producto => (
+      {products.map(producto => (
         <div className="col producto" id={`producto${producto.id}`} key={producto.id}>
           <div className="card producto-card">
             <div className="card-body card4">
@@ -25,6 +15,7 @@ function ProductosTienda({ products, addToCart }) {
               </section>
               <img src={producto.imagen} className="card-img-top img-fluid" alt={producto.nombre} />
               <h5 className="card-title">{producto.nombre}</h5>
+              <h6 className="card-category">{producto.categoria.charAt(0).toUpperCase() + producto.categoria.slice(1)}</h6>
               <h4 className="objetoCentrado1 tituloPrecio1">
                 Precio:<span>
                   <h3 className="tituloImportante2 objetoCentrado1"> ${producto.precio.toFixed(2)} </h3>
