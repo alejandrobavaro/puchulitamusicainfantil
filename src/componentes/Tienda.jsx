@@ -6,12 +6,15 @@ import ProductosTienda from "./ProductosTienda";
 import CarritoTienda from "./CarritoTienda";
 import DetalleProducto from "./DetalleProducto";
 import SearchBar from "./SearchBar";
+import PopUpModal from "./PopUpModal";
 import "../assets/scss/estilo.scss";
+import "../assets/scss/_13-popups.scss"; // Ruta al archivo SCSS
 
 function Tienda({ cart, setCart, addToCart, removeFromCart }) {
   const [products, setProducts] = useState([]);
   const [detalle, setDetalle] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState('Todos');
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     const cargarProductosDesdeJSON = async () => {
@@ -25,7 +28,12 @@ function Tienda({ cart, setCart, addToCart, removeFromCart }) {
     };
 
     cargarProductosDesdeJSON();
+    setShowModal(true); // Mostrar el modal cuando el componente se monte
   }, []);
+
+  const closeModal = () => {
+    setShowModal(false); // Cerrar el modal
+  };
 
   const handleAddToCart = (producto) => {
     addToCart(producto);
@@ -70,6 +78,7 @@ function Tienda({ cart, setCart, addToCart, removeFromCart }) {
       <SearchBar categories={categories} onCategoryChange={setSelectedCategory} />
       <ProductosTienda products={filteredProducts} addToCart={handleAddToCart} />
       <DetalleProducto detalle={detalle} />
+      <PopUpModal showModal={showModal} closeModal={closeModal} />
     </div>
   );
 }
