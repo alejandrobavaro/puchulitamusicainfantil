@@ -45,16 +45,16 @@ function App() {
   return (
     <Router>
       <Header cart={cart} />
-      <hr className="border border border-0 opacity-20" />
+      <hr className="border border-0 opacity-20" />
       <Routes>
         <Route path="/" element={<MainContent />} />
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/tienda" element={<Tienda setCart={setCart} cart={cart} addToCart={addToCart} removeFromCart={removeFromCart} />} />
         <Route path="/carrito" element={<CarritoCompleto cart={cart} removeFromCart={removeFromCart} handlePagar={handlePagar} />} />
       </Routes>
-      <hr className="border border border-0 opacity-20" />
+      <hr className="border border-0 opacity-20" />
       <PublicidadDebajo />
-      <hr className="border border border-0 opacity-20" />
+      <hr className="border border-0 opacity-20" />
       <Footer />
     </Router>
   );
