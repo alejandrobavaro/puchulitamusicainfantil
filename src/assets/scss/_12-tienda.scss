@@ -192,24 +192,83 @@ select.form-select option {
   gap: 20px;
 }
 
+.search-navbar {
+  margin-top: 0; /* Ajusta el margen superior */
+  padding: 0; /* Asegúrate de que no haya padding */
+}
+
+.suggested-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.search-container {
+  position: relative;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.search-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  border: none;
+  background: #ccc;
+}
+
+.search-results {
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.search-results div {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.search-results div:hover {
+  background: #f1f1f1;
+}
+
+.suggested-products {
+  display: flex;
+  flex-direction: column;
+}
+
 .product-card {
-  border: 1px solid #ff00ae;
-  border-radius: 5px;
-  padding: 10px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 8px;
 }
 
 .product-card img {
-  max-width: 100%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 8px;
 }
 
 .product-card h3 {
-  margin: 10px 0;
+  margin: 0;
+  font-size: 14px;
 }
 
 .product-card p {
-  margin: 5px 0;
+  margin: 0;
+  color: #999;
+  font-size: 12px;
 }
+
 
 .product-card .promotion {
   background-color: rgb(255, 0, 225);

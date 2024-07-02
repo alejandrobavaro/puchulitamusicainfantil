@@ -10,7 +10,7 @@ import PopUpModal from "./PopUpModal";
 import "../assets/scss/estilo.scss";
 import "../assets/scss/_13-popups.scss"; // Ruta al archivo SCSS
 
-function Tienda({ cart, setCart, addToCart, removeFromCart }) {
+function Tienda({ cart, setCart, addToCart, removeFromCart, searchInput }) {
   const [products, setProducts] = useState([]);
   const [detalle, setDetalle] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState('Todos');
@@ -68,7 +68,12 @@ function Tienda({ cart, setCart, addToCart, removeFromCart }) {
 
   const categories = ['Todos', ...new Set(products.map((producto) => producto.categoria))];
 
-  const filteredProducts = selectedCategory === 'Todos'
+  const filteredProducts = searchInput
+    ? products.filter((producto) =>
+        producto.nombre.toLowerCase().includes(searchInput.toLowerCase()) ||
+        producto.categoria.toLowerCase().includes(searchInput.toLowerCase())
+      )
+    : selectedCategory === 'Todos'
     ? products
     : products.filter((producto) => producto.categoria === selectedCategory);
 

@@ -1,67 +1,67 @@
 [
   {
     "id": 1,
-    "nombre": "P-1-Remera - Negra - Logo Almango",
+    "nombre": "P-1-Remera - Blanca - Logo Gondra World",
     "precio": 10000,
     "imagen": "/img/06-tienda/tienda1-.png",
     "categoria": "remera",
-    "descripcion": "Remera negra con logo de Almango estampado en el frente."
+    "descripcion": "Remera negra con logo de Gondra World estampado en el frente."
   },
   {
     "id": 2,
-    "nombre": "P-2-Remera - Blanca - Logo Almango",
+    "nombre": "P-2-Remera - Negra - Logo Almango Antiguo",
     "precio": 20000,
     "imagen": "/img/06-tienda/tienda2-.png",
     "categoria": "remera",
-    "descripcion": "Remera blanca con logo de Almango estampado en el frente."
+    "descripcion": "Remera Negra con logo de Almango Antiguo estampado en el frente."
   },
   {
     "id": 3,
-    "nombre": "P-3-Buzo - Azul - Logo Pequeño",
+    "nombre": "P-3-Remera - Azul - Dragon",
     "precio": 30000,
     "imagen": "/img/06-tienda/tienda3-.png",
-    "categoria": "buzo",
-    "descripcion": "Buzo azul con un pequeño logo de Almango en el pecho."
+    "categoria": "remera",
+    "descripcion": "Remera Verde azulado con dibujo Dragon en el pecho."
   },
   {
     "id": 4,
-    "nombre": "P-4-Camisa - Blanca - Elegante",
+    "nombre": "P-4-Remera - Blanca - Elegante",
     "precio": 40000,
     "imagen": "/img/06-tienda/tienda4-.png",
-    "categoria": "camisa",
-    "descripcion": "Camisa blanca elegante, ideal para eventos formales."
+    "categoria": "remera",
+    "descripcion": "Remera blanca elegante, ideal para eventos formales."
   },
   {
     "id": 5,
-    "nombre": "P-5-Pantalón - Negro - Clásico",
+    "nombre": "P-5-Remera - Negro - Clásico",
     "precio": 50000,
     "imagen": "/img/06-tienda/tienda5-.png",
-    "categoria": "pantalón",
-    "descripcion": "Pantalón negro clásico, cómodo y versátil."
+    "categoria": "remera",
+    "descripcion": "Remera negro clásico, cómodo y versátil."
   },
   {
     "id": 6,
-    "nombre": "P-6-Gorra - Roja - Logo Almango",
+    "nombre": "P-6-Remera - Roja - Logo Almango",
     "precio": 60000,
     "imagen": "/img/06-tienda/tienda6-.png",
-    "categoria": "gorra",
-    "descripcion": "Gorra roja con logo de Almango en la parte frontal."
+    "categoria": "remera",
+    "descripcion": "Remera roja con logo de Almango en la parte frontal."
   },
   {
     "id": 7,
-    "nombre": "P-7-Bufanda - Gris - Invierno",
+    "nombre": "P-7-Remera - Gris - Invierno",
     "precio": 7000,
     "imagen": "/img/06-tienda/tienda7-.png",
-    "categoria": "bufanda",
-    "descripcion": "Bufanda gris, perfecta para el invierno."
+    "categoria": "remera",
+    "descripcion": "Remera gris, perfecta para el invierno."
   },
   {
     "id": 8,
-    "nombre": "P-8-Buzo - Verde - Logo Almango",
+    "nombre": "P-8-Remera - Verde - Logo Almango",
     "precio": 8000,
     "imagen": "/img/06-tienda/tienda8-.png",
-    "categoria": "buzo",
-    "descripcion": "Buzo verde con logo de Almango estampado en el frente."
+    "categoria": "remera",
+    "descripcion": "Remera verde con logo de Almango estampado en el frente."
   },
   {
     "id": 9,
@@ -73,35 +73,35 @@
   },
   {
     "id": 10,
-    "nombre": "P-10-Camisa - Azul - Casual",
+    "nombre": "P-10-Remera - Azul - Casual",
     "precio": 10000,
     "imagen": "/img/06-tienda/tienda10-.png",
-    "categoria": "camisa",
-    "descripcion": "Camisa azul casual, ideal para el día a día."
+    "categoria": "remera",
+    "descripcion": "Remera azul casual, ideal para el día a día."
   },
   {
     "id": 11,
-    "nombre": "P-11-Pantalón - Beige - Casual",
+    "nombre": "P-11-Remera - Beige - Casual",
     "precio": 11000,
     "imagen": "/img/06-tienda/tienda11-.png",
-    "categoria": "pantalón",
-    "descripcion": "Pantalón beige casual, cómodo y elegante."
+    "categoria": "remera",
+    "descripcion": "Remeran beige casual, cómodo y elegante."
   },
   {
     "id": 12,
-    "nombre": "P-12-Gorra - Negra - Logo Puchulita",
+    "nombre": "P-12-Remera - Negra - Logo Puchulita",
     "precio": 12000,
     "imagen": "/img/06-tienda/tienda12-.png",
-    "categoria": "gorra",
-    "descripcion": "Gorra negra con el logo de Puchulita en el frente."
+    "categoria": "remera",
+    "descripcion": "Remera negra con el logo de Puchulita en el frente."
   },
   {
     "id": 13,
-    "nombre": "P-13-Remera - Verde - Logo Almango",
+    "nombre": "P-13-Gorra - Verde - Logo Almango",
     "precio": 13000,
     "imagen": "/img/06-tienda/tienda13-.png",
-    "categoria": "remera",
-    "descripcion": "Remera verde con logo de Almango estampado en el frente."
+    "categoria": "gorra",
+    "descripcion": "Gorra verde con logo de Almango estampado en el frente."
   },
   {
     "id": 14,

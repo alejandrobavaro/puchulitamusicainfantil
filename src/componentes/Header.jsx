@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../assets/scss/estilo.scss";
 
-const Header = ({ cart }) => {
+const Header = ({ cart, onSearch }) => {
   const location = useLocation();
   const showCartLink = location.pathname.startsWith("/tienda");
+  const [searchInput, setSearchInput] = useState("");
+
+  const handleSearchChange = (e) => {
+    setSearchInput(e.target.value);
+  };
+
+  const handleSearchSubmit = () => {
+    onSearch(searchInput);
+  };
 
   return (
     <div className="header">
@@ -72,8 +81,10 @@ const Header = ({ cart }) => {
               type="text"
               placeholder="Buscar productos, marcas y más..."
               className="search-bar"
+              value={searchInput}
+              onChange={handleSearchChange}
             />
-            <button className="search-button btn">
+            <button className="search-button btn" onClick={handleSearchSubmit}>
               <i className="bi bi-shift-fill"></i>
             </button>
           </div>
