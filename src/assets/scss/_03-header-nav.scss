@@ -126,15 +126,23 @@
 //------------------------------------------//
 
 .header {
-  background-color: #ffffff;
-  padding: 10px 20px;
+  background-color: #ffffff4d;
+  padding: 0; /* Asegúrate de que no haya padding */
+  margin: 0; /* Asegúrate de que no haya margin */
 }
-
 .header-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
+.header-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
 
 .logo {
   height: 40px; /* Ajusta el tamaño del logo según sea necesario */
