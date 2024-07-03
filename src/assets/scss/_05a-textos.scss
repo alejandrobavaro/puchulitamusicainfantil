@@ -1,11 +1,8 @@
 //----------------------TITULOS IMPORTANTES-----------------------//
 .h1Titulo {
-  // background-color: rgba(128, 128, 128, 0.566);
   font-size: large;
   color: rgb(255, 0, 170);
-  // font-weight: bold;
   text-transform: uppercase;
-  // border: 1px solid rgba(245, 222, 179, 0.482);
   border-radius: 20px;
   padding: 40px;
   box-shadow: 0 0 50px rgba(255, 0, 208, 0.522);
@@ -38,10 +35,7 @@
 .tituloImportante4 {
   color: rgb(255, 255, 255);
   font-size: medium;
-  // font-weight: bold;
-  // text-transform: uppercase;
 }
-//------------------------------------------------//
 
 //---------------TEXTOS CENTRADOS-------------------//
 .textoCentrado1 {
@@ -49,10 +43,8 @@
   align-items: center;
   justify-content: center;
 }
-//------------------------------------------------//
 
 //-----------TITULOS PEQUEÑOS-----------------//
-
 .tituloPequeño {
   color: rgb(0, 0, 0);
   font-size: medium;
@@ -83,8 +75,6 @@
   font-size: xx-small;
 }
 
-//-----------------------------------------------//
-
 //--------------CONTACTO TEXTOS ESTILOS--------------------//
 .estiloTextoContacto1 {
   font-size: large;
@@ -105,4 +95,3 @@
 .estiloContacto1 i {
   color: rgb(255, 0, 166);
 }
-//-----------------------------------------------//

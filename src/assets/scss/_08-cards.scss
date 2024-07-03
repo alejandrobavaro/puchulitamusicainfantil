@@ -7,15 +7,11 @@
   color: rgb(255, 255, 255);
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.427);
-  // box-shadow: 0 0 5px rgb(255, 166, 0);
 }
 
 .card1 {
   text-align: justify;
-  // background: rgba(10, 174, 160, 0.229);
   color: rgb(255, 0, 162);
-  // border-radius: 20px;
-  // border: 1px solid rgb(255, 255, 255);
 }
 
 .card2 {
@@ -23,13 +19,12 @@
   font-weight: bold;
   border: 2px dotted rgb(255, 255, 255);
   border-radius: 10px;
-  padding: 5px ;
+  padding: 5px;
 }
 
 .card3 {
   font-size: medium;
   font-weight: bold;
-
 }
 
 .card4 {
@@ -37,33 +32,29 @@
   border-radius: 20px;
   font-size: xx-small;
   padding: 10px;
-  // border: 1px rgba(0, 255, 255, 0.419) solid;
 }
 
 .card-category {
   text-align: justify;
-  // background: rgba(181, 121, 152, 0.194);
   color: rgba(212, 39, 125, 0.718);
   border-radius: 20px;
   border: 1px solid rgba(147, 46, 170, 0.162);
   display: flex;
   justify-content: center;
   align-items: center;
-    box-shadow: 0 0 5px rgba(255, 0, 238, 0.353);
+  box-shadow: 0 0 5px rgba(255, 0, 238, 0.353);
 }
 
 //-----------------CARDS-TITLE--------------------------//
 .card-title {
-  color: #707070; /* Cambia a negro u otro color visible */
-  text-align: center; /* Centrar el texto */
-  font-size: 1.2em; /* Ajusta el tamaño de la fuente según sea necesario */
-  margin-top: 10px; /* Añade un margen superior si es necesario */
+  color: #707070;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 10px;
 }
-
 
 .card-title1 {
   color: rgba(167, 156, 249, 0.86);
-  // text-transform: uppercase;
   font-size: small;
   text-align: center;
 }
@@ -81,7 +72,6 @@
 
 .card-container {
   display: flex;
-  // flex-direction: row; /* Cambiar la dirección principal a fila */
   justify-content: center;
   align-items: center;
 }

@@ -16,9 +16,6 @@
   background-color: rgba(88, 82, 82, 0.352);
 }
 
-
-
-
 /*----------------Botón Pagar----------------*/
 .botonPagar {
   background-color: #e2d9a4c4;
@@ -42,8 +39,6 @@
   color: rgb(255, 255, 255);
   cursor: pointer;
   transition: all 0.3s ease;
-  // float: right;
-  // margin-top: 10px;
 }
 
 #btnVaciarCarrito:hover {
@@ -52,9 +47,6 @@
   border: none;
   animation: shake 0.5s ease;
 }
-
-
-
 
 /*----------------Botón Encargar----------------*/
 .botonEncargar {
@@ -66,7 +58,6 @@
   color: rgb(255, 255, 255);
   cursor: pointer;
   transition: all 0.3s ease;
-  // float: right;
   margin-top: 10px;
 }
 
@@ -77,7 +68,7 @@
   animation: shake 0.5s ease;
 }
 
-/*----------------Boton Seguir comprando----------------*/
+/*----------------Botón Seguir comprando----------------*/
 .botonSeguirComprando1 {
   padding: 8px 16px;
   font-size: small;
@@ -87,8 +78,6 @@
   color: rgb(255, 255, 255);
   cursor: pointer;
   transition: all 0.3s ease;
-  // float: right;
-  // margin-top: 10px;
 }
 
 .botonSeguirComprando1:hover {
@@ -108,8 +97,6 @@
   color: rgba(0, 0, 0, 0.665);
   cursor: pointer;
   transition: all 0.3s ease;
-  // float: right;
-  // margin-top: 10px;
 }
 
 .btnEliminar:hover {
@@ -127,8 +114,6 @@
   color: rgb(255, 255, 255);
   cursor: pointer;
   transition: all 0.3s ease;
-  // float: right;
-  // margin-top: 10px;
 }
 
 .btn:hover {
@@ -138,14 +123,13 @@
   animation: shake 0.5s ease;
 }
 
-
 /*----------------Botón Comprar----------------*/
 .botonComprar {
   background-color: #ff00c8;
   color: rgb(255, 255, 255);
   border: none;
   padding: 10px 20px;
- }
+}
 
 .botonComprar:hover {
   background-color: rgba(226, 55, 175, 0.614);
@@ -159,7 +143,7 @@
   border: none;
   border-radius: 20px;
   padding: 10px 0px 0px 0px;
- }
+}
 
 .botonComprar1:hover {
   background-color: rgba(210, 43, 160, 0.55);
@@ -172,12 +156,9 @@
   font-size: small;
   border: none;
   border-radius: 10px;
-  // background-color: #ff00b381;
   color: rgb(255, 255, 255);
   cursor: pointer;
   transition: all 0.3s ease;
-  // float: right;
-  // margin-top: 10px;
 }
 
 #btnComprar:hover {
@@ -186,4 +167,3 @@
   border: none;
   animation: shake 0.5s ease;
 }
-

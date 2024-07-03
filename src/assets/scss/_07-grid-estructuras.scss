@@ -1,44 +1,7 @@
 /*---------------------------------GRID---------------------------------------*/
 
-.gridPadre {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  max-width: 1168px;
-  // border: 1px solid rgb(255, 0, 225);
-  border-radius: 30px;
-  padding: 30px;
-  box-shadow: 0 0 40px rgba(255, 0, 140, 0.467);
-}
-
-.gridPadreProductos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  max-width: 1168px;
-  // border: 1px solid rgb(255, 0, 225);
-  border-radius: 30px;
-  padding: 30px;
-  box-shadow: 0 0 40px rgba(255, 0, 140, 0.467);
-}
-
-.gridPadreContacto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-   margin: 0 auto;
-  max-width: 900px;
-  background-color: #ffffff;
-  // border: 1px solid rgb(255, 0, 225);
-  border-radius: 30px;
-  padding: 30px;
-  box-shadow: 0 0 40px rgb(255, 0, 140);
-}
-
+.gridPadre,
+.gridPadreProductos,
 .gridPadreFooter {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -46,17 +9,39 @@
   align-items: center;
   margin: 0 auto;
   max-width: 1168px;
-  // border: 1px solid rgb(255, 0, 225);
   border-radius: 30px;
   padding: 30px;
+}
+
+.gridPadre {
+  box-shadow: 0 0 40px rgba(255, 0, 140, 0.467);
+}
+
+.gridPadreProductos {
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  box-shadow: 0 0 40px rgba(255, 0, 140, 0.467);
+}
+
+.gridPadreFooter {
   // box-shadow: 0 0 40px rgba(255, 0, 140, 0.467);
 }
 
+.gridPadreContacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 900px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 30px;
+  box-shadow: 0 0 40px rgb(255, 0, 140);
+}
 
 .gridPadreCarrito1 {
   display: grid;
-  grid-template-columns: auto; /* Solo una columna */
-  grid-auto-flow: row; /* Flujo automático en filas */
+  grid-template-columns: auto;
+  grid-auto-flow: row;
   gap: 10px;
   justify-content: center;
   align-items: center;
@@ -66,63 +51,48 @@
   padding: 10px;
 }
 
-
 .gridPadreCarrito2 {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  max-width: 1168px;
   margin-top: 20px;
+  max-width: 1168px;
   border: 1px solid rgba(0, 255, 255, 0.21);
   border-radius: 30px;
   padding: 10px;
 }
 
-
-.gridPadreCarrito3 {
-  // background-color: rgba(128, 128, 128, 0.637);
-  display: flex;
-  flex-direction: column;
-  /* Mostrar elementos en filas */
-  flex-wrap: wrap;
-  /* Permitir que se envuelvan en varias filas */
-  justify-content: center;
-  align-items: center;
-   max-width: auto;
-  margin: 20px;
-  // border: 5px solid rgba(255, 0, 183, 0.21);
-  border-radius: 30px;
-  padding: 10px;
-  box-shadow: 0 0 40px rgba(255, 0, 140, 0.467);
-}
-
-
-
+.gridPadreCarrito3,
 .gridPadreCarrito4 {
   display: flex;
   flex-direction: column;
-  /* Mostrar elementos en filas */
   flex-wrap: wrap;
-  /* Permitir que se envuelvan en varias filas */
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  max-width: 800px;
-  margin-top: 20px;
-  border: 5px solid rgba(255, 0, 183, 0.21);
+  margin: 20px auto;
   border-radius: 30px;
   padding: 10px;
 }
 
+.gridPadreCarrito3 {
+  max-width: auto;
+  box-shadow: 0 0 40px rgba(255, 0, 140, 0.467);
+}
+
+.gridPadreCarrito4 {
+  max-width: 800px;
+  margin-top: 20px;
+  border: 5px solid rgba(255, 0, 183, 0.21);
+}
 
 .row-cols-md-4 {
   display: flex;
-  flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas */
-  justify-content: center; /* Centra los elementos horizontalmente */
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .col-md-4 {
-  flex: 0 0 25%; /* Establece el ancho de cada elemento para que haya 4 elementos por fila */
-  max-width: 25%; /* Establece el ancho máximo de cada elemento */
+  flex: 0 0 25%;
+  max-width: 25%;
 }

@@ -1,12 +1,4 @@
-
-
 /* estilos generales */
-// .tienda {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-// }
-
 .logo {
   height: 40px; /* Ajusta el tamaño del logo según sea necesario */
 }
@@ -33,13 +25,12 @@
   justify-content: center;
   width: 100%;
   margin-top: 10px;
+  position: relative;
 }
-
-
 
 .search-bar {
   flex: 1;
-  padding: 10px;
+  padding: 8px;
   border: 1px solid #ccc;
   border-radius: 5px 0 0 5px;
   outline: none;
@@ -56,6 +47,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  border: none;
+  background: #ccc;
 }
 
 .bi-shift-fill {
@@ -103,59 +100,11 @@
 .flota-carrito .nav-link:hover,
 .flota-carrito-izquierda .link-carrito:hover {
   color: #ffffff;
-  /* font-weight: bold; */
 }
 
 .flota-carrito-izquierda .link-carrito p {
   margin: 0;
   padding: 3px;
-}
-
-//------------------------TIENDA-ESTILOS-------------------------//
-
-.tituloPrecio1 {
-  color: rgb(255, 0, 217);
-  font-size: medium;
-}
-
-.tituloPrecioCarrito {
-  color: rgb(255, 255, 255);
-  font-size: large;
-}
-
-//------------------------MINI CARRITO COMPRAS-------------------------//
-.mini-carrito {
-  border-radius: 20px;
-  background-color: transparent;
-  box-shadow: 0 0 40px wheat;
-}
-
-.mini-carrito2 {
-  border-radius: 20px;
-  background-color: transparent;
-  box-shadow: 0 0 5px wheat;
-  padding: 20px;
-}
-
-.listaMiniCarrito3 {
-  background-color: transparent;
-  box-shadow: 0 0 2px wheat;
-  color: rgb(0, 0, 0);
-  padding: 10px;
-}
-
-//-----------------SELECTOR DENTRO DE PRODUCTO TALLE-COLOR------------------//
-.form-select {
-  background-color: #491d5e8d;
-  color: rgb(255, 255, 255);
-  border: none;
-  padding: 5px;
-}
-
-select.form-select option {
-  text-align: center;
-  background-color: #745a736d;
-  color: rgb(255, 255, 255);
 }
 
 /* Estilos generales */
@@ -188,30 +137,6 @@ select.form-select option {
   padding: 0; /* Asegúrate de que no haya padding */
 }
 
-.suggested-products {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.search-container {
-  position: relative;
-}
-
-.search-bar {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-}
-
-.search-button {
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  border: none;
-  background: #ccc;
-}
-
 .search-results {
   position: absolute;
   width: 100%;
@@ -233,6 +158,8 @@ select.form-select option {
 
 .suggested-products {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -260,7 +187,6 @@ select.form-select option {
   font-size: 12px;
 }
 
-
 .product-card .promotion {
   background-color: rgb(255, 0, 225);
   color: #000000;
@@ -287,4 +213,39 @@ select.form-select option {
 .productos-contenedor {
   max-width: calc(100vw - 48px); /* Ajusta el ancho máximo para no tapar los productos */
   margin: 0 auto; /* Centra el contenedor */
+}
+
+/* MINI CARRITO COMPRAS */
+.mini-carrito {
+  border-radius: 20px;
+  background-color: transparent;
+  box-shadow: 0 0 40px wheat;
+}
+
+.mini-carrito2 {
+  border-radius: 20px;
+  background-color: transparent;
+  box-shadow: 0 0 5px wheat;
+  padding: 20px;
+}
+
+.listaMiniCarrito3 {
+  background-color: transparent;
+  box-shadow: 0 0 2px wheat;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+}
+
+// SELECTOR DENTRO DE PRODUCTO TALLE-COLOR
+.form-select {
+  background-color: #491d5e8d;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 5px;
+}
+
+select.form-select option {
+  text-align: center;
+  background-color: #745a736d;
+  color: rgb(255, 255, 255);
 }

@@ -4,52 +4,49 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.estiloFormulario {
+  }
+  
+  .estiloFormulario {
     background-color: #fccef633;
     font-family: "Caveat", cursive;
     font-weight: bold;
     width: 60%;
     font-size: medium;
     color: rgb(255, 0, 230);
-    font-weight: bold;
-    // border: 2px solid #868889;
     border-radius: 20px;
     padding: 30px;
     margin-top: 10px;
-    border-radius: 20px;
     box-shadow: 0 0 20px rgb(255, 0, 200);
-}
-
-/* Estilos para los campos de entrada del formulario */
-.estiloFormulario input {
+  }
+  
+  /* Estilos para los campos de entrada del formulario */
+  .estiloFormulario input {
     background-color: #fdc2ee;
     font-weight: bolder;
     font-style: italic;
-    color: #FFF;
+    color: #fff;
     border: none;
     border-radius: 10px;
     padding: 8px;
     margin-bottom: 8px;
-}
-
-/* Estilos para las áreas de texto del formulario */
-.estiloFormulario textarea {
+  }
+  
+  /* Estilos para las áreas de texto del formulario */
+  .estiloFormulario textarea {
     background-color: #fdc2ee;
-    color: #FFF;
+    color: #fff;
     font-style: italic;
     font-weight: bolder;
     border: none;
     border-radius: 10px;
     padding: 5px;
     margin-bottom: 8px;
-}
-
-.form-control {
-display: flex;
-align-items: center;
-justify-content: center;
-max-width: 600;
-
-}
+  }
+  
+  .form-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+  }
+  
