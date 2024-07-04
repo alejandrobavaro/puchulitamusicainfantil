@@ -7,8 +7,11 @@ function Contacto() {
       {/* TITULO */}
       <div className="objetoCentrado1">
         <h1 className='estiloContacto2'>CONTACTO</h1>
+        
       </div>
 
+    
+      
       <div className='gridPadreContacto'>
         {/* DATOS DE CONTACTO */}
         <div className="objetoCentrado1">
@@ -65,6 +68,12 @@ function Contacto() {
           </div>
         </div>
       </div>
+
+      <hr className="border border-1 opacity-5" />
+
+      <div className="objetoCentrado1">
+      <h2 className='tituloImportante3'> CHILDEN ROCKS </h2>
+              </div>
 
       <hr className="border border-1 opacity-5" />
 

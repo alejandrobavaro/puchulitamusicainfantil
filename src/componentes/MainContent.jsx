@@ -29,7 +29,7 @@ function MainContent() {
                 Aquí podrás escuchar nuestras canciones! Somos un grupo de
                 músicos que nos divertimos componiendo canciones! Gracias por
                 visitarnos! Música infantil, sin fronteras! Para toda la
-                familia.
+                familia. CHILDEN ROCKS
               </p>
             </div>
             <div>
@@ -54,7 +54,7 @@ function MainContent() {
                 Canciones divertidas para aprender cantando! Descubrí nuestros
                 canales y nuestras redes sociales! Búscanos y síguenos para más
                 contenido! Actualmente estamos trabajando en nuevas canciones
-                para regalarte a vos y a tus hijos!
+                para regalarte a vos y a tus hijos! CHILDEN ROCKS
               </p>
             </div>
           </div>

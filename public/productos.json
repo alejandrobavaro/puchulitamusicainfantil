@@ -489,35 +489,35 @@
   },
   {
     "id": 62,
-    "nombre": "P-62-Libro de Actividades - Diversión con Puchulita",
+    "nombre": "P-62-Juego de mesa Puchulita - Diversión con Puchulita",
     "precio": 64800,
     "imagen": "/img/06-tienda/tienda62-.png",
-    "categoria": "libros",
-    "descripcion": "Libro de actividades con Puchulita, perfecto para aprender y divertirse con juegos y ejercicios."
+    "categoria": "juguetes",
+    "descripcion": "Juego de Mesa Puchulita, perfecto para aprender y divertirse con ejercicios simple de logica"
   },
   {
     "id": 63,
-    "nombre": "P-63-Pelota de Fútbol - Diseño Puchulita - Pequeña",
+    "nombre": "P-63-Raqueta de Tenis - Diseño Puchulita - Pequeña",
     "precio": 69900,
     "imagen": "/img/06-tienda/tienda63-.png",
     "categoria": "juguetes",
-    "descripcion": "Pelota de fútbol pequeña con diseño de Puchulita, ideal para juegos en interiores."
+    "descripcion": "Raqueta de Tenis con diseño de Puchulita"
   },
   {
     "id": 64,
-    "nombre": "P-64-Bufanda - Invierno Musical - Rosa",
+    "nombre": "P-64-Mochila - Invierno Musical - Rosa",
     "precio": 44800,
     "imagen": "/img/06-tienda/tienda64-.png",
-    "categoria": "bufanda",
-    "descripcion": "Bufanda rosa con diseño musical para niños, cálida y suave."
+    "categoria": "accesorios",
+    "descripcion": "Mochila rosa con diseño musical, cálida y suave."
   },
   {
     "id": 65,
-    "nombre": "P-65-Corona de Princesa - Brillante - Plateada",
+    "nombre": "P-65-Anillo brillante - Brillante - Plateada",
     "precio": 32700,
     "imagen": "/img/06-tienda/tienda65-.png",
     "categoria": "accesorios",
-    "descripcion": "Corona de princesa brillante plateada, perfecta para ocasiones especiales."
+    "descripcion": "Anillo brillante plateado, perfecta para ocasiones especiales."
   },
   {
     "id": 66,
@@ -529,51 +529,51 @@
   },
   {
     "id": 67,
-    "nombre": "P-67-Pantalón Corto - Verano Musical - Verde",
+    "nombre": "P-67-Jean - Rock life",
     "precio": 49200,
     "imagen": "/img/06-tienda/tienda67-.png",
     "categoria": "pantalón",
-    "descripcion": "Pantalón corto verde con diseño veraniego musical, fresco y cómodo para jugar."
+    "descripcion": "Jean, fachero y canchero."
   },
   {
     "id": 68,
-    "nombre": "P-68-Vestido de Princesa - Fiesta Encantada - Rosa",
+    "nombre": "P-68-Ropa Deportiva",
     "precio": 86200,
     "imagen": "/img/06-tienda/tienda68-.png",
-    "categoria": "vestido",
-    "descripcion": "Vestido de princesa rosa con detalles encantados, perfecto para fiestas y ocasiones especiales."
+    "categoria": "conjunto",
+    "descripcion": "Conjunto de vestimenta deportiva niña."
   },
   {
     "id": 69,
-    "nombre": "P-69-Tutú - Bailarina Estrellada - Verde",
+    "nombre": "P-69-Ropa Deportiva",
     "precio": 77780,
     "imagen": "/img/06-tienda/tienda69-.png",
-    "categoria": "tutú",
-    "descripcion": "Tutú verde con estrellas brillantes, ideal para niñas que sueñan con bailar."
+    "categoria": "conjunto",
+"descripcion": "Conjunto de vestimenta deportivo niño."
   },
   {
     "id": 70,
-    "nombre": "P-70-Chaqueta - Invierno Musical - Azul",
+    "nombre": "P-70-Chaqueta - Invierno Musical - Naranja",
     "precio": 70350,
     "imagen": "/img/06-tienda/tienda70-.png",
     "categoria": "chaqueta",
-    "descripcion": "Chaqueta azul con diseño musical, cálida y adorable para el invierno."
+    "descripcion": "Chaqueta naranja con diseño musical, cálida y adorable para el invierno."
   },
   {
     "id": 71,
-    "nombre": "P-71-Gorro de Lana - Conejito Puchulita - Amarillo",
+    "nombre": "P-71-Gorra - Childen Rocks Puchulita",
     "precio": 54500,
     "imagen": "/img/06-tienda/tienda71-.png",
     "categoria": "gorro",
-    "descripcion": "Gorro de lana amarillo con diseño de conejito Puchulita, cálido y adorable para el invierno."
+    "descripcion": "Gorra Childen Rocks Puchulita."
   },
   {
     "id": 72,
-    "nombre": "P-72-Set de Instrumentos Musicales - Percusión Divertida - Pequeño",
+    "nombre": "P-72-Bateria de niño - Percusión - Pequeño",
     "precio": 45200,
     "imagen": "/img/06-tienda/tienda72-.png",
     "categoria": "juguetes",
-    "descripcion": "Set de instrumentos musicales de percusión pequeños, ideal para iniciar a los niños en la música."
+    "descripcion": "Bateria de niño, ideal para iniciar a los niños en la música."
   },
   {
     "id": 73,
