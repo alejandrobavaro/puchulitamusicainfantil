@@ -1,7 +1,4 @@
-
-
 import React from 'react';
-import '../assets/scss/estilo.scss';
 
 function MiniCarrito({ items }) {
   return (

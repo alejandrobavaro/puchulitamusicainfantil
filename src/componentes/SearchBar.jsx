@@ -8,7 +8,7 @@ function SearchBar({ categories, onCategoryChange }) {
 
   return (
     <div className="search-navbar">
-      <div className="btn-group objetoCentrado1" role="group">
+      <div className="btn-group" role="group">
         {categories.map((category, index) => (
           <button
             key={index}

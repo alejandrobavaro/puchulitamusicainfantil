@@ -241,19 +241,19 @@
   },
   {
     "id": 31,
-    "nombre": "P-31-Bufanda - Invierno Musical - Rosa",
+    "nombre": "P-31-Bufanda - Invierno Musical",
     "precio": 41800,
     "imagen": "/img/06-tienda/tienda31-.png",
     "categoria": "bufanda",
-    "descripcion": "Bufanda rosa con diseño musical para niños, cálida y suave."
+    "descripcion": "Bufanda con diseño musical para niños, cálida y suave."
   },
   {
     "id": 32,
-    "nombre": "P-32-Corona de Princesa - Brillante - Plateada",
+    "nombre": "P-32-Medias de Puchulita - Calida",
     "precio": 29700,
     "imagen": "/img/06-tienda/tienda32-.png",
-    "categoria": "accesorios",
-    "descripcion": "Corona de princesa brillante plateada, perfecta para ocasiones especiales."
+    "categoria": "medias",
+    "descripcion": "Medias de Puchulita y sus amigos."
   },
   {
     "id": 33,
@@ -305,11 +305,11 @@
   },
   {
     "id": 39,
-    "nombre": "P-39-Set de Tambor y Baquetas - Colores Brillantes",
+    "nombre": "P-39-Mini Batería - Naranja",
     "precio": 39200,
     "imagen": "/img/06-tienda/tienda39-.png",
     "categoria": "juguetes",
-    "descripcion": "Set de tambor y baquetas en colores brillantes, perfecto para pequeños músicos."
+    "descripcion": "Mini batería Naranja, perfecto para pequeños músicos."
   },
   {
     "id": 40,

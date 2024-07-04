@@ -1,8 +1,7 @@
 import React from "react";
 import Modal from "react-modal";
-import "../assets/scss/_13-popups.scss"; // Ruta actualizada
 
-Modal.setAppElement("#root"); // Esto es necesario para la accesibilidad del modal
+Modal.setAppElement("#root");
 
 const PopUpModal = ({ showModal, closeModal }) => {
   return (
@@ -14,9 +13,8 @@ const PopUpModal = ({ showModal, closeModal }) => {
       overlayClassName="Overlay"
     >
       <div className="modal-content">
-        <h2 className="tituloImportante4">PROMOS INVIERNO!</h2>
+        <h2>PROMOS INVIERNO!</h2>
         <p>Aprovechá los mejores beneficios!</p>
-
         <table>
           <thead>
             <tr>
@@ -24,7 +22,6 @@ const PopUpModal = ({ showModal, closeModal }) => {
             </tr>
           </thead>
           <tbody>
-            <tr></tr>
             <tr>
               <td>Remeras 20% Off!</td>
             </tr>
@@ -39,8 +36,8 @@ const PopUpModal = ({ showModal, closeModal }) => {
             </tr>
           </tbody>
         </table>
-        <h3 className="tituloPequeño1">No te lo Pierdas!</h3>
-        <button onClick={closeModal} className="btn-primary botonEncargar">
+        <h3>No te lo Pierdas!</h3>
+        <button onClick={closeModal} className="btn-primary">
           Lo Quiero! Ver Más
         </button>
       </div>
