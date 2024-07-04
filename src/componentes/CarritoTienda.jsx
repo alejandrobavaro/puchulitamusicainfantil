@@ -20,16 +20,12 @@ const CarritoTienda = ({ cart }) => {
             </div>
 
             <div className="objetoCentrado1">
-              <Link to="/carrito" className="link-carrito">
-                <button className="botonComprar1">
-                  <h3 className="tituloImportante1 textoMovimiento">
-                  <i className="bi bi-shift-fill"></i>   Comprar 
-                  </h3>
-                </button>
-                
-              </Link>
+              <button className="botonComprar1">
+                <h3 className="tituloImportante1 textoMovimiento">
+                  <i className="bi bi-shift-fill"></i> Comprar
+                </h3>
+              </button>
             </div>
-            
           </Link>
         </div>
       )}

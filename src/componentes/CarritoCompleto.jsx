@@ -10,8 +10,7 @@ const CarritoCompleto = ({ cart, removeFromCart, handlePagar }) => {
       {/* TITULO */}
       <section className="objetoCentrado1">
         <h1 className="tituloImportante2 textoMovimiento">
-          <i className="bi bi-cart" /> CARRITO DE COMPRAS{" "}
-          <i className="bi bi-cart" />
+          <i className="bi bi-cart" /> CARRITO DE COMPRAS <i className="bi bi-cart" />
         </h1>
       </section>
 
@@ -23,8 +22,7 @@ const CarritoCompleto = ({ cart, removeFromCart, handlePagar }) => {
           </h3>
           <section className="objetoCentrado1">
             <h4 className="item tituloImportante2">
-              <i className="bi bi-activity" /> REALIZA TU PAGO{" "}
-              <i className="bi bi-activity" />
+              <i className="bi bi-activity" /> REALIZA TU PAGO <i className="bi bi-activity" />
             </h4>
           </section>
 
@@ -80,8 +78,7 @@ const CarritoCompleto = ({ cart, removeFromCart, handlePagar }) => {
                   id="btnVaciarCarrito"
                   onClick={() => removeFromCart(null)}
                 >
-                  <i className="bi bi-shift-fill" /> VACIAR CARRITO{" "}
-                  <i className="bi bi-shift-fill" />
+                  <i className="bi bi-shift-fill" /> VACIAR CARRITO <i className="bi bi-shift-fill" />
                 </button>
               </section>
             </div>

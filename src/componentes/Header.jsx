@@ -24,7 +24,7 @@ const Header = ({ cart, searchQuery, setSearchQuery }) => {
 
         <header className="encabezado">
           <div className="header-bottom">
-            <img  
+            <img
               src="/img/02-logos/puchulitamusicainfantil1.png"
               alt="Logo"
               className="logo textoMovimiento"

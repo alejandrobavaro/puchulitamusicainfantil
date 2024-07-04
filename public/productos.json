@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "nombre": "P-1-Remera - Blanca - Logo Puchulita",
+    "nombre": "P-1-Remera - Logo Puchulita",
     "precio": 50000,
     "imagen": "/img/06-tienda/tienda1-.png",
     "categoria": "remera",
-    "descripcion": "Remera blanca con el logo de Puchulita en el frente."
+    "descripcion": "Remera con el logo de Puchulita en el frente."
   },
   {
     "id": 2,
@@ -25,11 +25,11 @@
   },
   {
     "id": 4,
-    "nombre": "P-4-Tutú - Bailarina Estrellada - Rosa",
+    "nombre": "P-4-Conjunto - Bailarina",
     "precio": 67780,
     "imagen": "/img/06-tienda/tienda4-.png",
-    "categoria": "tutú",
-    "descripcion": "Tutú rosa con estrellas brillantes, perfecto para niñas bailarinas."
+    "categoria": "Conjunto",
+    "descripcion": "Conjunto con estrellas brillantes y camisa con logo puchulita."
   },
   {
     "id": 5,
@@ -41,11 +41,11 @@
   },
   {
     "id": 6,
-    "nombre": "P-6-Vestido - Princesa Encantada - Rosa",
+    "nombre": "P-6-Vestido - Princesa Encantada",
     "precio": 81900,
     "imagen": "/img/06-tienda/tienda6-.png",
     "categoria": "vestido",
-    "descripcion": "Vestido rosa de princesa con detalles encantados, ideal para fiestas."
+    "descripcion": "Vestido de princesa con detalles encantados, ideal para fiestas."
   },
   {
     "id": 7,
@@ -73,18 +73,18 @@
   },
   {
     "id": 10,
-    "nombre": "P-10-Zapatos - Bailarina Brillante - Dorados",
+    "nombre": "P-10-Zapatos - Zapatos",
     "precio": 68240,
     "imagen": "/img/06-tienda/tienda10-.png",
     "categoria": "zapatos",
-    "descripcion": "Zapatos de bailarina brillantes dorados, elegantes y cómodos."
+    "descripcion": "Zapatos niño o niña brillantes elegantes y cómodos."
   },
   {
     "id": 11,
     "nombre": "P-11-Set de Percusión Infantil - Colores",
     "precio": 88900,
     "imagen": "/img/06-tienda/tienda11-.png",
-    "categoria": "juguetes musicales",
+    "categoria": "juguetes",
     "descripcion": "Set de percusión infantil con instrumentos en colores vivos, perfecto para aprender ritmos."
   },
   {
@@ -92,7 +92,7 @@
     "nombre": "P-12-Libro de Cuentos - Aventuras con Puchulita",
     "precio": 54900,
     "imagen": "/img/06-tienda/tienda12-.png",
-    "categoria": "libros infantiles",
+    "categoria": "libros",
     "descripcion": "Libro de cuentos con las divertidas aventuras de Puchulita, ilustraciones encantadoras."
   },
   {
@@ -100,7 +100,7 @@
     "nombre": "P-13-Set de Guitarra y Micrófono - Estilo Rockero",
     "precio": 73750,
     "imagen": "/img/06-tienda/tienda13-.png",
-    "categoria": "juguetes musicales",
+    "categoria": "juguetes",
     "descripcion": "Set de guitarra y micrófono con estilo rockero para niños, ideal para imitar a sus ídolos."
   },
   {
@@ -124,23 +124,23 @@
     "nombre": "P-16-Corona de Princesa - Brillante - Dorada",
     "precio": 28900,
     "imagen": "/img/06-tienda/tienda16-.png",
-    "categoria": "accesorios de ropa para niños",
+    "categoria": "accesorios",
     "descripcion": "Corona de princesa brillante dorada, ideal para completar disfraces."
   },
   {
     "id": 17,
-    "nombre": "P-17-Camiseta - Rock Infantil - Roja",
+    "nombre": "P-17-Camiseta - Rock Infantil",
     "precio": 39800,
     "imagen": "/img/06-tienda/tienda17-.png",
     "categoria": "camiseta",
-    "descripcion": "Camiseta roja con diseño de rock infantil, perfecta para pequeños fans de la música."
+    "descripcion": "Camiseta deportiva con diseño de rock infantil, perfecta para pequeños fans de la música y el deporte."
   },
   {
     "id": 18,
     "nombre": "P-18-Set de Teclado y Micrófono - Musical",
     "precio": 82600,
     "imagen": "/img/06-tienda/tienda18-.png",
-    "categoria": "juguetes musicales",
+    "categoria": "juguetes",
     "descripcion": "Set de teclado y micrófono musical para niños, ideal para explorar el mundo de la música."
   },
   {
@@ -153,652 +153,650 @@
   },
   {
     "id": 20,
-    "nombre": "P-20-Gorro de Lana - Oso Puchulita - Rosa",
+    "nombre": "P-20-Gorro de Lana - Oso Puchulita ",
     "precio": 47500,
     "imagen": "/img/06-tienda/tienda20-.png",
     "categoria": "gorro",
-    "descripcion": "Gorro de lana rosa con diseño de oso Puchulita, cálido y adorable para el invierno."
+    "descripcion": "Gorro de lana con diseño de oso Puchulita, cálido y adorable para el invierno."
+  },
+  {
+    "id": 21,
+    "nombre": "P-21-Camisa - Estampado de Notas Musicales - Niños",
+    "precio": 63600,
+    "imagen": "/img/06-tienda/tienda21-.png",
+    "categoria": "camisa",
+    "descripcion": "Camisa con divertido estampado de notas musicales para niños, ideal para eventos informales."
+  },
+  {
+    "id": 22,
+    "nombre": "P-22-Pantalón Corto - Verano Musical",
+    "precio": 45200,
+    "imagen": "/img/06-tienda/tienda22-.png",
+    "categoria": "pantalón",
+    "descripcion": "Pantalón corto con diseño veraniego musical, fresco y cómodo para jugar."
+  },
+  {
+    "id": 23,
+    "nombre": "P-23-Vestido - Elegante",
+    "precio": 78200,
+    "imagen": "/img/06-tienda/tienda23-.png",
+    "categoria": "vestido",
+    "descripcion": "Vestido elegante"
+  },
+  {
+    "id": 24,
+    "nombre": "P-24-Medias - Medias rockeras",
+    "precio": 69780,
+    "imagen": "/img/06-tienda/tienda24-.png",
+    "categoria": "medias",
+    "descripcion": "Medias rockeras"
+  },
+  {
+    "id": 25,
+    "nombre": "P-25-Chaqueta - Invierno Musical",
+    "precio": 62350,
+    "imagen": "/img/06-tienda/tienda25-.png",
+    "categoria": "chaqueta",
+    "descripcion": "Chaqueta con diseño musical, cálida y adorable para el invierno."
+  },
+  {
+    "id": 26,
+    "nombre": "P-26-Camiseta - Rock Infantil - Negra",
+    "precio": 39800,
+    "imagen": "/img/06-tienda/tienda26-.png",
+    "categoria": "camiseta",
+    "descripcion": "Camiseta negra con diseño de rock infantil, perfecta para pequeños amantes de la música."
+  },
+  {
+    "id": 27,
+    "nombre": "P-27-Gorra - Perrito Puchulita",
+    "precio": 49500,
+    "imagen": "/img/06-tienda/tienda27-.png",
+    "categoria": "gorro",
+    "descripcion": "Gorra con diseño de perrito Puchulita, cálido y adorable para el invierno."
+  },
+  {
+    "id": 28,
+    "nombre": "P-28-Set de Maracas y Tambor - Colores Vivos",
+    "precio": 37200,
+    "imagen": "/img/06-tienda/tienda28-.png",
+    "categoria": "juguetes",
+    "descripcion": "Set de maracas y tambor en colores vivos, ideal para introducir a los niños al ritmo."
+  },
+  {
+    "id": 29,
+    "nombre": "P-29-Libro Interactivo - Aventuras Musicales con Puchulita",
+    "precio": 58800,
+    "imagen": "/img/06-tienda/tienda29-.png",
+    "categoria": "libros",
+    "descripcion": "Libro interactivo con las aventuras musicales de Puchulita, perfecto para aprender jugando."
+  },
+  {
+    "id": 30,
+    "nombre": "P-30-Pelota de Fútbol - Diseño Puchulita - Grande",
+    "precio": 68900,
+    "imagen": "/img/06-tienda/tienda30-.png",
+    "categoria": "juguetes",
+    "descripcion": "Pelota de fútbol grande con diseño de Puchulita, ideal para jugar en exteriores."
+  },
+  {
+    "id": 31,
+    "nombre": "P-31-Bufanda - Invierno Musical - Rosa",
+    "precio": 41800,
+    "imagen": "/img/06-tienda/tienda31-.png",
+    "categoria": "bufanda",
+    "descripcion": "Bufanda rosa con diseño musical para niños, cálida y suave."
+  },
+  {
+    "id": 32,
+    "nombre": "P-32-Corona de Princesa - Brillante - Plateada",
+    "precio": 29700,
+    "imagen": "/img/06-tienda/tienda32-.png",
+    "categoria": "accesorios",
+    "descripcion": "Corona de princesa brillante plateada, perfecta para ocasiones especiales."
+  },
+  {
+    "id": 33,
+    "nombre": "P-33-Camiseta - Rock Infantil - Verde",
+    "precio": 41500,
+    "imagen": "/img/06-tienda/tienda33-.png",
+    "categoria": "camiseta",
+    "descripcion": "Camiseta verde con diseño de rock infantil, ideal para pequeños aficionados a la música."
+  },
+  {
+    "id": 34,
+    "nombre": "P-34-Pantalón Corto - Verano Musical - Verde",
+    "precio": 46200,
+    "imagen": "/img/06-tienda/tienda34-.png",
+    "categoria": "pantalón",
+    "descripcion": "Pantalón corto verde con diseño veraniego musical, fresco y cómodo para jugar."
+  },
+  {
+    "id": 35,
+    "nombre": "P-35-Vestido de Princesa - Fiesta Encantada - Rosa",
+    "precio": 80200,
+    "imagen": "/img/06-tienda/tienda35-.png",
+    "categoria": "vestido",
+    "descripcion": "Vestido de princesa rosa con detalles encantados, perfecto para fiestas y ocasiones especiales."
+  },
+  {
+    "id": 36,
+    "nombre": "P-36-Tutú - Bailarina Estrellada - Blanco",
+    "precio": 71780,
+    "imagen": "/img/06-tienda/tienda36-.png",
+    "categoria": "tutú",
+    "descripcion": "Tutú blanco con estrellas brillantes, ideal para niñas que sueñan con bailar."
+  },
+  {
+    "id": 37,
+    "nombre": "P-37-Chaqueta - Invierno Musical - Azul",
+    "precio": 64350,
+    "imagen": "/img/06-tienda/tienda37-.png",
+    "categoria": "chaqueta",
+    "descripcion": "Chaqueta azul con diseño musical, cálida y adorable para el invierno."
+  },
+  {
+    "id": 38,
+    "nombre": "P-38-Gorro de Lana - Conejito Puchulita - Gris",
+    "precio": 50500,
+    "imagen": "/img/06-tienda/tienda38-.png",
+    "categoria": "gorro",
+    "descripcion": "Gorro de lana gris con diseño de conejito Puchulita, cálido y adorable para el invierno."
+  },
+  {
+    "id": 39,
+    "nombre": "P-39-Set de Tambor y Baquetas - Colores Brillantes",
+    "precio": 39200,
+    "imagen": "/img/06-tienda/tienda39-.png",
+    "categoria": "juguetes",
+    "descripcion": "Set de tambor y baquetas en colores brillantes, perfecto para pequeños músicos."
+  },
+  {
+    "id": 40,
+    "nombre": "P-40-Libro de Canciones - Aventuras Musicales con Puchulita",
+    "precio": 60800,
+    "imagen": "/img/06-tienda/tienda40-.png",
+    "categoria": "libros",
+    "descripcion": "Libro de canciones con las aventuras musicales de Puchulita, para aprender y divertirse."
+  },
+  {
+    "id": 41,
+    "nombre": "P-41-Pelota de Fútbol - Diseño Puchulita - Pequeña",
+    "precio": 65900,
+    "imagen": "/img/06-tienda/tienda41-.png",
+    "categoria": "juguetes",
+    "descripcion": "Pelota de fútbol pequeña con diseño de Puchulita, ideal para juegos en interiores."
+  },
+  {
+    "id": 42,
+    "nombre": "P-42-Bufanda - Invierno Musical - Verde",
+    "precio": 42800,
+    "imagen": "/img/06-tienda/tienda42-.png",
+    "categoria": "bufanda",
+    "descripcion": "Bufanda verde con diseño musical para niños, cálida y suave."
+  },
+  {
+    "id": 43,
+    "nombre": "P-43-Corona de Princesa - Brillante - Dorada",
+    "precio": 30700,
+    "imagen": "/img/06-tienda/tienda43-.png",
+    "categoria": "accesorios",
+    "descripcion": "Corona de princesa brillante dorada, perfecta para ocasiones especiales."
+  },
+  {
+    "id": 44,
+    "nombre": "P-44-Camiseta - Rock Infantil - Roja",
+    "precio": 43500,
+    "imagen": "/img/06-tienda/tienda44-.png",
+    "categoria": "camiseta",
+    "descripcion": "Camiseta roja con diseño de rock infantil, ideal para pequeños amantes de la música."
+  },
+  {
+    "id": 45,
+    "nombre": "P-45-Pantalón Corto - Verano Musical - Rojo",
+    "precio": 47200,
+    "imagen": "/img/06-tienda/tienda45-.png",
+    "categoria": "pantalón",
+    "descripcion": "Pantalón corto rojo con diseño veraniego musical, fresco y cómodo para jugar."
+  },
+  {
+    "id": 46,
+    "nombre": "P-46-Vestido de Princesa - Fiesta Encantada - Morado",
+    "precio": 82200,
+    "imagen": "/img/06-tienda/tienda46-.png",
+    "categoria": "vestido",
+    "descripcion": "Vestido de princesa morado con detalles encantados, perfecto para fiestas y ocasiones especiales."
+  },
+  {
+    "id": 47,
+    "nombre": "P-47-Tutú - Bailarina Estrellada - Rosado",
+    "precio": 73780,
+    "imagen": "/img/06-tienda/tienda47-.png",
+    "categoria": "tutú",
+    "descripcion": "Tutú rosado con estrellas brillantes, ideal para niñas que aman bailar."
+  },
+  {
+    "id": 48,
+    "nombre": "P-48-Chaqueta - Invierno Musical - Verde",
+    "precio": 66350,
+    "imagen": "/img/06-tienda/tienda48-.png",
+    "categoria": "chaqueta",
+    "descripcion": "Chaqueta verde con diseño musical, cálida y adorable para el invierno."
+  },
+  {
+    "id": 49,
+    "nombre": "P-49-Gorro de Lana - Conejito Puchulita - Azul",
+    "precio": 51500,
+    "imagen": "/img/06-tienda/tienda49-.png",
+    "categoria": "gorro",
+    "descripcion": "Gorro de lana azul con diseño de conejito Puchulita, cálido y adorable para el invierno."
+  },
+  {
+    "id": 50,
+    "nombre": "P-50-Set de Instrumentos Musicales - Percusión Divertida",
+    "precio": 41200,
+    "imagen": "/img/06-tienda/tienda50-.png",
+    "categoria": "juguetes",
+    "descripcion": "Set de instrumentos musicales de percusión, ideal para iniciar a los niños en la música."
+  },
+  {
+    "id": 51,
+    "nombre": "P-51-Libro Educativo - Descubre con Puchulita",
+    "precio": 62800,
+    "imagen": "/img/06-tienda/tienda51-.png",
+    "categoria": "libros",
+    "descripcion": "Libro educativo con divertidas aventuras de Puchulita, perfecto para aprender jugando."
+  },
+  {
+    "id": 52,
+    "nombre": "P-52-Pelota de Fútbol - Diseño Puchulita - Mediana",
+    "precio": 67900,
+    "imagen": "/img/06-tienda/tienda52-.png",
+    "categoria": "juguetes",
+    "descripcion": "Pelota de fútbol mediana con diseño de Puchulita, ideal para jugar tanto en interiores como en exteriores."
+  },
+  {
+    "id": 53,
+    "nombre": "P-53-Bufanda - Invierno Musical - Azul",
+    "precio": 43800,
+    "imagen": "/img/06-tienda/tienda53-.png",
+    "categoria": "bufanda",
+    "descripcion": "Bufanda azul con diseño musical para niños, cálida y suave."
+  },
+  {
+    "id": 54,
+    "nombre": "P-54-Corona de Princesa - Brillante - Rosa",
+    "precio": 31700,
+    "imagen": "/img/06-tienda/tienda54-.png",
+    "categoria": "accesorios",
+    "descripcion": "Corona de princesa brillante rosa, perfecta para ocasiones especiales."
+  },
+  {
+    "id": 55,
+    "nombre": "P-55-Camiseta - Rock Infantil - Azul",
+    "precio": 41500,
+    "imagen": "/img/06-tienda/tienda55-.png",
+    "categoria": "camiseta",
+    "descripcion": "Camiseta azul con diseño de rock infantil, ideal para pequeños aficionados a la música."
+  },
+  {
+    "id": 56,
+    "nombre": "P-56-Pantalón Corto - Verano Musical - Amarillo",
+    "precio": 48200,
+    "imagen": "/img/06-tienda/tienda56-.png",
+    "categoria": "pantalón",
+    "descripcion": "Pantalón corto amarillo con diseño veraniego musical, fresco y cómodo para jugar."
+  },
+  {
+    "id": 57,
+    "nombre": "P-57-Vestido de Princesa - Fiesta Encantada - Blanco",
+    "precio": 84200,
+    "imagen": "/img/06-tienda/tienda57-.png",
+    "categoria": "vestido",
+    "descripcion": "Vestido de princesa blanco con detalles encantados, perfecto para fiestas y ocasiones especiales."
+  },
+  {
+    "id": 58,
+    "nombre": "P-58-Tutú - Bailarina Estrellada - Azul",
+    "precio": 75780,
+    "imagen": "/img/06-tienda/tienda58-.png",
+    "categoria": "tutú",
+    "descripcion": "Tutú azul con estrellas brillantes, ideal para niñas que sueñan con bailar."
+  },
+  {
+    "id": 59,
+    "nombre": "P-59-Chaqueta - Invierno Musical - Morado",
+    "precio": 68350,
+    "imagen": "/img/06-tienda/tienda59-.png",
+    "categoria": "chaqueta",
+    "descripcion": "Chaqueta morada con diseño musical, cálida y adorable para el invierno."
+  },
+  {
+    "id": 60,
+    "nombre": "P-60-Gorro de Lana - Conejito Puchulita - Rosa",
+    "precio": 52500,
+    "imagen": "/img/06-tienda/tienda60-.png",
+    "categoria": "gorro",
+    "descripcion": "Gorro de lana rosa con diseño de conejito Puchulita, cálido y adorable para el invierno."
+  },
+  {
+    "id": 61,
+    "nombre": "P-61-Set de Xilófono y Maracas - Colores Alegres",
+    "precio": 43200,
+    "imagen": "/img/06-tienda/tienda61-.png",
+    "categoria": "juguetes",
+    "descripcion": "Set de xilófono y maracas en colores alegres, ideal para explorar el ritmo y la melodía."
+  },
+  {
+    "id": 62,
+    "nombre": "P-62-Libro de Actividades - Diversión con Puchulita",
+    "precio": 64800,
+    "imagen": "/img/06-tienda/tienda62-.png",
+    "categoria": "libros",
+    "descripcion": "Libro de actividades con Puchulita, perfecto para aprender y divertirse con juegos y ejercicios."
+  },
+  {
+    "id": 63,
+    "nombre": "P-63-Pelota de Fútbol - Diseño Puchulita - Pequeña",
+    "precio": 69900,
+    "imagen": "/img/06-tienda/tienda63-.png",
+    "categoria": "juguetes",
+    "descripcion": "Pelota de fútbol pequeña con diseño de Puchulita, ideal para juegos en interiores."
+  },
+  {
+    "id": 64,
+    "nombre": "P-64-Bufanda - Invierno Musical - Rosa",
+    "precio": 44800,
+    "imagen": "/img/06-tienda/tienda64-.png",
+    "categoria": "bufanda",
+    "descripcion": "Bufanda rosa con diseño musical para niños, cálida y suave."
+  },
+  {
+    "id": 65,
+    "nombre": "P-65-Corona de Princesa - Brillante - Plateada",
+    "precio": 32700,
+    "imagen": "/img/06-tienda/tienda65-.png",
+    "categoria": "accesorios",
+    "descripcion": "Corona de princesa brillante plateada, perfecta para ocasiones especiales."
+  },
+  {
+    "id": 66,
+    "nombre": "P-66-Camiseta - Rock Infantil - Amarilla",
+    "precio": 49500,
+    "imagen": "/img/06-tienda/tienda66-.png",
+    "categoria": "camiseta",
+    "descripcion": "Camiseta amarilla con diseño de rock infantil, ideal para pequeños amantes de la música."
+  },
+  {
+    "id": 67,
+    "nombre": "P-67-Pantalón Corto - Verano Musical - Verde",
+    "precio": 49200,
+    "imagen": "/img/06-tienda/tienda67-.png",
+    "categoria": "pantalón",
+    "descripcion": "Pantalón corto verde con diseño veraniego musical, fresco y cómodo para jugar."
+  },
+  {
+    "id": 68,
+    "nombre": "P-68-Vestido de Princesa - Fiesta Encantada - Rosa",
+    "precio": 86200,
+    "imagen": "/img/06-tienda/tienda68-.png",
+    "categoria": "vestido",
+    "descripcion": "Vestido de princesa rosa con detalles encantados, perfecto para fiestas y ocasiones especiales."
+  },
+  {
+    "id": 69,
+    "nombre": "P-69-Tutú - Bailarina Estrellada - Verde",
+    "precio": 77780,
+    "imagen": "/img/06-tienda/tienda69-.png",
+    "categoria": "tutú",
+    "descripcion": "Tutú verde con estrellas brillantes, ideal para niñas que sueñan con bailar."
+  },
+  {
+    "id": 70,
+    "nombre": "P-70-Chaqueta - Invierno Musical - Azul",
+    "precio": 70350,
+    "imagen": "/img/06-tienda/tienda70-.png",
+    "categoria": "chaqueta",
+    "descripcion": "Chaqueta azul con diseño musical, cálida y adorable para el invierno."
+  },
+  {
+    "id": 71,
+    "nombre": "P-71-Gorro de Lana - Conejito Puchulita - Amarillo",
+    "precio": 54500,
+    "imagen": "/img/06-tienda/tienda71-.png",
+    "categoria": "gorro",
+    "descripcion": "Gorro de lana amarillo con diseño de conejito Puchulita, cálido y adorable para el invierno."
+  },
+  {
+    "id": 72,
+    "nombre": "P-72-Set de Instrumentos Musicales - Percusión Divertida - Pequeño",
+    "precio": 45200,
+    "imagen": "/img/06-tienda/tienda72-.png",
+    "categoria": "juguetes",
+    "descripcion": "Set de instrumentos musicales de percusión pequeños, ideal para iniciar a los niños en la música."
+  },
+  {
+    "id": 73,
+    "nombre": "P-73-Libro Educativo - Descubre con Puchulita - Volumen 2",
+    "precio": 66800,
+    "imagen": "/img/06-tienda/tienda73-.png",
+    "categoria": "libros",
+    "descripcion": "Segundo volumen del libro educativo con aventuras de Puchulita, perfecto para seguir aprendiendo jugando."
+  },
+  {
+    "id": 74,
+    "nombre": "P-74-Pelota de Fútbol - Diseño Puchulita - Grande",
+    "precio": 71900,
+    "imagen": "/img/06-tienda/tienda74-.png",
+    "categoria": "juguetes",
+    "descripcion": "Pelota de fútbol grande con diseño de Puchulita, ideal para juegos en exteriores."
+  },
+  {
+    "id": 75,
+    "nombre": "P-75-Bufanda - Invierno Musical - Verde",
+    "precio": 45800,
+    "imagen": "/img/06-tienda/tienda75-.png",
+    "categoria": "bufanda",
+    "descripcion": "Bufanda verde con diseño musical para niños, cálida y suave."
+  },
+  {
+    "id": 76,
+    "nombre": "P-76-Corona de Princesa - Brillante - Dorada",
+    "precio": 33700,
+    "imagen": "/img/06-tienda/tienda76-.png",
+    "categoria": "accesorios",
+    "descripcion": "Corona de princesa brillante dorada, perfecta para ocasiones especiales."
+  },
+  {
+    "id": 77,
+    "nombre": "P-77-Camiseta - Rock Infantil - Roja",
+    "precio": 47500,
+    "imagen": "/img/06-tienda/tienda77-.png",
+    "categoria": "camiseta",
+    "descripcion": "Camiseta roja con diseño de rock infantil, ideal para pequeños amantes de la música."
+  },
+  {
+    "id": 78,
+    "nombre": "P-78-Pantalón Corto - Verano Musical - Rojo",
+    "precio": 51200,
+    "imagen": "/img/06-tienda/tienda78-.png",
+    "categoria": "pantalón",
+    "descripcion": "Pantalón corto rojo con diseño veraniego musical, fresco y cómodo para jugar."
+  },
+  {
+    "id": 79,
+    "nombre": "P-79-Vestido de Princesa - Fiesta Encantada - Morado",
+    "precio": 86200,
+    "imagen": "/img/06-tienda/tienda79-.png",
+    "categoria": "vestido",
+    "descripcion": "Vestido de princesa morado con detalles encantados, perfecto para fiestas y ocasiones especiales."
+  },
+  {
+    "id": 80,
+    "nombre": "P-80-Tutú - Bailarina Estrellada - Rosado",
+    "precio": 77780,
+    "imagen": "/img/06-tienda/tienda80-.png",
+    "categoria": "tutú",
+    "descripcion": "Tutú rosado con estrellas brillantes, ideal para niñas que aman bailar."
+  },
+  {
+    "id": 81,
+    "nombre": "P-81-Chaqueta - Invierno Musical - Verde",
+    "precio": 70350,
+    "imagen": "/img/06-tienda/tienda81-.png",
+    "categoria": "chaqueta",
+    "descripcion": "Chaqueta verde con diseño musical, cálida y adorable para el invierno."
+  },
+  {
+    "id": 82,
+    "nombre": "P-82-Gorro de Lana - Conejito Puchulita - Azul",
+    "precio": 54500,
+    "imagen": "/img/06-tienda/tienda82-.png",
+    "categoria": "gorro",
+    "descripcion": "Gorro de lana azul con diseño de conejito Puchulita, cálido y adorable para el invierno."
+  },
+  {
+    "id": 83,
+    "nombre": "P-83-Set de Instrumentos Musicales - Percusión Divertida",
+    "precio": 44200,
+    "imagen": "/img/06-tienda/tienda83-.png",
+    "categoria": "juguetes",
+    "descripcion": "Set de instrumentos musicales de percusión, ideal para iniciar a los niños en la música."
+  },
+  {
+    "id": 84,
+    "nombre": "P-84-Libro Educativo - Descubre con Puchulita",
+    "precio": 65800,
+    "imagen": "/img/06-tienda/tienda84-.png",
+    "categoria": "libros",
+    "descripcion": "Libro educativo con divertidas aventuras de Puchulita, perfecto para aprender jugando."
+  },
+  {
+    "id": 85,
+    "nombre": "P-85-Pelota de Fútbol - Diseño Puchulita - Mediana",
+    "precio": 70900,
+    "imagen": "/img/06-tienda/tienda85-.png",
+    "categoria": "juguetes",
+    "descripcion": "Pelota de fútbol mediana con diseño de Puchulita, ideal para juegos en exteriores."
+  },
+  {
+    "id": 86,
+    "nombre": "P-86-Bufanda - Invierno Musical - Morada",
+    "precio": 42800,
+    "imagen": "/img/06-tienda/tienda86-.png",
+    "categoria": "bufanda",
+    "descripcion": "Bufanda morada con diseño musical para niños, cálida y suave."
+  },
+  {
+    "id": 87,
+    "nombre": "P-87-Corona de Princesa - Brillante - Azul",
+    "precio": 31700,
+    "imagen": "/img/06-tienda/tienda87-.png",
+    "categoria": "accesorios",
+    "descripcion": "Corona de princesa brillante azul, perfecta para ocasiones especiales."
+  },
+  {
+    "id": 88,
+    "nombre": "P-88-Camiseta - Rock Infantil - Negra",
+    "precio": 45500,
+    "imagen": "/img/06-tienda/tienda88-.png",
+    "categoria": "camiseta",
+    "descripcion": "Camiseta negra con diseño de rock infantil, ideal para pequeños amantes de la música."
+  },
+  {
+    "id": 89,
+    "nombre": "P-89-Pantalón Corto - Verano Musical - Azul",
+    "precio": 52200,
+    "imagen": "/img/06-tienda/tienda89-.png",
+    "categoria": "pantalón",
+    "descripcion": "Pantalón corto azul con diseño veraniego musical, fresco y cómodo para jugar."
+  },
+  {
+    "id": 90,
+    "nombre": "P-90-Vestido de Princesa - Fiesta Encantada - Azul",
+    "precio": 89200,
+    "imagen": "/img/06-tienda/tienda90-.png",
+    "categoria": "vestido",
+    "descripcion": "Vestido de princesa azul con detalles encantados, perfecto para fiestas y ocasiones especiales."
+  },
+  {
+    "id": 91,
+    "nombre": "P-91-Tutú - Bailarina Estrellada - Azul",
+    "precio": 78780,
+    "imagen": "/img/06-tienda/tienda91-.png",
+    "categoria": "tutú",
+    "descripcion": "Tutú azul con estrellas brillantes, ideal para niñas que sueñan con bailar."
+  },
+  {
+    "id": 92,
+    "nombre": "P-92-Chaqueta - Invierno Musical - Roja",
+    "precio": 72350,
+    "imagen": "/img/06-tienda/tienda92-.png",
+    "categoria": "chaqueta",
+    "descripcion": "Chaqueta roja con diseño musical, cálida y adorable para el invierno."
+  },
+  {
+    "id": 93,
+    "nombre": "P-93-Gorro de Lana - Conejito Puchulita - Rojo",
+    "precio": 56500,
+    "imagen": "/img/06-tienda/tienda93-.png",
+    "categoria": "gorro",
+    "descripcion": "Gorro de lana rojo con diseño de conejito Puchulita, cálido y adorable para el invierno."
+  },
+  {
+    "id": 94,
+    "nombre": "P-94-Set de Instrumentos Musicales - Percusión Divertida - Grande",
+    "precio": 46200,
+    "imagen": "/img/06-tienda/tienda94-.png",
+    "categoria": "juguetes",
+    "descripcion": "Set de instrumentos musicales de percusión grandes, ideal para iniciar a los niños en la música."
+  },
+  {
+    "id": 95,
+    "nombre": "P-95-Libro Educativo - Descubre con Puchulita - Volumen 3",
+    "precio": 68800,
+    "imagen": "/img/06-tienda/tienda95-.png",
+    "categoria": "libros",
+    "descripcion": "Tercer volumen del libro educativo con aventuras de Puchulita, perfecto para seguir aprendiendo jugando."
+  },
+  {
+    "id": 96,
+    "nombre": "P-96-Pelota de Fútbol - Diseño Puchulita - Pequeña",
+    "precio": 72900,
+    "imagen": "/img/06-tienda/tienda96-.png",
+    "categoria": "juguetes",
+    "descripcion": "Pelota de fútbol pequeña con diseño de Puchulita, ideal para juegos en exteriores."
+  },
+  {
+    "id": 97,
+    "nombre": "P-97-Bufanda - Invierno Musical - Azul",
+    "precio": 43800,
+    "imagen": "/img/06-tienda/tienda97-.png",
+    "categoria": "bufanda",
+    "descripcion": "Bufanda azul con diseño musical para niños, cálida y suave."
+  },
+  {
+    "id": 98,
+    "nombre": "P-98-Corona de Princesa - Brillante - Rosada",
+    "precio": 30700,
+    "imagen": "/img/06-tienda/tienda98-.png",
+    "categoria": "accesorios",
+    "descripcion": "Corona de princesa brillante rosada, perfecta para ocasiones especiales."
+  },
+  {
+    "id": 99,
+    "nombre": "P-99-Camiseta - Rock Infantil - Azul",
+    "precio": 48500,
+    "imagen": "/img/06-tienda/tienda99-.png",
+    "categoria": "camiseta",
+    "descripcion": "Camiseta azul con diseño de rock infantil, ideal para pequeños amantes de la música."
+  },
+  {
+    "id": 100,
+    "nombre": "P-100-Pantalón Corto - Verano Musical - Amarillo",
+    "precio": 50200,
+    "imagen": "/img/06-tienda/tienda100-.png",
+    "categoria": "pantalón",
+    "descripcion": "Pantalón corto amarillo con diseño veraniego musical, fresco y cómodo para jugar."
   }
-      {
-      "id": 21,
-      "nombre": "P-21-Camisa - Estampado de Notas Musicales - Niños",
-      "precio": 63600,
-      "imagen": "/img/06-tienda/tienda21-.png",
-      "categoria": "camisa",
-      "descripcion": "Camisa con divertido estampado de notas musicales para niños, ideal para eventos informales."
-    },
-    {
-      "id": 22,
-      "nombre": "P-22-Pantalón Corto - Verano Musical - Azul",
-      "precio": 45200,
-      "imagen": "/img/06-tienda/tienda22-.png",
-      "categoria": "pantalón",
-      "descripcion": "Pantalón corto azul con diseño veraniego musical, fresco y cómodo para jugar."
-    },
-    {
-      "id": 23,
-      "nombre": "P-23-Vestido de Princesa - Fiesta Encantada - Azul",
-      "precio": 78200,
-      "imagen": "/img/06-tienda/tienda23-.png",
-      "categoria": "vestido",
-      "descripcion": "Vestido de princesa azul con detalles encantados, perfecto para fiestas y ocasiones especiales."
-    },
-    {
-      "id": 24,
-      "nombre": "P-24-Tutú - Bailarina Estrellada - Morado",
-      "precio": 69780,
-      "imagen": "/img/06-tienda/tienda24-.png",
-      "categoria": "tutú",
-      "descripcion": "Tutú morado con estrellas brillantes, ideal para niñas que aman bailar."
-    },
-    {
-      "id": 25,
-      "nombre": "P-25-Chaqueta - Invierno Musical - Rosa",
-      "precio": 62350,
-      "imagen": "/img/06-tienda/tienda25-.png",
-      "categoria": "chaqueta",
-      "descripcion": "Chaqueta rosa con diseño musical, cálida y adorable para el invierno."
-    },
-    {
-      "id": 26,
-      "nombre": "P-26-Camiseta - Rock Infantil - Negra",
-      "precio": 39800,
-      "imagen": "/img/06-tienda/tienda26-.png",
-      "categoria": "camiseta",
-      "descripcion": "Camiseta negra con diseño de rock infantil, perfecta para pequeños amantes de la música."
-    },
-    {
-      "id": 27,
-      "nombre": "P-27-Gorro de Lana - Conejito Puchulita - Blanco",
-      "precio": 49500,
-      "imagen": "/img/06-tienda/tienda27-.png",
-      "categoria": "gorro",
-      "descripcion": "Gorro de lana blanco con diseño de conejito Puchulita, cálido y adorable para el invierno."
-    },
-    {
-      "id": 28,
-      "nombre": "P-28-Set de Maracas y Tambor - Colores Vivos",
-      "precio": 37200,
-      "imagen": "/img/06-tienda/tienda28-.png",
-      "categoria": "juguetes musicales",
-      "descripcion": "Set de maracas y tambor en colores vivos, ideal para introducir a los niños al ritmo."
-    },
-    {
-      "id": 29,
-      "nombre": "P-29-Libro Interactivo - Aventuras Musicales con Puchulita",
-      "precio": 58800,
-      "imagen": "/img/06-tienda/tienda29-.png",
-      "categoria": "libros infantiles",
-      "descripcion": "Libro interactivo con las aventuras musicales de Puchulita, perfecto para aprender jugando."
-    },
-    {
-      "id": 30,
-      "nombre": "P-30-Pelota de Fútbol - Diseño Puchulita - Grande",
-      "precio": 68900,
-      "imagen": "/img/06-tienda/tienda30-.png",
-      "categoria": "juguetes",
-      "descripcion": "Pelota de fútbol grande con diseño de Puchulita, ideal para jugar en exteriores."
-    },
-    {
-      "id": 31,
-      "nombre": "P-31-Bufanda - Invierno Musical - Rosa",
-      "precio": 41800,
-      "imagen": "/img/06-tienda/tienda31-.png",
-      "categoria": "bufanda",
-      "descripcion": "Bufanda rosa con diseño musical para niños, cálida y suave."
-    },
-    {
-      "id": 32,
-      "nombre": "P-32-Corona de Princesa - Brillante - Plateada",
-      "precio": 29700,
-      "imagen": "/img/06-tienda/tienda32-.png",
-      "categoria": "accesorios de ropa para niños",
-      "descripcion": "Corona de princesa brillante plateada, perfecta para ocasiones especiales."
-    },
-    {
-      "id": 33,
-      "nombre": "P-33-Camiseta - Rock Infantil - Verde",
-      "precio": 41500,
-      "imagen": "/img/06-tienda/tienda33-.png",
-      "categoria": "camiseta",
-      "descripcion": "Camiseta verde con diseño de rock infantil, ideal para pequeños aficionados a la música."
-    },
-    {
-      "id": 34,
-      "nombre": "P-34-Pantalón Corto - Verano Musical - Verde",
-      "precio": 46200,
-      "imagen": "/img/06-tienda/tienda34-.png",
-      "categoria": "pantalón",
-      "descripcion": "Pantalón corto verde con diseño veraniego musical, fresco y cómodo para jugar."
-    },
-    {
-      "id": 35,
-      "nombre": "P-35-Vestido de Princesa - Fiesta Encantada - Rosa",
-      "precio": 80200,
-      "imagen": "/img/06-tienda/tienda35-.png",
-      "categoria": "vestido",
-      "descripcion": "Vestido de princesa rosa con detalles encantados, perfecto para fiestas y ocasiones especiales."
-    },
-    {
-      "id": 36,
-      "nombre": "P-36-Tutú - Bailarina Estrellada - Blanco",
-      "precio": 71780,
-      "imagen": "/img/06-tienda/tienda36-.png",
-      "categoria": "tutú",
-      "descripcion": "Tutú blanco con estrellas brillantes, ideal para niñas que sueñan con bailar."
-    },
-    {
-      "id": 37,
-      "nombre": "P-37-Chaqueta - Invierno Musical - Azul",
-      "precio": 64350,
-      "imagen": "/img/06-tienda/tienda37-.png",
-      "categoria": "chaqueta",
-      "descripcion": "Chaqueta azul con diseño musical, cálida y adorable para el invierno."
-    },
-    {
-      "id": 38,
-      "nombre": "P-38-Gorro de Lana - Conejito Puchulita - Gris",
-      "precio": 50500,
-      "imagen": "/img/06-tienda/tienda38-.png",
-      "categoria": "gorro",
-      "descripcion": "Gorro de lana gris con diseño de conejito Puchulita, cálido y adorable para el invierno."
-    },
-    {
-      "id": 39,
-      "nombre": "P-39-Set de Tambor y Baquetas - Colores Brillantes",
-      "precio": 39200,
-      "imagen": "/img/06-tienda/tienda39-.png",
-      "categoria": "juguetes musicales",
-      "descripcion": "Set de tambor y baquetas en colores brillantes, perfecto para pequeños músicos."
-    },
-    {
-      "id": 40,
-      "nombre": "P-40-Libro de Canciones - Aventuras Musicales con Puchulita",
-      "precio": 60800,
-      "imagen": "/img/06-tienda/tienda40-.png",
-      "categoria": "libros infantiles",
-      "descripcion": "Libro de canciones con las aventuras musicales de Puchulita, para aprender y divertirse."
-    },
-    {
-      "id": 41,
-      "nombre": "P-41-Pelota de Fútbol - Diseño Puchulita - Pequeña",
-      "precio": 65900,
-      "imagen": "/img/06-tienda/tienda41-.png",
-      "categoria": "juguetes",
-      "descripcion": "Pelota de fútbol pequeña con diseño de Puchulita, ideal para juegos en interiores."
-    },
-    {
-      "id": 42,
-      "nombre": "P-42-Bufanda - Invierno Musical - Verde",
-      "precio": 42800,
-      "imagen": "/img/06-tienda/tienda42-.png",
-      "categoria": "bufanda",
-      "descripcion": "Bufanda verde con diseño musical para niños, cálida y suave."
-    },
-    {
-      "id": 43,
-      "nombre": "P-43-Corona de Princesa - Brillante - Dorada",
-      "precio": 30700,
-      "imagen": "/img/06-tienda/tienda43-.png",
-      "categoria": "accesorios de ropa para niños",
-      "descripcion": "Corona de princesa brillante dorada, perfecta para ocasiones especiales."
-    },
-    {
-      "id": 44,
-      "nombre": "P-44-Camiseta - Rock Infantil - Roja",
-      "precio": 43500,
-      "imagen": "/img/06-tienda/tienda44-.png",
-      "categoria": "camiseta",
-      "descripcion": "Camiseta roja con diseño de rock infantil, ideal para pequeños amantes de la música."
-    },
-    {
-      "id": 45,
-      "nombre": "P-45-Pantalón Corto - Verano Musical - Rojo",
-      "precio": 47200,
-      "imagen": "/img/06-tienda/tienda45-.png",
-      "categoria": "pantalón",
-      "descripcion": "Pantalón corto rojo con diseño veraniego musical, fresco y cómodo para jugar."
-    },
-    {
-      "id": 46,
-      "nombre": "P-46-Vestido de Princesa - Fiesta Encantada - Morado",
-      "precio": 82200,
-      "imagen": "/img/06-tienda/tienda46-.png",
-      "categoria": "vestido",
-      "descripcion": "Vestido de princesa morado con detalles encantados, perfecto para fiestas y ocasiones especiales."
-    },
-    {
-      "id": 47,
-      "nombre": "P-47-Tutú - Bailarina Estrellada - Rosado",
-      "precio": 73780,
-      "imagen": "/img/06-tienda/tienda47-.png",
-      "categoria": "tutú",
-      "descripcion": "Tutú rosado con estrellas brillantes, ideal para niñas que aman bailar."
-    },
-    {
-      "id": 48,
-      "nombre": "P-48-Chaqueta - Invierno Musical - Verde",
-      "precio": 66350,
-      "imagen": "/img/06-tienda/tienda48-.png",
-      "categoria": "chaqueta",
-      "descripcion": "Chaqueta verde con diseño musical, cálida y adorable para el invierno."
-    },
-    {
-      "id": 49,
-      "nombre": "P-49-Gorro de Lana - Conejito Puchulita - Azul",
-      "precio": 51500,
-      "imagen": "/img/06-tienda/tienda49-.png",
-      "categoria": "gorro",
-      "descripcion": "Gorro de lana azul con diseño de conejito Puchulita, cálido y adorable para el invierno."
-    },
-    {
-      "id": 50,
-      "nombre": "P-50-Set de Instrumentos Musicales - Percusión Divertida",
-      "precio": 41200,
-      "imagen": "/img/06-tienda/tienda50-.png",
-      "categoria": "juguetes musicales",
-      "descripcion": "Set de instrumentos musicales de percusión, ideal para iniciar a los niños en la música."
-    },
-    {
-      "id": 51,
-      "nombre": "P-51-Libro Educativo - Descubre con Puchulita",
-      "precio": 62800,
-      "imagen": "/img/06-tienda/tienda51-.png",
-      "categoria": "libros infantiles",
-      "descripcion": "Libro educativo con divertidas aventuras de Puchulita, perfecto para aprender jugando."
-    },
-    {
-      "id": 52,
-      "nombre": "P-52-Pelota de Fútbol - Diseño Puchulita - Mediana",
-      "precio": 67900,
-      "imagen": "/img/06-tienda/tienda52-.png",
-      "categoria": "juguetes",
-      "descripcion": "Pelota de fútbol mediana con diseño de Puchulita, ideal para jugar tanto en interiores como en exteriores."
-    },
-    {
-      "id": 53,
-      "nombre": "P-53-Bufanda - Invierno Musical - Azul",
-      "precio": 43800,
-      "imagen": "/img/06-tienda/tienda53-.png",
-      "categoria": "bufanda",
-      "descripcion": "Bufanda azul con diseño musical para niños, cálida y suave."
-    },
-    {
-      "id": 54,
-      "nombre": "P-54-Corona de Princesa - Brillante - Rosa",
-      "precio": 31700,
-      "imagen": "/img/06-tienda/tienda54-.png",
-      "categoria": "accesorios de ropa para niños",
-      "descripcion": "Corona de princesa brillante rosa, perfecta para ocasiones especiales."
-    },
-    {
-      "id": 55,
-      "nombre": "P-55-Camiseta - Rock Infantil - Azul",
-      "precio": 41500,
-      "imagen": "/img/06-tienda/tienda55-.png",
-      "categoria": "camiseta",
-      "descripcion": "Camiseta azul con diseño de rock infantil, ideal para pequeños aficionados a la música."
-    },
-    {
-      "id": 56,
-      "nombre": "P-56-Pantalón Corto - Verano Musical - Amarillo",
-      "precio": 48200,
-      "imagen": "/img/06-tienda/tienda56-.png",
-      "categoria": "pantalón",
-      "descripcion": "Pantalón corto amarillo con diseño veraniego musical, fresco y cómodo para jugar."
-    },
-    {
-      "id": 57,
-      "nombre": "P-57-Vestido de Princesa - Fiesta Encantada - Blanco",
-      "precio": 84200,
-      "imagen": "/img/06-tienda/tienda57-.png",
-      "categoria": "vestido",
-      "descripcion": "Vestido de princesa blanco con detalles encantados, perfecto para fiestas y ocasiones especiales."
-    },
-    {
-      "id": 58,
-      "nombre": "P-58-Tutú - Bailarina Estrellada - Azul",
-      "precio": 75780,
-      "imagen": "/img/06-tienda/tienda58-.png",
-      "categoria": "tutú",
-      "descripcion": "Tutú azul con estrellas brillantes, ideal para niñas que sueñan con bailar."
-    },
-    {
-      "id": 59,
-      "nombre": "P-59-Chaqueta - Invierno Musical - Morado",
-      "precio": 68350,
-      "imagen": "/img/06-tienda/tienda59-.png",
-      "categoria": "chaqueta",
-      "descripcion": "Chaqueta morada con diseño musical, cálida y adorable para el invierno."
-    },
-    {
-      "id": 60,
-      "nombre": "P-60-Gorro de Lana - Conejito Puchulita - Rosa",
-      "precio": 52500,
-      "imagen": "/img/06-tienda/tienda60-.png",
-      "categoria": "gorro",
-      "descripcion": "Gorro de lana rosa con diseño de conejito Puchulita, cálido y adorable para el invierno."
-    },
-    {
-      "id": 61,
-      "nombre": "P-61-Set de Xilófono y Maracas - Colores Alegres",
-      "precio": 43200,
-      "imagen": "/img/06-tienda/tienda61-.png",
-      "categoria": "juguetes musicales",
-      "descripcion": "Set de xilófono y maracas en colores alegres, ideal para explorar el ritmo y la melodía."
-    },
-    {
-      "id": 62,
-      "nombre": "P-62-Libro de Actividades - Diversión con Puchulita",
-      "precio": 64800,
-      "imagen": "/img/06-tienda/tienda62-.png",
-      "categoria": "libros infantiles",
-      "descripcion": "Libro de actividades con Puchulita, perfecto para aprender y divertirse con juegos y ejercicios."
-    },
-    {
-      "id": 63,
-      "nombre": "P-63-Pelota de Fútbol - Diseño Puchulita - Pequeña",
-      "precio": 69900,
-      "imagen": "/img/06-tienda/tienda63-.png",
-      "categoria": "juguetes",
-      "descripcion": "Pelota de fútbol pequeña con diseño de Puchulita, ideal para juegos en interiores."
-    },
-    {
-      "id": 64,
-      "nombre": "P-64-Bufanda - Invierno Musical - Rosa",
-      "precio": 44800,
-      "imagen": "/img/06-tienda/tienda64-.png",
-      "categoria": "bufanda",
-      "descripcion": "Bufanda rosa con diseño musical para niños, cálida y suave."
-    },
-    {
-      "id": 65,
-      "nombre": "P-65-Corona de Princesa - Brillante - Plateada",
-      "precio": 32700,
-      "imagen": "/img/06-tienda/tienda65-.png",
-      "categoria": "accesorios de ropa para niños",
-      "descripcion": "Corona de princesa brillante plateada, perfecta para ocasiones especiales."
-    },
-    {
-      "id": 66,
-      "nombre": "P-66-Camiseta - Rock Infantil - Amarilla",
-      "precio": 49500,
-      "imagen": "/img/06-tienda/tienda66-.png",
-      "categoria": "camiseta",
-      "descripcion": "Camiseta amarilla con diseño de rock infantil, ideal para pequeños amantes de la música."
-    },
-    {
-      "id": 67,
-      "nombre": "P-67-Pantalón Corto - Verano Musical - Verde",
-      "precio": 49200,
-      "imagen": "/img/06-tienda/tienda67-.png",
-      "categoria": "pantalón",
-      "descripcion": "Pantalón corto verde con diseño veraniego musical, fresco y cómodo para jugar."
-    },
-    {
-      "id": 68,
-      "nombre": "P-68-Vestido de Princesa - Fiesta Encantada - Rosa",
-      "precio": 86200,
-      "imagen": "/img/06-tienda/tienda68-.png",
-      "categoria": "vestido",
-      "descripcion": "Vestido de princesa rosa con detalles encantados, perfecto para fiestas y ocasiones especiales."
-    },
-    {
-      "id": 69,
-      "nombre": "P-69-Tutú - Bailarina Estrellada - Verde",
-      "precio": 77780,
-      "imagen": "/img/06-tienda/tienda69-.png",
-      "categoria": "tutú",
-      "descripcion": "Tutú verde con estrellas brillantes, ideal para niñas que sueñan con bailar."
-    },
-    {
-      "id": 70,
-      "nombre": "P-70-Chaqueta - Invierno Musical - Azul",
-      "precio": 70350,
-      "imagen": "/img/06-tienda/tienda70-.png",
-      "categoria": "chaqueta",
-      "descripcion": "Chaqueta azul con diseño musical, cálida y adorable para el invierno."
-    },
-    {
-      "id": 71,
-      "nombre": "P-71-Gorro de Lana - Conejito Puchulita - Amarillo",
-      "precio": 54500,
-      "imagen": "/img/06-tienda/tienda71-.png",
-      "categoria": "gorro",
-      "descripcion": "Gorro de lana amarillo con diseño de conejito Puchulita, cálido y adorable para el invierno."
-    },
-    {
-      "id": 72,
-      "nombre": "P-72-Set de Instrumentos Musicales - Percusión Divertida - Pequeño",
-      "precio": 45200,
-      "imagen": "/img/06-tienda/tienda72-.png",
-      "categoria": "juguetes musicales",
-      "descripcion": "Set de instrumentos musicales de percusión pequeños, ideal para iniciar a los niños en la música."
-    },
-    {
-      "id": 73,
-      "nombre": "P-73-Libro Educativo - Descubre con Puchulita - Volumen 2",
-      "precio": 66800,
-      "imagen": "/img/06-tienda/tienda73-.png",
-      "categoria": "libros infantiles",
-      "descripcion": "Segundo volumen del libro educativo con aventuras de Puchulita, perfecto para seguir aprendiendo jugando."
-    },
-    {
-      "id": 74,
-      "nombre": "P-74-Pelota de Fútbol - Diseño Puchulita - Grande",
-      "precio": 71900,
-      "imagen": "/img/06-tienda/tienda74-.png",
-      "categoria": "juguetes",
-      "descripcion": "Pelota de fútbol grande con diseño de Puchulita, ideal para juegos en exteriores."
-    },
-    {
-      "id": 75,
-      "nombre": "P-75-Bufanda - Invierno Musical - Verde",
-      "precio": 45800,
-      "imagen": "/img/06-tienda/tienda75-.png",
-      "categoria": "bufanda",
-      "descripcion": "Bufanda verde con diseño musical para niños, cálida y suave."
-    },
-    {
-      "id": 76,
-      "nombre": "P-76-Corona de Princesa - Brillante - Dorada",
-      "precio": 33700,
-      "imagen": "/img/06-tienda/tienda76-.png",
-      "categoria": "accesorios de ropa para niños",
-      "descripcion": "Corona de princesa brillante dorada, perfecta para ocasiones especiales."
-    },
-    {
-      "id": 77,
-      "nombre": "P-77-Camiseta - Rock Infantil - Roja",
-      "precio": 47500,
-      "imagen": "/img/06-tienda/tienda77-.png",
-      "categoria": "camiseta",
-      "descripcion": "Camiseta roja con diseño de rock infantil, ideal para pequeños amantes de la música."
-    },
-    {
-      "id": 78,
-      "nombre": "P-78-Pantalón Corto - Verano Musical - Rojo",
-      "precio": 51200,
-      "imagen": "/img/06-tienda/tienda78-.png",
-      "categoria": "pantalón",
-      "descripcion": "Pantalón corto rojo con diseño veraniego musical, fresco y cómodo para jugar."
-    },
-    {
-      "id": 79,
-      "nombre": "P-79-Vestido de Princesa - Fiesta Encantada - Morado",
-      "precio": 86200,
-      "imagen": "/img/06-tienda/tienda79-.png",
-      "categoria": "vestido",
-      "descripcion": "Vestido de princesa morado con detalles encantados, perfecto para fiestas y ocasiones especiales."
-    },
-    {
-      "id": 80,
-      "nombre": "P-80-Tutú - Bailarina Estrellada - Rosado",
-      "precio": 77780,
-      "imagen": "/img/06-tienda/tienda80-.png",
-      "categoria": "tutú",
-      "descripcion": "Tutú rosado con estrellas brillantes, ideal para niñas que aman bailar."
-    },
-    {
-      "id": 81,
-      "nombre": "P-81-Chaqueta - Invierno Musical - Verde",
-      "precio": 70350,
-      "imagen": "/img/06-tienda/tienda81-.png",
-      "categoria": "chaqueta",
-      "descripcion": "Chaqueta verde con diseño musical, cálida y adorable para el invierno."
-    },
-    {
-      "id": 82,
-      "nombre": "P-82-Gorro de Lana - Conejito Puchulita - Azul",
-      "precio": 54500,
-      "imagen": "/img/06-tienda/tienda82-.png",
-      "categoria": "gorro",
-      "descripcion": "Gorro de lana azul con diseño de conejito Puchulita, cálido y adorable para el invierno."
-    },
-    {
-      "id": 83,
-      "nombre": "P-83-Set de Instrumentos Musicales - Percusión Divertida",
-      "precio": 44200,
-      "imagen": "/img/06-tienda/tienda83-.png",
-      "categoria": "juguetes musicales",
-      "descripcion": "Set de instrumentos musicales de percusión, ideal para iniciar a los niños en la música."
-    },
-    {
-      "id": 84,
-      "nombre": "P-84-Libro Educativo - Descubre con Puchulita",
-      "precio": 65800,
-      "imagen": "/img/06-tienda/tienda84-.png",
-      "categoria": "libros infantiles",
-      "descripcion": "Libro educativo con divertidas aventuras de Puchulita, perfecto para aprender jugando."
-    },
-    {
-      "id": 85,
-      "nombre": "P-85-Pelota de Fútbol - Diseño Puchulita - Mediana",
-      "precio": 70900,
-      "imagen": "/img/06-tienda/tienda85-.png",
-      "categoria": "juguetes",
-      "descripcion": "Pelota de fútbol mediana con diseño de Puchulita, ideal para juegos en exteriores."
-    },
-    {
-      "id": 86,
-      "nombre": "P-86-Bufanda - Invierno Musical - Morada",
-      "precio": 42800,
-      "imagen": "/img/06-tienda/tienda86-.png",
-      "categoria": "bufanda",
-      "descripcion": "Bufanda morada con diseño musical para niños, cálida y suave."
-    },
-    {
-      "id": 87,
-      "nombre": "P-87-Corona de Princesa - Brillante - Azul",
-      "precio": 31700,
-      "imagen": "/img/06-tienda/tienda87-.png",
-      "categoria": "accesorios de ropa para niños",
-      "descripcion": "Corona de princesa brillante azul, perfecta para ocasiones especiales."
-    },
-    {
-      "id": 88,
-      "nombre": "P-88-Camiseta - Rock Infantil - Negra",
-      "precio": 45500,
-      "imagen": "/img/06-tienda/tienda88-.png",
-      "categoria": "camiseta",
-      "descripcion": "Camiseta negra con diseño de rock infantil, ideal para pequeños amantes de la música."
-    },
-    {
-      "id": 89,
-      "nombre": "P-89-Pantalón Corto - Verano Musical - Azul",
-      "precio": 52200,
-      "imagen": "/img/06-tienda/tienda89-.png",
-      "categoria": "pantalón",
-      "descripcion": "Pantalón corto azul con diseño veraniego musical, fresco y cómodo para jugar."
-    },
-    {
-      "id": 90,
-      "nombre": "P-90-Vestido de Princesa - Fiesta Encantada - Azul",
-      "precio": 89200,
-      "imagen": "/img/06-tienda/tienda90-.png",
-      "categoria": "vestido",
-      "descripcion": "Vestido de princesa azul con detalles encantados, perfecto para fiestas y ocasiones especiales."
-    },
-    {
-      "id": 91,
-      "nombre": "P-91-Tutú - Bailarina Estrellada - Azul",
-      "precio": 78780,
-      "imagen": "/img/06-tienda/tienda91-.png",
-      "categoria": "tutú",
-      "descripcion": "Tutú azul con estrellas brillantes, ideal para niñas que sueñan con bailar."
-    },
-    {
-      "id": 92,
-      "nombre": "P-92-Chaqueta - Invierno Musical - Roja",
-      "precio": 72350,
-      "imagen": "/img/06-tienda/tienda92-.png",
-      "categoria": "chaqueta",
-      "descripcion": "Chaqueta roja con diseño musical, cálida y adorable para el invierno."
-    },
-    {
-      "id": 93,
-      "nombre": "P-93-Gorro de Lana - Conejito Puchulita - Rojo",
-      "precio": 56500,
-      "imagen": "/img/06-tienda/tienda93-.png",
-      "categoria": "gorro",
-      "descripcion": "Gorro de lana rojo con diseño de conejito Puchulita, cálido y adorable para el invierno."
-    },
-    {
-      "id": 94,
-      "nombre": "P-94-Set de Instrumentos Musicales - Percusión Divertida - Grande",
-      "precio": 46200,
-      "imagen": "/img/06-tienda/tienda94-.png",
-      "categoria": "juguetes musicales",
-      "descripcion": "Set de instrumentos musicales de percusión grandes, ideal para iniciar a los niños en la música."
-    },
-    {
-      "id": 95,
-      "nombre": "P-95-Libro Educativo - Descubre con Puchulita - Volumen 3",
-      "precio": 68800,
-      "imagen": "/img/06-tienda/tienda95-.png",
-      "categoria": "libros infantiles",
-      "descripcion": "Tercer volumen del libro educativo con aventuras de Puchulita, perfecto para seguir aprendiendo jugando."
-    },
-    {
-      "id": 96,
-      "nombre": "P-96-Pelota de Fútbol - Diseño Puchulita - Pequeña",
-      "precio": 72900,
-      "imagen": "/img/06-tienda/tienda96-.png",
-      "categoria": "juguetes",
-      "descripcion": "Pelota de fútbol pequeña con diseño de Puchulita, ideal para juegos en exteriores."
-    }
-    {
-      "id": 97,
-      "nombre": "P-97-Bufanda - Invierno Musical - Azul",
-      "precio": 43800,
-      "imagen": "/img/06-tienda/tienda97-.png",
-      "categoria": "bufanda",
-      "descripcion": "Bufanda azul con diseño musical para niños, cálida y suave."
-    },
-    {
-      "id": 98,
-      "nombre": "P-98-Corona de Princesa - Brillante - Rosada",
-      "precio": 30700,
-      "imagen": "/img/06-tienda/tienda98-.png",
-      "categoria": "accesorios de ropa para niños",
-      "descripcion": "Corona de princesa brillante rosada, perfecta para ocasiones especiales."
-    },
-    {
-      "id": 99,
-      "nombre": "P-99-Camiseta - Rock Infantil - Azul",
-      "precio": 48500,
-      "imagen": "/img/06-tienda/tienda99-.png",
-      "categoria": "camiseta",
-      "descripcion": "Camiseta azul con diseño de rock infantil, ideal para pequeños amantes de la música."
-    },
-    {
-      "id": 100,
-      "nombre": "P-100-Pantalón Corto - Verano Musical - Amarillo",
-      "precio": 50200,
-      "imagen": "/img/06-tienda/tienda100-.png",
-      "categoria": "pantalón",
-      "descripcion": "Pantalón corto amarillo con diseño veraniego musical, fresco y cómodo para jugar."
-    }
-  ]
-  
-  
+]

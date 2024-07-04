@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import "../assets/scss/estilo.scss";
 
 function MainContent() {
@@ -23,11 +22,11 @@ function MainContent() {
                 <a href="#">
                   <img
                     alt="icono"
-                    className="container-fluid objetoCentrado1 imagen-limitada7 textoMovimiento"
+                    className="container-fluid imagen-limitada7 textoMovimiento"
                     src="/img/05-img-costados-larga/20.png"
                   />
                 </a>
-                Aquí podrás escuchar nuestras canciónes! Somos un grupo de
+                Aquí podrás escuchar nuestras canciones! Somos un grupo de
                 músicos que nos divertimos componiendo canciones! Gracias por
                 visitarnos! Música infantil, sin fronteras! Para toda la
                 familia.
@@ -35,12 +34,11 @@ function MainContent() {
             </div>
             <div>
               <h1 className="objetoCentrado1 textoMovimiento">
-                {" "}
                 <img
                   className="container-fluid"
                   src="/img/05-img-costados-larga/1a.png"
                   alt=""
-                />{" "}
+                />
               </h1>
             </div>
 
@@ -49,12 +47,12 @@ function MainContent() {
                 <a href="#">
                   <img
                     alt="icono"
-                    className="container-fluid imagen-limitada6 objetoCentrado1 textoMovimiento"
+                    className="container-fluid imagen-limitada6 textoMovimiento"
                     src="/img/05-img-costados-larga/16aicono.png"
                   />
                 </a>
                 Canciones divertidas para aprender cantando! Descubrí nuestros
-                canales, y nuestras redes sociales! Buscanos y seguinos para mas
+                canales y nuestras redes sociales! Búscanos y síguenos para más
                 contenido! Actualmente estamos trabajando en nuevas canciones
                 para regalarte a vos y a tus hijos!
               </p>
@@ -76,8 +74,6 @@ function MainContent() {
           </a>
         </p>
       </div>
-
-     
     </>
   );
 }
