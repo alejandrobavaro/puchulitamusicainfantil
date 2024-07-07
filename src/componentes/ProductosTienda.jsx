@@ -21,17 +21,6 @@ function ProductosTienda({ products, addToCart }) {
                   <h3 className="tituloImportante2 objetoCentrado1"> ${producto.precio.toFixed(2)} </h3>
                 </span>
               </h4>
-              <label htmlFor={`selectColor${producto.id}`} className="objetoCentrado1 tituloPequeño1">
-                <i className="bi bi-activity"></i> ELIGE COLOR <i className="bi bi-activity"></i>
-              </label>
-              <select id={`selectColor${producto.id}`} className="form-select mb-3 tituloPequeño4">
-                <option value="Negro">Negro</option>
-                <option value="Blanco">Blanco</option>
-                <option value="Gris-claro">Gris Claro</option>
-                <option value="Gris-oscuro">Gris Oscuro</option>
-                <option value="Rojo">Rojo</option>
-                <option value="Naranja">Naranja</option>
-              </select>
               <label htmlFor={`selectTalla${producto.id}`} className="objetoCentrado1 tituloPequeño1">
                 <i className="bi bi-activity"></i> ELIGE TALLE <i className="bi bi-activity"></i>
               </label>
@@ -43,11 +32,11 @@ function ProductosTienda({ products, addToCart }) {
                 <option value="x-large">X-Large</option>
                 <option value="xx-large">XX-Large</option>
               </select>
+              <h6 className='objetoCentrado1 tituloPequeño1'>  <i className="bi bi-activity"></i>(Talles infantiles) <i className="bi bi-activity"></i></h6>
               <div className="d-grid gap-2 col-6 mx-auto">
                 <button className="botonEncargar btn btn-primary" onClick={() => {
-                  const color = document.getElementById(`selectColor${producto.id}`).value;
                   const talla = document.getElementById(`selectTalla${producto.id}`).value;
-                  addToCart({ ...producto, color, talla });
+                  addToCart({ ...producto, color: 'Negro', talla });
                 }}>
                   <i className="bi bi-shift-fill"></i> Encargar 
                 </button>

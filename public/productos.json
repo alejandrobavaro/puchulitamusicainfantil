@@ -4,7 +4,7 @@
     "nombre": "P-1-Remera - Logo Puchulita",
     "precio": 50000,
     "imagen": "/img/06-tienda/tienda1-.png",
-    "categoria": "remera",
+    "categoria": "camiseta",
     "descripcion": "Remera con el logo de Puchulita en el frente."
   },
   {
@@ -284,7 +284,7 @@
     "nombre": "P-36-Tutú - Bailarina Estrellada - Blanco",
     "precio": 71780,
     "imagen": "/img/06-tienda/tienda36-.png",
-    "categoria": "tutú",
+    "categoria": "vestido",
     "descripcion": "Tutú blanco con estrellas brillantes, ideal para niñas que sueñan con bailar."
   },
   {
@@ -460,7 +460,7 @@
     "nombre": "P-58-Tutú - Bailarina Estrellada - Azul",
     "precio": 75780,
     "imagen": "/img/06-tienda/tienda58-.png",
-    "categoria": "tutú",
+    "categoria": "vestido",
     "descripcion": "Tutú azul con estrellas brillantes, ideal para niñas que sueñan con bailar."
   },
   {
@@ -604,7 +604,7 @@
     "nombre": "P-76-Mochila - Puchulita",
     "precio": 33700,
     "imagen": "/img/06-tienda/tienda76-.png",
-    "categoria": "mochilas",
+    "categoria": "accesorios",
     "descripcion": "Mochila Puchulita Rock."
   },
   {
@@ -657,19 +657,19 @@
   },
   {
     "id": 83,
-    "nombre": "P-83-Ukelele",
+    "nombre": "P-83-Camisa de cuadros",
     "precio": 44200,
     "imagen": "/img/06-tienda/tienda83-.png",
-    "categoria": "juguetes",
-    "descripcion": "Ukelele, ideal para iniciar a los niños en la música."
+    "categoria": "camisa",
+    "descripcion": "Camisa de cuadros musical, children rocks."
   },
   {
     "id": 84,
-    "nombre": "P-84-Libro Educativo - Descubre con Puchulita",
+    "nombre": "P-84-Jean y Buzo - Descubre con Puchulita",
     "precio": 65800,
     "imagen": "/img/06-tienda/tienda84-.png",
-    "categoria": "libros",
-    "descripcion": "Libro educativo con divertidas aventuras de Puchulita, perfecto para aprender jugando."
+  "categoria": "conjunto",
+    "descripcion": "Conjunto jean y buzo."
   },
   {
     "id": 85,
@@ -681,11 +681,11 @@
   },
   {
     "id": 86,
-    "nombre": "P-86-Buzo - Invierno Musical - Naranja",
+    "nombre": "P-86-Buzo y pantalón - Invierno Musical",
     "precio": 42800,
     "imagen": "/img/06-tienda/tienda86-.png",
-    "categoria": "bufanda",
-    "descripcion": "Buzo Naranja con diseño musical para niños, cálido y suave."
+    "categoria": "conjunto",
+    "descripcion": "Buzo y pantalón con diseño musical para niños, cálido y suave."
   },
   {
     "id": 87,
@@ -697,10 +697,10 @@
   },
   {
     "id": 88,
-    "nombre": "P-88-Camiseta de futbol - Devortiva",
+    "nombre": "P-88-Pijama de futbol - Deportiva",
     "precio": 45500,
     "imagen": "/img/06-tienda/tienda88-.png",
-    "categoria": "camiseta",
+   "categoria": "pijama",
     "descripcion": "Camiseta de futbol equipo Puchulita y sus amigos."
   },
   {
@@ -721,11 +721,11 @@
   },
   {
     "id": 91,
-    "nombre": "P-91-Jean - Rock - Azul",
+    "nombre": "P-91-Pijama - Rock - Azul",
     "precio": 78780,
     "imagen": "/img/06-tienda/tienda91-.png",
-    "categoria": "pantalón",
-    "descripcion": "Jean con estrellas brillantes, con estilo rock."
+    "categoria": "pijama",
+    "descripcion": "Pijama con estrellas brillantes, con estilo rock."
   },
   {
     "id": 92,
@@ -737,11 +737,11 @@
   },
   {
     "id": 93,
-    "nombre": "P-93-Peluche - Puchulita",
+    "nombre": "P-93-Pijama - Puchulita",
     "precio": 56500,
     "imagen": "/img/06-tienda/tienda93-.png",
-    "categoria": "juguetes",
-    "descripcion": "Peluche de Puchulita, cálido y adorable."
+   "categoria": "pijama",
+    "descripcion": "Pijama de Puchulita, cálido y adorable."
   },
   {
     "id": 94,
@@ -772,7 +772,7 @@
     "nombre": "P-97-Buzo deportivo - Puchulita",
     "precio": 43800,
     "imagen": "/img/06-tienda/tienda97-.png",
-    "categoria": "buzo",
+    "categoria": "chaqueta",
     "descripcion": "Bufanda azul con diseño musical para niños, cálida y suave."
   },
   {
@@ -785,11 +785,11 @@
   },
   {
     "id": 99,
-    "nombre": "P-99-Camiseta - Rock Infantil - Naranja",
+    "nombre": "P-99-Pijama - Rock Infantil - Naranja",
     "precio": 48500,
     "imagen": "/img/06-tienda/tienda99-.png",
-    "categoria": "camiseta",
-    "descripcion": "Camiseta naranja con diseño de rock infantil, ideal para pequeños amantes de la música."
+   "categoria": "pijama",
+    "descripcion": "Pijama naranja con diseño de rock infantil, ideal para pequeños amantes de la música."
   },
   {
     "id": 100,

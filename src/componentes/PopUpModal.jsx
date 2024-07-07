@@ -23,7 +23,7 @@ const PopUpModal = ({ showModal, closeModal }) => {
           </thead>
           <tbody>
             <tr>
-              <td>Remeras 20% Off!</td>
+              <td>Camisetas 20% Off!</td>
             </tr>
             <tr>
               <td>45% OFF en envíos</td>
