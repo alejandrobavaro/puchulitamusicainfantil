@@ -665,7 +665,7 @@
   },
   {
     "id": 84,
-    "nombre": "P-84-Jean y Buzo - Descubre con Puchulita",
+    "nombre": "P-84-Conjunto Jean y Buzo ",
     "precio": 65800,
     "imagen": "/img/06-tienda/tienda84-.png",
   "categoria": "conjunto",
@@ -717,11 +717,11 @@
     "precio": 89200,
     "imagen": "/img/06-tienda/tienda90-.png",
     "categoria": "chaqueta",
-    "descripcion": "Campera con detalles encantados, perfecto para fiestas y ocasiones especiales."
+    "descripcion": "Campera con detalles rock infantil, perfecto para fiestas."
   },
   {
     "id": 91,
-    "nombre": "P-91-Pijama - Rock - Azul",
+    "nombre": "P-91-Pijama - Rock",
     "precio": 78780,
     "imagen": "/img/06-tienda/tienda91-.png",
     "categoria": "pijama",
