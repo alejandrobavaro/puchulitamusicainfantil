@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
 import '../assets/scss/estilo.scss';
 
-function ImageModal({ images, closeModal }) {
+function ImageModal({ images, isOpen, closeModal }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const handlePrevImage = () => {
+  if (!isOpen) return null;
+
+  const handlePrevImage = (e) => {
+    e.stopPropagation();
     setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
   };
 
-  const handleNextImage = () => {
+  const handleNextImage = (e) => {
+    e.stopPropagation();
     setCurrentImageIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
   };
 

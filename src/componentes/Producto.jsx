@@ -1,15 +1,29 @@
 import React, { useState } from 'react';
+import ImageModal from './ImageModal'; // Asegúrate de importar correctamente si el archivo está en otra ubicación
 
 const Producto = ({ producto, onEncargar }) => {
-  const { id, nombre, precio, imagen } = producto;
+  const { id, nombre, precio, imagenes } = producto; // Cambio de `imagen` a `imagenes`
   const [color, setColor] = useState('Negro');
   const [talla, setTalla] = useState('x-small');
+  const [modalOpen, setModalOpen] = useState(false); // Estado para controlar si el modal está abierto
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const cardTitleStyle = {
     color: '#000',
     textAlign: 'center',
     fontSize: '1.2em',
     marginTop: '10px'
+  };
+
+  const openModal = () => setModalOpen(true);
+  const closeModal = () => setModalOpen(false);
+
+  const handlePrevImage = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? imagenes.length - 1 : prevIndex - 1));
+  };
+
+  const handleNextImage = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex === imagenes.length - 1 ? 0 : prevIndex + 1));
   };
 
   return (
@@ -21,7 +35,7 @@ const Producto = ({ producto, onEncargar }) => {
               <i className="bi bi-activity"></i> (Producto por encargo) <i className="bi bi-activity"></i>
             </h5>
           </section>
-          <img src={imagen} className="card-img-top img-fluid" alt={nombre} />
+          <img src={imagenes[0]} className="card-img-top img-fluid" alt={nombre} onClick={openModal} style={{ cursor: 'pointer' }} />
           <h5 className="card-title" style={cardTitleStyle}>{nombre}</h5>
           <h4 style={{ textAlign: 'center', fontWeight: 'bold' }}>
             Precio:
@@ -63,11 +77,20 @@ const Producto = ({ producto, onEncargar }) => {
           </select>
           <div className="d-grid gap-2 col-6 mx-auto">
             <button className="btn btn-primary" onClick={() => onEncargar(id, color, talla)}>
-              <i className="bi bi-shift-fill"></i> Encargar 
+              <i className="bi bi-shift-fill"></i> Encargar
             </button>
           </div>
         </div>
       </div>
+      {modalOpen && (
+        <ImageModal
+          images={imagenes}
+          currentImageIndex={currentImageIndex}
+          closeModal={closeModal}
+          handlePrevImage={handlePrevImage}
+          handleNextImage={handleNextImage}
+        />
+      )}
     </div>
   );
 };
