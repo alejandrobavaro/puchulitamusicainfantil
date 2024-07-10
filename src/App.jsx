@@ -8,6 +8,7 @@ import PublicidadDebajo from './componentes/PublicidadDebajo';
 import Footer from './componentes/Footer';
 import Tienda from './componentes/Tienda';
 import CarritoCompleto from './componentes/CarritoCompleto';
+import { OfertasProvider } from './componentes/OfertasContext'; // Importar el proveedor
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -44,20 +45,22 @@ function App() {
   };
 
   return (
-    <Router>
-      <Header cart={cart} searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
-      <hr className="border border-0 opacity-20" />
-      <Routes>
-        <Route path="/" element={<MainContent />} />
-        <Route path="/contacto" element={<Contacto />} />
-        <Route path="/tienda" element={<Tienda setCart={setCart} cart={cart} addToCart={addToCart} removeFromCart={removeFromCart} searchQuery={searchQuery} setSearchQuery={setSearchQuery} />} />
-        <Route path="/carrito" element={<CarritoCompleto cart={cart} removeFromCart={removeFromCart} handlePagar={handlePagar} />} />
-      </Routes>
-      <hr className="border border-0 opacity-20" />
-      <PublicidadDebajo />
-      <hr className="border border-0 opacity-20" />
-      <Footer />
-    </Router>
+    <OfertasProvider> {/* Envolver dentro del proveedor */}
+      <Router>
+        <Header cart={cart} searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+        <hr className="border border-0 opacity-20" />
+        <Routes>
+          <Route path="/" element={<MainContent />} />
+          <Route path="/contacto" element={<Contacto />} />
+          <Route path="/tienda" element={<Tienda setCart={setCart} cart={cart} addToCart={addToCart} removeFromCart={removeFromCart} searchQuery={searchQuery} setSearchQuery={setSearchQuery} />} />
+          <Route path="/carrito" element={<CarritoCompleto cart={cart} removeFromCart={removeFromCart} handlePagar={handlePagar} />} />
+        </Routes>
+        <hr className="border border-0 opacity-20" />
+        <PublicidadDebajo />
+        <hr className="border border-0 opacity-20" />
+        <Footer />
+      </Router>
+    </OfertasProvider>
   );
 }
 

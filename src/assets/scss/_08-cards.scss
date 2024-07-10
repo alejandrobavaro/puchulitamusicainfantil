@@ -34,6 +34,23 @@
   padding: 10px;
 }
 
+.card5 {
+  font-size: large;
+  font-weight: bold;
+  border: 2px dashed rgb(225, 0, 174);
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-header {
+  background: linear-gradient(rgba(248, 249, 250, 0.623), rgba(248, 249, 250, 0.623));
+  color: rgb(41, 42, 42);
+}
+
 .card-category {
   text-align: justify;
   color: rgba(212, 39, 125, 0.718);
@@ -74,4 +91,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+//-----------------OFERTA-TAG------------------------//
+
+.oferta-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
 }

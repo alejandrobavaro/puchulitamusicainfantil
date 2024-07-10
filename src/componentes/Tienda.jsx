@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
 import Swal from "sweetalert2";
@@ -9,12 +9,14 @@ import SearchBar from "./SearchBar";
 import PopUpModal from "./PopUpModal";
 import "../assets/scss/estilo.scss";
 import "../assets/scss/_13-popups.scss"; // Ruta al archivo SCSS
+import { OfertasContext } from './OfertasContext'; // Importar el contexto
 
 function Tienda({ cart, setCart, addToCart, removeFromCart, searchQuery, setSearchQuery }) {
   const [products, setProducts] = useState([]);
   const [detalle, setDetalle] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState('Todos');
   const [showModal, setShowModal] = useState(false);
+  const { productosEnOferta } = useContext(OfertasContext); // Obtener productos en oferta
 
   useEffect(() => {
     const cargarProductosDesdeJSON = async () => {
@@ -74,11 +76,17 @@ function Tienda({ cart, setCart, addToCart, removeFromCart, searchQuery, setSear
     return matchesCategory && matchesSearchQuery;
   });
 
+  // Marcar los productos en oferta
+  const productsWithOffers = filteredProducts.map(producto => ({
+    ...producto,
+    oferta: productosEnOferta.includes(producto.id)
+  }));
+
   return (
     <div className="tienda">
       <CarritoTienda cart={cart} />
       <SearchBar categories={categories} onCategoryChange={setSelectedCategory} />
-      <ProductosTienda products={filteredProducts} addToCart={handleAddToCart} />
+      <ProductosTienda products={productsWithOffers} addToCart={handleAddToCart} />
       <DetalleProducto detalle={detalle} />
       <PopUpModal showModal={showModal} closeModal={closeModal} />
     </div>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import Producto from './ProductoLista';
+import Producto from './Producto';
+import { OfertasProvider } from './OfertasContext'; // Importar el proveedor de contexto
 
 const ProductoLista = ({ onEncargar }) => {
   const [productos, setProductos] = useState([]);
@@ -12,11 +13,13 @@ const ProductoLista = ({ onEncargar }) => {
   }, []);
 
   return (
-    <div className="row row-cols-1 row-cols-md-4 g-4">
-      {productos.map(producto => (
-        <Producto key={producto.id} producto={producto} onEncargar={onEncargar} />
-      ))}
-    </div>
+    <OfertasProvider>
+      <div className="row row-cols-1 row-cols-md-4 g-4">
+        {productos.map(producto => (
+          <Producto key={producto.id} producto={producto} onEncargar={onEncargar} />
+        ))}
+      </div>
+    </OfertasProvider>
   );
 };
 

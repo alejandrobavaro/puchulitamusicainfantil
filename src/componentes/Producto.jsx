@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
-import ImageModal from './ImageModal'; // Asegúrate de importar correctamente si el archivo está en otra ubicación
+import ImageModal from './ImageModal';
+import { useOfertas } from './OfertasContext'; // Importar el contexto de ofertas
 
 const Producto = ({ producto, onEncargar }) => {
-  const { id, nombre, precio, imagenes } = producto; // Cambio de `imagen` a `imagenes`
+  const { id, nombre, precio, imagenes, categoria } = producto; 
   const [color, setColor] = useState('Negro');
   const [talla, setTalla] = useState('x-small');
-  const [modalOpen, setModalOpen] = useState(false); // Estado para controlar si el modal está abierto
+  const [modalOpen, setModalOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const { camisetas } = useOfertas(); // Usar el contexto de ofertas
 
   const cardTitleStyle = {
     color: '#000',
@@ -35,6 +37,9 @@ const Producto = ({ producto, onEncargar }) => {
               <i className="bi bi-activity"></i> (Producto por encargo) <i className="bi bi-activity"></i>
             </h5>
           </section>
+          {camisetas && categoria === 'camiseta' && (
+            <div className="oferta-tag">Oferta 30%</div>
+          )}
           <img src={imagenes[0]} className="card-img-top img-fluid" alt={nombre} onClick={openModal} style={{ cursor: 'pointer' }} />
           <h5 className="card-title" style={cardTitleStyle}>{nombre}</h5>
           <h4 style={{ textAlign: 'center', fontWeight: 'bold' }}>
