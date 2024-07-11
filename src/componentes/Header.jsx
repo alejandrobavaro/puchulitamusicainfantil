@@ -1,11 +1,13 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useAuth } from "./AuthContext"; // Importa el hook useAuth para obtener el estado de autenticación
 import "../assets/scss/estilo.scss";
 
 const Header = ({ cart, searchQuery, setSearchQuery }) => {
   const location = useLocation();
   const showCartLink = location.pathname.startsWith("/tienda");
   const showSearchBar = location.pathname === "/tienda";
+  const { state, dispatch } = useAuth(); // Obtén el estado de autenticación
 
   return (
     <div className="header">
@@ -14,7 +16,7 @@ const Header = ({ cart, searchQuery, setSearchQuery }) => {
           <div className="flota-carrito">
             <div className="card3">
               <Link to="/carrito" className="nav-link carrito-link">
-                <i className="bi bi-cart"></i> <hr />{" "}
+                <i className="bi bi-cart"></i> <hr />
                 <span className="card2">{cart.length}</span>
                 <hr /> Productos en el carrito
               </Link>
@@ -48,10 +50,7 @@ const Header = ({ cart, searchQuery, setSearchQuery }) => {
                     src="/img/05-img-costados-larga/16aicono.png"
                   />
                 </button>
-                <div
-                  className="collapse navbar-collapse"
-                  id="navbarNavAltMarkup"
-                >
+                <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                   <div className="navbar-nav">
                     <Link className="nav-link menu-link" to="/">
                       Home
@@ -62,6 +61,24 @@ const Header = ({ cart, searchQuery, setSearchQuery }) => {
                     <Link className="nav-link menu-link" to="/tienda">
                       Tienda
                     </Link>
+                    {!state.isAuthenticated ? (
+                      <>
+                        <Link className="nav-link menu-link" to="/login">
+                          <i className="bi bi-box-arrow-in-right"></i>
+                        </Link>
+                        <Link className="nav-link menu-link" to="/register">
+                          Regístrate
+                        </Link>
+                      </>
+                    ) : (
+                      <Link
+                        className="nav-link menu-link"
+                        to="/logout"
+                        onClick={() => dispatch({ type: "LOGOUT" })}
+                      >
+                        <i className="bi bi-box-arrow-right"></i>
+                      </Link>
+                    )}
                   </div>
                 </div>
               </div>

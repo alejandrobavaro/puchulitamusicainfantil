@@ -1,8 +1,45 @@
-# React + Vite
+AQUI SE DOCUMENTA TODO 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SASS:
 
-Currently, two official plugins are available:
+00-responsive.scss
+01-body.scss
+02-main.scss
+03-header-nav.scss
+04-footer.scss
+05a-textos.scss
+05b-formularios.scss
+06-imagenes.scss
+07-grid-estructuras.scss
+08-cards.scss
+09-botones.scss
+10-animaciones.scss
+11-alerts-toasts.scss
+12-tienda.scss
+13-popups.scss
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+COMPONENTES JSX:
+
+AuthContext.jsx
+CarritoCompleto.jsx
+CarritoTienda.jsx
+Contacto.jsx
+DetalleProducto.jsx
+Footer.jsx
+Header.jsx
+ImageModal.jsx
+Login.jsx
+Logout.jsx
+MainContent.jsx
+Message.jsx
+MiniCarrito.jsx
+OfertasContext.jsx
+PopUpModal.jsx
+Producto.jsx
+ProductoLista.jsx
+ProductosTienda.jsx
+PublicidadDebajo.jsx
+SearchBar.jsx
+Tienda.jsx
+App.jsx
+main.jsx
