@@ -8,7 +8,7 @@ import PublicidadDebajo from './componentes/PublicidadDebajo';
 import Footer from './componentes/Footer';
 import Tienda from './componentes/Tienda';
 import CarritoCompleto from './componentes/CarritoCompleto';
-import { OfertasProvider } from './componentes/OfertasContext'; // Importar el proveedor
+import { OfertasProvider } from './componentes/OfertasContext';
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -45,8 +45,8 @@ function App() {
   };
 
   return (
-    <OfertasProvider> {/* Envolver dentro del proveedor */}
-      <Router>
+    <Router>
+      <OfertasProvider>
         <Header cart={cart} searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
         <hr className="border border-0 opacity-20" />
         <Routes>
@@ -59,8 +59,8 @@ function App() {
         <PublicidadDebajo />
         <hr className="border border-0 opacity-20" />
         <Footer />
-      </Router>
-    </OfertasProvider>
+      </OfertasProvider>
+    </Router>
   );
 }
 

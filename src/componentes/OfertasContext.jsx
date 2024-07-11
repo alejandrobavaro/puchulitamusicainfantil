@@ -1,15 +1,30 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useContext, useEffect, useState } from 'react';
 
-// Crea el contexto
-export const OfertasContext = createContext();
+const OfertasContext = createContext();
 
-// Crea un proveedor para el contexto
 export const OfertasProvider = ({ children }) => {
-  const [productosEnOferta, setProductosEnOferta] = useState([1, 2, 3, 4]); // IDs de productos en oferta
+  const [ofertas, setOfertas] = useState([]);
+
+  useEffect(() => {
+    const fetchOfertas = async () => {
+      try {
+        const response = await fetch('/productos.json');
+        const productos = await response.json();
+        const ofertasRemeras = productos.filter(producto => producto.categoria.toLowerCase() === 'camiseta');
+        setOfertas(ofertasRemeras.map(producto => producto.id));
+      } catch (error) {
+        console.error('Error al cargar los productos:', error);
+      }
+    };
+
+    fetchOfertas();
+  }, []);
 
   return (
-    <OfertasContext.Provider value={{ productosEnOferta }}>
+    <OfertasContext.Provider value={{ ofertas }}>
       {children}
     </OfertasContext.Provider>
   );
 };
+
+export const useOfertas = () => useContext(OfertasContext);

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect } from "react";
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
 import Swal from "sweetalert2";
@@ -8,15 +8,15 @@ import DetalleProducto from "./DetalleProducto";
 import SearchBar from "./SearchBar";
 import PopUpModal from "./PopUpModal";
 import "../assets/scss/estilo.scss";
-import "../assets/scss/_13-popups.scss"; // Ruta al archivo SCSS
-import { OfertasContext } from './OfertasContext'; // Importar el contexto
+import "../assets/scss/_13-popups-modals.scss";
+import { useOfertas } from "./OfertasContext";
 
 function Tienda({ cart, setCart, addToCart, removeFromCart, searchQuery, setSearchQuery }) {
   const [products, setProducts] = useState([]);
   const [detalle, setDetalle] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState('Todos');
   const [showModal, setShowModal] = useState(false);
-  const { productosEnOferta } = useContext(OfertasContext); // Obtener productos en oferta
+  const { ofertas } = useOfertas();
 
   useEffect(() => {
     const cargarProductosDesdeJSON = async () => {
@@ -30,11 +30,11 @@ function Tienda({ cart, setCart, addToCart, removeFromCart, searchQuery, setSear
     };
 
     cargarProductosDesdeJSON();
-    setShowModal(true); // Mostrar el modal cuando el componente se monte
+    setShowModal(true);
   }, []);
 
   const closeModal = () => {
-    setShowModal(false); // Cerrar el modal
+    setShowModal(false);
   };
 
   const handleAddToCart = (producto) => {
@@ -76,17 +76,11 @@ function Tienda({ cart, setCart, addToCart, removeFromCart, searchQuery, setSear
     return matchesCategory && matchesSearchQuery;
   });
 
-  // Marcar los productos en oferta
-  const productsWithOffers = filteredProducts.map(producto => ({
-    ...producto,
-    oferta: productosEnOferta.includes(producto.id)
-  }));
-
   return (
     <div className="tienda">
       <CarritoTienda cart={cart} />
       <SearchBar categories={categories} onCategoryChange={setSelectedCategory} />
-      <ProductosTienda products={productsWithOffers} addToCart={handleAddToCart} />
+      <ProductosTienda products={filteredProducts} addToCart={handleAddToCart} />
       <DetalleProducto detalle={detalle} />
       <PopUpModal showModal={showModal} closeModal={closeModal} />
     </div>

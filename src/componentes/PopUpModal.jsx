@@ -14,7 +14,7 @@ const PopUpModal = ({ showModal, closeModal }) => {
     >
       <div className="modal-content">
         <h2>PROMOS INVIERNO!</h2>
-        <p>Aprovechá los mejores beneficios!</p>
+        <p className="tituloImportante4">Aprovechá los mejores beneficios!</p>
         <table>
           <thead>
             <tr>
@@ -36,7 +36,7 @@ const PopUpModal = ({ showModal, closeModal }) => {
             </tr>
           </tbody>
         </table>
-        <h3>No te lo Pierdas!</h3>
+        <h3 className="tituloImportante4">No te lo Pierdas!</h3>
         <button onClick={closeModal} className="btn-primary">
           Lo Quiero! Ver Más
         </button>

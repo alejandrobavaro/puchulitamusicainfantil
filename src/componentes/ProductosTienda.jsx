@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import ImageModal from './ImageModal'; // Import the ImageModal component
+import ImageModal from './ImageModal';
+import { useOfertas } from './OfertasContext';
 import '../assets/scss/estilo.scss';
 
 function ProductosTienda({ products, addToCart }) {
   const [selectedImages, setSelectedImages] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const { ofertas } = useOfertas();
 
   const openModal = (images) => {
     setSelectedImages(images);
@@ -18,10 +20,10 @@ function ProductosTienda({ products, addToCart }) {
   return (
     <div className="productos-contenedor row row-cols-1 row-cols-md-6 g-4">
       {products.map(producto => (
-        <div className={`col producto ${producto.oferta ? 'oferta' : ''}`} id={`producto${producto.id}`} key={producto.id}>
+        <div className={`col producto ${ofertas.includes(producto.id) ? 'oferta' : ''}`} id={`producto${producto.id}`} key={producto.id}>
           <div className="card producto-card">
             <div className="card-body card4">
-              {producto.oferta && <div className="oferta-tag">Oferta</div>} {/* Mostrar la etiqueta de oferta */}
+              {ofertas.includes(producto.id) && <div className="oferta-tag">Oferta</div>}
               <section>
                 <h5 className="objetoCentrado1">
                   <i className="bi bi-activity"></i> (Producto por encargo) <i className="bi bi-activity"></i>
@@ -31,8 +33,8 @@ function ProductosTienda({ products, addToCart }) {
                 src={producto.imagenes[0]}
                 className="card-img-top img-fluid"
                 alt={producto.nombre}
-                onClick={() => openModal(producto.imagenes)} // Open modal on image click
-                style={{ cursor: 'pointer' }} // Add pointer cursor to indicate clickability
+                onClick={() => openModal(producto.imagenes)}
+                style={{ cursor: 'pointer' }}
               />
               <h5 className="card-title">{producto.nombre}</h5>
               <h6 className="card-category">{producto.categoria.charAt(0).toUpperCase() + producto.categoria.slice(1)}</h6>
@@ -65,7 +67,7 @@ function ProductosTienda({ products, addToCart }) {
           </div>
         </div>
       ))}
-      <ImageModal images={selectedImages} isOpen={isModalOpen} closeModal={closeModal} /> {/* Render the ImageModal */}
+      <ImageModal images={selectedImages} isOpen={isModalOpen} closeModal={closeModal} />
     </div>
   );
 }
