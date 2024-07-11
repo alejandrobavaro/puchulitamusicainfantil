@@ -13,7 +13,7 @@ const PopUpModal = ({ showModal, closeModal }) => {
       overlayClassName="Overlay"
     >
       <div className="modal-content">
-        <h2>PROMOS INVIERNO!</h2>
+        <h2>PROMOS PUCHULITA!</h2>
         <p className="tituloImportante4">Aprovechá los mejores beneficios!</p>
         <table>
           <thead>
@@ -26,13 +26,13 @@ const PopUpModal = ({ showModal, closeModal }) => {
               <td>Camisetas 20% Off!</td>
             </tr>
             <tr>
-              <td>45% OFF en envíos</td>
+              <td>Envios Gratis a todo el pais!</td>
             </tr>
-            <tr>
+            {/* <tr>
               <td>Remeras de Puchulita 20% Off!</td>
-            </tr>
+            </tr> */}
             <tr>
-              <td>Descuentos sorpresa</td>
+              <td>Premios sorpresa!</td>
             </tr>
           </tbody>
         </table>

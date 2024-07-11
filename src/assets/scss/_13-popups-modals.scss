@@ -1,15 +1,10 @@
 //-----------------OFERTA-TAG------------------------//
 /* Estilo del cartel de oferta */
-
 .oferta-tag {
-  // position: absolute;
-  // top: 10px;
-  // left: 10px;
   background-color: rgba(176, 18, 144, 0.68);
   color: rgb(255, 255, 255);
   border-radius: 20px;
   border: dotted 5px rgb(255, 255, 255);
-  // padding: 5px 10px;
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
@@ -27,7 +22,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-   border: none;
+  border: none;
   background-color: rgba(255, 0, 0, 0.559);
   z-index: 100; /* Asegúrate de que el modal tenga un z-index más alto que el cartel de oferta */
 }
@@ -76,9 +71,7 @@
   right: 10px;
 }
 
-
 /* _13-popups-modals.scss */
-
 .Overlay {
   position: fixed;
   top: 0;
@@ -107,7 +100,6 @@
   position: relative;
   z-index: 10001;
 }
-
 
 .modal-content h2 {
   margin-bottom: 10px;
@@ -196,7 +188,7 @@
   max-width: 100%;
   max-height: 80vh;
   object-fit: contain;
-  border-radius: 15px; // Ensure this is here
+  border-radius: 15px;
 }
 
 .prev-button,
@@ -218,4 +210,51 @@
 
 .next-button {
   right: 10px;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .oferta-tag {
+    font-size: 10px;
+    padding: 5px;
+    border-width: 3px;
+  }
+
+  .modal-content {
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .close-button {
+    font-size: 24px;
+    right: 10px;
+  }
+
+  .prev-button, .next-button {
+    font-size: 40px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .oferta-tag {
+    font-size: 8px;
+    padding: 3px;
+    border-width: 2px;
+  }
+
+  .modal-content {
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .close-button {
+    font-size: 20px;
+    right: 5px;
+  }
+
+  .prev-button, .next-button {
+    font-size: 30px;
+    padding: 5px;
+  }
 }

@@ -56,7 +56,7 @@ function ProductosTienda({ products, addToCart }) {
               </select>
               <h6 className='objetoCentrado1 tituloPequeño1'>  <i className="bi bi-activity"></i>(Talles infantiles) <i className="bi bi-activity"></i></h6>
               <div className="d-grid gap-2 col-6 mx-auto">
-                <button className="botonEncargar btn btn-primary" onClick={() => {
+                <button className={`botonEncargar btn btn-primary ${ofertas.includes(producto.id) ? 'oferta' : ''}`} onClick={() => {
                   const talla = document.getElementById(`selectTalla${producto.id}`).value;
                   addToCart({ ...producto, color: 'Negro', talla, imagen: producto.imagenes[0] });
                 }}>
