@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ImageModal from './ImageModal';
-import { useOfertas } from './OfertasContext'; // Importar el contexto de ofertas
+import { useOfertas } from './OfertasContext';
 
 const Producto = ({ producto, onEncargar }) => {
   const { id, nombre, precio, imagenes, categoria } = producto; 
@@ -8,7 +8,7 @@ const Producto = ({ producto, onEncargar }) => {
   const [talla, setTalla] = useState('x-small');
   const [modalOpen, setModalOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const { camisetas } = useOfertas(); // Usar el contexto de ofertas
+  const { ofertas } = useOfertas(); 
 
   const cardTitleStyle = {
     color: '#000',
@@ -37,7 +37,7 @@ const Producto = ({ producto, onEncargar }) => {
               <i className="bi bi-activity"></i> (Producto por encargo) <i className="bi bi-activity"></i>
             </h5>
           </section>
-          {camisetas && categoria === 'camiseta' && (
+          {ofertas.includes(id) && categoria === 'camiseta' && (
             <div className="oferta-tag">Oferta 30%</div>
           )}
           <img src={imagenes[0]} className="card-img-top img-fluid" alt={nombre} onClick={openModal} style={{ cursor: 'pointer' }} />
@@ -80,11 +80,13 @@ const Producto = ({ producto, onEncargar }) => {
             <option value="x-large">X-Large</option>
             <option value="xx-large">XX-Large</option>
           </select>
-          <div className="d-grid gap-2 col-6 mx-auto">
-            <button className="btn btn-primary" onClick={() => onEncargar(id, color, talla)}>
-              <i className="bi bi-shift-fill"></i> Encargar
-            </button>
-          </div>
+          {onEncargar && (
+            <div className="d-grid gap-2 col-6 mx-auto">
+              <button className="btn btn-primary" onClick={() => onEncargar(id, color, talla)}>
+                <i className="bi bi-shift-fill"></i> Encargar
+              </button>
+            </div>
+          )}
         </div>
       </div>
       {modalOpen && (

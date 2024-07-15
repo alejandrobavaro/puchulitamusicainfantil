@@ -9,7 +9,7 @@ import Footer from './componentes/Footer';
 import Tienda from './componentes/Tienda';
 import CarritoCompleto from './componentes/CarritoCompleto';
 import { OfertasProvider } from './componentes/OfertasContext';
-import { AuthProvider } from './componentes/AuthContext'; // Importa el AuthProvider
+import { AuthProvider } from './componentes/AuthContext'; 
 import Login from './componentes/Login';
 import Register from './componentes/Register';
 import Logout from './componentes/Logout';
