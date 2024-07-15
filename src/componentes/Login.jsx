@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from './AuthContext';
 
+
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -17,7 +18,7 @@ const Login = () => {
 
   return (
     <div className="login-container">
-      <form onSubmit={handleLogin}>
+      <form onSubmit={handleLogin} className="login-form">
         <h2>Login</h2>
         <input
           type="email"
