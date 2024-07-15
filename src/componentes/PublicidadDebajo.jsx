@@ -1,43 +1,40 @@
-import React, { useState } from 'react';
-import '../assets/scss/estilo.scss';
+import React from 'react';
 
-function PublicidadDebajo() {
-  const [count, setCount] = useState(0);
-
+const PublicidadDebajo = () => {
   return (
-    <div className="gridPadre">
-      <div className="objetoCentrado1">
+    <div className="publicidad-container">
+      <div className="publicidad-grid">
         <a href="#">
           <img
             alt="icono"
-            className="container-fluid imagen-limitada6 objetoCentrado1 textoMovimiento"
+            className="imagen-publicidad"
             src="/img/05-img-costados-larga/1a.png"
           />
         </a>
         <a href="#">
           <img
             alt="icono"
-            className="container-fluid imagen-limitada6 objetoCentrado1 textoMovimiento"
+            className="imagen-publicidad"
             src="/img/05-img-costados-larga/2.png"
           />
         </a>
         <a href="#">
           <img
             alt="icono"
-            className="container-fluid imagen-limitada6 objetoCentrado1 textoMovimiento"
+            className="imagen-publicidad"
             src="/img/05-img-costados-larga/16aicono.png"
           />
         </a>
         <a href="#">
           <img
             alt="icono"
-            className="container-fluid imagen-limitada6 objetoCentrado1 textoMovimiento"
+            className="imagen-publicidad"
             src="/img/05-img-costados-larga/20.png"
           />
         </a>
       </div>
     </div>
   );
-}
+};
 
 export default PublicidadDebajo;

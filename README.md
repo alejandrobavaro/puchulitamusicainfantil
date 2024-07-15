@@ -162,12 +162,11 @@ Para instalar y ejecutar este proyecto en tu máquina local, sigue estos pasos:
     ```
 
 ### Configuración de Variables de Entorno
-Si tu proyecto utiliza variables de entorno, crea un archivo `.env` en la raíz del proyecto y añade las variables necesarias. Ejemplo:
 
-    ```makefile
+ 
     REACT_APP_API_URL=https://api.puchulitamusicainfantil.com
     REACT_APP_API_KEY=tu_api_key
-    ```
+
 
 ## Estructura del Proyecto
 La estructura de carpetas y archivos importantes es la siguiente:

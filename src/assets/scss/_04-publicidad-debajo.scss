@@ -1,0 +1,22 @@
+.publicidad-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  
+    .publicidad-grid {
+      display: flex;
+      gap: 1rem;
+    }
+  
+    .imagen-publicidad {
+      width: 150px;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+  
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  
