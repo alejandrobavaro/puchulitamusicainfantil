@@ -233,7 +233,7 @@ function Contacto() {
           <div className="carrusel-column">
             <div className="objetoCentrado2">
               <h2 className="tituloImportante3">
-                <i className="bi bi-person-arms-up" /> CHILDREN ROCK{" "}
+                <i className="bi bi-person-arms-up" /> KIDS WANNA ROCK {" "}
                 <i className="bi bi-person-arms-up" />
               </h2>
             </div>
