@@ -61,11 +61,13 @@ function Contacto() {
               ))}
             </Slider> */}
 
+<a href="#">
             <img
-              className="textoMovimiento"
-              src="../../public/img/05-img-costados-larga/16aicono.png"
-              alt="personajebateria"
+              alt="icono"
+              className="imagen-publicidad"
+              src="/img/05-img-costados-larga/16aicono.png"
             />
+          </a>
           </div>
 
           {/* Datos de Contacto */}
