@@ -51,7 +51,7 @@ const Header = ({ cart, searchQuery, setSearchQuery }) => {
                   />
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                  <div className="navbar-nav">
+                  <div className="navbar-nav tituloImportante3">
                     <Link className="nav-link menu-link" to="/">
                       Home
                     </Link>
@@ -67,7 +67,7 @@ const Header = ({ cart, searchQuery, setSearchQuery }) => {
                           <i className="bi bi-box-arrow-in-right"></i>
                         </Link>
                         <Link className="nav-link menu-link" to="/register">
-                          Regístrate
+                        <i class="bi bi-filter-square"></i>
                         </Link>
                       </>
                     ) : (

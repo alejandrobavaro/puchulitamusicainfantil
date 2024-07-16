@@ -89,9 +89,33 @@
 }
 
 .estiloContacto2 {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 0, 230);
 }
 
 .estiloContacto1 i {
   color: rgb(255, 0, 166);
+}
+
+
+.contact-item {
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.contact-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(255, 0, 200, 0.2);
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: #8e3180ef;
+  font-weight: bold;
+}
+
+.contact-item a:hover {
+  color: #ff00d9;
 }

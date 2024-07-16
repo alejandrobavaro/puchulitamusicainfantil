@@ -12,28 +12,28 @@
 }
 
 .estiloFormulario {
-  background-color: #fccef633;
+  background-color: #f8e1ff; /* Color de fondo más suave */
   font-family: "Caveat", cursive;
   font-weight: bold;
   width: 100%; /* Ajustar al ancho de la columna */
   font-size: medium;
-  color: rgb(255, 0, 230);
+  color: #d300ac; /* Cambiar el color del texto a un tono de violeta */
   border-radius: 20px;
   padding: 30px;
   margin-top: 10px;
-  box-shadow: 0 0 20px rgb(255, 0, 200);
+  box-shadow: 0 0 20px rgba(211, 0, 176, 0.5); /* Sombra más suave */
 }
 
 /* Estilos para los campos de entrada del formulario */
 .estiloFormulario input, .estiloFormulario textarea {
-  background-color: #fdc2ee;
+  background-color: #ffffff; /* Fondo más claro */
   font-weight: bolder;
   font-style: italic;
-  color: #fff;
-  border: none;
+  color: #000000; /* Texto en color gris oscuro */
+  border: 1px solid #9400d348; /* Borde en violeta */
   border-radius: 10px;
   padding: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 10px; /* Mayor espacio entre los campos */
 }
 
 .form-control {
@@ -46,16 +46,17 @@
 .carrusel-column {
   width: 100%;
   max-width: 500px;
+  padding-left: 20px; /* Espacio a la izquierda del carrusel */
 }
 
 .carrusel-column img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 50px;
 }
 
 .botonEnviar {
-  background-color: #ff00e6;
+  background-color: #9400d3;
   color: #fff;
   border: none;
   border-radius: 10px;
@@ -65,5 +66,5 @@
 }
 
 .botonEnviar:hover {
-  background-color: #cc00b8;
+  background-color: #7b00b1; /* Cambiar el color en hover */
 }
