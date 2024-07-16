@@ -13,6 +13,19 @@
   padding: 30px;
 }
 
+.gridPadreProductos1{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1168px;
+  // border: 2px pink solid;
+  border-radius: 30px;
+  box-shadow: 0 0 40px rgba(255, 0, 140, 0.467);
+  padding: 20px;
+}
+
 .gridPadre {
   box-shadow: 0 0 40px rgba(255, 0, 140, 0.467);
 }

@@ -8,12 +8,28 @@ function MainContent() {
     <>
       <div>
         <main>
-          <div className="objetoCentrado1">
-            <img
-              alt="imagen"
-              className="container-fluid imagen-limitada3"
-              src="/img/02-logos/puchulitamusicainfantil1.png"
-            />
+          <div className="gridPadre1">
+            <div className="objetoCentrado1">
+              <a href="#">
+                <img
+                  alt="icono"
+                  className="container-fluid textoMovimiento"
+                  src="/img/05-img-costados-larga/4.png"
+                />
+              </a>
+              <img
+                alt="imagen"
+                className="container-fluid imagen-limitada3 textoMovimiento"
+                src="/img/02-logos/puchulitamusicainfantil1.png"
+              />
+              <a href="#">
+                <img
+                  alt="icono"
+                  className="container-fluid textoMovimiento"
+                  src="/img/05-img-costados-larga/3.png"
+                />
+              </a>
+            </div>
           </div>
 
           <div className="gridPadre">
@@ -22,23 +38,15 @@ function MainContent() {
                 <a href="#">
                   <img
                     alt="icono"
-                    className="container-fluid imagen-limitada7 textoMovimiento"
+                    className="container-fluid textoMovimiento"
                     src="/img/05-img-costados-larga/20.png"
                   />
                 </a>
-                Aquí podrás escuchar nuestras canciones! Somos un grupo de
-                músicos que nos divertimos componiendo canciones! Gracias por
-                visitarnos! Música infantil, sin fronteras! Para toda la
-                familia. CHILDEN ROCKS
               </p>
             </div>
             <div>
               <h1 className="objetoCentrado1 textoMovimiento">
-                <img
-                  className="container-fluid"
-                  src="/img/05-img-costados-larga/1a.png"
-                  alt=""
-                />
+                <img src="/img/05-img-costados-larga/1a.png" alt="" />
               </h1>
             </div>
 
@@ -47,14 +55,10 @@ function MainContent() {
                 <a href="#">
                   <img
                     alt="icono"
-                    className="container-fluid imagen-limitada6 textoMovimiento"
+                    className="container-fluid textoMovimiento"
                     src="/img/05-img-costados-larga/16aicono.png"
                   />
                 </a>
-                Canciones divertidas para aprender cantando! Descubrí nuestros
-                canales y nuestras redes sociales! Búscanos y síguenos para más
-                contenido! Actualmente estamos trabajando en nuevas canciones
-                para regalarte a vos y a tus hijos! CHILDEN ROCKS
               </p>
             </div>
           </div>

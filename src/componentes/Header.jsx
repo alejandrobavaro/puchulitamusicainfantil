@@ -47,7 +47,7 @@ const Header = ({ cart, searchQuery, setSearchQuery }) => {
                   <img
                     alt="icono"
                     className="container-fluid menu-logo"
-                    src="/img/05-img-costados-larga/16aicono.png"
+                    src="/img/05-img-costados-larga/2.png"
                   />
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
