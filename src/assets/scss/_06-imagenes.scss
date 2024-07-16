@@ -51,6 +51,19 @@
   width: 90%;
 }
 
+
+
+.imagen-detras {
+  // position: absolute;
+  top: 0;
+  left: 0;
+  width: 110%; // Ajusta según sea necesario
+  height: auto; // Ajusta según sea necesario
+  z-index: 1; // Ajusta el z-index si es necesario
+}
+
+
+
 //-------------------ESTILOS GIF-----------------------------/
 
 .gif-limitado1 {

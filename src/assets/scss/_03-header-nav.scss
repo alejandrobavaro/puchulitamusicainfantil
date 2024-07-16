@@ -14,18 +14,27 @@
   font-size: x-large;
 }
 
+/* Cambia el color de los enlaces de navegación */
 .navbar-nav .nav-link {
   text-align: center;
+  color: #ff02b3; // Cambia este color al que desees
+  font-size: large;
 }
 
-/* Estilos para el enlace del menú al pasar el mouse */
+/* Cambia el color de los enlaces del menú específico */
+.menu-link {
+  color: #ae00ff; // Cambia este color al que desees
+}
+
+/* Cambia el color de los enlaces del menú al pasar el mouse */
 .menu-link:hover {
-  color: rgb(255, 0, 149);
+  color: rgb(168, 53, 120); // Color cuando se pasa el mouse
 }
 
+/* Cambia el color de los enlaces activos */
 .navbar-nav .nav-item.active .nav-link,
 .navbar-nav .nav-item.active .nav-link:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255); // Color cuando está activo o cuando se pasa el mouse sobre el enlace activo
 }
 
 /* Estilos para el encabezado */
@@ -49,7 +58,7 @@
 }
 
 .menu-logo1 {
-  width: 70%;
+  width: 100%;
 }
 
 /* Estilos para el botón de menú hamburguesa */

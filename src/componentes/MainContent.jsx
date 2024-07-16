@@ -44,9 +44,14 @@ function MainContent() {
                 </a>
               </p>
             </div>
-            <div>
-              <h1 className="objetoCentrado1 textoMovimiento">
-                <img src="/img/05-img-costados-larga/1a.png" alt="" />
+
+            <div className="objetoCentrado1">
+              <h1 className="textoMovimiento">
+                <img
+                  className="imagen-detras"
+                  src="/img/05-img-costados-larga/1a.png"
+                  alt=""
+                />
               </h1>
             </div>
 
@@ -55,7 +60,7 @@ function MainContent() {
                 <a href="#">
                   <img
                     alt="icono"
-                    className="container-fluid textoMovimiento"
+                    className="container-fluid textoMovimiento imagen-frente"
                     src="/img/05-img-costados-larga/16aicono.png"
                   />
                 </a>
