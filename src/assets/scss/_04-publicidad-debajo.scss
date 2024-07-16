@@ -1,22 +1,43 @@
 .publicidad-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-  
-    .publicidad-grid {
-      display: flex;
-      gap: 1rem;
-    }
-  
-    .imagen-publicidad {
-      width: 150px;
-      border-radius: 8px;
-      transition: transform 0.3s ease;
-  
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0rem;
+
+  .publicidad-carousel {
+    box-shadow: 0 0 40px rgba(255, 0, 140, 0.467);
+    border-radius: 100px;
+    width: 40%;
+    max-width: 50%;
+    margin: 0 10px;
+    overflow: hidden;
   }
-  
+
+  .texto-oferta {
+    margin-left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+}
+
+.publicidad-grid {
+  display: flex;
+  gap: 1rem;
+}
+
+.imagen-publicidad {
+  width: 150px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.imagen-publicidad {
+  width: 100%;
+  height: auto;
+}

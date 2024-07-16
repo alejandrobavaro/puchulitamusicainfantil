@@ -50,7 +50,7 @@ function App() {
 
   return (
     <Router>
-      <AuthProvider> {/* Envuelve la aplicación con el AuthProvider */}
+      <AuthProvider> 
         <OfertasProvider>
           <Header cart={cart} searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
           <hr className="border border-0 opacity-20" />
@@ -65,7 +65,6 @@ function App() {
           </Routes>
           <hr className="border border-0 opacity-20" />
           <PublicidadDebajo />
-          <hr className="border border-0 opacity-20" />
           <Footer />
         </OfertasProvider>
       </AuthProvider>

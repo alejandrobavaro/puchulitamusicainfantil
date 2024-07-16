@@ -6,7 +6,7 @@ function Contacto() {
     <>
       {/* Título */}
       <div className="objetoCentrado1">
-        <h1 className='estiloContacto2'>CONTACTO</h1>
+        <h1 className='tituloImportante3'>CONTACTO</h1>
       </div>
 
       <div className='gridPadreContacto'>
@@ -72,7 +72,7 @@ function Contacto() {
         <h2 className='tituloImportante3'>CHILDREN ROCKS</h2>
       </div>
 
-      <hr className="border border-1 opacity-5" />
+
 
       {/* Formulario */}
       <div className="contenedorFormulario">
@@ -101,6 +101,8 @@ function Contacto() {
             <button type="submit" className="btn botonEnviar">ENVIAR</button>
           </div>
         </form>
+
+        
       </div>
     </>
   );
