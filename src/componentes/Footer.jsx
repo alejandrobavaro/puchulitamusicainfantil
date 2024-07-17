@@ -7,7 +7,7 @@ function Footer() {
       <div className="footerContent">
         <div className="footerElements">
           <div className="img1Footer textoMovimiento">
-            <a href="#"><img src="/public/img/02-logos/logoheader1-izquierda.png" alt="" /></a>
+            <a href="#"><img src="/img/02-logos/logoheader1-izquierda.png" alt="" /></a>
           </div>
           <div className="linksFooter">
             <div className="textoMovimiento tituloImportante4">
@@ -22,7 +22,7 @@ function Footer() {
             </div>
 
             <div className="img1Footer imagen-publicidad">
-            <a href="#"><img src="/public/img/02-logos/logoheader3-centro.png" alt="" /></a>
+            <a href="#"><img src="/img/02-logos/logoheader3-centro.png" alt="" /></a>
           </div>
 
 
@@ -38,7 +38,7 @@ function Footer() {
             </div>
           </div>
           <div className="img1Footer textoMovimiento">
-            <a href="#"><img src="/public/img/02-logos/logoheader2-derecha.png" alt="" /></a>
+            <a href="#"><img src="/img/02-logos/logoheader2-derecha.png" alt="" /></a>
           </div>
         </div>
 
