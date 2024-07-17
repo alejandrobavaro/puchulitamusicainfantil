@@ -67,7 +67,7 @@ const Header = ({ cart, searchQuery, setSearchQuery }) => {
                           <i className="bi bi-box-arrow-in-right"></i>
                         </Link>
                         <Link className="nav-link menu-link" to="/register">
-                        <i class="bi bi-filter-square"></i>
+                          <i className="bi bi-filter-square"></i>
                         </Link>
                       </>
                     ) : (
