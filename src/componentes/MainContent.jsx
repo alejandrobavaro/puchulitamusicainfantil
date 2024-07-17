@@ -19,7 +19,7 @@ function MainContent() {
               </a>
               <img
                 alt="imagen"
-                className="container-fluid imagen-limitada3 textoMovimiento"
+                className="container-fluid imagen-limitada3 imagen-publicidad"
                 src="/img/02-logos/puchulitamusicainfantil1.png"
               />
               <a href="#">
@@ -33,26 +33,26 @@ function MainContent() {
           </div>
 
           <div className="gridPadre">
+       
+
             <div className="objetoCentrado1">
               <p>
                 <a href="#">
                   <img
-                    alt="icono"
-                    className="container-fluid textoMovimiento"
-                    src="/img/05-img-costados-larga/20.png"
+                    className="imagen-detras imagen-publicidad"
+                    src="/img/05-img-costados-larga/1a.png"
+                    alt=""
                   />
                 </a>
               </p>
             </div>
 
-            <div className="objetoCentrado1">
-              <h1 className="textoMovimiento">
-                <img
-                  className="imagen-detras"
-                  src="/img/05-img-costados-larga/1a.png"
-                  alt=""
-                />
-              </h1>
+            <div className="objetoCentrado1 imagen-publicidad">
+              <img
+                className="imagen-delante imagen-publicidad"
+                src="/img/05-img-costados-larga/0a.png"
+                alt=""
+              />
             </div>
 
             <div className="objetoCentrado1">
@@ -60,7 +60,7 @@ function MainContent() {
                 <a href="#">
                   <img
                     alt="icono"
-                    className="container-fluid textoMovimiento imagen-frente"
+                    className="container-fluid imagen-frente imagen-publicidad"
                     src="/img/05-img-costados-larga/16aicono.png"
                   />
                 </a>

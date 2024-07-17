@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="banner">
-        <h1>Welcome to Puchulita Música Infantil</h1>
+        <h1 className=''>Welcome to Puchulita Música Infantil</h1>
         <p>Your favorite place for children's music products</p>
       </div>
       

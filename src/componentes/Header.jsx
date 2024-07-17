@@ -46,7 +46,7 @@ const Header = ({ cart, searchQuery, setSearchQuery }) => {
                   <span className="navbar-toggler-icon" />
                   <img
                     alt="icono"
-                    className="container-fluid menu-logo"
+                    className="container-fluid menu-logo imagen-publicidad"
                     src="/img/05-img-costados-larga/2.png"
                   />
                 </button>
@@ -89,7 +89,7 @@ const Header = ({ cart, searchQuery, setSearchQuery }) => {
             <div className="search-container">
               <input
                 type="text"
-                placeholder="Buscar productos, marcas y más..."
+                placeholder="Buscar productos por categoría"
                 className="search-bar"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}

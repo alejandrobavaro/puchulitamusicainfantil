@@ -62,6 +62,15 @@
   z-index: 1; // Ajusta el z-index si es necesario
 }
 
+.imagen-delante {
+  // position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%; // Ajusta según sea necesario
+  height: auto; // Ajusta según sea necesario
+  z-index: 0; // Ajusta el z-index si es necesario
+}
+
 
 
 //-------------------ESTILOS GIF-----------------------------/

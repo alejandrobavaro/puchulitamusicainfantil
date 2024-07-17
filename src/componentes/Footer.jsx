@@ -4,32 +4,50 @@ import "../assets/scss/estilo.scss";
 function Footer() {
   return (
     <footer className="gridPadreFooter">
-      <div className="footerElements">
-        <div className="img1Footer"></div>
-        <div className="linksFooter">
-          <div className="textoMovimiento tituloImportante4">
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-              <i className="bi bi-instagram" /> Instagram  <i className="bi bi-instagram" /> 
-            </a>
+      <div className="footerContent">
+        <div className="footerElements">
+          <div className="img1Footer textoMovimiento">
+            <a href="#"><img src="/public/img/02-logos/logoheader1-izquierda.png" alt="" /></a>
           </div>
-          <div className="textoMovimiento tituloImportante4">
-            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
-              <i className="bi bi-youtube" /> Youtube <i className="bi bi-youtube" />
-            </a>
+          <div className="linksFooter">
+            <div className="textoMovimiento tituloImportante4">
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <i className="bi bi-instagram" /> Instagram
+              </a>
+            </div>
+            <div className="textoMovimiento tituloImportante4">
+              <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                <i className="bi bi-youtube" /> Youtube
+              </a>
+            </div>
+
+            <div className="img1Footer imagen-publicidad">
+            <a href="#"><img src="/public/img/02-logos/logoheader3-centro.png" alt="" /></a>
           </div>
-          <div className="textoMovimiento tituloImportante4">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-              <i className="bi bi-facebook" /> Facebook  <i className="bi bi-facebook" />
-            </a>
+
+
+            <div className="textoMovimiento tituloImportante4">
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                <i className="bi bi-facebook" /> Facebook
+              </a>
+            </div>
+            <div className="textoMovimiento tituloImportante4">
+              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                <i className="bi bi-twitter" /> X (Twitter)
+              </a>
+            </div>
           </div>
-          <div className="textoMovimiento tituloImportante4">
-            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-              <i className="bi bi-twitter" /> X (Twitter) <i className="bi bi-twitter" />
-            </a>
+          <div className="img1Footer textoMovimiento">
+            <a href="#"><img src="/public/img/02-logos/logoheader2-derecha.png" alt="" /></a>
           </div>
+        </div>
+
+        <hr className="footer-divider" />
+
+        <div className="footerTrademark">
           <div className="textoMovimiento tituloImportante4">
-            <a href="https://alejandrobavaro.github.io/gondraworld/" target="_blank" rel="noopener noreferrer">
-            <i class="bi bi-brilliance"></i> Gondra World Dev <i class="bi bi-brilliance"></i>
+            <a href="https://alejandrobavaro.github.io/gondraworld/" target="_blank" rel="gondraworldweb">
+              <i className="bi bi-brilliance" /> Gondra World Dev <i className="bi bi-brilliance" />
             </a>
           </div>
         </div>

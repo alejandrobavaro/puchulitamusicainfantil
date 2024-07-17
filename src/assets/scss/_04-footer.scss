@@ -10,22 +10,73 @@ footer {
   width: 40%;
 }
 
+/* Estilos para el contenido del pie de página */
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* Estilos para los elementos del pie de página */
 .footerElements {
   display: flex;
+  flex-direction: column; // Cambiar a columna para pantallas pequeñas
   justify-content: center;
   text-align: center;
+  margin-bottom: 20px; // Añadimos un margen inferior para separar las filas
 }
 
 /* Estilos para los enlaces en el pie de página */
 .linksFooter {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; // Cambiar a columna para pantallas pequeñas
   justify-content: center;
-  margin: 0 5rem;
+  margin: 0;
 }
 
 /* Estilos para los elementos de lista en el pie de página */
 .linksFooter div {
   list-style: none;
+  margin-bottom: 10px; // Añadir margen inferior para separar los enlaces
+}
+
+/* Estilos para el separador */
+.footer-divider {
+  border: 2px solid rgba(255, 0, 170, 0.613);
+  border-top: 1px solid rgba(208, 0, 255, 0.635);
+  box-shadow: 0 0 10px rgb(255, 0, 140);
+  border-radius: 50px;
+  width: 100%;
+}
+
+/* Estilos para el texto "Gondra World Dev" */
+.footerTrademark {
+  text-align: center;
+  margin-top: 10px;
+
+  .tituloImportante4 {
+    font-size: 0.75rem; /* Tamaño de letra más pequeño */
+  }
+}
+
+// Media queries para responsividad
+@media only screen and (min-width: 768px) {
+  footer {
+    padding: 10%;
+    width: 60%; // Ajustar ancho en pantallas más grandes
+  }
+
+  .footerElements {
+    flex-direction: row; // Cambiar a fila en pantallas más grandes
+  }
+
+  .linksFooter {
+    flex-direction: row; // Cambiar a fila en pantallas más grandes
+    margin: 0 5rem; // Ajustar margen en pantallas más grandes
+  }
+
+  .linksFooter div {
+    margin-bottom: 0; // Quitar margen inferior en pantallas más grandes
+    margin-right: 1rem; // Añadir margen derecho para separar los enlaces
+  }
 }
