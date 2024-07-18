@@ -20,6 +20,28 @@
   .card {
     margin: 10px 0;
   }
+
+  .gridPadre1,
+  .gridPadre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .objetoCentrado1 {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .imagen-publicidad {
+    width: 100%;
+    max-width: 300px; // Adjust as needed
+  }
+
+  #telefonoWhattsapp {
+    text-align: center;
+    margin-top: 20px;
+  }
 }
 
 // Tablet
@@ -45,6 +67,28 @@
   .card {
     margin: 15px 0;
   }
+
+  .gridPadre1,
+  .gridPadre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .objetoCentrado1 {
+    margin: 15px;
+    text-align: center;
+  }
+
+  .imagen-publicidad {
+    width: 100%;
+    max-width: 400px; // Adjust as needed
+  }
+
+  #telefonoWhattsapp {
+    text-align: center;
+    margin-top: 20px;
+  }
 }
 
 // Desktop
@@ -69,5 +113,27 @@
 
   .card {
     margin: 20px 0;
+  }
+
+  .gridPadre1,
+  .gridPadre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .objetoCentrado1 {
+    // margin: 20px;
+    // text-align: center;
+  }
+
+  .imagen-publicidad {
+    width: 100%;
+    max-width: 500px; 
+  }
+
+  #telefonoWhattsapp {
+    text-align: left;
+    margin-top: 20px;
   }
 }

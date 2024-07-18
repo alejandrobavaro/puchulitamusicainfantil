@@ -9,7 +9,7 @@ function SearchBar({ categories, onCategoryChange }) {
 
   return (
     <div className="search-navbar">
-      <div className="btn-group flex-wrap two-rows" role="group">
+      <div className="btn-group flex-wrap two-rows objetoCentrado1" role="group">
         {categories.map((category, index) => (
           <button
             key={index}

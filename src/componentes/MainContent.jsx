@@ -19,7 +19,7 @@ function MainContent() {
               </a>
               <img
                 alt="imagen"
-                className="container-fluid imagen-limitada3 imagen-publicidad"
+                className="container-fluid imagen-limitada3 textoMovimiento"
                 src="/img/02-logos/puchulitamusicainfantil1.png"
               />
               <a href="#">
@@ -33,8 +33,6 @@ function MainContent() {
           </div>
 
           <div className="gridPadre">
-       
-
             <div className="objetoCentrado1">
               <p>
                 <a href="#">
