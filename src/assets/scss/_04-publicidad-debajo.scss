@@ -66,6 +66,28 @@ width: 100%;
   }
 }
 
+.imagen-publicidad2 {
+  // width: 10%;
+  // height: 10%;
+  // border-radius: 8px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.imagen-publicidad3 {
+  width: 20%;
+  height: 10%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
 
 
 /* Estilos específicos para dispositivos móviles */

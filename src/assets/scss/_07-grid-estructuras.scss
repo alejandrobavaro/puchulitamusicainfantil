@@ -32,24 +32,24 @@
 
 .gridPadreProductos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(600px, 100%));
   box-shadow: 0 0 40px rgba(255, 0, 140, 0.467);
   
-  @media (max-width: 1200px) {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  }
+  // @media (max-width: 1200px) {
+  //   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  // }
   
-  @media (max-width: 992px) {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
+  // @media (max-width: 992px) {
+  //   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  // }
   
-  @media (max-width: 768px) {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
+  // @media (max-width: 768px) {
+  //   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  // }
   
-  @media (max-width: 576px) {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
+  // @media (max-width: 576px) {
+  //   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  // }
 }
 
 

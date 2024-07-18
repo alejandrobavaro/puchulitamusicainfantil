@@ -35,10 +35,10 @@ function MainContent() {
           <div className="gridPadre">
             {/* <div className="objetoCentrado1"> <a href="#"> <img className='imagen-limitada3 imagen-publicidad objetoCentrado1' src="/img/05-img-costados-larga/1a.png" alt="" /> </a> </div> */}
 
-            <div className="objetoCentrado1">
+            <div className="">
               <a href="#">
                 <img
-                 className='imagen-publicidad2 objetoCentrado1'
+                 className='imagen-publicidad2 objetoCentrado3'
                   src="/img/05-img-costados-larga/0a.png"
                   alt=""
                 />
