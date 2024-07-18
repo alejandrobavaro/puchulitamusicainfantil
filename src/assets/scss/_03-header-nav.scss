@@ -18,7 +18,7 @@
 .navbar-nav .nav-link {
   text-align: center;
   color: #ff02b3; // Cambia este color al que desees
-  font-size: large;
+  font-size: x-large;
 }
 
 /* Cambia el color de los enlaces del menú específico */
@@ -59,6 +59,15 @@
 /* Estilos para el botón de menú hamburguesa */
 .navbar-toggler .navbar-toggler-icon {
   border-radius: 20px;
+  color: #ffffff;
+  // background-color: #ff00c3;
+  // border: #000000 2px solid;
+  box-shadow: 0 10px 20px rgb(255, 0, 200);
+ 
+  background-image: url('../../../public/img/02-logos/botonmenu2.png');
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen en el contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
 .navbar-toggler {
@@ -81,8 +90,8 @@
   width: 40%;
   height: auto;
   display: flex;
-  // border: #ff00ee20 solid 1px;
-  box-shadow: 0 0 20px rgba(255, 0, 200, 0.369);
+  border: #ff00ee solid 1px;
+  box-shadow: 0 0 20px rgb(255, 0, 200);
   align-items: center;
   justify-content: center;
   animation: shake 1s ease;

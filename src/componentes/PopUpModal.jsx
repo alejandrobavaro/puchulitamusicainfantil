@@ -12,7 +12,7 @@ const PopUpModal = ({ showModal, closeModal }) => {
       className="Modal"
       overlayClassName="Overlay"
     >
-      <div className="modal-content">
+      <div className="modal-content objetoCentrado1">
         <h2>PROMOS PUCHULITA!</h2>
         <p className="tituloImportante4">Aprovechá los mejores beneficios!</p>
         <table>

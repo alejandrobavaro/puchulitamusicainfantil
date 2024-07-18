@@ -43,15 +43,22 @@ const Header = ({ cart, searchQuery, setSearchQuery }) => {
                   data-bs-toggle="collapse"
                   type="button"
                 >
+                     <img
+                      className="imagen-limitada2 textoMovimiento"
+                      src="../../public/img/02-logos/puchulitamusicainfantil1.png"
+                      alt=""
+                    />
+           
                   <span className="navbar-toggler-icon" />
-                  <img
-                    alt="icono"
-                    className="container-fluid menu-logo imagen-publicidad"
-                    src="/img/05-img-costados-larga/2.png"
-                  />
+               
                 </button>
-                <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div
+                  className="collapse navbar-collapse"
+                  id="navbarNavAltMarkup"
+                >
                   <div className="navbar-nav tituloImportante3">
+              
+
                     <Link className="nav-link menu-link" to="/">
                       Home
                     </Link>
@@ -64,10 +71,17 @@ const Header = ({ cart, searchQuery, setSearchQuery }) => {
                     {!state.isAuthenticated ? (
                       <>
                         <Link className="nav-link menu-link" to="/login">
-                          <i className="bi bi-box-arrow-in-right"></i>
+                          <p>
+                            {" "}
+                            Inicia Sesión -
+                            <i className="bi bi-box-arrow-in-right"></i>
+                          </p>
                         </Link>
                         <Link className="nav-link menu-link" to="/register">
-                          <i className="bi bi-filter-square"></i>
+                          <p>
+                            {" "}
+                            Registrate -<i className="bi bi-filter-square"></i>
+                          </p>
                         </Link>
                       </>
                     ) : (
@@ -76,7 +90,11 @@ const Header = ({ cart, searchQuery, setSearchQuery }) => {
                         to="/logout"
                         onClick={() => dispatch({ type: "LOGOUT" })}
                       >
-                        <i className="bi bi-box-arrow-right"></i>
+                        <p>
+                          {" "}
+                          Cerrá Sesión -
+                          <i className="bi bi-box-arrow-right"></i>
+                        </p>
                       </Link>
                     )}
                   </div>

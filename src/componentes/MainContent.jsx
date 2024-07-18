@@ -13,19 +13,19 @@ function MainContent() {
               <a href="#">
                 <img
                   alt="icono"
-                  className="container-fluid textoMovimiento"
+               className='imagen-limitada3 imagen-publicidad1'
                   src="/img/05-img-costados-larga/4.png"
                 />
               </a>
               <img
                 alt="imagen"
-                className="container-fluid imagen-limitada3 textoMovimiento"
+          className='imagen-limitada3 imagen-publicidad1'
                 src="/img/02-logos/puchulitamusicainfantil1.png"
               />
               <a href="#">
                 <img
                   alt="icono"
-                  className="container-fluid textoMovimiento"
+               className='imagen-limitada3 imagen-publicidad1'
                   src="/img/05-img-costados-larga/3.png"
                 />
               </a>
@@ -33,20 +33,12 @@ function MainContent() {
           </div>
 
           <div className="gridPadre">
-            <div className="objetoCentrado1">
-              <a href="#">
-                <img
-                  className="container-fluid imagen-detras imagen-publicidad"
-                  src="/img/05-img-costados-larga/1a.png"
-                  alt=""
-                />
-              </a>
-            </div>
+            {/* <div className="objetoCentrado1"> <a href="#"> <img className='imagen-limitada3 imagen-publicidad objetoCentrado1' src="/img/05-img-costados-larga/1a.png" alt="" /> </a> </div> */}
 
             <div className="objetoCentrado1">
               <a href="#">
                 <img
-                  className="container-fluid imagen-delante imagen-publicidad"
+                 className='imagen-publicidad2 objetoCentrado1'
                   src="/img/05-img-costados-larga/0a.png"
                   alt=""
                 />
@@ -55,15 +47,15 @@ function MainContent() {
 
 
 
-            <div className="objetoCentrado1">
+            {/* <div className="objetoCentrado1">
               <a href="#">
                 <img
                   alt="icono"
-                  className="container-fluid imagen-detras imagen-publicidad"
+                 className='imagen-limitada3 imagen-publicidad objetoCentrado1'
                   src="/img/05-img-costados-larga/16aicono.png"
                 />
               </a>
-            </div>
+            </div> */}
 
        
 

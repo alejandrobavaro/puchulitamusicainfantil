@@ -100,7 +100,7 @@ const PublicidadDebajo = () => {
           <a href="#">
             <img
               alt="icono"
-              className="imagen-publicidad"
+              className="imagen-publicidad "
               src="/img/05-img-costados-larga/0a.png"
             />
           </a>

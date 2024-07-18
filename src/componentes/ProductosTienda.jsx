@@ -18,7 +18,7 @@ function ProductosTienda({ products, addToCart }) {
   };
 
   return (
-    <div className="productos-contenedor row row-cols-1 row-cols-md-6 g-4">
+    <div className="productos-contenedor row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 g-4">
       {products.map(producto => (
         <div className={`col producto ${ofertas.includes(producto.id) ? 'oferta' : ''}`} id={`producto${producto.id}`} key={producto.id}>
           <div className="card producto-card">

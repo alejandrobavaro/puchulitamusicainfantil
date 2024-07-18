@@ -31,7 +31,7 @@ const CarritoCompleto = ({ cart, removeFromCart, handlePagar }) => {
             <div className="card-container">
               <div className="tituloImportante1">
                 <div className="objetoCentrado1">
-                  <p className="tituloImportante3 objetoCentrado1">
+                  <p className="tituloImportante objetoCentrado1">
                     Total: ${total.toFixed(2)}
                   </p>
                   <p className="totalImportante1 objetoCentrado1">
@@ -45,7 +45,7 @@ const CarritoCompleto = ({ cart, removeFromCart, handlePagar }) => {
           <hr className="border border-0 opacity-20" />
 
           <div className="card-container gridPadre">
-            <div className="tituloImportante1">
+            <div className="tituloImportante4">
               <div className="objetoCentrado1" id="resumenCarrito">
                 <ul id="listaCarrito" className="list-group mb-3">
                   {cart.map((product, index) => (

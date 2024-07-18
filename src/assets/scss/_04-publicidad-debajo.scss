@@ -18,7 +18,7 @@ width: 100%;
   width: 45%;
   max-width: 100%;
   margin: 10px;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .texto-oferta {
@@ -54,6 +54,19 @@ width: 100%;
   }
 }
 }
+
+.imagen-publicidad1 {
+  width: 10%;
+  height: 10%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+
 
 /* Estilos específicos para dispositivos móviles */
 @media only screen and (max-width: 768px) {

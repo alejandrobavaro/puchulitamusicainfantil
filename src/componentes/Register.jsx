@@ -28,6 +28,9 @@ const Register = () => {
 
   return (
     <div className="register-container">
+<div className='gridPadre1'>
+      <img className='imagen-publicidad1' src="../../public/img/05-img-costados-larga/4.png" alt="" />
+      
       {loading ? (
         <LoadingSpinner />
       ) : (
@@ -54,6 +57,10 @@ const Register = () => {
           <button type="submit">Register</button>
         </form>
       )}
+       <img className='imagen-publicidad1' src="../../public/img/05-img-costados-larga/0a.png" alt="" />
+       
+    </div>
+    
     </div>
   );
 };
