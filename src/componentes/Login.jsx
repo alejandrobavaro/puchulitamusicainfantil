@@ -24,7 +24,7 @@ const Login = () => {
   return (
     <div className="login-container gridPadre">
       <div className='gridPadre1'>
-      <img className='imagen-publicidad3' src="../../public/img/05-img-costados-larga/2.png" alt="" />
+      <img className='imagen-publicidad3' src="/img/05-img-costados-larga/2.png" alt="" />
       
       {loading ? (
         <LoadingSpinner />
@@ -46,7 +46,7 @@ const Login = () => {
           <button type="submit">Login</button>
         </form>
       )}
-       <img className='imagen-publicidad3' src="../../public/img/05-img-costados-larga/20.png" alt="" />
+       <img className='imagen-publicidad3' src="/img/05-img-costados-larga/20.png" alt="" />
           </div>
     </div>
   );
