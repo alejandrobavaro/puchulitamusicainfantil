@@ -1,34 +1,51 @@
-.publicidad-container {
-  display: flex;
+.gridPadre, .gridPadreProductos, .gridPadreFooter {
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
   justify-content: center;
-  align-items: center;
-  margin-top: 0rem;
+}
 
-  .publicidad-carousel {
-    box-shadow: 0 0 40px rgba(255, 0, 140, 0.467);
-    border-radius: 100px;
-    width: 40%;
-    max-width: 50%;
-    margin: 0 10px;
-    overflow: hidden;
-  }
+.publicidad-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+margin-top: 0rem;
+width: 100%;
 
-  .texto-oferta {
-    margin-left: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-  }
+.publicidad-carousel {
+  box-shadow: 0 0 40px rgba(255, 0, 140, 0.467);
+  border-radius: 100px;
+  width: 45%;
+  max-width: 100%;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.texto-oferta {
+  margin: 20px;
+  // background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 100%;
+}
 }
 
 .publicidad-grid {
-  display: flex;
-  gap: 1rem;
-}
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+width: 100%;
+
+// a {
+//   // margin: 5px;
+// }
 
 .imagen-publicidad {
-  width: 150px;
+  width: 80px;
+  height: auto;
   border-radius: 8px;
   transition: transform 0.3s ease;
 
@@ -36,8 +53,95 @@
     transform: scale(1.1);
   }
 }
+}
 
-.imagen-publicidad {
+/* Estilos específicos para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+.publicidad-container {
+  flex-direction: column;
+  align-items: center;
+  
+  .publicidad-carousel {
+    width: 50%;
+    max-width: 50%;
+  }
+
+  .texto-oferta {
+    margin: 10px;
+    font-size: 1rem;
+  }
+}
+
+.publicidad-grid {
+  .imagen-publicidad {
+    width: 35px;
+  }
+}
+
+.gridPadreProductos {
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  height: auto;
+  
+  .publicidad-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    a {
+      margin: 5px;
+    }
+
+    .imagen-publicidad {
+      width: 35px;
+    }
+  }
+}
+}
+
+/* Estilos específicos para tabletas */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+.publicidad-container {
+  flex-direction: column;
+  align-items: center;
+
+  .publicidad-carousel {
+    width: 80%;
+    max-width: 80%;
+  }
+
+  .texto-oferta {
+    margin: 10px;
+    font-size: 1.4rem;
+  }
+}
+
+.publicidad-grid {
+  .imagen-publicidad {
+    width: 70px;
+  }
+}
+
+.gridPadreProductos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  
+  .publicidad-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    a {
+      margin: 5px;
+    }
+
+    .imagen-publicidad {
+      width: 60px;
+    }
+  }
+}
 }

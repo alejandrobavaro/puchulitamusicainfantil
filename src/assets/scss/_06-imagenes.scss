@@ -93,6 +93,13 @@
   right: 20px;
 }
 
+@media (max-width: 992px) {
+  .logoWhats {
+    right: 100px; /* Ajusta la posición hacia la izquierda en dispositivos móviles y tabletas */
+  }
+}
+
+
 
 //-------------------------------------------//
 .image-gallery-image {

@@ -45,11 +45,16 @@
 }
 
 .gridPadreContacto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 20px;
+
+  // Agregar estilos para móviles y tabletas
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center; // Alineación centrada
+  }
 }
+
 
 .contact-grid {
   display: grid;

@@ -1,14 +1,54 @@
-/* Estilos para el formulario */
+/* Estilos para el formulario y carrusel */
 .contenedorFormulario {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  flex-wrap: wrap; /* Permitir envoltura de elementos */
   gap: 2rem; /* Espacio entre las columnas */
   padding: 2rem; /* Padding alrededor del contenedor */
 }
 
 .formulario-column, .carrusel-column {
-  flex: 1;
+  flex: 1; /* Ocupar espacio igualmente */
+}
+
+@media (max-width: 768px) {
+  /* Estilos específicos para tablets y dispositivos móviles */
+  .contenedorFormulario {
+    flex-direction: column; /* Cambio a dirección de columna en dispositivos pequeños */
+    align-items: center; /* Centrar elementos en la columna */
+  }
+
+  .formulario-column, .carrusel-column {
+    width: 100%; /* Ajuste para ocupar todo el ancho en dispositivos pequeños */
+    padding: 0; /* Quitar el padding para ocupar mejor el espacio */
+  }
+
+  .estiloFormulario {
+    padding: 20px; /* Aumentar el padding para mejor legibilidad */
+  }
+
+  .estiloFormulario input, .estiloFormulario textarea {
+    padding: 12px; /* Aumentar el padding para mejor legibilidad */
+  }
+
+  .objetoCentrado2 {
+    text-align: center;
+  }
+
+  .tituloImportante3 {
+    font-size: 100%;
+  }
+
+  .contact-grid {
+    margin-top: 20px; /* Añade espacio arriba del bloque de contactos en dispositivos móviles */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-item {
+    text-align: center; /* Centra los elementos de contacto */
+    margin-bottom: 10px; /* Espacio entre los elementos de contacto */
+  }
 }
 
 .estiloFormulario {
@@ -47,6 +87,7 @@
   width: 100%;
   max-width: 500px;
   padding-left: 20px; /* Espacio a la izquierda del carrusel */
+  margin-bottom: 20px; /* Espacio abajo del carrusel en dispositivos móviles */
 }
 
 .carrusel-column img {

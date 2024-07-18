@@ -79,11 +79,14 @@ function Tienda({ cart, setCart, addToCart, removeFromCart, searchQuery, setSear
   return (
     <div className="tienda">
       <CarritoTienda cart={cart} />
-      <SearchBar categories={categories} onCategoryChange={setSelectedCategory} />
-      <ProductosTienda products={filteredProducts} addToCart={handleAddToCart} />
-      <DetalleProducto detalle={detalle} />
-      <PopUpModal showModal={showModal} closeModal={closeModal} />
+      <div className="tienda-container">
+        <SearchBar categories={categories} onCategoryChange={setSelectedCategory} />
+        <ProductosTienda products={filteredProducts} addToCart={handleAddToCart} />
+        <DetalleProducto detalle={detalle} />
+        <PopUpModal showModal={showModal} closeModal={closeModal} />
+      </div>
     </div>
+    
   );
 }
 

@@ -41,121 +41,117 @@ function Contacto() {
 
       <div className="gridPadre">
         <div className="gridPadreContacto">
-          <div className="carrusel-column card-body1">
-            <div className="objetoCentrado2">
-              <h2 className="tituloImportante3 textoMovimiento">
-                <i className="bi bi-person-arms-up" /> CONTACTANOS{" "}
-                <i className="bi bi-person-arms-up" />
-              </h2>
-            </div>
-            {/* <Slider {...settings}>
-              {productos.map((producto) => (
-                <div key={producto.id}>
-                  <img
-                    src={producto.imagenes[0]}
-                    alt={producto.nombre}
-                    className="imagen-publicidad"
-                    style={{ width: "100%", height: "auto" }}
-                  />
-                </div>
-              ))}
-            </Slider> */}
-
-<a href="#">
+          <a href="#">
             <img
               alt="icono"
-              className="imagen-publicidad"
-              src="/img/05-img-costados-larga/16aicono.png"
+              className="imagen-publicidad textoMovimiento"
+              src="/img/02-logos/puchulitamusicainfantil1.png"
             />
           </a>
+
+          <a href="#">
+            <img
+              alt="icono"
+              className="imagen-publicidad textoMovimiento"
+              src="/img/05-img-costados-larga/0a.png"
+            />
+          </a>
+        </div>
+
+        {/* Datos de Contacto */}
+
+        <div className="objetoCentrado2">
+        <a href="#">
+            <img
+              alt="icono"
+              className="imagen-publicidad textoMovimiento"
+              src="/img/05-img-costados-larga/3.png"
+            />
+          </a>
+
+          <a href="#">
+            <img
+              alt="icono"
+              className="imagen-publicidad textoMovimiento"
+              src="/img/05-img-costados-larga/20.png"
+            />
+          </a>
+
+        </div>
+        <div className="contact-grid">
+          <div className="contact-item">
+            <a
+              href="https://www.facebook.com/alegondramusic"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="bi bi-facebook" /> Facebook{" "}
+              <i className="bi bi-facebook" />
+            </a>
           </div>
 
-          {/* Datos de Contacto */}
-          <div className="contact-grid">
-            <div className="contact-item">
+          <div className="contact-item">
+            <a
+              href="https://www.instagram.com/alegondramusic/?hl=es"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="bi bi-instagram" /> Instagram{" "}
+              <i className="bi bi-instagram" />
+            </a>
+          </div>
+
+          <div className="contact-item">
+            <a
+              href="https://www.youtube.com/channel/UCBhJkysp3SnHU1tR3qAA5pQ"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="bi bi-youtube" /> YouTube{" "}
+              <i className="bi bi-youtube" />
+            </a>
+          </div>
+
+          <div className="contact-item">
+            <a
+              href="https://open.spotify.com/artist/7qo7PxAcvyyyZb6XztH7zE"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="bi bi-spotify" /> Spotify{" "}
+              <i className="bi bi-spotify" />
+            </a>
+          </div>
+
+          <div className="contact-item">
+            <i className="bi bi-envelope objetoCentrado1" />
+            <span className="card1">
+              {" "}
               <a
-                href="https://www.facebook.com/alegondramusic"
+                href="mailto:bavaroalejandro@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="bi bi-facebook" /> Facebook{" "}
-                <i className="bi bi-facebook" />
-              </a>
-            </div>
-
-            <div className="contact-item">
-              <a
-                href="https://www.instagram.com/alegondramusic/?hl=es"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="bi bi-instagram" /> Instagram{" "}
-                <i className="bi bi-instagram" />
-              </a>
-            </div>
-
-            <div className="contact-item">
-              <a
-                href="https://www.youtube.com/channel/UCBhJkysp3SnHU1tR3qAA5pQ"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="bi bi-youtube" /> YouTube{" "}
-                <i className="bi bi-youtube" />
-              </a>
-            </div>
-
-            <div className="contact-item">
-              <a
-                href="https://open.spotify.com/artist/7qo7PxAcvyyyZb6XztH7zE"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="bi bi-spotify" /> Spotify{" "}
-                <i className="bi bi-spotify" />
-              </a>
-            </div>
-
-            <div className="contact-item">
-              <i className="bi bi-envelope objetoCentrado1" />
-              <span className="card1">
-                {" "}
-                <a
-                  href="mailto:bavaroalejandro@gmail.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="bi bi-person-arms-up" /> Escríbenos un mail{" "}
-                  <i className="bi bi-person-arms-up" />
-                </a>
-              </span>
-            </div>
-
-            <div className="contact-item">
-              <a
-                href="https://api.whatsapp.com/send?phone=2235455451&text=Hola!%20Quisiera,%20contratar%20a%20Almango%20Pop"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="bi bi-person-arms-up" /> CONTRATACIONES AQUÍ{" "}
+                <i className="bi bi-person-arms-up" /> Escríbenos un mail{" "}
                 <i className="bi bi-person-arms-up" />
               </a>
-            </div>
+            </span>
+          </div>
 
-            <div className="contact-item">
-              <a
-                className="logoPaypal"
-                href="https://www.paypal.com/paypalme/alegondramusic?country.x=AR&locale.x=es_XC"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="bi bi-paypal" /> COLABORA CON NOSOTROS{" "}
-                <i className="bi bi-paypal" />
-              </a>
-            </div>
+          <div className="contact-item">
+            <a
+              className="logoPaypal"
+              href="https://www.paypal.com/paypalme/alegondramusic?country.x=AR&locale.x=es_XC"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="bi bi-paypal" /> COLABORA CON NOSOTROS{" "}
+              <i className="bi bi-paypal" />
+            </a>
           </div>
         </div>
       </div>
+
       <hr className="border border-1 opacity-5" />
 
       <div className="gridPadre">
@@ -233,7 +229,7 @@ function Contacto() {
           <div className="carrusel-column">
             <div className="objetoCentrado2">
               <h2 className="tituloImportante3">
-                <i className="bi bi-person-arms-up" /> KIDS WANNA ROCK {" "}
+                <i className="bi bi-person-arms-up" /> KIDS ROCK{" "}
                 <i className="bi bi-person-arms-up" />
               </h2>
             </div>
@@ -252,6 +248,20 @@ function Contacto() {
           </div>
         </div>
       </div>
+
+      <p id="telefonoWhattsapp">
+        <a
+          href="https://api.whatsapp.com/send?phone=..............&text=Hola!,%20en%20que%20puedo%20ayudarte?"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="imgwhattsapp1"
+            className="logoWhats textoMovimiento"
+            src="/img/02-logos/logowhattsapp1.png"
+          />
+        </a>
+      </p>
     </>
   );
 }

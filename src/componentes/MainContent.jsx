@@ -34,36 +34,39 @@ function MainContent() {
 
           <div className="gridPadre">
             <div className="objetoCentrado1">
-              <p>
-                <a href="#">
-                  <img
-                    className="imagen-detras imagen-publicidad"
-                    src="/img/05-img-costados-larga/1a.png"
-                    alt=""
-                  />
-                </a>
-              </p>
-            </div>
-
-            <div className="objetoCentrado1 imagen-publicidad">
-              <img
-                className="imagen-delante imagen-publicidad"
-                src="/img/05-img-costados-larga/0a.png"
-                alt=""
-              />
+              <a href="#">
+                <img
+                  className="container-fluid imagen-detras imagen-publicidad"
+                  src="/img/05-img-costados-larga/1a.png"
+                  alt=""
+                />
+              </a>
             </div>
 
             <div className="objetoCentrado1">
-              <p>
-                <a href="#">
-                  <img
-                    alt="icono"
-                    className="container-fluid imagen-frente imagen-publicidad"
-                    src="/img/05-img-costados-larga/16aicono.png"
-                  />
-                </a>
-              </p>
+              <a href="#">
+                <img
+                  className="container-fluid imagen-delante imagen-publicidad"
+                  src="/img/05-img-costados-larga/0a.png"
+                  alt=""
+                />
+              </a>
             </div>
+
+
+
+            <div className="objetoCentrado1">
+              <a href="#">
+                <img
+                  alt="icono"
+                  className="container-fluid imagen-detras imagen-publicidad"
+                  src="/img/05-img-costados-larga/16aicono.png"
+                />
+              </a>
+            </div>
+
+       
+
           </div>
         </main>
 

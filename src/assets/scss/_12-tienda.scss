@@ -59,6 +59,32 @@
   font-size: 1.2rem;
 }
 
+.tienda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tienda-container {
+  max-width: 85%;
+  padding: 0 20px; /* Ajusta el padding horizontal para dejar espacio a los elementos */
+  box-sizing: border-box;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+  .tienda-container {
+    padding: 0 10px; /* Reduce el padding horizontal para dispositivos más pequeños */
+  }
+  
+  .flota-carrito,
+  .flota-carrito-izquierda {
+    padding: 15px; /* Reduce el padding de las barras flotantes en dispositivos móviles */
+  }
+}
+
+
+
 /* Estilos para las barras flotantes */
 .flota-carrito,
 .flota-carrito-izquierda {
@@ -86,6 +112,13 @@
   right: 0;
   writing-mode: vertical-rl;
 }
+
+@media (max-width: 992px) {
+  .flota-carrito {
+    right: 100px; 
+  }
+}
+
 
 .flota-carrito .nav-link,
 .flota-carrito-izquierda .link-carrito {
