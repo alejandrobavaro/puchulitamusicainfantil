@@ -29,7 +29,7 @@ const Header = ({ cart, searchQuery, setSearchQuery }) => {
             <img
               src="/img/02-logos/puchulitamusicainfantil1.png"
               alt="Logo"
-              className="logo textoMovimiento"
+              className="logo imagen-publicidad2"
             />
 
             <nav className="navbar navbar-expand-lg">
@@ -44,7 +44,7 @@ const Header = ({ cart, searchQuery, setSearchQuery }) => {
                   type="button"
                 >
                      <img
-                      className="imagen-limitada2 textoMovimiento"
+                      className="imagen-limitada2 imagen-publicidad2"
                       src="/img/02-logos/puchulitamusicainfantil1.png"
                       alt=""
                     />
