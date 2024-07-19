@@ -45,7 +45,7 @@ const Header = ({ cart, searchQuery, setSearchQuery }) => {
                 >
                      <img
                       className="imagen-limitada2 textoMovimiento"
-                      src="../../public/img/02-logos/puchulitamusicainfantil1.png"
+                      src="/img/02-logos/puchulitamusicainfantil1.png"
                       alt=""
                     />
            

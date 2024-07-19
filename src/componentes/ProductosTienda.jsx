@@ -31,7 +31,7 @@ function ProductosTienda({ products, addToCart }) {
               </section>
               <img
                 src={producto.imagenes[0]}
-                className="card-img-top img-fluid"
+                className="card-img-top img-fluid imagen-publicidad2"
                 alt={producto.nombre}
                 onClick={() => openModal(producto.imagenes)}
                 style={{ cursor: 'pointer' }}

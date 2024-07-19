@@ -6,7 +6,7 @@ function Footer() {
     <footer className="gridPadreFooter">
       <div className="footerContent">
         <div className="footerElements">
-          <div className="img1Footer textoMovimiento">
+          <div className="img1Footer imagen-publicidad2">
             <a href="#"><img src="/img/02-logos/logoheader1-izquierda.png" alt="" /></a>
           </div>
           <div className="linksFooter">
@@ -21,7 +21,7 @@ function Footer() {
               </a>
             </div>
 
-            <div className="img1Footer imagen-publicidad">
+            <div className="img1Footer imagen-publicidad3">
             <a href="#"><img src="/img/02-logos/logoheader3-centro.png" alt="" /></a>
           </div>
 
@@ -37,7 +37,7 @@ function Footer() {
               </a>
             </div>
           </div>
-          <div className="img1Footer textoMovimiento">
+          <div className="img1Footer imagen-publicidad2">
             <a href="#"><img src="/img/02-logos/logoheader2-derecha.png" alt="" /></a>
           </div>
         </div>

@@ -44,7 +44,7 @@ function Contacto() {
           <a href="#">
             <img
               alt="icono"
-              className="imagen-publicidad textoMovimiento"
+              className="imagen-publicidad imagen-publicidad2"
               src="/img/02-logos/puchulitamusicainfantil1.png"
             />
           </a>
@@ -52,7 +52,7 @@ function Contacto() {
           <a href="#">
             <img
               alt="icono"
-              className="imagen-publicidad textoMovimiento"
+              className="imagen-publicidad imagen-publicidad2"
               src="/img/05-img-costados-larga/0a.png"
             />
           </a>
@@ -64,7 +64,7 @@ function Contacto() {
         <a href="#">
             <img
               alt="icono"
-              className="imagen-publicidad textoMovimiento"
+              className="imagen-publicidad imagen-publicidad2"
               src="/img/05-img-costados-larga/3.png"
             />
           </a>
@@ -72,7 +72,7 @@ function Contacto() {
           <a href="#">
             <img
               alt="icono"
-              className="imagen-publicidad textoMovimiento"
+              className="imagen-publicidad imagen-publicidad2"
               src="/img/05-img-costados-larga/20.png"
             />
           </a>
