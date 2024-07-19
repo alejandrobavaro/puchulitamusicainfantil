@@ -1,20 +1,31 @@
 /*---------------------SASS A CSS------------------------*/
 
-@import "00-responsive";
+@import "./00-general/00-responsive";
 
-@import "01-body";
+@import "./00-general/00-body";
 
-@import "02-main";
 
-@import "02-home";
 
-@import "03-header-nav";
 
-@import "04-footer";
+@import "./02-diseño/02-alineacion";
 
-@import "04-publicidad-debajo";
+@import "./02-diseño/02-textos";
 
-@import "05a-textos";
+
+
+//----------COMPONENTES-CUERPOS------------//
+
+@import "./03-componentes/03a-cuerpos/03a-header";
+
+
+
+@import "./03-componentes/03a-cuerpos/03-footer";
+
+@import "./03-componentes/03a-cuerpos/03-banner1";
+
+
+
+
 
 @import "05b-formularios";
 
