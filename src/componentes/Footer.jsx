@@ -21,7 +21,7 @@ function Footer() {
               </a>
             </div>
 
-            <div className="img1Footer imagen-publicidad3">
+            <div className="img1Footer imagen-publicidad2">
             <a href="#"><img src="/img/02-logos/logoheader3-centro.png" alt="" /></a>
           </div>
 

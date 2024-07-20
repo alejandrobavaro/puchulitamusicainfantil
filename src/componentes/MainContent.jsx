@@ -19,7 +19,7 @@ function MainContent() {
               </a>
               <img
                 alt="imagen"
-          className='imagen-limitada3 imagen-publicidad1'
+          className='imagen-limitada3 imagen-publicidad2'
                 src="/img/02-logos/puchulitamusicainfantil1.png"
               />
               <a href="#">
@@ -33,8 +33,7 @@ function MainContent() {
           </div>
 
           <div className="gridPadre">
-            {/* <div className="objetoCentrado1"> <a href="#"> <img className='imagen-limitada3 imagen-publicidad objetoCentrado1' src="/img/05-img-costados-larga/1a.png" alt="" /> </a> </div> */}
-
+          
             <div className="objetoCentrado1">
               <a href="#">
                 <img
@@ -44,21 +43,7 @@ function MainContent() {
                 />
               </a>
             </div>
-
-
-
-            {/* <div className="objetoCentrado1">
-              <a href="#">
-                <img
-                  alt="icono"
-                 className='imagen-limitada3 imagen-publicidad objetoCentrado1'
-                  src="/img/05-img-costados-larga/16aicono.png"
-                />
-              </a>
-            </div> */}
-
-       
-
+     
           </div>
         </main>
 

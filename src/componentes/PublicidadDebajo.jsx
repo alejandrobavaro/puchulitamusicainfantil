@@ -38,16 +38,15 @@ const PublicidadDebajo = () => {
 
   return (
     <div className="publicidad-grid gridPadreProductos">
-      <div className="publicidad-container">
-        <div className="publicidad-carousel">
+      <div className="publicidad-container ">
+        <div className="publicidad-carousel ">
           <Slider {...settings}>
             {productos.map((producto) => (
-              <div key={producto.id}>
+              <div key={producto.id} className="slide-item">
                 <img
                   src={producto.imagenes[0]}
                   alt={producto.nombre}
                   className="imagen-publicidad"
-                  style={{ width: "100%", height: "auto" }}
                 />
               </div>
             ))}
@@ -56,12 +55,11 @@ const PublicidadDebajo = () => {
         <div className="publicidad-carousel">
           <Slider {...settings}>
             {productos.slice().reverse().map((producto) => ( // Aquí utilizamos reverse en el segundo carrusel
-              <div key={producto.id}>
+              <div key={producto.id} className="slide-item">
                 <img
                   src={producto.imagenes[0]}
                   alt={producto.nombre}
                   className="imagen-publicidad"
-                  style={{ width: "100%", height: "auto" }}
                 />
               </div>
             ))}
@@ -75,32 +73,31 @@ const PublicidadDebajo = () => {
       
 
       <div className="gridPadreProductos1">
-        <div className="publicidad-grid">
-          <a href="#">
+             <a href="#">
             <img
               alt="icono"
-              className="imagen-publicidad"
+              className="imagen-publicidad imagen-limitada8"
               src="/img/05-img-costados-larga/16aicono.png"
             />
           </a>
           <a href="#">
             <img
               alt="icono"
-              className="imagen-publicidad"
+              className="imagen-publicidad imagen-limitada8"
               src="/img/05-img-costados-larga/4.png"
             />
           </a>
           <a href="#">
             <img
               alt="icono"
-              className="imagen-publicidad"
+              className="imagen-publicidad imagen-limitada8"
               src="/img/05-img-costados-larga/1a.png"
             />
           </a>
           <a href="#">
             <img
               alt="icono"
-              className="imagen-publicidad "
+              className="imagen-publicidad imagen-limitada8"
               src="/img/05-img-costados-larga/0a.png"
             />
           </a>
@@ -108,27 +105,28 @@ const PublicidadDebajo = () => {
           <a href="#">
             <img
               alt="icono"
-              className="imagen-publicidad"
+              className="imagen-publicidad imagen-limitada8"
               src="/img/05-img-costados-larga/2.png"
             />
           </a>
           <a href="#">
             <img
               alt="icono"
-              className="imagen-publicidad"
+              className="imagen-publicidad
+  imagen-limitada8"
               src="/img/05-img-costados-larga/20.png"
             />
           </a>
           <a href="#">
             <img
               alt="icono"
-              className="imagen-publicidad"
+              className="imagen-publicidad imagen-limitada8"
               src="/img/05-img-costados-larga/3.png"
             />
           </a>
         </div>
       </div>
-    </div>
+
   );
 };
 
