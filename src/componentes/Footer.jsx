@@ -46,7 +46,7 @@ function Footer() {
 
         <div className="footerTrademark">
           <div className="textoMovimiento tituloImportante4">
-            <a href="https://alejandrobavaro.github.io/gondraworld/" target="_blank" rel="gondraworldweb">
+            <a href="https://alejandrobavaro.github.io/gondraworld-dev/" target="_blank" rel="gondraworldweb">
               <i className="bi bi-brilliance" /> Gondra World Dev <i className="bi bi-brilliance" />
             </a>
           </div>
