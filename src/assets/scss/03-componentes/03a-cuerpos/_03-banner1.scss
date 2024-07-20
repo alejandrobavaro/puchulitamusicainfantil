@@ -62,8 +62,9 @@
 
   .imagen-publicidad {
     height: auto;
-    border-radius: 8px;
+
     transition: transform 0.3s ease;
+     border-radius: 50px;
 
     &:hover {
       transform: scale(1.1);
@@ -77,8 +78,9 @@
     align-items: center;
 
     .publicidad-carousel {
-      width: 100%;
+      width: 60%;
       max-width: 100%;
+     
     }
 
     .texto-oferta {

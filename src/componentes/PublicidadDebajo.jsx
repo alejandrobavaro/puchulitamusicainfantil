@@ -46,7 +46,7 @@ const PublicidadDebajo = () => {
                 <img
                   src={producto.imagenes[0]}
                   alt={producto.nombre}
-                  className="imagen-publicidad2 objetoCentrado1"
+                  className="imagen-publicidad objetoCentrado1"
                 />
               </div>
             ))}
@@ -54,12 +54,11 @@ const PublicidadDebajo = () => {
         </div>
         <div className="publicidad-carousel">
           <Slider {...settings}>
-            {productos.slice().reverse().map((producto) => ( // Aquí utilizamos reverse en el segundo carrusel
-              <div key={producto.id} className="slide-item">
+            {productos.slice().reverse().map((producto) => (<div key={producto.id} className="slide-item">
                 <img
                   src={producto.imagenes[0]}
                   alt={producto.nombre}
-                  className="imagen-publicidad2 objetoCentrado1"
+                  className="imagen-publicidad objetoCentrado1"
                 />
               </div>
             ))}
