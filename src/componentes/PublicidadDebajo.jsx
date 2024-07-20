@@ -37,7 +37,7 @@ const PublicidadDebajo = () => {
   };
 
   return (
-    <div className="publicidad-grid gridPadreProductos">
+    <div className="publicidad-grid gridPadreProductos ">
       <div className="publicidad-container ">
         <div className="publicidad-carousel ">
           <Slider {...settings}>
@@ -46,7 +46,7 @@ const PublicidadDebajo = () => {
                 <img
                   src={producto.imagenes[0]}
                   alt={producto.nombre}
-                  className="imagen-publicidad"
+                  className="imagen-publicidad2 objetoCentrado1"
                 />
               </div>
             ))}
@@ -59,7 +59,7 @@ const PublicidadDebajo = () => {
                 <img
                   src={producto.imagenes[0]}
                   alt={producto.nombre}
-                  className="imagen-publicidad"
+                  className="imagen-publicidad2 objetoCentrado1"
                 />
               </div>
             ))}
