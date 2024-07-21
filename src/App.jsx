@@ -9,10 +9,11 @@ import Footer from './componentes/Footer';
 import Tienda from './componentes/Tienda';
 import CarritoCompleto from './componentes/CarritoCompleto';
 import { OfertasProvider } from './componentes/OfertasContext';
-import { AuthProvider } from './componentes/AuthContext'; 
+import { AuthProvider } from './componentes/AuthContext';
 import Login from './componentes/Login';
 import Register from './componentes/Register';
 import Logout from './componentes/Logout';
+import Musica from './componentes/Musica';  // Nuevo componente
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -50,7 +51,7 @@ function App() {
 
   return (
     <Router>
-      <AuthProvider> 
+      <AuthProvider>
         <OfertasProvider>
           <Header cart={cart} searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
           <hr className="border border-0 opacity-20" />
@@ -62,6 +63,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/logout" element={<Logout />} />
+            <Route path="/musica" element={<Musica setCart={setCart} cart={cart} addToCart={addToCart} removeFromCart={removeFromCart} searchQuery={searchQuery} setSearchQuery={setSearchQuery} />} /> {/* Nueva ruta */}
           </Routes>
           <hr className="border border-0 opacity-20" />
           <PublicidadDebajo />

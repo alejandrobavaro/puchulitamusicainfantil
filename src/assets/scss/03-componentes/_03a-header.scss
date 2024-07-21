@@ -14,6 +14,10 @@
   font-size: x-large;
 }
 
+
+
+
+
 /* Cambia el color de los enlaces de navegación */
 .navbar-nav .nav-link {
   text-align: center;
@@ -196,3 +200,21 @@
     display: none; // Oculta la imagen de logo adicional en versiones móviles
   }
 }
+
+
+
+
+//aclaracion debajo del nav menu//
+
+.nav-link {
+  position: relative; /* Necesario para posicionar el índice pequeño correctamente */
+}
+
+.index-text {
+  display: block; /* Esto pone el texto en una nueva línea */
+  font-size: xx-small; /* Tamaño de fuente más pequeño */
+  color: rgb(179, 0, 255); /* Color para diferenciar el texto */
+  margin-top: 2px; /* Espacio entre el texto principal y el índice pequeño */
+}
+
+//-----------------------------//

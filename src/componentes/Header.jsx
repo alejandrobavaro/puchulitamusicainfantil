@@ -2,7 +2,6 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useAuth } from "./AuthContext"; // Importa el hook useAuth para obtener el estado de autenticación
 
-
 const Header = ({ cart, searchQuery, setSearchQuery }) => {
   const location = useLocation();
   const showCartLink = location.pathname.startsWith("/tienda");
@@ -26,6 +25,7 @@ const Header = ({ cart, searchQuery, setSearchQuery }) => {
 
         <header className="encabezado">
           <div className="header-bottom">
+            <div>
             <img
               src="/img/02-logos/puchulitamusicainfantil1.png"
               alt="Logo"
@@ -43,31 +43,37 @@ const Header = ({ cart, searchQuery, setSearchQuery }) => {
                   data-bs-toggle="collapse"
                   type="button"
                 >
-                     <img
-                      className="imagen-limitada2 imagen-publicidad2"
-                      src="/img/02-logos/puchulitamusicainfantil1.png"
-                      alt=""
-                    />
-           
+                  <img
+                    className="imagen-limitada2 imagen-publicidad2"
+                    src="/img/02-logos/puchulitamusicainfantil1.png"
+                    alt=""
+                  />
                   <span className="navbar-toggler-icon" />
-               
                 </button>
                 <div
                   className="collapse navbar-collapse"
                   id="navbarNavAltMarkup"
                 >
                   <div className="navbar-nav tituloImportante3">
-              
-
                     <Link className="nav-link menu-link" to="/">
                       Home
                     </Link>
-                    <Link className="nav-link menu-link" to="/contacto">
-                      Contacto
-                    </Link>
+                  
                     <Link className="nav-link menu-link" to="/tienda">
                       Tienda
                     </Link>
+
+                    <Link className="nav-link menu-link" to="/contacto">
+                      Contacto
+                    </Link>
+                   
+                    <Link className="nav-link menu-link" to="/musica">
+  Música
+  <span className="index-text"> (en construcción) </span>
+</Link>
+
+
+
                     {!state.isAuthenticated ? (
                       <>
                         <Link className="nav-link menu-link" to="/login">
@@ -101,6 +107,7 @@ const Header = ({ cart, searchQuery, setSearchQuery }) => {
                 </div>
               </div>
             </nav>
+            </div>
           </div>
 
           {showSearchBar && (

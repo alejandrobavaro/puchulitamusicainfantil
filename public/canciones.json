@@ -1,0 +1,363 @@
+[
+    {
+      "id": 1,
+      "nombre": "Puchulita y el Sol",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Infantil",
+      "duracion": "2:30",
+      "url": "/audio/cancion-1.mp3",
+      "imagen": "/img/cancion-1.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Colores Brillantes",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Pop Infantil",
+      "duracion": "3:00",
+      "url": "/audio/cancion-2.mp3",
+      "imagen": "/img/cancion-2.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Uno, Dos, Tres",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Rock Infantil",
+      "duracion": "2:45",
+      "url": "/audio/cancion-3.mp3",
+      "imagen": "/img/cancion-3.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Animales Amigos",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Infantil",
+      "duracion": "3:15",
+      "url": "/audio/cancion-4.mp3",
+      "imagen": "/img/cancion-4.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Manos Limpias",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Electro Pop Infantil",
+      "duracion": "2:50",
+      "url": "/audio/cancion-5.mp3",
+      "imagen": "/img/cancion-5.jpg"
+    },
+    {
+      "id": 6,
+      "nombre": "Jugar en el Parque",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Pop Infantil",
+      "duracion": "3:05",
+      "url": "/audio/cancion-6.mp3",
+      "imagen": "/img/cancion-6.jpg"
+    },
+    {
+      "id": 7,
+      "nombre": "Días Divertidos",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Rock Infantil",
+      "duracion": "2:55",
+      "url": "/audio/cancion-7.mp3",
+      "imagen": "/img/cancion-7.jpg"
+    },
+    {
+      "id": 8,
+      "nombre": "Baila con Puchulita",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Electro Pop Infantil",
+      "duracion": "3:20",
+      "url": "/audio/cancion-8.mp3",
+      "imagen": "/img/cancion-8.jpg"
+    },
+    {
+      "id": 9,
+      "nombre": "Frutas y Verduras",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Infantil",
+      "duracion": "2:40",
+      "url": "/audio/cancion-9.mp3",
+      "imagen": "/img/cancion-9.jpg"
+    },
+    {
+      "id": 10,
+      "nombre": "Hola y Adiós",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Pop Infantil",
+      "duracion": "3:10",
+      "url": "/audio/cancion-10.mp3",
+      "imagen": "/img/cancion-10.jpg"
+    },
+    {
+      "id": 11,
+      "nombre": "Números con Puchulita",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Rock Infantil",
+      "duracion": "2:35",
+      "url": "/audio/cancion-11.mp3",
+      "imagen": "/img/cancion-11.jpg"
+    },
+    {
+      "id": 12,
+      "nombre": "Ronda de Juguetes",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Infantil",
+      "duracion": "3:25",
+      "url": "/audio/cancion-12.mp3",
+      "imagen": "/img/cancion-12.jpg"
+    },
+    {
+      "id": 13,
+      "nombre": "Vamos a Compartir",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Electro Pop Infantil",
+      "duracion": "2:55",
+      "url": "/audio/cancion-13.mp3",
+      "imagen": "/img/cancion-13.jpg"
+    },
+    {
+      "id": 14,
+      "nombre": "Dulces Sueños",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Pop Infantil",
+      "duracion": "3:15",
+      "url": "/audio/cancion-14.mp3",
+      "imagen": "/img/cancion-14.jpg"
+    },
+    {
+      "id": 15,
+      "nombre": "El Gato y el Ratón",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Rock Infantil",
+      "duracion": "3:00",
+      "url": "/audio/cancion-15.mp3",
+      "imagen": "/img/cancion-15.jpg"
+    },
+    {
+      "id": 16,
+      "nombre": "Canción de las Estrellas",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Electro Pop Infantil",
+      "duracion": "3:30",
+      "url": "/audio/cancion-16.mp3",
+      "imagen": "/img/cancion-16.jpg"
+    },
+    {
+      "id": 17,
+      "nombre": "Vamos al Zoo",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Infantil",
+      "duracion": "2:50",
+      "url": "/audio/cancion-17.mp3",
+      "imagen": "/img/cancion-17.jpg"
+    },
+    {
+      "id": 18,
+      "nombre": "El Circo",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Pop Infantil",
+      "duracion": "3:05",
+      "url": "/audio/cancion-18.mp3",
+      "imagen": "/img/cancion-18.jpg"
+    },
+    {
+      "id": 19,
+      "nombre": "Fiesta de Globos",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Rock Infantil",
+      "duracion": "2:45",
+      "url": "/audio/cancion-19.mp3",
+      "imagen": "/img/cancion-19.jpg"
+    },
+    {
+      "id": 20,
+      "nombre": "El Gran Desfile",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Electro Pop Infantil",
+      "duracion": "3:20",
+      "url": "/audio/cancion-20.mp3",
+      "imagen": "/img/cancion-20.jpg"
+    },
+    {
+      "id": 21,
+      "nombre": "La Risa de Puchulita",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Infantil",
+      "duracion": "2:35",
+      "url": "/audio/cancion-21.mp3",
+      "imagen": "/img/cancion-21.jpg"
+    },
+    {
+      "id": 22,
+      "nombre": "Carrera de Bicis",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Pop Infantil",
+      "duracion": "3:00",
+      "url": "/audio/cancion-22.mp3",
+      "imagen": "/img/cancion-22.jpg"
+    },
+    {
+      "id": 23,
+      "nombre": "Viaje a la Luna",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Rock Infantil",
+      "duracion": "3:10",
+      "url": "/audio/cancion-23.mp3",
+      "imagen": "/img/cancion-23.jpg"
+    },
+    {
+      "id": 24,
+      "nombre": "Danza de Colores",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Electro Pop Infantil",
+      "duracion": "2:55",
+      "url": "/audio/cancion-24.mp3",
+      "imagen": "/img/cancion-24.jpg"
+    },
+    {
+      "id": 25,
+      "nombre": "El Gran Baile",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Infantil",
+      "duracion": "3:15",
+      "url": "/audio/cancion-25.mp3",
+      "imagen": "/img/cancion-25.jpg"
+    },
+    {
+      "id": 26,
+      "nombre": "Aventuras en el Bosque",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Pop Infantil",
+      "duracion": "3:05",
+      "url": "/audio/cancion-26.mp3",
+      "imagen": "/img/cancion-26.jpg"
+    },
+    {
+      "id": 27,
+      "nombre": "El Cochecito Rojo",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Rock Infantil",
+      "duracion": "2:50",
+      "url": "/audio/cancion-27.mp3",
+      "imagen": "/img/cancion-27.jpg"
+    },
+    {
+      "id": 28,
+      "nombre": "Caminando por la Ciudad",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Electro Pop Infantil",
+      "duracion": "3:20",
+      "url": "/audio/cancion-28.mp3",
+      "imagen": "/img/cancion-28.jpg"
+    },
+    {
+      "id": 29,
+      "nombre": "La Casa Encantada",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Infantil",
+      "duracion": "2:45",
+      "url": "/audio/cancion-29.mp3",
+      "imagen": "/img/cancion-29.jpg"
+    },
+    {
+      "id": 30,
+      "nombre": "Burbujas de Alegría",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Pop Infantil",
+      "duracion": "2:45",
+      "url": "/audio/cancion-30.mp3",
+      "imagen": "/img/cancion-30.jpg"
+    },
+    {
+      "id": 31,
+      "nombre": "Cuento de Hadas",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Rock Infantil",
+      "duracion": "3:20",
+      "url": "/audio/cancion-31.mp3",
+      "imagen": "/img/cancion-31.jpg"
+    },
+    {
+      "id": 32,
+      "nombre": "Dulces Sueños, Pequeños",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Electro Pop Infantil",
+      "duracion": "3:10",
+      "url": "/audio/cancion-32.mp3",
+      "imagen": "/img/cancion-32.jpg"
+    },
+    {
+      "id": 33,
+      "nombre": "El Tren de la Amistad",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Infantil",
+      "duracion": "2:40",
+      "url": "/audio/cancion-33.mp3",
+      "imagen": "/img/cancion-33.jpg"
+    },
+    {
+      "id": 34,
+      "nombre": "Aventuras en el Espacio",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Pop Infantil",
+      "duracion": "3:15",
+      "url": "/audio/cancion-34.mp3",
+      "imagen": "/img/cancion-34.jpg"
+    },
+    {
+      "id": 35,
+      "nombre": "Día de Picnic",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Rock Infantil",
+      "duracion": "3:05",
+      "url": "/audio/cancion-35.mp3",
+      "imagen": "/img/cancion-35.jpg"
+    },
+    {
+      "id": 36,
+      "nombre": "Exploradores del Mar",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Electro Pop Infantil",
+      "duracion": "2:50",
+      "url": "/audio/cancion-36.mp3",
+      "imagen": "/img/cancion-36.jpg"
+    },
+    {
+      "id": 37,
+      "nombre": "El Castillo Mágico",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Infantil",
+      "duracion": "3:20",
+      "url": "/audio/cancion-37.mp3",
+      "imagen": "/img/cancion-37.jpg"
+    },
+    {
+      "id": 38,
+      "nombre": "Cazadores de Tesoros",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Pop Infantil",
+      "duracion": "2:55",
+      "url": "/audio/cancion-38.mp3",
+      "imagen": "/img/cancion-38.jpg"
+    },
+    {
+      "id": 39,
+      "nombre": "El Reino de los Juguetes",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Rock Infantil",
+      "duracion": "3:15",
+      "url": "/audio/cancion-39.mp3",
+      "imagen": "/img/cancion-39.jpg"
+    },
+    {
+      "id": 40,
+      "nombre": "La Magia de Puchulita",
+      "artista": "Puchulita Musica Infantil",
+      "categoria": "Electro Pop Infantil",
+      "duracion": "3:00",
+      "url": "/audio/cancion-40.mp3",
+      "imagen": "/img/cancion-40.jpg"
+    }
+  ]
+  
