@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ImageModal from './ImageModal';
 import { useOfertas } from './OfertasContext';
-import '../assets/scss/estilo.scss';
+
 
 function ProductosTienda({ products, addToCart }) {
   const [selectedImages, setSelectedImages] = useState([]);

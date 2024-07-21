@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Producto from './Producto';
-import { OfertasProvider } from './OfertasContext'; // Importar el proveedor de contexto
+import { OfertasProvider } from './OfertasContext'; 
 
 const ProductoLista = ({ onEncargar }) => {
   const [productos, setProductos] = useState([]);

@@ -7,8 +7,6 @@ import CarritoTienda from "./CarritoTienda";
 import DetalleProducto from "./DetalleProducto";
 import SearchBar from "./SearchBar";
 import PopUpModal from "./PopUpModal";
-import "../assets/scss/estilo.scss";
-import "../assets/scss/_13-popups-modals.scss";
 import { useOfertas } from "./OfertasContext";
 
 function Tienda({ cart, setCart, addToCart, removeFromCart, searchQuery, setSearchQuery }) {

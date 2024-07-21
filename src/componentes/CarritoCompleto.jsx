@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/scss/estilo.scss";
+
 
 const CarritoCompleto = ({ cart, removeFromCart, handlePagar }) => {
   // Calcula el total del carrito

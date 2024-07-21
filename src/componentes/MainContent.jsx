@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../assets/scss/estilo.scss";
+
 
 function MainContent() {
   const [count, setCount] = useState(0);
@@ -13,7 +13,7 @@ function MainContent() {
               <a href="#">
                 <img
                   alt="icono"
-               className='imagen-limitada3 imagen-publicidad1'
+               className="imagen-limitada3 imagen-publicidad1"
                   src="/img/05-img-costados-larga/4.png"
                 />
               </a>

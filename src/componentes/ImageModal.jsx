@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../assets/scss/estilo.scss';
+
 
 function ImageModal({ images, isOpen, closeModal }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

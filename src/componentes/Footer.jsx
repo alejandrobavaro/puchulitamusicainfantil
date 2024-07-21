@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/scss/estilo.scss";
+
 
 function Footer() {
   return (

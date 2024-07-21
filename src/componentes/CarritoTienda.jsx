@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import "../assets/scss/estilo.scss";
+
 
 const CarritoTienda = ({ cart }) => {
   const location = useLocation();

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import '../assets/scss/estilo.scss';
+
 
 function SearchBar({ categories, onCategoryChange }) {
   useEffect(() => {
