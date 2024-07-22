@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
-import Swal from "sweetalert2";
 import CancionesLista from "./CancionesLista";
 import ReproductorMusica from "./ReproductorMusica";
 import SearchBar from "./SearchBar";
@@ -41,9 +40,22 @@ function Musica({
       close: true,
       gravity: "top",
       position: "left",
-      backgroundColor: "#4CAF50",
+      backgroundColor: "#ff69b4",
       className: "toastify-total",
     }).showToast();
+  };
+
+  const handlePlayPreview = (cancion) => {
+    Toastify({
+      text: `Reproduciendo preview de ${cancion.nombre}.`,
+      duration: 3000,
+      close: true,
+      gravity: "top",
+      position: "left",
+      backgroundColor: "#9370db",
+      className: "toastify-total",
+    }).showToast();
+    // Lógica para reproducir la preview
   };
 
   const categories = [
@@ -61,20 +73,17 @@ function Musica({
   });
 
   return (
-    <div className="gridPadreProductos1 musica ">
-      <div className="musica-container ">
-        <SearchBar
-          categories={categories}
-          onCategoryChange={setSelectedCategory}
-        />
-        <div className="gridPadre">
-          <CancionesLista songs={filteredSongs} addToCart={handleAddToCart} />
-        </div>
-        <hr />
-      </div>
-      <div className="gridPadreProductos1 ">
-        <ReproductorMusica cart={cart} removeFromCart={removeFromCart} />
-      </div>
+    <div className="musica-container">
+      <SearchBar
+        categories={categories}
+        onCategoryChange={setSelectedCategory}
+      />
+      <CancionesLista
+        songs={filteredSongs}
+        addToCart={handleAddToCart}
+        playPreview={handlePlayPreview}
+      />
+      <ReproductorMusica cart={cart} removeFromCart={removeFromCart} />
     </div>
   );
 }
