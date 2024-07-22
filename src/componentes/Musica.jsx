@@ -58,6 +58,19 @@ function Musica({
     // Lógica para reproducir la preview
   };
 
+  const handleClearCart = () => {
+    setCart([]);
+    Toastify({
+      text: "Lista de reproducción vaciada.",
+      duration: 3000,
+      close: true,
+      gravity: "top",
+      position: "left",
+      backgroundColor: "#ff0000",
+      className: "toastify-total",
+    }).showToast();
+  };
+
   const categories = [
     "Todos",
     ...new Set(songs.map((cancion) => cancion.categoria)),
@@ -83,7 +96,7 @@ function Musica({
         addToCart={handleAddToCart}
         playPreview={handlePlayPreview}
       />
-      <ReproductorMusica cart={cart} removeFromCart={removeFromCart} />
+      <ReproductorMusica cart={cart} removeFromCart={removeFromCart} clearCart={handleClearCart} />
     </div>
   );
 }

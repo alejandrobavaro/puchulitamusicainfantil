@@ -1,39 +1,20 @@
-import React, { useState, useRef } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import { PlusCircle, Play } from 'react-bootstrap-icons'; // Usamos los íconos de react-bootstrap-icons
+import { PlusCircle } from 'react-bootstrap-icons';
 
 function CancionCard({ cancion, addToCart }) {
-  const [isPlayingPreview, setIsPlayingPreview] = useState(false);
-  const audioRef = useRef(null);
-
-  const handlePreview = () => {
-    if (isPlayingPreview) {
-      audioRef.current.pause();
-      setIsPlayingPreview(false);
-    } else {
-      audioRef.current.play();
-      setIsPlayingPreview(true);
-    }
-  };
-
   return (
     <div className="cancion-card">
       <img src={cancion.imagen} alt={cancion.nombre} className="cancion-imagen" />
       <div className="cancion-info">
-        <h3>{cancion.nombre}</h3>
-        <p>{cancion.artista}</p>
-        <p>{cancion.categoria}</p>
-        <p>{cancion.duracion}</p>
+        <p><strong>Nombre de canción:</strong> {cancion.nombre}</p>
+        <p><strong>Disco:</strong> {cancion.artista}</p>
+        <p><strong>Categoría o Género Musical:</strong> {cancion.categoria}</p>
+        <p><strong>Tiempo de duración:</strong> {cancion.duracion}</p>
       </div>
-      <div className="button-group">
-        <button onClick={handlePreview} title={isPlayingPreview ? "Stop Preview" : "Play Preview"}>
-          <Play />
-        </button>
-        <button onClick={() => addToCart(cancion)} title="Add to Playlist">
-          <PlusCircle />
-        </button>
-      </div>
-      <audio ref={audioRef} src={cancion.url} />
+      <button onClick={() => addToCart(cancion)} title="Add to Playlist">
+        <PlusCircle />
+      </button>
     </div>
   );
 }
