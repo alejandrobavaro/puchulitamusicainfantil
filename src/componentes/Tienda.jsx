@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
 import Swal from "sweetalert2";
-import ProductosTienda from "./ProductosTienda";
-import CarritoTienda from "./CarritoTienda";
-import DetalleProducto from "./DetalleProducto";
-import SearchBar from "./SearchBar";
-import PopUpModal from "./PopUpModal";
-import { useOfertas } from "./OfertasContext";
+import ProductosTienda from "./TiendaProductos";
+import CarritoTienda from "./TiendaCarrito";
+import DetalleProducto from "./TiendaDetalleProducto";
+import SearchBar from "./HeaderSearchBar";
+import PopUpModal from "./TiendaPopUpPromoInicio";
+import { useOfertas } from "./TiendaOfertasContext";
 
 function Tienda({ cart, setCart, addToCart, removeFromCart, searchQuery, setSearchQuery }) {
   const [products, setProducts] = useState([]);

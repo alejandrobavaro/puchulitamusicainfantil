@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
-import CancionesLista from "./CancionesLista";
-import ReproductorMusica from "./ReproductorMusica";
-import SearchBar from "./SearchBar";
-import { useOfertas } from "./OfertasContext";
+import CancionesLista from "./MusicaCancionesLista";
+import ReproductorMusica from "./MusicaReproductor";
+import SearchBar from "./HeaderSearchBar";
+import { useOfertas } from "./TiendaOfertasContext";
 
 function Musica({
   cart,

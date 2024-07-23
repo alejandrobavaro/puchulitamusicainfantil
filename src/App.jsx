@@ -4,16 +4,16 @@ import Swal from 'sweetalert2';
 import Header from './componentes/Header';
 import MainContent from './componentes/MainContent';
 import Contacto from './componentes/Contacto';
-import PublicidadDebajo from './componentes/PublicidadDebajo';
+import PublicidadDebajo from './componentes/TiendaPublicidadSilder';
 import Footer from './componentes/Footer';
 import Tienda from './componentes/Tienda';
-import CarritoCompleto from './componentes/CarritoCompleto';
-import { OfertasProvider } from './componentes/OfertasContext';
-import { AuthProvider } from './componentes/AuthContext';
-import Login from './componentes/Login';
-import Register from './componentes/Register';
-import Logout from './componentes/Logout';
-import Musica from './componentes/Musica';  // Nuevo componente
+import CarritoCompleto from './componentes/TiendaCarritoCompleto';
+import { OfertasProvider } from './componentes/TiendaOfertasContext';
+import { AuthProvider } from './componentes/SesionAuthContext';
+import Login from './componentes/SesionLogin';
+import Register from './componentes/SesionRegistrate';
+import Logout from './componentes/SesionLogout';
+import Musica from './componentes/Musica';  
 
 function App() {
   const [cart, setCart] = useState([]);

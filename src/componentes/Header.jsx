@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { useAuth } from "./AuthContext"; // Importa el hook useAuth para obtener el estado de autenticación
+import { useAuth } from "./SesionAuthContext"; // Importa el hook useAuth para obtener el estado de autenticación
 
 const Header = ({ cart, searchQuery, setSearchQuery }) => {
   const location = useLocation();
