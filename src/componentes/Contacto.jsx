@@ -251,7 +251,7 @@ function Contacto() {
 
       <p id="telefonoWhattsapp">
         <a
-          href="https://api.whatsapp.com/send?phone=..............&text=Hola!,%20en%20que%20puedo%20ayudarte?"
+          href="https://api.whatsapp.com/send?phone=+5492235455451&text=Hola!,%20en%20que%20puedo%20ayudarte?"
           rel="noopener noreferrer"
           target="_blank"
         >
