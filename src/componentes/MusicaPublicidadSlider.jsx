@@ -26,18 +26,7 @@ const MusicaPublicidadSlider = () => {
           </div>
         ))}
       </Slider>
-      <Slider {...settings}>
-        {productos.map((producto) => (
-          <div key={producto.id} className="slide-item">
-            <img
-              src={producto.imagenes[0]}
-              alt={producto.nombre}
-              className="imagen-publicidad5 objetoCentrado1"
-            />
-          </div>
-        ))}
-      </Slider>
-    </div>
+        </div>
   );
 }
 
