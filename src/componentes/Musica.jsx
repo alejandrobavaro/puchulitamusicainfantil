@@ -4,6 +4,7 @@ import "toastify-js/src/toastify.css";
 import CancionesLista from "./MusicaCancionesLista";
 import ReproductorMusica from "./MusicaReproductor";
 import SearchBar from "./HeaderSearchBar";
+import MusicaPublicidadSlider from "./MusicaPublicidadSlider";
 import { useOfertas } from "./TiendaOfertasContext";
 
 function Musica({
@@ -91,12 +92,23 @@ function Musica({
         categories={categories}
         onCategoryChange={setSelectedCategory}
       />
-      <CancionesLista
-        songs={filteredSongs}
-        addToCart={handleAddToCart}
-        playPreview={handlePlayPreview}
+      <div className="musica-content">
+        <div className="canciones-lista">
+          <CancionesLista
+            songs={filteredSongs}
+            addToCart={handleAddToCart}
+            playPreview={handlePlayPreview}
+          />
+        </div>
+        <div className="publicidad-slider-musica">
+          <MusicaPublicidadSlider />
+        </div>
+      </div>
+      <ReproductorMusica
+        cart={cart}
+        removeFromCart={removeFromCart}
+        clearCart={handleClearCart}
       />
-      <ReproductorMusica cart={cart} removeFromCart={removeFromCart} clearCart={handleClearCart} />
     </div>
   );
 }
