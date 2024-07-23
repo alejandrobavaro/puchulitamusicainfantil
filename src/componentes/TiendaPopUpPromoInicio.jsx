@@ -3,7 +3,7 @@ import Modal from "react-modal";
 
 Modal.setAppElement("#root");
 
-const PopUpModal = ({ showModal, closeModal }) => {
+const TiendaPopUpPromoInicio = ({ showModal, closeModal }) => {
   return (
     <Modal
       isOpen={showModal}
@@ -45,4 +45,4 @@ const PopUpModal = ({ showModal, closeModal }) => {
   );
 };
 
-export default PopUpModal;
+export default TiendaPopUpPromoInicio;

@@ -102,4 +102,4 @@ const Producto = ({ producto, onEncargar }) => {
   );
 };
 
-export default Producto;
+export default TiendaProducto;

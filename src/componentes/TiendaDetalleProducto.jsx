@@ -1,6 +1,6 @@
 import React from "react";
 
-const DetalleProducto = ({ detalle }) => {
+const TiendaDetalleProducto = ({ detalle }) => {
   if (!detalle) return null;
 
   return (
@@ -14,4 +14,4 @@ const DetalleProducto = ({ detalle }) => {
   );
 };
 
-export default DetalleProducto;
+export default TiendaDetalleProducto;

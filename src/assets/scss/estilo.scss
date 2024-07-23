@@ -1,70 +1,46 @@
 /*---------------------SASS A CSS------------------------*/
 
-@import "./00-general/00a-body-html";
+@import "./_01-General/BodyHtml";
 
-@import "./00-general/00c-responsive";
-
+@import "./_01-General/Responsive";
 
 
 //----------DISEÑO GRAL------------//
 
-@import "./02-diseño/02a-textos";
+@import "./_02-Diseño/Textos";
 
-@import "./02-diseño/02b-imagenes";
+@import "./_02-Diseño/Imagenes";
 
-@import "./02-diseño/02c-alineacion";
+@import "./_02-Diseño/Alineacion";
 
-@import "./02-diseño/02d-grid-estructuras";
+@import "./_02-Diseño/GridEstructuras";
 
-@import "./02-diseño/02e-animaciones";
+@import "./_02-Diseño/Animaciones";
 
-@import "./02-diseño/02f-cards";
+@import "./_02-Diseño/Cards";
 
-@import "./02-diseño/02g-botones";
-
+@import "./_02-Diseño/Botones";
 
 
 //----------COMPONENTES------------------------//
 
-//----------HEADER--------------------//
+@import "./_03-Componentes/AlertsModalsMsjs";
 
-@import "./03-componentes/03a-header";
+@import "./_03-Componentes/Contacto";
 
-//----------MAIN----------------------//
-@import "./03-componentes/03b-maincontent";
+@import "./_03-Componentes/Footer";
 
-@import "./03-componentes/03c-formularios";
+@import "./_03-Componentes/Header";
 
-@import "./03-componentes/03d-banners";
+@import "./_03-Componentes/MainContent";
 
-//------TIENDA-------//
-@import "./03-componentes/03e-tienda";
+@import "./_03-Componentes/Musica";
 
+@import "./_03-Componentes/PublicidadSliders";
 
-//------COMPLEMENTOS-------//
-@import "./03-componentes/03g-toastify-alerts";
+@import "./_03-Componentes/SesionLoginRegister";
 
-@import "./03-componentes/03h-popups-modals";
-
-//------LOGIN-REGISTRO-------//
-@import "./03-componentes/03i-login";
-
-@import './03-componentes/03j-register';
-
-@import "./03-componentes/03k-loading-spinner";
-
-
-//------PAGINA MUSICA REPRODUCTOR------//
-
-@import "./03-componentes/03l-musica.scss";
-
-//----------FOOTER---------------------//
-
-@import "./03-componentes/03f-footer";
-
-
-
-
+@import "./_03-Componentes/Tienda";
 
 
 

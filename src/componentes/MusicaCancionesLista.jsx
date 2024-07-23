@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import CancionCard from './MusicaCancionCard';
+import MusicaCancionCard from './MusicaCancionCard';
 
-function CancionesLista({ songs, addToCart }) {
+function MusicaCancionesLista({ songs, addToCart }) {
   return (
     <div className="canciones-lista">
       {songs.map((cancion) => (
-        <CancionCard
+        <MusicaCancionCard
           key={cancion.id}
           cancion={cancion}
           addToCart={addToCart}
@@ -16,9 +16,9 @@ function CancionesLista({ songs, addToCart }) {
   );
 }
 
-CancionesLista.propTypes = {
+MusicaCancionesLista.propTypes = {
   songs: PropTypes.array.isRequired,
   addToCart: PropTypes.func.isRequired,
 };
 
-export default CancionesLista;
+export default MusicaCancionesLista;

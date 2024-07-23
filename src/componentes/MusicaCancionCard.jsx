@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { PlusCircle } from 'react-bootstrap-icons';
 
-function CancionCard({ cancion, addToCart }) {
+function MusicaCancionCard({ cancion, addToCart }) {
   return (
     <div className="cancion-card">
       <img src={cancion.imagen} alt={cancion.nombre} className="cancion-imagen" />
@@ -19,9 +19,9 @@ function CancionCard({ cancion, addToCart }) {
   );
 }
 
-CancionCard.propTypes = {
+MusicaCancionCard.propTypes = {
   cancion: PropTypes.object.isRequired,
   addToCart: PropTypes.func.isRequired,
 };
 
-export default CancionCard;
+export default MusicaCancionCard;

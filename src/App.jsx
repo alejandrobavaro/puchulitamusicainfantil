@@ -4,7 +4,7 @@ import Swal from 'sweetalert2';
 import Header from './componentes/Header';
 import MainContent from './componentes/MainContent';
 import Contacto from './componentes/Contacto';
-import PublicidadDebajo from './componentes/TiendaPublicidadSilder';
+import PublicidadDebajo from './componentes/TiendaPublicidadSlider';
 import Footer from './componentes/Footer';
 import Tienda from './componentes/Tienda';
 import CarritoCompleto from './componentes/TiendaCarritoCompleto';

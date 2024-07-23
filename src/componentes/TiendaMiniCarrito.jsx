@@ -19,4 +19,4 @@ function MiniCarrito({ items }) {
   );
 }
 
-export default MiniCarrito;
+export default TiendaMiniCarrito;

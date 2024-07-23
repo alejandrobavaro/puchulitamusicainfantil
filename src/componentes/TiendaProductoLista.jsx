@@ -23,4 +23,4 @@ const ProductoLista = ({ onEncargar }) => {
   );
 };
 
-export default ProductoLista;
+export default TiendaProductoLista;

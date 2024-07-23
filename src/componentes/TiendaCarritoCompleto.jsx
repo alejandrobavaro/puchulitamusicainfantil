@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const CarritoCompleto = ({ cart, removeFromCart, handlePagar }) => {
+const TiendaCarritoCompleto = ({ cart, removeFromCart, handlePagar }) => {
   // Calcula el total del carrito
   const total = cart.reduce((sum, product) => sum + product.precio, 0);
 
@@ -97,4 +97,4 @@ const CarritoCompleto = ({ cart, removeFromCart, handlePagar }) => {
   );
 };
 
-export default CarritoCompleto;
+export default TiendaCarritoCompleto;

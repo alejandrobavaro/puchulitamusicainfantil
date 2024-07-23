@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
 
-const CarritoTienda = ({ cart }) => {
+const TiendaCarrito = ({ cart }) => {
   const location = useLocation();
   const total = cart.reduce((sum, product) => sum + product.precio, 0);
   const showLeftCartLink = location.pathname.startsWith("/tienda");
@@ -33,4 +33,4 @@ const CarritoTienda = ({ cart }) => {
   );
 };
 
-export default CarritoTienda;
+export default TiendaCarrito;

@@ -3,7 +3,7 @@ import ImageModal from './TiendaAgrandarImgModal';
 import { useOfertas } from './TiendaOfertasContext';
 
 
-function ProductosTienda({ products, addToCart }) {
+function TiendaProductos ({ products, addToCart }) {
   const [selectedImages, setSelectedImages] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { ofertas } = useOfertas();
@@ -72,4 +72,4 @@ function ProductosTienda({ products, addToCart }) {
   );
 }
 
-export default ProductosTienda;
+export default TiendaProductos;

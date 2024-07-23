@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 
-function ImageModal({ images, isOpen, closeModal }) {
+function TiendaAgrandarImgModal({ images, isOpen, closeModal }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   if (!isOpen) return null;
@@ -28,4 +28,4 @@ function ImageModal({ images, isOpen, closeModal }) {
   );
 }
 
-export default ImageModal;
+export default TiendaAgrandarImgModal;
