@@ -1,93 +1,903 @@
 [
-    {
-      "id": 1,
-      "nombre": "A Dormir Amiguitos",
-      "artista": "Puchulita y El Topo Gigio",
-      "categoria": "Pop Infantil",
-      "duracion": "2:30",
-      "url": "/audio/cancion-1.mp3",
-      "imagen": "/img/08-tapas-audio/cancion-1.png"
-    },
-    {
-      "id": 2,
-      "nombre": "Colores Brillantes",
-      "artista": "Puchulita y su Banda",
-      "categoria": "Pop Infantil",
-      "duracion": "3:00",
-      "url": "/audio/cancion-2.mp3",
-      "imagen": "/img/08-tapas-audio/cancion-2.png"
-    },
-    {
-      "id": 3,
-      "nombre": "Uno, Dos, Tres",
-      "artista": "Puchulita y su Banda",
-      "categoria": "Rock Infantil",
-      "duracion": "2:45",
-      "url": "/audio/cancion-3.mp3",
-      "imagen": "/img/08-tapas-audio/cancion-3.png"
-    },
-    {
-      "id": 4,
-      "nombre": "Animales Amigos",
-      "artista": "Puchulita y su Banda",
-      "categoria": "Pop Infantil",
-      "duracion": "3:15",
-      "url": "/audio/cancion-4.mp3",
-      "imagen": "/img/08-tapas-audio/cancion-4.png"
-    },
-    {
-      "id": 5,
-      "nombre": "Manos Limpias",
-      "artista": "Puchulita y su Banda",
-      "categoria": "Electro Pop Infantil",
-      "duracion": "2:50",
-      "url": "/audio/cancion-5.mp3",
-      "imagen": "/img/08-tapas-audio/cancion-5.png"
-    },
-    {
-      "id": 6,
-      "nombre": "Jugar en el Parque",
-      "artista": "Puchulita y su Banda",
-      "categoria": "Pop Infantil",
-      "duracion": "3:05",
-      "url": "/audio/cancion-6.mp3",
-      "imagen": "/img/08-tapas-audio/cancion-6.png"
-    },
-    {
-      "id": 7,
-      "nombre": "Días Divertidos",
-      "artista": "Puchulita y su Banda",
-      "categoria": "Rock Infantil",
-      "duracion": "2:55",
-      "url": "/audio/cancion-7.mp3",
-      "imagen": "/img/08-tapas-audio/cancion-7.png"
-    },
-    {
-      "id": 8,
-      "nombre": "Baila con Puchulita",
-      "artista": "Puchulita y su Banda",
-      "categoria": "Electro Pop Infantil",
-      "duracion": "3:20",
-      "url": "/audio/cancion-8.mp3",
-      "imagen": "/img/08-tapas-audio/cancion-8.png"
-    },
-    {
-      "id": 9,
-      "nombre": "Frutas y Verduras",
-      "artista": "Puchulita y su Banda",
-      "categoria": "Pop Infantil",
-      "duracion": "2:40",
-      "url": "/audio/cancion-9.mp3",
-      "imagen": "/img/08-tapas-audio/cancion-9.png"
-    },
-    {
-      "id": 10,
-      "nombre": "Hola y Adiós",
-      "artista": "Puchulita y su Banda",
-      "categoria": "Electro Pop Infantil",
-      "duracion": "3:10",
-      "url": "/audio/cancion-10.mp3",
-      "imagen": "/img/08-tapas-audio/cancion-10.png"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "nombre": "A Dormir Amiguitos",
+    "artista": "Puchulita y El Topo Gigio",
+    "categoria": "Pop Infantil",
+    "duracion": "2:30",
+    "url": "/audio/cancion-1.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-1.png"
+  },
+  {
+    "id": 2,
+    "nombre": "Colores Brillantes",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "3:00",
+    "url": "/audio/cancion-2.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-2.png"
+  },
+  {
+    "id": 3,
+    "nombre": "Uno, Dos, Tres",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Rock Infantil",
+    "duracion": "2:45",
+    "url": "/audio/cancion-3.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-3.png"
+  },
+  {
+    "id": 4,
+    "nombre": "Animales Amigos",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "3:15",
+    "url": "/audio/cancion-4.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-4.png"
+  },
+  {
+    "id": 5,
+    "nombre": "Manos Limpias",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Electro Pop Infantil",
+    "duracion": "2:50",
+    "url": "/audio/cancion-5.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-5.png"
+  },
+  {
+    "id": 6,
+    "nombre": "Jugar en el Parque",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "3:05",
+    "url": "/audio/cancion-6.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-6.png"
+  },
+  {
+    "id": 7,
+    "nombre": "Días Divertidos",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Rock Infantil",
+    "duracion": "2:55",
+    "url": "/audio/cancion-7.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-7.png"
+  },
+  {
+    "id": 8,
+    "nombre": "Baila con Puchulita",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Electro Pop Infantil",
+    "duracion": "3:20",
+    "url": "/audio/cancion-8.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-8.png"
+  },
+  {
+    "id": 9,
+    "nombre": "Frutas y Verduras",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "2:40",
+    "url": "/audio/cancion-9.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-9.png"
+  },
+  {
+    "id": 10,
+    "nombre": "Hola y Adiós",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Electro Pop Infantil",
+    "duracion": "3:10",
+    "url": "/audio/cancion-10.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-10.png"
+  },
+  {
+    "id": 11,
+    "nombre": "El Cuento de la Luna",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "2:55",
+    "url": "/audio/cancion-11.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-11.png"
+  },
+  {
+    "id": 12,
+    "nombre": "Dibujitos Divertidos",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Rock Infantil",
+    "duracion": "3:10",
+    "url": "/audio/cancion-12.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-12.png"
+  },
+  {
+    "id": 13,
+    "nombre": "Viaje en Globo",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Electro Pop Infantil",
+    "duracion": "3:00",
+    "url": "/audio/cancion-13.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-13.png"
+  },
+  {
+    "id": 14,
+    "nombre": "El Tren de los Sueños",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "2:45",
+    "url": "/audio/cancion-14.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-14.png"
+  },
+  {
+    "id": 15,
+    "nombre": "Canciones del Mar",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Rock Infantil",
+    "duracion": "3:05",
+    "url": "/audio/cancion-15.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-15.png"
+  },
+  {
+    "id": 16,
+    "nombre": "El Mundo de los Juguetes",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Electro Pop Infantil",
+    "duracion": "2:50",
+    "url": "/audio/cancion-16.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-16.png"
+  },
+  {
+    "id": 17,
+    "nombre": "Canta y Ríe",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "3:15",
+    "url": "/audio/cancion-17.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-17.png"
+  },
+  {
+    "id": 18,
+    "nombre": "Cuentos de Hadas",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Rock Infantil",
+    "duracion": "3:00",
+    "url": "/audio/cancion-18.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-18.png"
+  },
+  {
+    "id": 19,
+    "nombre": "Fiesta en el Jardín",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Electro Pop Infantil",
+    "duracion": "3:10",
+    "url": "/audio/cancion-19.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-19.png"
+  },
+  {
+    "id": 20,
+    "nombre": "Diversión en la Nieve",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "2:35",
+    "url": "/audio/cancion-20.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-20.png"
+  },
+
+  {
+    "id": 21,
+    "nombre": "El Ratón Viajero",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "2:50",
+    "url": "/audio/cancion-21.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-21.png"
+  },
+  {
+    "id": 22,
+    "nombre": "El Arco Iris",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Electro Pop Infantil",
+    "duracion": "3:05",
+    "url": "/audio/cancion-22.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-22.png"
+  },
+  {
+    "id": 23,
+    "nombre": "Fiesta en la Granja",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "3:00",
+    "url": "/audio/cancion-23.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-23.png"
+  },
+  {
+    "id": 24,
+    "nombre": "La Canción de los Colores",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Rock Infantil",
+    "duracion": "2:45",
+    "url": "/audio/cancion-24.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-24.png"
+  },
+  {
+    "id": 25,
+    "nombre": "El Tren Fantástico",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Electro Pop Infantil",
+    "duracion": "3:20",
+    "url": "/audio/cancion-25.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-25.png"
+  },
+  {
+    "id": 26,
+    "nombre": "Canción del Bosque",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "3:10",
+    "url": "/audio/cancion-26.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-26.png"
+  },
+  {
+    "id": 27,
+    "nombre": "Aventura en la Selva",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Rock Infantil",
+    "duracion": "2:55",
+    "url": "/audio/cancion-27.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-27.png"
+  },
+  {
+    "id": 28,
+    "nombre": "La Canción de la Primavera",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Electro Pop Infantil",
+    "duracion": "3:15",
+    "url": "/audio/cancion-28.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-28.png"
+  },
+  {
+    "id": 29,
+    "nombre": "El Pequeño Explorador",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "2:50",
+    "url": "/audio/cancion-29.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-29.png"
+  },
+  {
+    "id": 30,
+    "nombre": "Los Sueños de la Noche",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Rock Infantil",
+    "duracion": "3:05",
+    "url": "/audio/cancion-30.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-30.png"
+  },
+  {
+    "id": 31,
+    "nombre": "La Canción del Sol",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "2:40",
+    "url": "/audio/cancion-31.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-31.png"
+  },
+  {
+    "id": 32,
+    "nombre": "Diversión en el Parque",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Electro Pop Infantil",
+    "duracion": "3:20",
+    "url": "/audio/cancion-32.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-32.png"
+  },
+  {
+    "id": 33,
+    "nombre": "El Viaje del Pequeño Barco",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "3:00",
+    "url": "/audio/cancion-33.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-33.png"
+  },
+  {
+    "id": 34,
+    "nombre": "Canción del Cielo Azul",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Rock Infantil",
+    "duracion": "2:55",
+    "url": "/audio/cancion-34.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-34.png"
+  },
+  {
+    "id": 35,
+    "nombre": "Fiesta en el Jardín",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Electro Pop Infantil",
+    "duracion": "3:05",
+    "url": "/audio/cancion-35.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-35.png"
+  },
+  {
+    "id": 36,
+    "nombre": "Aventura en el Espacio",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "3:10",
+    "url": "/audio/cancion-36.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-36.png"
+  },
+  {
+    "id": 37,
+    "nombre": "Canción de los Animales",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Rock Infantil",
+    "duracion": "2:50",
+    "url": "/audio/cancion-37.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-37.png"
+  },
+  {
+    "id": 38,
+    "nombre": "Los Secretos del Bosque",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Electro Pop Infantil",
+    "duracion": "3:15",
+    "url": "/audio/cancion-38.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-38.png"
+  },
+  {
+    "id": 39,
+    "nombre": "La Fiesta de los Juguetes",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "3:05",
+    "url": "/audio/cancion-39.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-39.png"
+  },
+  {
+    "id": 40,
+    "nombre": "Canción del Arco Iris",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Rock Infantil",
+    "duracion": "2:45",
+    "url": "/audio/cancion-40.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-40.png"
+  },
+  {
+    "id": 41,
+    "nombre": "El Pequeño Tesoro",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "2:50",
+    "url": "/audio/cancion-41.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-41.png"
+  },
+  {
+    "id": 42,
+    "nombre": "Canción del Océano",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Electro Pop Infantil",
+    "duracion": "3:00",
+    "url": "/audio/cancion-42.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-42.png"
+  },
+  {
+    "id": 43,
+    "nombre": "El Mundo de los Cuentos",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "3:10",
+    "url": "/audio/cancion-43.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-43.png"
+  },
+  {
+    "id": 44,
+    "nombre": "La Canción de la Estrella",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Rock Infantil",
+    "duracion": "2:55",
+    "url": "/audio/cancion-44.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-44.png"
+  },
+  {
+    "id": 45,
+    "nombre": "Día de Picnic",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Electro Pop Infantil",
+    "duracion": "3:20",
+    "url": "/audio/cancion-45.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-45.png"
+  },
+  {
+    "id": 46,
+    "nombre": "La Canción del Árbol",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "2:45",
+    "url": "/audio/cancion-46.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-46.png"
+  },
+  {
+    "id": 47,
+    "nombre": "El Viaje a la Luna",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Rock Infantil",
+    "duracion": "3:05",
+    "url": "/audio/cancion-47.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-47.png"
+  },
+  {
+    "id": 48,
+    "nombre": "Canción del Desierto",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Electro Pop Infantil",
+    "duracion": "3:10",
+    "url": "/audio/cancion-48.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-48.png"
+  },
+  {
+    "id": 49,
+    "nombre": "El Sueño de los Niños",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "2:50",
+    "url": "/audio/cancion-49.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-49.png"
+  },
+  {
+    "id": 50,
+    "nombre": "La Canción del Mar",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Rock Infantil",
+    "duracion": "3:00",
+    "url": "/audio/cancion-50.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-50.png"
+  },
+  {
+    "id": 51,
+    "nombre": "El Pequeño Gran Héroe",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "2:55",
+    "url": "/audio/cancion-51.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-51.png"
+  },
+  {
+    "id": 52,
+    "nombre": "Canción del Bosque Encantado",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Electro Pop Infantil",
+    "duracion": "3:15",
+    "url": "/audio/cancion-52.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-52.png"
+  },
+  {
+    "id": 53,
+    "nombre": "La Canción del Dinosaurio",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "3:10",
+    "url": "/audio/cancion-53.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-53.png"
+  },
+  {
+    "id": 54,
+    "nombre": "El Viaje al Polo Norte",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Rock Infantil",
+    "duracion": "2:45",
+    "url": "/audio/cancion-54.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-54.png"
+  },
+  {
+    "id": 55,
+    "nombre": "La Canción de la Montaña",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Electro Pop Infantil",
+    "duracion": "3:00",
+    "url": "/audio/cancion-55.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-55.png"
+  },
+  {
+    "id": 56,
+    "nombre": "El Juego de las Estrellas",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "2:50",
+    "url": "/audio/cancion-56.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-56.png"
+  },
+  {
+    "id": 57,
+    "nombre": "La Canción del Océano Azul",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Rock Infantil",
+    "duracion": "3:05",
+    "url": "/audio/cancion-57.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-57.png"
+  },
+  {
+    "id": 58,
+    "nombre": "Canción del Tren de Juguete",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Electro Pop Infantil",
+    "duracion": "3:15",
+    "url": "/audio/cancion-58.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-58.png"
+  },
+  {
+    "id": 59,
+    "nombre": "La Canción del Zodiaco",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "2:45",
+    "url": "/audio/cancion-59.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-59.png"
+  },
+  {
+    "id": 60,
+    "nombre": "El Pequeño Solitario",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Rock Infantil",
+    "duracion": "3:00",
+    "url": "/audio/cancion-60.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-60.png"
+  },
+  {
+    "id": 61,
+    "nombre": "El Viaje al Circo",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "2:55",
+    "url": "/audio/cancion-61.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-61.png"
+  },
+  {
+    "id": 62,
+    "nombre": "Canción de la Nube Mágica",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Electro Pop Infantil",
+    "duracion": "3:10",
+    "url": "/audio/cancion-62.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-62.png"
+  },
+  {
+    "id": 63,
+    "nombre": "El Mundo de los Juguetes",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "2:50",
+    "url": "/audio/cancion-63.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-63.png"
+  },
+  {
+    "id": 64,
+    "nombre": "La Canción del Pequeño Pirata",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Rock Infantil",
+    "duracion": "3:05",
+    "url": "/audio/cancion-64.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-64.png"
+  },
+  {
+    "id": 65,
+    "nombre": "Canción del Estadio",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Electro Pop Infantil",
+    "duracion": "3:00",
+    "url": "/audio/cancion-65.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-65.png"
+  },
+  {
+    "id": 66,
+    "nombre": "El Viaje de los Dinosaurios",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "3:15",
+    "url": "/audio/cancion-66.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-66.png"
+  },
+  {
+    "id": 67,
+    "nombre": "La Canción del Dragón",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Rock Infantil",
+    "duracion": "2:50",
+    "url": "/audio/cancion-67.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-67.png"
+  },
+  {
+    "id": 68,
+    "nombre": "Canción del Pequeño Jardinero",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Electro Pop Infantil",
+    "duracion": "3:05",
+    "url": "/audio/cancion-68.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-68.png"
+  },
+  {
+    "id": 69,
+    "nombre": "La Fiesta de los Colores",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "2:45",
+    "url": "/audio/cancion-69.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-69.png"
+  },
+  {
+    "id": 70,
+    "nombre": "El Pequeño Astrónomo",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Rock Infantil",
+    "duracion": "3:00",
+    "url": "/audio/cancion-70.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-70.png"
+  },
+  {
+    "id": 71,
+    "nombre": "Canción del Pequeño Científico",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Electro Pop Infantil",
+    "duracion": "3:10",
+    "url": "/audio/cancion-71.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-71.png"
+  },
+  {
+    "id": 72,
+    "nombre": "La Canción del Tren",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "2:55",
+    "url": "/audio/cancion-72.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-72.png"
+  },
+  {
+    "id": 73,
+    "nombre": "El Paseo en Globo",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Rock Infantil",
+    "duracion": "3:05",
+    "url": "/audio/cancion-73.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-73.png"
+  },
+  {
+    "id": 74,
+    "nombre": "La Canción del Sol y la Luna",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Electro Pop Infantil",
+    "duracion": "3:20",
+    "url": "/audio/cancion-74.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-74.png"
+  },
+  {
+    "id": 75,
+    "nombre": "Canción del Tren Mágico",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "3:00",
+    "url": "/audio/cancion-75.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-75.png"
+  },
+  {
+    "id": 76,
+    "nombre": "El Pequeño Aventurero",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Rock Infantil",
+    "duracion": "2:50",
+    "url": "/audio/cancion-76.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-76.png"
+  },
+  {
+    "id": 77,
+    "nombre": "Canción del Pequeño Monstruo",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Electro Pop Infantil",
+    "duracion": "3:10",
+    "url": "/audio/cancion-77.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-77.png"
+  },
+  {
+    "id": 78,
+    "nombre": "La Fiesta en la Nieve",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "3:05",
+    "url": "/audio/cancion-78.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-78.png"
+  },
+  {
+    "id": 79,
+    "nombre": "El Viaje al Espacio",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Rock Infantil",
+    "duracion": "2:45",
+    "url": "/audio/cancion-79.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-79.png"
+  },
+  {
+    "id": 80,
+    "nombre": "Canción del Jardín Secreto",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Electro Pop Infantil",
+    "duracion": "3:15",
+    "url": "/audio/cancion-80.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-80.png"
+  },
+  {
+    "id": 81,
+    "nombre": "La Canción del Pequeño Robot",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "2:55",
+    "url": "/audio/cancion-81.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-81.png"
+  },
+  {
+    "id": 82,
+    "nombre": "El Mundo de los Colores",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Rock Infantil",
+    "duracion": "3:10",
+    "url": "/audio/cancion-82.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-82.png"
+  },
+  {
+    "id": 83,
+    "nombre": "Canción del Río Mágico",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Electro Pop Infantil",
+    "duracion": "3:00",
+    "url": "/audio/cancion-83.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-83.png"
+  },
+  {
+    "id": 84,
+    "nombre": "La Canción del Pequeño Campeón",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "3:05",
+    "url": "/audio/cancion-84.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-84.png"
+  },
+  {
+    "id": 85,
+    "nombre": "El Viaje a la Isla del Tesoro",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Rock Infantil",
+    "duracion": "2:50",
+    "url": "/audio/cancion-85.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-85.png"
+  },
+  {
+    "id": 86,
+    "nombre": "Canción del Pequeño Explorador",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Electro Pop Infantil",
+    "duracion": "3:10",
+    "url": "/audio/cancion-86.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-86.png"
+  },
+  {
+    "id": 87,
+    "nombre": "La Canción del Pequeño Pintor",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "3:15",
+    "url": "/audio/cancion-87.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-87.png"
+  },
+  {
+    "id": 88,
+    "nombre": "El Baile del Pequeño Ratón",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Rock Infantil",
+    "duracion": "2:45",
+    "url": "/audio/cancion-88.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-88.png"
+  },
+  {
+    "id": 89,
+    "nombre": "Canción del Castillo Encantado",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Electro Pop Infantil",
+    "duracion": "3:00",
+    "url": "/audio/cancion-89.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-89.png"
+  },
+  {
+    "id": 90,
+    "nombre": "La Canción del Pequeño Héroe",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "3:05",
+    "url": "/audio/cancion-90.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-90.png"
+  },
+  {
+    "id": 91,
+    "nombre": "El Viaje al Mundo Submarino",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Rock Infantil",
+    "duracion": "3:10",
+    "url": "/audio/cancion-91.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-91.png"
+  },
+  {
+    "id": 92,
+    "nombre": "Canción del Pequeño Aventurero",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Electro Pop Infantil",
+    "duracion": "2:50",
+    "url": "/audio/cancion-92.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-92.png"
+  },
+  {
+    "id": 93,
+    "nombre": "La Canción del Pequeño Héroe",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "3:15",
+    "url": "/audio/cancion-93.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-93.png"
+  },
+  {
+    "id": 94,
+    "nombre": "El Baile de los Animales",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Rock Infantil",
+    "duracion": "2:45",
+    "url": "/audio/cancion-94.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-94.png"
+  },
+  {
+    "id": 95,
+    "nombre": "Canción del Gran Globo",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Electro Pop Infantil",
+    "duracion": "3:10",
+    "url": "/audio/cancion-95.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-95.png"
+  },
+  {
+    "id": 96,
+    "nombre": "La Canción del Pequeño Dinosaurio",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "2:55",
+    "url": "/audio/cancion-96.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-96.png"
+  },
+  {
+    "id": 97,
+    "nombre": "El Viaje al Mundo de los Sueños",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Rock Infantil",
+    "duracion": "3:05",
+    "url": "/audio/cancion-97.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-97.png"
+  },
+  {
+    "id": 98,
+    "nombre": "Canción del Pequeño Esquimal",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Electro Pop Infantil",
+    "duracion": "3:00",
+    "url": "/audio/cancion-98.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-98.png"
+  },
+  {
+    "id": 99,
+    "nombre": "La Canción del Pequeño Fantasía",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Pop Infantil",
+    "duracion": "3:10",
+    "url": "/audio/cancion-99.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-99.png"
+  },
+  {
+    "id": 100,
+    "nombre": "El Pequeño Héroe del Espacio",
+    "artista": "Puchulita y su Banda",
+    "categoria": "Rock Infantil",
+    "duracion": "2:55",
+    "url": "/audio/cancion-100.mp3",
+    "imagen": "/img/08-tapas-audio/cancion-100.png"
+  }
+ ]

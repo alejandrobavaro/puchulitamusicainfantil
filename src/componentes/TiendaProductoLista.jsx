@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Producto from './TiendaProducto';
 import { OfertasProvider } from './TiendaOfertasContext'; 
+import '../assets/scss/_03-Componentes/_Tienda.scss';
 
 const ProductoLista = ({ onEncargar }) => {
   const [productos, setProductos] = useState([]);

@@ -1,21 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
-import CancionesLista from "./MusicaCancionesLista";
+import MusicaCancionesLista from "./MusicaCancionesLista";
 import ReproductorMusica from "./MusicaReproductor";
-import SearchBar from "./HeaderSearchBar";
-import MusicaPublicidadSlider from "./MusicaPublicidadSlider";
 import { useOfertas } from "./TiendaOfertasContext";
+import '../assets/scss/_03-Componentes/_Musica.scss';
 
-function Musica({
-  cart,
-  setCart,
-  addToCart,
-  removeFromCart,
-  searchQuery,
-  setSearchQuery,
-}) {
+function Musica({ cart, setCart, addToCart, removeFromCart, searchQuery, setSearchQuery }) {
   const [songs, setSongs] = useState([]);
+  const [productos, setProductos] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("Todos");
   const { ofertas } = useOfertas();
 
@@ -23,6 +16,7 @@ function Musica({
     const cargarCancionesDesdeJSON = async () => {
       try {
         const response = await fetch("/canciones.json");
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         const canciones = await response.json();
         setSongs(canciones);
       } catch (error) {
@@ -30,19 +24,33 @@ function Musica({
       }
     };
 
+    const cargarProductosDesdeJSON = async () => {
+      try {
+        const response = await fetch("/productos.json");
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        const productosData = await response.json();
+        setProductos(productosData);
+      } catch (error) {
+        console.error("Error al cargar los productos:", error);
+      }
+    };
+
     cargarCancionesDesdeJSON();
+    cargarProductosDesdeJSON();
   }, []);
 
-  const handleAddToCart = (cancion) => {
-    addToCart(cancion);
+  const handleAddToCart = (item) => {
+    addToCart(item);
     Toastify({
-      text: `Añadiste ${cancion.nombre} a la lista de reproducción.`,
+      text: `Añadiste ${item.nombre} a la lista de reproducción.`,
       duration: 3000,
       close: true,
       gravity: "top",
       position: "left",
-      backgroundColor: "#ff69b4",
-      className: "toastify-total",
+      style: {
+        background: "#ff69b4",
+      },
+      className: "toastify-musica",
     }).showToast();
   };
 
@@ -53,10 +61,11 @@ function Musica({
       close: true,
       gravity: "top",
       position: "left",
-      backgroundColor: "#9370db",
-      className: "toastify-total",
+      style: {
+        background: "#9370db",
+      },
+      className: "toastify-musica",
     }).showToast();
-    // Lógica para reproducir la preview
   };
 
   const handleClearCart = () => {
@@ -67,42 +76,32 @@ function Musica({
       close: true,
       gravity: "top",
       position: "left",
-      backgroundColor: "#ff0000",
-      className: "toastify-total",
+      style: {
+        background: "#000000",
+      },
+      className: "toastify-musica",
     }).showToast();
   };
 
-  const categories = [
-    "Todos",
-    ...new Set(songs.map((cancion) => cancion.categoria)),
-  ];
+  const filteredSongs = songs.filter(song =>
+    song.nombre.toLowerCase().includes(searchQuery.toLowerCase()) &&
+    (selectedCategory === "Todos" || song.categoria === selectedCategory)
+  );
 
-  const filteredSongs = songs.filter((cancion) => {
-    const matchesCategory =
-      selectedCategory === "Todos" || cancion.categoria === selectedCategory;
-    const matchesSearchQuery =
-      searchQuery === "" ||
-      cancion.nombre.toLowerCase().includes(searchQuery.toLowerCase());
-    return matchesCategory && matchesSearchQuery;
-  });
+  const categories = ['Todos', ...new Set(songs.map((song) => song.categoria))];
 
   return (
     <div className="musica-container">
-      <SearchBar
-        categories={categories}
-        onCategoryChange={setSelectedCategory}
-      />
-      <div className="musica-content">
-        <div className="canciones-lista">
-          <CancionesLista
-            songs={filteredSongs}
-            addToCart={handleAddToCart}
-            playPreview={handlePlayPreview}
-          />
-        </div>
-        <div className="publicidad-slider-musica">
-          <MusicaPublicidadSlider />
-        </div>
+      <div className="tabla-canciones-container">
+        <MusicaCancionesLista
+          songs={filteredSongs}
+          handleAddToCart={handleAddToCart}
+          handlePlayPreview={handlePlayPreview}
+          searchQuery={searchQuery}
+          selectedCategory={selectedCategory}
+          setSelectedCategory={setSelectedCategory}
+          productos={productos} // Pasar los productos al componente
+        />
       </div>
       <ReproductorMusica
         cart={cart}

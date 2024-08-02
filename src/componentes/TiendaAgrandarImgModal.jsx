@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../assets/scss/_03-Componentes/_Tienda.scss';
 
 
 function TiendaAgrandarImgModal({ images, isOpen, closeModal }) {

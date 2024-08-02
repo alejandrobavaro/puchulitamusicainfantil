@@ -1,0 +1,35 @@
+.reproductor-card-musica {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  animation: fadeIn 0.5s ease-in-out;
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .reproductor-imagen-musica {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin-right: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .reproductor-info-musica {
+    p {
+      margin: 0;
+      font-size: 16px;
+      color: #fff;
+
+      strong {
+        font-size: 18px;
+        color: #ff69b4;
+      }
+    }
+  }
+}

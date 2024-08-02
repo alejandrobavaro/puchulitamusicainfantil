@@ -1,0 +1,159 @@
+/* _MusicaCancionesLista.scss */
+
+.cancion-card-musica {
+  display: flex;
+  align-items: center;
+  margin: 0; /* Reducido el espacio entre tarjetas */
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 5px rgba(255, 0, 140, 0.702);
+    cursor: pointer;
+  }
+
+  .cancion-imagen-musica {
+    width: 25px;
+    height: auto;
+    object-fit: cover;
+    margin-right: 50px;
+    margin-left: 50px;
+    border-radius: 5px;
+  }
+
+  .cancion-info-musica {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #333;
+
+    .info-item {
+      margin-right: 10px;
+    }
+
+    button {
+      border: none;
+      cursor: pointer;
+      color: #ff00aa;
+      font-size: large;
+      margin-right: 50px;
+      margin-left: 50px;
+      border-radius: 5px;
+      padding: 5px;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background: #ff007b;
+        color: white;
+      }
+    }
+  }
+}
+
+.musica-grid-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr; // 3 partes para el listado, 1 parte para la publicidad
+  gap: 0px; // Espacio entre las columnas
+  padding: 0px;
+  max-width: 100%; // Ajuste del ancho máximo para evitar desbordamiento horizontal
+}
+
+.canciones-lista-musica {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+
+  overflow-y: auto;
+}
+
+.musica-publicidad {
+  background-color: gray;
+  padding: 10px;
+  border-radius: 10px; // Ajusta según tu estilo
+  box-shadow: 0 0 10px rgb(255, 1, 217);
+  max-height: 500px; // Limitar la altura máxima del contenedor de publicidad
+  overflow: hidden; // Asegurarse de que el contenido adicional no desborde
+  position: fixed; // Fijar la posición
+  top: 150px; // Ajusta la distancia desde la parte superior
+  right: 30px; // Ajusta la distancia desde el lado derecho
+  width: 300px; // Ajusta el ancho según sea necesario
+  z-index: 1000; // Asegura que la publicidad esté sobre otros elementos
+
+
+  p {
+    margin: 0;
+    font-size: 16px;
+    color: #ffe6f7;
+    font-weight: bold;
+  }
+
+  .slide-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .imagen-publicidad {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 30px;
+    }
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #ff007b;
+    }
+  }
+}
+
+// Ajustes responsivos
+@media (max-width: 768px) {
+  .musica-grid-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .musica-publicidad {
+    display: none; // Opcional: Ocultar la publicidad en pantallas más pequeñas si no es necesaria
+  }
+
+  .cancion-card-musica {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .cancion-imagen-musica {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+
+    .cancion-info-musica {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+
+      button {
+        width: 100%;
+        margin: 0;
+        margin-top: 10px;
+      }
+    }
+  }
+}

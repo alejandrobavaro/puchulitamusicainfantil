@@ -1,4 +1,5 @@
 import React, { createContext, useReducer, useContext } from 'react';
+import '../assets/scss/_03-Componentes/_SesionLoginRegister.scss';
 
 const AuthContext = createContext();
 

@@ -1,26 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Trash } from 'react-bootstrap-icons';
+import '../assets/scss/_03-Componentes/_MusicaReproductorCard.scss';
 
-function MusicaReproductorCard({ song, removeFromCart }) {
+function MusicaReproductorCard({ song }) {
   return (
-    <div className="reproductor-musica-card">
-      <div className="song-info">
-        <p><strong>Nombre de canción:</strong> {song.nombre}</p>
-        <p><strong>Disco:</strong> {song.artista}</p>
-        <p><strong>Categoría o Género Musical:</strong> {song.categoria}</p>
-        <p><strong>Tiempo de duración:</strong> {song.duracion}</p>
+    <div className="reproductor-card-musica">
+      <img src={song.cover} alt={song.title} className="reproductor-imagen-musica" />
+      <div className="reproductor-info-musica">
+        <p>{`Nombre de canción: ${song.title}`}</p>
+        <p>{`Álbum: ${song.album}`}</p>
+        <p>{`Género: ${song.genre}`}</p>
+        <p>{`Duración: ${song.duration}`}</p>
       </div>
-      <button onClick={() => removeFromCart(song.id)} className="remove-song-btn">
-        <Trash />
-      </button>
     </div>
   );
 }
 
 MusicaReproductorCard.propTypes = {
-  song: PropTypes.object.isRequired,
-  removeFromCart: PropTypes.func.isRequired,
+  song: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    album: PropTypes.string.isRequired,
+    genre: PropTypes.string.isRequired,
+    duration: PropTypes.string.isRequired,
+    cover: PropTypes.string.isRequired,
+    audio: PropTypes.string.isRequired
+  }).isRequired,
 };
 
 export default MusicaReproductorCard;

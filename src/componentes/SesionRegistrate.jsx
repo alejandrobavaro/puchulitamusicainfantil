@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from './SesionAuthContext';
 import LoadingSpinner from './SesionLoadingSpinner';
+import '../assets/scss/_03-Componentes/_SesionLoginRegister.scss';
 
 const Register = () => {
   const [email, setEmail] = useState('');
@@ -18,49 +19,45 @@ const Register = () => {
       return;
     }
     setLoading(true);
-    // Simulate registration logic
     setTimeout(() => {
       dispatch({ type: 'REGISTER', payload: { email } });
       setLoading(false);
       navigate('/');
-    }, 2000); // Simula un retraso
+    }, 2000);
   };
 
   return (
-    <div className="register-container gridPadre">
-<div className='gridPadre1'>
-      <img className='imagen-publicidad3' src="/img/05-img-costados-larga/4.png" alt="" />
-      
+    <div className="auth-container">
       {loading ? (
         <LoadingSpinner />
       ) : (
-        <form onSubmit={handleRegister} className="register-form">
-          <h2>Registrate</h2>
-          <input
-            type="email"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <input
-            type="password"
-            placeholder="Confirm Password"
-            value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)}
-          />
-          <button type="submit">Register</button>
-        </form>
+        <div className="auth-content">
+          <img className='auth-image' src="/img/05-img-costados-larga/4.png" alt="" />
+          <form onSubmit={handleRegister} className="auth-form">
+            <h2>Registrate</h2>
+            <input
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <input
+              type="password"
+              placeholder="Confirm Password"
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+            />
+            <button type="submit">Register</button>
+          </form>
+          <img className='auth-image' src="/img/05-img-costados-larga/1a.png" alt="" />
+        </div>
       )}
-       <img className='imagen-publicidad3' src="/img/05-img-costados-larga/1a.png" alt="" />
-       
-    </div>
-    
     </div>
   );
 };

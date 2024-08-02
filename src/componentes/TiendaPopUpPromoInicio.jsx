@@ -1,5 +1,6 @@
 import React from "react";
 import Modal from "react-modal";
+import '../assets/scss/_03-Componentes/_Tienda.scss';
 
 Modal.setAppElement("#root");
 

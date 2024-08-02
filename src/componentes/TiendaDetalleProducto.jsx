@@ -1,4 +1,5 @@
 import React from "react";
+import '../assets/scss/_03-Componentes/_Tienda.scss';
 
 const TiendaDetalleProducto = ({ detalle }) => {
   if (!detalle) return null;

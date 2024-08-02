@@ -1,25 +1,27 @@
 /*---------------------SASS A CSS------------------------*/
 
-@import "./_01-General/BodyHtml";
-
-@import "./_01-General/Responsive";
+@import "./_01-General/BodyIndexApp";
 
 
 //----------DISEÑO GRAL------------//
 
-@import "./_02-Diseño/Textos";
+// @import "./_02-Diseño/Responsive";
 
-@import "./_02-Diseño/Imagenes";
+// @import "./_02-Diseño/Textos";
 
-@import "./_02-Diseño/Alineacion";
+// @import "./_02-Diseño/Imagenes";
 
-@import "./_02-Diseño/GridEstructuras";
+// @import "./_02-Diseño/PublicidadSliders";
+
+// @import "./_02-Diseño/Alineacion";
+
+// @import "./_02-Diseño/GridEstructuras";
 
 @import "./_02-Diseño/Animaciones";
 
-@import "./_02-Diseño/Cards";
+// @import "./_02-Diseño/Cards";
 
-@import "./_02-Diseño/Botones";
+// @import "./_02-Diseño/Botones";
 
 
 //----------COMPONENTES------------------------//
@@ -32,11 +34,26 @@
 
 @import "./_03-Componentes/Header";
 
+@import "./_03-Componentes/_MainPublicidadSlider";
+
 @import "./_03-Componentes/MainContent";
+
 
 @import "./_03-Componentes/Musica";
 
-@import "./_03-Componentes/PublicidadSliders";
+@import "./_03-Componentes/MusicaCancionCard.scss";
+
+@import "./_03-Componentes/MusicaCancionesLista";
+
+
+
+@import "./_03-Componentes/MusicaReproductor";
+
+@import "./_03-Componentes/MusicaReproductorCard";
+
+
+
+
 
 @import "./_03-Componentes/SesionLoginRegister";
 

@@ -1,132 +1,117 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { useAuth } from "./SesionAuthContext"; // Importa el hook useAuth para obtener el estado de autenticación
+import { useAuth } from "./SesionAuthContext";
+import "../assets/scss/_03-Componentes/_Header.scss";
 
-const Header = ({ cart, searchQuery, setSearchQuery }) => {
+const Header = ({ searchQuery, setSearchQuery }) => {
   const location = useLocation();
-  const showCartLink = location.pathname.startsWith("/tienda");
-  const showSearchBar = location.pathname === "/tienda";
-  const { state, dispatch } = useAuth(); // Obtén el estado de autenticación
+  const { state, dispatch } = useAuth();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const handleToggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const shouldShowSearchBar = location.pathname === "/tienda" || location.pathname === "/musica";
 
   return (
-    <div className="header">
-      <div className="container">
-        {showCartLink && (
-          <div className="flota-carrito">
-            <div className="card3">
-              <Link to="/carrito" className="nav-link carrito-link">
-                <i className="bi bi-cart"></i> <hr />
-                <span className="card2">{cart.length}</span>
-                <hr /> Productos en el carrito
-              </Link>
-            </div>
-          </div>
-        )}
-
-        <header className="encabezado">
-          <div className="header-bottom">
-            <div>
+    <header className="header">
+      <div className="containerHeader">
+        <div className="header-topHeader">
+          <div className="search-containerHeader">
             <img
               src="/img/02-logos/puchulitamusicainfantil1.png"
               alt="Logo"
-              className="logo imagen-publicidad2"
+              className="logoHeader"
             />
-
-            <nav className="navbar navbar-expand-lg">
-              <div className="container-fluid">
-                <button
-                  aria-controls="navbarNavAltMarkup"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                  className="navbar-toggler"
-                  data-bs-target="#navbarNavAltMarkup"
-                  data-bs-toggle="collapse"
-                  type="button"
-                >
-                  <img
-                    className="imagen-limitada2 imagen-publicidad2"
-                    src="/img/02-logos/puchulitamusicainfantil1.png"
-                    alt=""
-                  />
-                  <span className="navbar-toggler-icon" />
+            {shouldShowSearchBar && (
+              <div className="search-bar-containerHeader">
+                <input
+                  type="text"
+                  placeholder={location.pathname === "/tienda" ? "Buscar productos" : "Buscar canciones"}
+                  className="search-barHeader"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                />
+                <button className="search-buttonHeader">
+                  <i className="bi bi-search"></i>
                 </button>
-                <div
-                  className="collapse navbar-collapse"
-                  id="navbarNavAltMarkup"
-                >
-                  <div className="navbar-nav tituloImportante3">
-                    <Link className="nav-link menu-link" to="/">
-                      Home
-                    </Link>
-                  
-                    <Link className="nav-link menu-link" to="/tienda">
-                      Tienda
-                    </Link>
-
-                    <Link className="nav-link menu-link" to="/contacto">
-                      Contacto
-                    </Link>
-                   
-                    <Link className="nav-link menu-link" to="/musica">
-  Música
-  <span className="index-text"> (en construcción) </span>
-</Link>
-
-
-
-                    {!state.isAuthenticated ? (
-                      <>
-                        <Link className="nav-link menu-link" to="/login">
-                          <p>
-                            {" "}
-                            Inicia Sesión -
-                            <i className="bi bi-box-arrow-in-right"></i>
-                          </p>
-                        </Link>
-                        <Link className="nav-link menu-link" to="/register">
-                          <p>
-                            {" "}
-                            Registrate -<i className="bi bi-filter-square"></i>
-                          </p>
-                        </Link>
-                      </>
-                    ) : (
-                      <Link
-                        className="nav-link menu-link"
-                        to="/logout"
-                        onClick={() => dispatch({ type: "LOGOUT" })}
-                      >
-                        <p>
-                          {" "}
-                          Cerrá Sesión -
-                          <i className="bi bi-box-arrow-right"></i>
-                        </p>
-                      </Link>
-                    )}
-                  </div>
-                </div>
               </div>
-            </nav>
-            </div>
+            )}
           </div>
+          <button
+            className="navbar-togglerHeader"
+            type="button"
+            aria-label="Toggle navigation"
+            onClick={handleToggleMobileMenu}
+          >
+            <span className="navbar-toggler-iconHeader" />
+          </button>
+        </div>
 
-          {showSearchBar && (
-            <div className="search-container">
-              <input
-                type="text"
-                placeholder="Buscar productos por categoría"
-                className="search-bar"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-              />
-              <button className="search-button btn">
-                <i className="bi bi-shift-fill"></i>
-              </button>
-            </div>
-          )}
-        </header>
+        <nav className={`navbarHeader ${isMobileMenuOpen ? "open" : ""}`}>
+          <div className="navbar-navHeader">
+            <Link
+              className="nav-linkHeader"
+              to="/"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              HOME
+            </Link>
+            <Link
+              className="nav-linkHeader"
+              to="/musica"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              MÚSICA
+            </Link>
+            <Link
+              className="nav-linkHeader"
+              to="/contacto"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              CONTACTO
+            </Link>
+            <Link
+              className="nav-linkHeader"
+              to="/tienda"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              TIENDA
+            </Link>
+            {!state.isAuthenticated ? (
+              <>
+                <Link
+                  className="nav-linkHeader"
+                  to="/login"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  INICIA SESIÓN
+                </Link>
+                <Link
+                  className="nav-linkHeader"
+                  to="/register"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  REGÍSTRATE
+                </Link>
+              </>
+            ) : (
+              <Link
+                className="nav-linkHeader"
+                to="/logout"
+                onClick={() => {
+                  dispatch({ type: "LOGOUT" });
+                  setIsMobileMenuOpen(false);
+                }}
+              >
+                CERRÁ SESIÓN
+              </Link>
+            )}
+          </div>
+        </nav>
       </div>
-    </div>
+    </header>
   );
 };
 

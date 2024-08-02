@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from './SesionAuthContext';
 import LoadingSpinner from './SesionLoadingSpinner';
+import '../assets/scss/_03-Componentes/_SesionLoginRegister.scss';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -13,41 +14,39 @@ const Login = () => {
   const handleLogin = (e) => {
     e.preventDefault();
     setLoading(true);
-    // Simulate authentication logic
     setTimeout(() => {
       dispatch({ type: 'LOGIN', payload: { email } });
       setLoading(false);
       navigate('/');
-    }, 2000); // Simula un retraso
+    }, 2000);
   };
 
   return (
-    <div className="login-container gridPadre">
-      <div className='gridPadre1'>
-      <img className='imagen-publicidad3' src="/img/05-img-costados-larga/2.png" alt="" />
-      
+    <div className="auth-container">
       {loading ? (
         <LoadingSpinner />
       ) : (
-        <form onSubmit={handleLogin} className="login-form">
-          <h2>Login</h2>
-          <input
-            type="email"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <button type="submit">Login</button>
-        </form>
+        <div className="auth-content">
+          <img className='auth-image' src="/img/05-img-costados-larga/2.png" alt="" />
+          <form onSubmit={handleLogin} className="auth-form">
+            <h2>Login</h2>
+            <input
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <button type="submit">Login</button>
+          </form>
+          <img className='auth-image' src="/img/05-img-costados-larga/20.png" alt="" />
+        </div>
       )}
-       <img className='imagen-publicidad3' src="/img/05-img-costados-larga/20.png" alt="" />
-          </div>
     </div>
   );
 };

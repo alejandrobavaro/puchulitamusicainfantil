@@ -1,4 +1,5 @@
 import React from 'react';
+import '../assets/scss/_03-Componentes/_SesionLoginRegister.scss';
 
 const LoadingSpinner = () => {
   return (

@@ -66,46 +66,49 @@ Aquí tienes capturas de pantalla y ejemplos de uso de la aplicación.
 ## Archivos SASS
 Los siguientes archivos SASS se utilizan en el proyecto para el diseño y la estructura:
 
-- `00-responsive.scss`
-- `01-body.scss`
-- `02-main.scss`
-- `03-header-nav.scss`
-- `04-footer.scss`
-- `05a-textos.scss`
-- `05b-formularios.scss`
-- `06-imagenes.scss`
-- `07-grid-estructuras.scss`
-- `08-cards.scss`
-- `09-botones.scss`
-- `10-animaciones.scss`
-- `11-alerts-toasts.scss`
-- `12-tienda.scss`
-- `13-popups.scss`
+- `_BodyIndexApp.scss`
+
+- `_AlertsModalsMsjs.scss`
+- `_Contacto.scss`
+- `_Footer.scss`
+- `_Header.scss`
+- `_MainContent.scss`
+- `_Musica.scss`
+- `_SesionLoginRegister.scss`
+- `_Tienda.scss`
+- `estilo.scss`
 
 ## Componentes JSX
 Los siguientes componentes JSX se utilizan en el proyecto para la funcionalidad de la aplicación:
 
-- `AuthContext.jsx`
-- `CarritoCompleto.jsx`
-- `CarritoTienda.jsx`
 - `Contacto.jsx`
-- `DetalleProducto.jsx`
 - `Footer.jsx`
 - `Header.jsx`
-- `ImageModal.jsx`
-- `Login.jsx`
-- `Logout.jsx`
+- `HeaderSearchBar.jsx`
 - `MainContent.jsx`
-- `Message.jsx`
-- `MiniCarrito.jsx`
-- `OfertasContext.jsx`
-- `PopUpModal.jsx`
-- `Producto.jsx`
-- `ProductoLista.jsx`
-- `ProductosTienda.jsx`
-- `PublicidadDebajo.jsx`
-- `SearchBar.jsx`
+- `Musica.jsx`
+- `MusicaCancionCard.jsx`
+- `MusicaCancionesLista.jsx`
+- `MusicaPublicidadSlider.jsx`
+- `MusicaReproductor.jsx`
+- `MusicaReproductorCard.jsx`
+- `ReactMessage.jsx`
+- `SesionAuthContent.jsx`
+- `SesionLoadingSpinner.jsx`
+- `SesionLogin.jsx`
+- `SesionLogout.jsx`
+- `SesionRegistrate.jsx`
 - `Tienda.jsx`
+- `TiendaAgrandarImgModal.jsx`
+- `TiendaCarrito.jsx`
+- `TiendaCarritoCompleto.jsx`
+- `TiendaDetalleProducto.jsx`
+- `TiendaMiniCarrito.jsx`
+- `TiendaOfertasContext.jsx`
+- `TiendaPopUpPromoInicio.jsx`
+- `TiendaProducto.jsx`
+- `TiendaProductos.jsx`
+- `TiendaPublicidadSlider.jsx`
 - `App.jsx`
 - `main.jsx`
 

@@ -1,3 +1,4 @@
+// src/componentes/Tienda.jsx
 import React, { useState, useEffect } from "react";
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
@@ -5,9 +6,10 @@ import Swal from "sweetalert2";
 import ProductosTienda from "./TiendaProductos";
 import CarritoTienda from "./TiendaCarrito";
 import DetalleProducto from "./TiendaDetalleProducto";
-import SearchBar from "./HeaderSearchBar";
+import Header from "./Header"; // Cambiado de HeaderSearchBar a Header
 import PopUpModal from "./TiendaPopUpPromoInicio";
 import { useOfertas } from "./TiendaOfertasContext";
+import '../assets/scss/_03-Componentes/_Tienda.scss';
 
 function Tienda({ cart, setCart, addToCart, removeFromCart, searchQuery, setSearchQuery }) {
   const [products, setProducts] = useState([]);
@@ -28,11 +30,10 @@ function Tienda({ cart, setCart, addToCart, removeFromCart, searchQuery, setSear
     };
 
     cargarProductosDesdeJSON();
-    setShowModal(true);
   }, []);
 
-  const closeModal = () => {
-    setShowModal(false);
+  const handleShowDetalle = (producto) => {
+    setDetalle(producto);
   };
 
   const handleAddToCart = (producto) => {
@@ -43,48 +44,55 @@ function Tienda({ cart, setCart, addToCart, removeFromCart, searchQuery, setSear
       close: true,
       gravity: "top",
       position: "left",
-      backgroundColor: "#4CAF50",
-      className: "toastify-total",
+      style: {
+        background: "#ff69b4",
+      },
+      className: "toastify-tienda",
     }).showToast();
   };
 
-  const handlePagar = () => {
-    Swal.fire({
-      title: "Proceso de Pago",
-      text: "Ahora vamos a realizar todo el proceso de tu pago. ¿Deseas continuar?",
-      icon: "question",
-      showCancelButton: true,
-      confirmButtonText: "Sí, continuar",
-      cancelButtonText: "No, volver a la tienda",
-    }).then((result) => {
-      if (result.isConfirmed) {
-        window.open(
-          "https://www.paypal.com/paypalme/alegondramusic?country.x=AR&locale.x=es_XC",
-          "_blank"
-        );
-      }
-    });
+  const handleClearCart = () => {
+    setCart([]);
+    Toastify({
+      text: "Carrito vaciado.",
+      duration: 3000,
+      close: true,
+      gravity: "top",
+      position: "left",
+      style: {
+        background: "#000000",
+      },
+      className: "toastify-tienda",
+    }).showToast();
   };
 
-  const categories = ['Todos', ...new Set(products.map((producto) => producto.categoria))];
+  const filteredProducts = products.filter(product =>
+    product.nombre.toLowerCase().includes(searchQuery.toLowerCase()) &&
+    (selectedCategory === 'Todos' || product.categoria === selectedCategory)
+  );
 
-  const filteredProducts = products.filter((producto) => {
-    const matchesCategory = selectedCategory === 'Todos' || producto.categoria === selectedCategory;
-    const matchesSearchQuery = searchQuery === "" || producto.nombre.toLowerCase().includes(searchQuery.toLowerCase());
-    return matchesCategory && matchesSearchQuery;
-  });
+  const categories = ['Todos', ...new Set(products.map((product) => product.categoria))];
 
   return (
-    <div className="tienda">
-      <CarritoTienda cart={cart} />
+    <>
+     
       <div className="tienda-container">
-        <SearchBar categories={categories} onCategoryChange={setSelectedCategory} />
-        <ProductosTienda products={filteredProducts} addToCart={handleAddToCart} />
-        <DetalleProducto detalle={detalle} />
-        <PopUpModal showModal={showModal} closeModal={closeModal} />
+        <ProductosTienda
+          products={filteredProducts}
+          handleAddToCart={handleAddToCart}
+          handleShowDetalle={handleShowDetalle}
+          searchQuery={searchQuery}
+          selectedCategory={selectedCategory}
+        />
+        <CarritoTienda
+          cart={cart}
+          removeFromCart={removeFromCart}
+          clearCart={handleClearCart}
+        />
+        {detalle && <DetalleProducto producto={detalle} onClose={() => setDetalle(null)} />}
+        {showModal && <PopUpModal onClose={() => setShowModal(false)} />}
       </div>
-    </div>
-    
+    </>
   );
 }
 

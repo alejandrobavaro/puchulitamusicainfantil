@@ -1,28 +1,31 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
+function HeaderSearchBar({ categories, onCategoryChange, searchQuery, setSearchQuery, placeholder }) {
+  const handleCategoryChange = (event) => {
+    onCategoryChange(event.target.value);
+  };
 
-function SearchBar({ categories, onCategoryChange }) {
-  useEffect(() => {
-    // Establecer "Todos" como la categoría por defecto
-    onCategoryChange('Todos');
-  }, [onCategoryChange]);
+  const handleSearchChange = (event) => {
+    setSearchQuery(event.target.value);
+  };
 
   return (
-    <div className="search-navbar">
-      <div className="btn-group flex-wrap two-rows objetoCentrado1" role="group">
-        {categories.map((category, index) => (
-          <button
-            key={index}
-            type="button"
-            className="btn btn-category"
-            onClick={() => onCategoryChange(category)}
-          >
-            {category.charAt(0).toUpperCase() + category.slice(1)}
-          </button>
+    <div className="search-bar-container">
+      <select onChange={handleCategoryChange}>
+        {categories.map((category) => (
+          <option key={category} value={category}>
+            {category}
+          </option>
         ))}
-      </div>
+      </select>
+      <input
+        type="text"
+        value={searchQuery}
+        onChange={handleSearchChange}
+        placeholder={placeholder}
+      />
     </div>
   );
 }
 
-export default SearchBar;
+export default HeaderSearchBar;

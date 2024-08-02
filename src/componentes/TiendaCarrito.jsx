@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import '../assets/scss/_03-Componentes/_Tienda.scss';
 
 
 const TiendaCarrito = ({ cart }) => {

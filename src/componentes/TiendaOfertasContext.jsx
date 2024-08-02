@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
+import '../assets/scss/_03-Componentes/_Tienda.scss';
 
 const OfertasContext = createContext();
 
