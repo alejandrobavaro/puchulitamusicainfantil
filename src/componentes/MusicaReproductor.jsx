@@ -144,7 +144,14 @@ function MusicaReproductor({ cart, removeFromCart, clearCart }) {
           </div>
         </>
       ) : (
-        <p>No hay canciones en la lista de reproducción.</p>
+        
+        <p className="tituloReproductor1">   Agregalas a la lista 
+              
+        <img className="imagen-publicidadReproductor" src="../../public/img/05-img-costados-larga/1a.png" alt="" />
+         <h2 className="tituloReproductor1">  <i className="bi bi-person-arms-up" /> Aqui <i className="bi bi-person-arms-up" /> </h2>
+        </p>
+
+       
       )}
     </div>
   );

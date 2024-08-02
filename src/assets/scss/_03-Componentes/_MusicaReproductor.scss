@@ -1,37 +1,44 @@
 .reproductor-musica {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(95, 14, 57, 0.801);
+  box-shadow: 0 0 40px rgba(255, 0, 140, 0.467);
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 15px rgb(255, 0, 208);
   color: white;
   padding: 20px;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 300px;
+  bottom: 70px;
+  right: 0px;
+  width: 360px;
   z-index: 1000;
 
   .reproductor-card {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     margin-bottom: 15px;
 
     img {
       border-radius: 8px;
-      height: 60px;
+      height: auto;
       margin-right: 15px;
-      width: 60px;
+      width: 40%;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
     .reproductor-info {
       p {
-        margin: 5px 0;
+        margin: 0px;
+        color: #ffffff;
+        padding: 5px;
+        border: 1px rgba(255, 255, 255, 0.483) dotted;
+        border-radius: 10px;
       }
 
       h3 {
         margin: 0;
-        font-size: 16px;
-        color: #ff69b4;
+        font-size: medium;
+        padding: 5px;
+        color: #ffffff;
       }
     }
   }
@@ -111,5 +118,27 @@
     span {
       font-size: 14px;
     }
+  }
+}
+
+.tituloReproductor1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: small;
+  color: white;
+  text-transform: uppercase;
+}
+
+.imagen-publicidadReproductor {
+  width: 50%;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 768px) {
+    width: 300px;
   }
 }

@@ -27,16 +27,22 @@
   }
 
   .cancion-info-musica {
-    flex: 1;
     display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten si es necesario */
     align-items: center;
-    justify-content: space-between;
-    font-size: 14px;
-    color: #333;
+    justify-content: start;
+    padding: 0px 0px 0px 10px;
+    font-size: x-small;
+    color: #000000;
+    gap: 10px; /* Añade espacio entre los elementos */
+    width: 100%; /* Asegura que el contenedor ocupe el ancho disponible */
 
-    .info-item {
-      margin-right: 10px;
-    }
+
+.info-item {
+    flex: 1 1 auto; /* Permite que los elementos crezcan y se encojan si es necesario */
+    min-width: 0; /* Evita que el contenido se desborde en el contenedor */
+}
+
 
     button {
       border: none;
