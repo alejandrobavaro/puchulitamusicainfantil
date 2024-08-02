@@ -1,72 +1,176 @@
+//sass _Header.scss //
+
 .header {
-  padding: 0;
-  margin: 10px 0;
-  border-radius: 5px;
-  width: 100%;
-}
-
-// Estructuras contenedores
-
-.encabezadoHeader {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(255, 0, 200, 0.5);
-  margin-bottom: 0;
-  padding: 0;
+  width: 100%;
+  background-color: #fff;
 }
 
 .containerHeader {
-  width: 100%;
-  max-width: 80%;
-  margin: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
-// Botón hamburguesa
+.header-topHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
 
-.navbar-togglerHeader {
-  display: none;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  padding: 5px;
-  margin-left: auto;
-  margin-right: 20px;
+.logo-and-search {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
 
-  .navbar-toggler-iconHeader {
-    display: inline-block;
-    width: 30px;
-    height: 3px;
-    background-color: #ff4081;
-    margin: 6px 0;
-    transition: background-color 0.3s ease;
+.logoHeader {
+  width: 20%;
+  margin: 0 20px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
   }
+}
 
-  &:hover .navbar-toggler-iconHeader {
+.search-bar-containerHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-barHeader {
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 200px; /* Ajusta según sea necesario */
+}
+
+.search-buttonHeader {
+  border: none;
+  background-color: #ff4081;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
     background-color: #e91e63;
   }
 }
 
-// Menú en dispositivos móviles
+.d-md-none {
+  @media (min-width: 769px) {
+    display: none !important;
+  }
+}
+
+.navbarHeader {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-navHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+
+.nav-linkHeader {
+  text-align: center;
+  color: rgb(255, 0, 170);
+  text-decoration: none;
+
+  &:hover {
+    color: rgb(255, 0, 150);
+  }
+}
+
+.textoMenu {
+  font-weight: bold;
+  color: #e91e63;
+}
+
+.textoMenu1 {
+  font-size: x-large;
+  font-weight: bold;
+  color: #ff0357;
+}
+
+.textoMenu2 {
+  font-size: xx-small;
+  color: #ff0357;
+}
+
+.auth-buttons {
+  // display: flex;
+  // align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
 
 @media (max-width: 768px) {
+  .logoHeader {
+    width: 40%;
+  }
+
+  .search-bar-containerHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .search-barHeader {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .search-buttonHeader {
+    width: 80%;
+    margin: 0;
+  }
+
   .navbar-togglerHeader {
     display: block;
   }
 
-  .header-middleHeader {
+  .header-topHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .logo-and-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbarHeader {
     display: none;
     flex-direction: column;
     width: 100%;
     position: absolute;
-    top: 100%;
-    left: 0;
+    top: 60px;
+    right: 0;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -79,12 +183,12 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 100%;
+      padding: 10px;
 
       .nav-linkHeader {
         width: 100%;
         text-align: center;
-        padding: 10px 0;
+        padding: 10px;
         border-bottom: 1px solid rgba(255, 0, 170, 0.1);
 
         &:last-child {
@@ -95,125 +199,23 @@
   }
 }
 
-// Menú en tablets y dispositivos de tamaño intermedio (990px a 767px)
-
-@media (min-width: 768px) and (max-width: 990px) {
-  .navbar-togglerHeader {
-    display: block;
-  }
-
-  .header-middleHeader {
+@media (min-width: 769px) {
+  .header-topHeader {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    .navbar-navHeader {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-
-      .nav-linkHeader {
-        margin: 0 10px;
-      }
-    }
-  }
-}
-
-// Imagenes logos
-
-.logoHeader {
-  width: 20%;
-  margin: 10px 0;
-  transition: transform 0.3s ease;
-
-  &:hover {
-    transform: scale(1.1);
-  }
-}
-
-// Textos
-
-.tituloImportante3 {
-  color: rgb(255, 0, 179);
-  font-size: x-large;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-// Buscador
-
-.search-containerHeader {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-  margin-top: 10px;
-}
-
-.search-barHeader {
-  border: none;
-  border-radius: 20px;
-  padding: 10px;
-  width: 300px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.search-buttonHeader {
-  border: none;
-  background-color: #ff4081;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 20px;
-  margin-left: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-
-  &:hover {
-    background-color: #e91e63;
-  }
-}
-
-// Nav-bar
-
-.navbar-navHeader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: large;
-}
-
-.nav-linkHeader {
-  text-align: center;
-  color: rgb(255, 0, 170);
-  font-size: 1.25rem;
-  margin: 0 10px;
-  position: relative;
-  transition: color 0.3s ease;
-
-  &:hover {
-    color: rgb(142, 44, 121);
-  }
-
-  &.active {
-    color: #ab516f;
-  }
-
-  &::after {
-    content: "";
-    display: block;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    height: 2px;
-    background-color: #ff4081;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.3s ease;
+    padding: 0 20px;
   }
 
-  &:hover::after {
-    // transform: scaleX(1);
-    // transform-origin: bottom left;
+  .navbarHeader {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-linkHeader {
+    margin: 0 10px;
   }
 }

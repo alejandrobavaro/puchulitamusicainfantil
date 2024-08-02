@@ -1,5 +1,4 @@
-// Estilos del componente MainContent
-
+// Estilos sass _MainContent//
 .mainContent {
   display: flex;
   flex-direction: column;
@@ -7,31 +6,24 @@
 }
 
 // Contenedor principal del grid
-.gridPadre1MainContent {
+.gridPadre1MainContent, .gridPadreMainContent {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px 0;
-  box-shadow: 0 0 40px rgba(255, 0, 140, 0.467);
   padding: 20px;
+  width: 80%;
   background-color: #fff;
   border-radius: 20px;
-  width: 80%;
-}
-
-// Estilos generales del grid padre principal
-.gridPadreMainContent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  // background-color: #ffffff;ç
-  border-radius: 20px;
   box-shadow: 0 0 40px rgba(255, 0, 140, 0.467);
-  margin-top: 20px;
-  width: 80%;
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 90%;
+    margin: 10px 0;
+    padding: 15px;
+  }
 }
-
 
 // Estilo para centrar objetos en la primera sección del grid
 .objetoCentradoMainContent1 {
@@ -40,17 +32,9 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
-}
-
-// Estilos para imágenes limitadas
-.imagen-limitadaMainContent {
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-
-  &:hover {
-    transform: scale(1.1);
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
   }
 }
 
@@ -64,50 +48,60 @@
   &:hover {
     transform: scale(1.1);
   }
+
+  @media (max-width: 768px) {
+    width: 150px;
+  }
 }
 
 .imagen-publicidadMainContent2 {
   width: 500px;
   height: auto;
-   transition: transform 0.3s ease;
-
-  &:hover {
-    transform: scale(1.1);
-  }
-}
-
-// Estilo para la imagen principal con box shadow y animación
-.imagen-publicidadMainContent3 {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 8px;
-  // box-shadow: 0 0 40px rgba(255, 0, 140, 0.467);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-  &:hover {
-    transform: scale(1.1);
-    // box-shadow: 0 0 50px rgba(255, 0, 140, 0.7);
-  }
-}
-
-
-
-
-#telefonoWhatsappMainContent {
-  position: fixed;
-  bottom: 1px;  // Distancia desde el fondo
-  right: 1px;   // Distancia desde el borde derecho
-  z-index: 1000; // Asegúrate de que esté por encima de otros elementos importantes
-}
-
-.logoWhatsappMainContent {
-  width: 80px;   // Ajusta el tamaño del ícono
-  height: auto;  // Mantén la proporción del ícono
   transition: transform 0.3s ease;
 
   &:hover {
     transform: scale(1.1);
   }
+
+  @media (max-width: 768px) {
+    width: 300px;
+  }
 }
 
+.imagen-publicidadMainContent3 {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 768px) {
+    max-width: 300px;
+  }
+}
+
+// Estilos para íconos de WhatsApp
+#telefonoWhatsappMainContent {
+  position: fixed;
+  bottom: 1px; 
+  right: 1px;
+  z-index: 1000; 
+}
+
+.logoWhatsappMainContent {
+  width: 80px;   
+  height: auto;  
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 768px) {
+    width: 60px;
+  }
+}

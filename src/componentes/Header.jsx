@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useAuth } from "./SesionAuthContext";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import "../assets/scss/_03-Componentes/_Header.scss";
 
 const Header = ({ searchQuery, setSearchQuery }) => {
@@ -12,32 +13,59 @@ const Header = ({ searchQuery, setSearchQuery }) => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const handleCloseMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   const shouldShowSearchBar = location.pathname === "/tienda" || location.pathname === "/musica";
 
   return (
     <header className="header">
       <div className="containerHeader">
         <div className="header-topHeader">
-          <div className="search-containerHeader">
+          <div className="logo-and-search">
             <img
               src="/img/02-logos/puchulitamusicainfantil1.png"
               alt="Logo"
               className="logoHeader"
             />
-            {shouldShowSearchBar && (
-              <div className="search-bar-containerHeader">
-                <input
-                  type="text"
-                  placeholder={location.pathname === "/tienda" ? "Buscar productos" : "Buscar canciones"}
-                  className="search-barHeader"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                />
-                <button className="search-buttonHeader">
-                  <i className="bi bi-search"></i>
-                </button>
+            <div className="search-bar-containerHeader">
+              {shouldShowSearchBar && (
+                <>
+                  <input
+                    type="text"
+                    placeholder={location.pathname === "/tienda" ? "Buscar productos" : "Buscar canciones"}
+                    className="search-barHeader"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                  />
+                  <button className="search-buttonHeader d-md-none">
+                    <i className="bi bi-search"></i>
+                  </button>
+                </>
+              )}
+            </div>
+
+            {/* Botones de autenticación solo para pantallas grandes */}
+            {/* {!state.isAuthenticated && (
+              <div className="auth-buttons d-none d-md-block">
+                <Link
+                  className="nav-linkHeader"
+                  to="/login"
+                  onClick={handleCloseMobileMenu}
+                >
+                  <h3 className="textoMenu2">INICIA SESIÓN</h3>
+                </Link>
+                <Link
+                  className="nav-linkHeader"
+                  to="/register"
+                  onClick={handleCloseMobileMenu}
+                >
+                  <h3 className="textoMenu2">REGÍSTRATE</h3>
+                </Link>
               </div>
-            )}
+            )} */}
+
           </div>
           <button
             className="navbar-togglerHeader"
@@ -45,7 +73,7 @@ const Header = ({ searchQuery, setSearchQuery }) => {
             aria-label="Toggle navigation"
             onClick={handleToggleMobileMenu}
           >
-            <span className="navbar-toggler-iconHeader" />
+            <i className="bi bi-list"></i>
           </button>
         </div>
 
@@ -54,59 +82,61 @@ const Header = ({ searchQuery, setSearchQuery }) => {
             <Link
               className="nav-linkHeader"
               to="/"
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={handleCloseMobileMenu}
             >
-              HOME
+              <h2 className="textoMenu1">HOME</h2>
             </Link>
             <Link
               className="nav-linkHeader"
               to="/musica"
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={handleCloseMobileMenu}
             >
-              MÚSICA
+              <h2 className="textoMenu">MÚSICA</h2>
             </Link>
             <Link
               className="nav-linkHeader"
               to="/contacto"
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={handleCloseMobileMenu}
             >
-              CONTACTO
+              <h2 className="textoMenu">CONTACTO</h2>
             </Link>
             <Link
               className="nav-linkHeader"
               to="/tienda"
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={handleCloseMobileMenu}
             >
-              TIENDA
+              <h2 className="textoMenu">TIENDA</h2>
             </Link>
-            {!state.isAuthenticated ? (
-              <>
-                <Link
-                  className="nav-linkHeader"
-                  to="/login"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  INICIA SESIÓN
-                </Link>
-                <Link
-                  className="nav-linkHeader"
-                  to="/register"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  REGÍSTRATE
-                </Link>
-              </>
-            ) : (
+
+            {/* Botones de autenticación para pantallas pequeñas */}
+            {state.isAuthenticated ? (
               <Link
                 className="nav-linkHeader"
                 to="/logout"
                 onClick={() => {
                   dispatch({ type: "LOGOUT" });
-                  setIsMobileMenuOpen(false);
+                  handleCloseMobileMenu();
                 }}
               >
-                CERRÁ SESIÓN
+                <h2 className="textoMenu">CERRÁ SESIÓN</h2>
               </Link>
+            ) : (
+              <>
+                <Link
+                  className="nav-linkHeader"
+                  to="/login"
+                  onClick={handleCloseMobileMenu}
+                >
+                  <h3 className="textoMenu2">INICIA SESIÓN</h3>
+                </Link>
+                <Link
+                  className="nav-linkHeader"
+                  to="/register"
+                  onClick={handleCloseMobileMenu}
+                >
+                  <h3 className="textoMenu2">REGÍSTRATE</h3>
+                </Link>
+              </>
             )}
           </div>
         </nav>

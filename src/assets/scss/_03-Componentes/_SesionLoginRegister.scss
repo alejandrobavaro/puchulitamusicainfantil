@@ -1,14 +1,15 @@
+//SASS de _SesionLoginRegister.scss ---- //
 .auth-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  // background-color: #f9f9f9;
   padding: 2rem;
 
   .auth-content {
     display: flex;
     align-items: center;
-    // background: #ffffff;
+    flex-direction: column; // Cambiado para que las imágenes se coloquen arriba y abajo en mobile
+    background: #ffffff;
     padding: 2rem;
     border-radius: 20px;
     box-shadow: 0 0 40px rgba(255, 0, 140, 0.467);
@@ -20,17 +21,17 @@
     .auth-image {
       width: 80px;
       height: auto;
-      margin: 0 1rem;
+      margin: 1rem 0;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
 
       &:hover {
         transform: scale(1.1);
-        // box-shadow: 0 0 50px rgba(255, 0, 140, 0.7);
       }
     }
 
     .auth-form {
       flex: 1;
+      width: 100%;
 
       h2 {
         margin-bottom: 1.5rem;
@@ -67,10 +68,16 @@
         }
       }
     }
+
+    @media (min-width: 768px) {
+      flex-direction: row; // Volver a la dirección de fila en pantallas grandes
+
+      .auth-image {
+        margin: 0 1rem;
+      }
+    }
   }
 }
-
-//--------loading spinner----------//
 
 .loading-spinner {
   display: flex;

@@ -32,7 +32,7 @@ const Register = () => {
         <LoadingSpinner />
       ) : (
         <div className="auth-content">
-          <img className='auth-image' src="/img/05-img-costados-larga/4.png" alt="" />
+          <img className='auth-image top-image' src="/img/05-img-costados-larga/4.png" alt="" />
           <form onSubmit={handleRegister} className="auth-form">
             <h2>Registrate</h2>
             <input
@@ -55,7 +55,7 @@ const Register = () => {
             />
             <button type="submit">Register</button>
           </form>
-          <img className='auth-image' src="/img/05-img-costados-larga/1a.png" alt="" />
+          <img className='auth-image bottom-image' src="/img/05-img-costados-larga/1a.png" alt="" />
         </div>
       )}
     </div>
