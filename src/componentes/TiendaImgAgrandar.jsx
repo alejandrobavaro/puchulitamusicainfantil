@@ -1,8 +1,8 @@
+// src/componentes/TiendaImgAgrandar.jsx
 import React, { useState } from 'react';
-import '../assets/scss/_03-Componentes/_Tienda.scss';
+import '../assets/scss/_03-Componentes/_TiendaImgAgrandar.scss'; // Verifica esta ruta
 
-
-function TiendaAgrandarImgModal({ images, isOpen, closeModal }) {
+function TiendaImgAgrandar({ images, isOpen, closeModal }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   if (!isOpen) return null;
@@ -29,4 +29,4 @@ function TiendaAgrandarImgModal({ images, isOpen, closeModal }) {
   );
 }
 
-export default TiendaAgrandarImgModal;
+export default TiendaImgAgrandar;

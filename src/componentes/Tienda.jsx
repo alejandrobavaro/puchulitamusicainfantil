@@ -1,15 +1,14 @@
-// src/componentes/Tienda.jsx
 import React, { useState, useEffect } from "react";
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
 import Swal from "sweetalert2";
 import ProductosTienda from "./TiendaProductos";
-import CarritoTienda from "./TiendaCarrito";
-import DetalleProducto from "./TiendaDetalleProducto";
-import Header from "./Header"; // Cambiado de HeaderSearchBar a Header
-import PopUpModal from "./TiendaPopUpPromoInicio";
+import TiendaCarritoMini2 from "./TiendaCarritoMini2";
+import TiendaProductoDetalle from "./TiendaProductoDetalle";
+import Header from "./Header";
+import TiendaModalInicio from "./TiendaModalInicio";
 import { useOfertas } from "./TiendaOfertasContext";
-import '../assets/scss/_03-Componentes/_Tienda.scss';
+import '../assets/scss/_03-Componentes/_Tienda.scss'; 
 
 function Tienda({ cart, setCart, addToCart, removeFromCart, searchQuery, setSearchQuery }) {
   const [products, setProducts] = useState([]);
@@ -75,22 +74,21 @@ function Tienda({ cart, setCart, addToCart, removeFromCart, searchQuery, setSear
 
   return (
     <>
-     
       <div className="tienda-container">
         <ProductosTienda
           products={filteredProducts}
-          handleAddToCart={handleAddToCart}
+          addToCart={handleAddToCart}
           handleShowDetalle={handleShowDetalle}
           searchQuery={searchQuery}
           selectedCategory={selectedCategory}
         />
-        <CarritoTienda
+        <TiendaCarritoMini2
           cart={cart}
           removeFromCart={removeFromCart}
           clearCart={handleClearCart}
         />
-        {detalle && <DetalleProducto producto={detalle} onClose={() => setDetalle(null)} />}
-        {showModal && <PopUpModal onClose={() => setShowModal(false)} />}
+        {detalle && <TiendaProductoDetalle producto={detalle} onClose={() => setDetalle(null)} />}
+        {showModal && <TiendaModalInicio onClose={() => setShowModal(false)} />}
       </div>
     </>
   );

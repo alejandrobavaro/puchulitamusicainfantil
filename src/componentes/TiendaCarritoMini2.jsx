@@ -1,9 +1,9 @@
+// src/componentes/TiendaCarritoMini2.jsx
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import '../assets/scss/_03-Componentes/_Tienda.scss';
+import '../assets/scss/_03-Componentes/_TiendaCarritoMini2.scss'; // Verifica esta ruta
 
-
-const TiendaCarrito = ({ cart }) => {
+const TiendaCarritoMini2 = ({ cart, removeFromCart, clearCart }) => {
   const location = useLocation();
   const total = cart.reduce((sum, product) => sum + product.precio, 0);
   const showLeftCartLink = location.pathname.startsWith("/tienda");
@@ -13,15 +13,15 @@ const TiendaCarrito = ({ cart }) => {
       {showLeftCartLink && (
         <div className="flota-carrito-izquierda">
           <Link to="/carrito" className="link-carrito">
-            <h6> A Pagar </h6>
+            <h6 className="texto-carrito">A Pagar</h6>
             <div>
-              <section className="tituloPrecioCarrito card2">
+              <section className="tituloPrecioCarrito">
                 ${total.toFixed(2)}
               </section>
             </div>
 
             <div className="objetoCentrado1">
-              <button className="botonComprar1">
+              <button className="botonComprar1" onClick={() => alert("Compra realizada")}>
                 <h3 className="tituloImportante1 textoMovimiento">
                   <i className="bi bi-shift-fill"></i> Comprar
                 </h3>
@@ -34,4 +34,4 @@ const TiendaCarrito = ({ cart }) => {
   );
 };
 
-export default TiendaCarrito;
+export default TiendaCarritoMini2;

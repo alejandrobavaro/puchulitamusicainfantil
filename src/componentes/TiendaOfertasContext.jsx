@@ -1,7 +1,8 @@
+// src/componentes/TiendaOfertasContext.jsx
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import '../assets/scss/_03-Componentes/_Tienda.scss';
+import '../assets/scss/_03-Componentes/_TiendaOfertasContext.scss'; // Verifica esta ruta
 
-const OfertasContext = createContext();
+const TiendaOfertasContext = createContext();
 
 export const OfertasProvider = ({ children }) => {
   const [ofertas, setOfertas] = useState([]);
@@ -22,10 +23,10 @@ export const OfertasProvider = ({ children }) => {
   }, []);
 
   return (
-    <OfertasContext.Provider value={{ ofertas }}>
+    <TiendaOfertasContext.Provider value={{ ofertas }}>
       {children}
-    </OfertasContext.Provider>
+    </TiendaOfertasContext.Provider>
   );
 };
 
-export const useOfertas = () => useContext(OfertasContext);
+export const useOfertas = () => useContext(TiendaOfertasContext);

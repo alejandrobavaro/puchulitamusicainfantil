@@ -1,0 +1,67 @@
+// src/assets/scss/_03-Componentes/_TiendaCarritoMini2.scss
+
+.mini-carrito {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.compacto {
+  width: 250px; // Ajusta el tamaño según tus necesidades
+}
+
+.flota-carrito-izquierda {
+  text-align: center;
+}
+
+.link-carrito {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.texto-carrito {
+  font-size: 1.2rem;
+  color: #ff69b4; // Color rosa
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tituloPrecioCarrito {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4caf50; // Color verde para el total
+  margin-bottom: 15px;
+}
+
+.botonComprar1 {
+  background-color: #ff01a6;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botonComprar1:hover {
+  background-color: #d81b60;
+}
+
+.tituloImportante1 {
+  font-size: 1rem;
+}
+
+.textoMovimiento {
+  font-weight: bold;
+}

@@ -1,0 +1,26 @@
+// src/assets/scss/_03-Componentes/_TiendaProductoDetalle.scss
+
+.producto-detalle {
+  background-color: #f9f9f9; /* Color de fondo suave */
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  h4 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #555;
+
+    strong {
+      color: #000;
+      font-weight: bold;
+    }
+  }
+}

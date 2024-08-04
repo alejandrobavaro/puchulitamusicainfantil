@@ -1,10 +1,11 @@
+// src/componentes/TiendaModalInicio.jsx
 import React from "react";
 import Modal from "react-modal";
-import '../assets/scss/_03-Componentes/_Tienda.scss';
+import '../assets/scss/_03-Componentes/_TiendaModalInicio.scss'; // Verifica esta ruta
 
 Modal.setAppElement("#root");
 
-const TiendaPopUpPromoInicio = ({ showModal, closeModal }) => {
+const TiendaModalInicio = ({ showModal, closeModal }) => {
   return (
     <Modal
       isOpen={showModal}
@@ -46,4 +47,4 @@ const TiendaPopUpPromoInicio = ({ showModal, closeModal }) => {
   );
 };
 
-export default TiendaPopUpPromoInicio;
+export default TiendaModalInicio;

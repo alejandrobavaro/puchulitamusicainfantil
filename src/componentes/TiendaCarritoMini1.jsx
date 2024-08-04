@@ -1,7 +1,8 @@
+// src/componentes/TiendaCarritoMini1.jsx
 import React from 'react';
-import '../assets/scss/_03-Componentes/_Tienda.scss';
+import '../assets/scss/_03-Componentes/_TiendaCarritoMini1.scss'; // Verifica esta ruta
 
-function MiniCarrito({ items }) {
+function TiendaCarritoMini1({ items }) {
   return (
     <div className="mini-carrito">
       <h2>Carrito</h2>
@@ -20,4 +21,4 @@ function MiniCarrito({ items }) {
   );
 }
 
-export default TiendaMiniCarrito;
+export default TiendaCarritoMini1;

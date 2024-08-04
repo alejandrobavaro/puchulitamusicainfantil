@@ -1,11 +1,11 @@
-// import React from "react";
+import React from "react";
 
-// function Message({ message }) {
-//   return (
-//     <div>
-//       <p>{message}</p>
-//     </div>
-//   );
-// }
+function Message({ message }) {
+  return (
+    <div>
+      <p>{message}</p>
+    </div>
+  );
+}
 
-// export default Message;
+export default Message;

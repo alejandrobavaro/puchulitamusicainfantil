@@ -1,7 +1,8 @@
+// src/componentes/TiendaOfertas.jsx
 import React from 'react';
-import '../assets/scss/_03-Componentes/_Tienda.scss';
+import '../assets/scss/_03-Componentes/_TiendaOfertas.scss'; // Verifica esta ruta
 
-const Producto = ({ producto, onEncargar }) => {
+const TiendaOfertas = ({ producto, onEncargar }) => {
   const { id, nombre, precio, imagenes, categoria } = producto;
 
   return (
@@ -30,4 +31,4 @@ const Producto = ({ producto, onEncargar }) => {
   );
 };
 
-export default Producto;
+export default TiendaOfertas;

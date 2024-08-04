@@ -1,11 +1,11 @@
 import React from "react";
-import '../assets/scss/_03-Componentes/_Tienda.scss';
+import '../assets/scss/_03-Componentes/_TiendaProductoDetalle.scss'; // Verifica esta ruta
 
-const TiendaDetalleProducto = ({ detalle }) => {
+const TiendaProductoDetalle = ({ detalle }) => {
   if (!detalle) return null;
 
   return (
-    <div>
+    <div className="producto-detalle">
       <h4>Detalle del Producto:</h4>
       <p><strong>Nombre:</strong> {detalle.nombre}</p>
       <p><strong>Precio:</strong> ${detalle.precio.toFixed(2)}</p>
@@ -15,4 +15,4 @@ const TiendaDetalleProducto = ({ detalle }) => {
   );
 };
 
-export default TiendaDetalleProducto;
+export default TiendaProductoDetalle;

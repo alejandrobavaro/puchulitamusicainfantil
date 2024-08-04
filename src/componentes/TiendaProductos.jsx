@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import ImageModal from './TiendaAgrandarImgModal';
+import ImageModal from './TiendaImgAgrandar';
 import { useOfertas } from './TiendaOfertasContext';
-import '../assets/scss/_03-Componentes/_Tienda.scss';
+import '../assets/scss/_03-Componentes/_TiendaProductos.scss';
 
 function TiendaProductos({ products, addToCart }) {
   const [selectedImages, setSelectedImages] = useState([]);

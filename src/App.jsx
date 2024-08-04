@@ -8,7 +8,7 @@ import ContactoFormularioSlider from './componentes/ContactoFormularioSlider';
 import PublicidadDebajo from './componentes/MainPublicidadSlider';
 import Footer from './componentes/Footer';
 import Tienda from './componentes/Tienda';
-import CarritoCompleto from './componentes/TiendaCarritoCompleto';
+import CarritoCompleto from './componentes/TiendaCarritoCompra';
 import { OfertasProvider } from './componentes/TiendaOfertasContext';
 import { AuthProvider } from './componentes/SesionAuthContext';
 import Login from './componentes/SesionLogin';

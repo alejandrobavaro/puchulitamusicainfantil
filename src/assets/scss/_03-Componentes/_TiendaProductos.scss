@@ -1,0 +1,82 @@
+// src/assets/scss/_03-Componentes/_TiendaProductos.scss
+
+// Productos
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  box-shadow: 0 0 100px rgba(255, 0, 140, 0.467);
+}
+
+.producto-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(255, 0, 242, 0.467);
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Arial', sans-serif; // Ajusta la fuente si es necesario
+}
+
+.producto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 40px rgba(255, 0, 140, 0.504);
+}
+
+.producto-image {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.producto-image:hover {
+  transform: scale(1.05);
+}
+
+.producto-title {
+  font-size: 0.85rem; // Ajustado a un tamaño más pequeño
+  font-weight: 500;
+  color: #333;
+  margin: 10px 0;
+  text-transform: none; // No uppercase
+}
+
+.producto-price {
+  font-size: 0.95rem; // Ajustado a un tamaño más pequeño
+  color: #e91e63;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.producto-button {
+  background-color: #ff01a6;
+  border: none;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 0.85rem; // Ajustado a un tamaño más pequeño
+}
+
+.producto-button:hover {
+  background-color: #d81b60;
+  transform: scale(1.05);
+}
+
+.oferta-tag {
+  position: absolute; /* O 'relative', 'fixed', o 'sticky' dependiendo de tu diseño */
+  top: 10px;
+  right: 10px;
+  background-color: #fb00ff;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 0.75rem; /* Ajustado a un tamaño más pequeño */
+  font-weight: 600;
+  text-transform: none; /* No uppercase */
+  z-index: 1000; /* Valor alto para asegurar que esté al frente */
+}

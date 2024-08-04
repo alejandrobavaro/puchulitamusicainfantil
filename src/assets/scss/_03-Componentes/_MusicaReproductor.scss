@@ -2,7 +2,6 @@
   background: rgba(95, 14, 57, 0.801);
   box-shadow: 0 0 40px rgba(255, 0, 140, 0.467);
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgb(255, 0, 208);
   color: white;
   padding: 20px;
   position: fixed;
@@ -10,51 +9,62 @@
   right: 0px;
   width: 360px;
   z-index: 1000;
+  transition: all 0.3s ease;
+
+  &.minimized {
+    width: 100px;
+    height: 60px;
+    padding: 10px;
+    bottom: 10px;
+    right: 10px;
+    overflow: hidden;
+    .reproductor-card,
+    .controls-musica,
+    .volume-controls,
+    .rate-controls,
+    .progress-musica,
+    .playlist {
+      display: none;
+    }
+  }
 
   .reproductor-card {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin-bottom: 15px;
-
+    margin-bottom: 20px;
     img {
-      border-radius: 8px;
-      height: auto;
-      margin-right: 15px;
-      width: 40%;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 50px;
+      height: 50px;
+      border-radius: 5px;
+      margin-right: 10px;
     }
-
     .reproductor-info {
+      flex: 1;
+      h3 {
+        margin: 0px;
+        padding: 0px;
+        font-size: medium;
+      }
       p {
         margin: 0px;
-        color: #ffffff;
-        padding: 5px;
-        border: 1px rgba(255, 255, 255, 0.483) dotted;
-        border-radius: 10px;
-      }
-
-      h3 {
-        margin: 0;
-        font-size: medium;
-        padding: 5px;
-        color: #ffffff;
+        padding: 0px;
+        color: #00ffd0e4;
       }
     }
   }
 
   .controls-musica {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 15px;
-
     button {
       background: none;
       border: none;
-      color: white;
-      cursor: pointer;
+      color: #fff;
       font-size: 24px;
-
+      margin: 0 10px;
+      cursor: pointer;
       &:hover {
         color: #ff69b4;
       }
@@ -62,72 +72,104 @@
   }
 
   .volume-controls,
-  .rate-controls {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-
-    .volume-icon {
-      margin-right: 10px;
-    }
-
-    input[type="range"] {
-      margin: 0 10px;
-      cursor: pointer;
-    }
-
-    label {
-      margin-right: 10px;
-    }
-
-    select {
-      padding: 5px;
-      border-radius: 5px;
-      border: 1px solid #ddd;
-      background: #fff;
-      color: #333;
-    }
-  }
-
+  .rate-controls,
   .progress-musica {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 15px;
+
+    input[type='range'] {
+      width: 100px;
+    }
+
+    select {
+      background: rgba(95, 14, 57, 0.531);
+      color: white;
+      border: 1px solid white;
+      border-radius: 5px;
+      padding: 5px;
+    }
 
     progress {
-      flex: 1;
-      margin: 0 10px;
       width: 100%;
+      border-radius: 5px;
+    }
+  }
 
-      &[value] {
-        appearance: none;
-        background: #ddd;
+  .playlist {
+    max-height: 200px;
+    overflow-y: auto;
 
-        &::-webkit-progress-bar {
-          background-color: #ddd;
-          border-radius: 5px;
+    h3 {
+      margin: 0px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 20px;
+      margin: 0;
+
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px;
+        font-size: x-small;
+        border-bottom: 1px solid #00ffff;
+        
+        &:hover {
+          color: #f6ccf6;
+        }
+        span {
+          flex: 1;
         }
 
-        &::-webkit-progress-value {
-          background-color: #ff69b4;
-          border-radius: 5px;
+        button {
+          background: none;
+          border: none;
+          color: #fff;
+          cursor: pointer;
+          &:hover {
+            color: #ff69b4;
+          }
+        }
+
+        &.active {
+          background: rgba(255, 105, 180, 0.3);
         }
       }
     }
+  }
 
-    span {
-      font-size: 14px;
+  .toggle-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    position: sticky;
+    bottom: 10px;
+    right: 10px;
+
+    &:hover {
+      color: #00ffea;
     }
   }
-}
 
-.tituloReproductor1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: small;
-  color: white;
-  text-transform: uppercase;
+  .no-songs-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+
+    .tituloReproductor1 {
+      font-size: 18px;
+      margin: 0;
+      
+    }
+  }
 }
 
 .imagen-publicidadReproductor {
@@ -139,6 +181,6 @@
   }
 
   @media (max-width: 768px) {
-    width: 300px;
+    width: 60px;
   }
 }

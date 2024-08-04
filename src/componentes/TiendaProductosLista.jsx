@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import Producto from './TiendaProducto';
-import { OfertasProvider } from './TiendaOfertasContext'; 
-import '../assets/scss/_03-Componentes/_Tienda.scss';
+import Producto from './TiendaProductos'; // Verifica que el archivo esté en la misma carpeta o ajusta la ruta si es necesario
+import { OfertasProvider } from './TiendaOfertasContext'; // Verifica que el archivo esté en la misma carpeta o ajusta la ruta si es necesario
+import '../assets/scss/_03-Componentes/_TiendaProductosLista.scss'; // Verifica la ruta del archivo SCSS
 
-const ProductoLista = ({ onEncargar }) => {
+const TiendaProductosLista = ({ onEncargar }) => {
   const [productos, setProductos] = useState([]);
 
   useEffect(() => {
@@ -24,4 +24,4 @@ const ProductoLista = ({ onEncargar }) => {
   );
 };
 
-export default TiendaProductoLista;
+export default TiendaProductosLista;

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
-import { BsShuffle, BsRepeat, BsPlayFill, BsPauseFill, BsSkipEnd, BsSkipStart, BsVolumeUp, BsVolumeMute } from 'react-icons/bs';
+import { BsShuffle, BsRepeat, BsPlayFill, BsPauseFill, BsSkipEnd, BsSkipStart, BsVolumeUp, BsVolumeMute, BsArrowsCollapse, BsArrowsExpand } from 'react-icons/bs';
 import '../assets/scss/_03-Componentes/_MusicaReproductor.scss';
 
 function MusicaReproductor({ cart, removeFromCart, clearCart }) {
@@ -11,6 +11,7 @@ function MusicaReproductor({ cart, removeFromCart, clearCart }) {
   const [currentTime, setCurrentTime] = useState(0);
   const [volume, setVolume] = useState(1);
   const [playbackRate, setPlaybackRate] = useState(1);
+  const [isMinimized, setIsMinimized] = useState(false);
   const audioRef = useRef(null);
 
   useEffect(() => {
@@ -86,72 +87,92 @@ function MusicaReproductor({ cart, removeFromCart, clearCart }) {
   };
 
   return (
-    <div className="reproductor-musica">
+    <div className={`reproductor-musica ${isMinimized ? 'minimized' : ''}`}>
       {cart.length > 0 ? (
         <>
           <audio
             ref={audioRef}
             onEnded={handleEnd}
           ></audio>
-          <div className="reproductor-card">
-            <img src={cart[currentSongIndex].imagen} alt={cart[currentSongIndex].nombre} />
-            <div className="reproductor-info">
-              <h3>{cart[currentSongIndex].nombre}</h3>
-              <p>{cart[currentSongIndex].artista}</p>
-              <p>{cart[currentSongIndex].categoria}</p>
-              <p>{cart[currentSongIndex].duracion}</p>
-            </div>
-          </div>
-          <div className="controls-musica">
-            <button onClick={handleSkipPrev}><BsSkipStart /></button>
-            <button onClick={handlePlayPause}>
-              {isPlaying ? <BsPauseFill /> : <BsPlayFill />}
-            </button>
-            <button onClick={handleSkipNext}><BsSkipEnd /></button>
-            <button onClick={() => setIsShuffle(!isShuffle)}>
-              <BsShuffle color={isShuffle ? '#ff69b4' : '#fff'} />
-            </button>
-            <button onClick={handleRepeatMode}>
-              <BsRepeat color={repeatMode !== 'none' ? '#ff69b4' : '#fff'} />
-            </button>
-            <button onClick={clearCart}>Clear</button>
-          </div>
-          <div className="volume-controls">
-            <BsVolumeUp />
-            <input
-              type="range"
-              min="0"
-              max="1"
-              step="0.01"
-              value={volume}
-              onChange={handleVolumeChange}
-            />
-            <BsVolumeMute />
-          </div>
-          <div className="rate-controls">
-            <label htmlFor="rate">Speed:</label>
-            <select id="rate" value={playbackRate} onChange={handleRateChange}>
-              <option value="0.5">0.5x</option>
-              <option value="1">1x</option>
-              <option value="1.5">1.5x</option>
-              <option value="2">2x</option>
-            </select>
-          </div>
-          <div className="progress-musica">
-            <span>{Math.floor(currentTime / 60)}:{Math.floor(currentTime % 60).toString().padStart(2, '0')}</span>
-            <progress value={currentTime} max={audioRef.current?.duration || 0}></progress>
-            <span>{Math.floor((audioRef.current?.duration || 0) / 60)}:{Math.floor((audioRef.current?.duration || 0) % 60).toString().padStart(2, '0')}</span>
-          </div>
+          {!isMinimized && (
+            <>
+              <div className="reproductor-card">
+                <img src={cart[currentSongIndex].imagen} alt={cart[currentSongIndex].nombre} />
+                <div className="reproductor-info">
+                  <h3>{cart[currentSongIndex].nombre}</h3>
+                  <p>{cart[currentSongIndex].artista}</p>
+                  <p>{cart[currentSongIndex].categoria}</p>
+                  <p>{cart[currentSongIndex].duracion}</p>
+                </div>
+              </div>
+              <div className="controls-musica">
+                <button onClick={handleSkipPrev}><BsSkipStart /></button>
+                <button onClick={handlePlayPause}>
+                  {isPlaying ? <BsPauseFill /> : <BsPlayFill />}
+                </button>
+                <button onClick={handleSkipNext}><BsSkipEnd /></button>
+                <button onClick={() => setIsShuffle(!isShuffle)}>
+                  <BsShuffle color={isShuffle ? '#ff69b4' : '#fff'} />
+                </button>
+                <button onClick={handleRepeatMode}>
+                  <BsRepeat color={repeatMode !== 'none' ? '#ff69b4' : '#fff'} />
+                </button>
+                <button onClick={clearCart}><i className="bi bi-trash-fill"></i></button>
+              </div>
+              <div className="volume-controls">
+                <BsVolumeUp />
+                <input
+                  type="range"
+                  min="0"
+                  max="1"
+                  step="0.01"
+                  value={volume}
+                  onChange={handleVolumeChange}
+                />
+                <BsVolumeMute />
+              </div>
+              <div className="rate-controls">
+                <label htmlFor="rate">Speed:</label>
+                <select id="rate" value={playbackRate} onChange={handleRateChange}>
+                  <option value="0.5">0.5x</option>
+                  <option value="1">1x</option>
+                  <option value="1.5">1.5x</option>
+                  <option value="2">2x</option>
+                </select>
+              </div>
+              <div className="progress-musica">
+                <span>{Math.floor(currentTime / 60)}:{Math.floor(currentTime % 60).toString().padStart(2, '0')}</span>
+                <progress value={currentTime} max={audioRef.current?.duration || 0}></progress>
+                <span>{Math.floor((audioRef.current?.duration || 0) / 60)}:{Math.floor((audioRef.current?.duration || 0) % 60).toString().padStart(2, '0')}</span>
+              </div>
+              <div className="playlist">
+                <h3>Lista de Reproducción</h3>
+                <ul>
+                  {cart.map((song, index) => (
+                    <li key={index} className={index === currentSongIndex ? 'active' : ''}>
+                      <span>{song.nombre}</span>
+                      <button onClick={() => setCurrentSongIndex(index)}><i className="bi bi-file-play"></i></button>
+                      <button onClick={() => removeFromCart(index)}><i className="bi bi-trash-fill"></i></button>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </>
+          )}
+          <button className="toggle-button" onClick={() => setIsMinimized(prevState => !prevState)}>
+            {isMinimized ? <BsArrowsExpand /> : <BsArrowsCollapse />}
+          </button>
         </>
       ) : (
-        
-        <p className="tituloReproductor1">   Agregalas a la lista 
-              
-        <img className="imagen-publicidadReproductor" src="../../public/img/05-img-costados-larga/1a.png" alt="" />
-         <h2 className="tituloReproductor1">  <i className="bi bi-person-arms-up" /> Aqui <i className="bi bi-person-arms-up" /> </h2>
-        </p>
-
-       
+        <div className="no-songs-container">
+          <p className="tituloReproductor1">
+            Agregalas a la lista
+            <img className="imagen-publicidadReproductor" src="../../public/img/05-img-costados-larga/1a.png" alt="" />
+          </p>
+          <h2 className="tituloReproductor1">
+            <i className="bi bi-person-arms-up" /> Aqui <i className="bi bi-person-arms-up" />
+          </h2>
+        </div>
       )}
     </div>
   );

@@ -1,0 +1,61 @@
+// src/assets/scss/_03-Componentes/_TiendaOfertas.scss
+
+.producto-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.oferta-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ff01a6;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.producto-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.producto-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.producto-price {
+  font-size: 1.1rem;
+  color: #ff01a6;
+  margin: 10px 0;
+}
+
+.producto-button {
+  background-color: #ff01a6;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #d81b60;
+  }
+}

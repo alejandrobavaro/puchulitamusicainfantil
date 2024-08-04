@@ -6,8 +6,8 @@ function MainWhatsappIcon() {
   return (
     <div id="telefonoWhatsappMainContent">
       <a
-        href="https://api.whatsapp.com/send?phone=..............&text=Hola!,%20en%20que%20puedo%20ayudarte?"
-        rel="noopener noreferrer"
+        href="https://api.whatsapp.com/send?phone=+542235455451&text=Hola!,%20en%20que%20puedo%20ayudarte?"
+        rel="link whatsapp"
         target="_blank"
       >
         <img

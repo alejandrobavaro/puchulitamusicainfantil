@@ -86,10 +86,11 @@
   box-shadow: 0 0 10px rgb(255, 1, 217);
   max-height: 500px; // Limitar la altura máxima del contenedor de publicidad
   overflow: hidden; // Asegurarse de que el contenido adicional no desborde
-  position: fixed; // Fijar la posición
-  top: 150px; // Ajusta la distancia desde la parte superior
+  position: absolute; // Fijar la posición
+  top: 10px; // Ajusta la distancia desde la parte superior
   right: 30px; // Ajusta la distancia desde el lado derecho
   width: 300px; // Ajusta el ancho según sea necesario
+  height: auto;
   z-index: 1000; // Asegura que la publicidad esté sobre otros elementos
 
 

@@ -51,9 +51,11 @@ function MusicaCancionesLista({
           />
         ))}
       </div>
+
+      
       {isPublicidadVisible && (
         <div className="musica-publicidad">
-          {/* <button className="close-btn" onClick={handleClosePublicidad}>
+          <button className="close-btn" onClick={handleClosePublicidad}>
             &times;
           </button>
           <p>SUPER OFERTAS!</p>
@@ -68,9 +70,11 @@ function MusicaCancionesLista({
                 />
               </div>
             ))}
-          </Slider> */}
+          </Slider>
         </div>
       )}
+
+
     </div>
   );
 }
