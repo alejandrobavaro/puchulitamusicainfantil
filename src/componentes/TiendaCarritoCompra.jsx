@@ -1,8 +1,25 @@
 import React from "react";
+import Swal from "sweetalert2";
 import '../assets/scss/_03-Componentes/_TiendaCarritoCompra.scss'; 
+import '../assets/scss/_01-General/_SweetAlert.scss'; 
 
-const TiendaCarritoCompra = ({ cart, removeFromCart, handlePagar }) => {
-  const total = cart.reduce((sum, product) => sum + product.precio, 0);
+const TiendaCarritoCompra = ({ cart = [], removeFromCart, handlePagar }) => {
+  const total = cart.reduce((sum, product) => sum + (product.precio || 0), 0);
+
+  const handleComprar = () => {
+    handlePagar();
+    Swal.fire({
+      title: 'Compra realizada!',
+      text: 'Tu compra ha sido procesada exitosamente.',
+      icon: 'success',
+      confirmButtonText: 'OK',
+      customClass: {
+        popup: 'sweetalert-popup',
+        title: 'sweetalert-title',
+        confirmButton: 'sweetalert-button',
+      }
+    });
+  };
 
   return (
     <div className="carrito-container">
@@ -43,9 +60,13 @@ const TiendaCarritoCompra = ({ cart, removeFromCart, handlePagar }) => {
                     src={product.imagen}
                     alt={product.nombre}
                     className="producto-imagen"
+                    onError={(e) => {
+                      e.target.onerror = null;
+                      e.target.src = "path/to/default/image.jpg"; // Ruta de la imagen por defecto
+                    }}
                   />
                   <span className="producto-nombre">{product.nombre}</span>
-                  <span className="producto-precio">${product.precio.toFixed(2)}</span>
+                  <span className="producto-precio">${(product.precio || 0).toFixed(2)}</span>
                   <button
                     className="btn-eliminar"
                     onClick={() => removeFromCart(product.id)}
@@ -72,7 +93,7 @@ const TiendaCarritoCompra = ({ cart, removeFromCart, handlePagar }) => {
 
         <hr className="divider" />
 
-        <button onClick={handlePagar} className="btn botonComprar">
+        <button onClick={handleComprar} className="btn botonComprar">
           <h3 className="compra-text">
             <i className="bi bi-paypal"></i> Comprar
           </h3>

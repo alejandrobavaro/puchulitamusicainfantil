@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Producto from './TiendaProductos'; // Verifica que el archivo esté en la misma carpeta o ajusta la ruta si es necesario
-import { OfertasProvider } from './TiendaOfertasContext'; // Verifica que el archivo esté en la misma carpeta o ajusta la ruta si es necesario
-import '../assets/scss/_03-Componentes/_TiendaProductosLista.scss'; // Verifica la ruta del archivo SCSS
+import Producto from './TiendaProductos'; 
+import { OfertasProvider } from './TiendaOfertasContext'; 
+import '../assets/scss/_03-Componentes/_TiendaProductosLista.scss'; 
 
 const TiendaProductosLista = ({ onEncargar }) => {
   const [productos, setProductos] = useState([]);

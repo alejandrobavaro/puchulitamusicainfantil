@@ -1,6 +1,6 @@
+// src/componentes/Tienda.jsx
 import React, { useState, useEffect } from "react";
-import Toastify from "toastify-js";
-import "toastify-js/src/toastify.css";
+import Toastify from "toastify-js"; 
 import Swal from "sweetalert2";
 import ProductosTienda from "./TiendaProductos";
 import TiendaCarritoMini2 from "./TiendaCarritoMini2";
@@ -8,13 +8,13 @@ import TiendaProductoDetalle from "./TiendaProductoDetalle";
 import Header from "./Header";
 import TiendaModalInicio from "./TiendaModalInicio";
 import { useOfertas } from "./TiendaOfertasContext";
-import '../assets/scss/_03-Componentes/_Tienda.scss'; 
+import '../assets/scss/_03-Componentes/_Tienda.scss'; // Importación de tus estilos SCSS
 
 function Tienda({ cart, setCart, addToCart, removeFromCart, searchQuery, setSearchQuery }) {
   const [products, setProducts] = useState([]);
   const [detalle, setDetalle] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState('Todos');
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(true); // Inicialmente mostramos el modal
   const { ofertas } = useOfertas();
 
   useEffect(() => {
@@ -44,7 +44,7 @@ function Tienda({ cart, setCart, addToCart, removeFromCart, searchQuery, setSear
       gravity: "top",
       position: "left",
       style: {
-        background: "#ff69b4",
+        background: "#ff69b4", // Usa style.background en lugar de backgroundColor
       },
       className: "toastify-tienda",
     }).showToast();
@@ -59,7 +59,7 @@ function Tienda({ cart, setCart, addToCart, removeFromCart, searchQuery, setSear
       gravity: "top",
       position: "left",
       style: {
-        background: "#000000",
+        background: "#000000", // Usa style.background en lugar de backgroundColor
       },
       className: "toastify-tienda",
     }).showToast();
@@ -88,7 +88,7 @@ function Tienda({ cart, setCart, addToCart, removeFromCart, searchQuery, setSear
           clearCart={handleClearCart}
         />
         {detalle && <TiendaProductoDetalle producto={detalle} onClose={() => setDetalle(null)} />}
-        {showModal && <TiendaModalInicio onClose={() => setShowModal(false)} />}
+        {showModal && <TiendaModalInicio showModal={showModal} closeModal={() => setShowModal(false)} />}
       </div>
     </>
   );

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import ImageModal from './TiendaImgAgrandar';
+import TiendaImgAgrandar from './TiendaImgAgrandar';
 import { useOfertas } from './TiendaOfertasContext';
 import '../assets/scss/_03-Componentes/_TiendaProductos.scss';
 
-function TiendaProductos({ products, addToCart }) {
+function TiendaProductos({ products, addToCart, handleShowDetalle, searchQuery, selectedCategory }) {
   const [selectedImages, setSelectedImages] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -19,11 +19,13 @@ function TiendaProductos({ products, addToCart }) {
     setIsModalOpen(false);
   };
 
-  const prevImage = () => {
+  const handlePrevImage = (e) => {
+    e.stopPropagation();
     setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? selectedImages.length - 1 : prevIndex - 1));
   };
 
-  const nextImage = () => {
+  const handleNextImage = (e) => {
+    e.stopPropagation();
     setCurrentImageIndex((prevIndex) => (prevIndex === selectedImages.length - 1 ? 0 : prevIndex + 1));
   };
 
@@ -43,7 +45,7 @@ function TiendaProductos({ products, addToCart }) {
           <h5 className="producto-title">{product.nombre}</h5>
           <h4 className="producto-price">Precio: ${product.precio.toFixed(2)}</h4>
           <button
-            className="btn btn-primary producto-button"
+            className="producto-button"
             onClick={() => addToCart(product)}
           >
             Añadir al Carrito
@@ -51,12 +53,12 @@ function TiendaProductos({ products, addToCart }) {
         </div>
       ))}
       {isModalOpen && (
-        <ImageModal
+        <TiendaImgAgrandar
           images={selectedImages}
-          currentImageIndex={currentImageIndex}
+          isOpen={isModalOpen}
           closeModal={closeImageModal}
-          handlePrevImage={prevImage}
-          handleNextImage={nextImage}
+          handlePrevImage={handlePrevImage}
+          handleNextImage={handleNextImage}
         />
       )}
     </div>

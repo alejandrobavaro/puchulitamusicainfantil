@@ -52,7 +52,7 @@ function MusicaCancionesLista({
         ))}
       </div>
 
-      
+{/*       
       {isPublicidadVisible && (
         <div className="musica-publicidad">
           <button className="close-btn" onClick={handleClosePublicidad}>
@@ -72,7 +72,7 @@ function MusicaCancionesLista({
             ))}
           </Slider>
         </div>
-      )}
+      )} */}
 
 
     </div>

@@ -1,6 +1,6 @@
 // src/componentes/TiendaImgAgrandar.jsx
 import React, { useState } from 'react';
-import '../assets/scss/_03-Componentes/_TiendaImgAgrandar.scss'; // Verifica esta ruta
+import '../assets/scss/_03-Componentes/_TiendaImgAgrandar.scss'; 
 
 function TiendaImgAgrandar({ images, isOpen, closeModal }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

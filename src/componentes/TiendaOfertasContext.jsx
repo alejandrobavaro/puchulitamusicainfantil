@@ -1,6 +1,5 @@
 // src/componentes/TiendaOfertasContext.jsx
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import '../assets/scss/_03-Componentes/_TiendaOfertasContext.scss'; // Verifica esta ruta
 
 const TiendaOfertasContext = createContext();
 

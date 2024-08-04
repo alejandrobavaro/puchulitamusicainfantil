@@ -141,7 +141,6 @@
   color: #ff0357;
   text-transform: uppercase;
   font-weight: bold;
-
 }
 
 .auth-buttons {
@@ -260,7 +259,6 @@
     margin: 0px; /* Margen del contenedor */
     background-color: transparent;
     
-
     .nav-linkHeader {
       color: #e55a88;
       text-align: center;
@@ -271,11 +269,60 @@
       border-radius: 5px;
       transition: background-color 0.3s ease, color 0.3s ease;
       
-
       /* Si quieres que el contenido del botón se ajuste verticalmente */
       display: flex;
       align-items: center;
       justify-content: center;
     }
   }
+}
+
+.mini-carrito-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.mini-carrito {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  max-height: 300px; /* Limitar la altura máxima */
+  overflow-y: auto; /* Scroll si el contenido excede la altura */
+  margin-left: 20px; /* Separación del borde izquierdo */
+}
+
+.mini-carrito h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.mini-carrito ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Ancho completo */
+}
+
+.mini-carrito li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+  width: 100%; /* Ancho completo */
+}
+
+.mini-carrito li:last-child {
+  border-bottom: none; /* Sin borde en el último elemento */
+}
+
+.mini-carrito p {
+  font-size: 1rem;
+  color: #777;
 }

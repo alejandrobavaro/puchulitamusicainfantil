@@ -1,5 +1,11 @@
 // src/assets/scss/_03-Componentes/_TiendaModalInicio.scss
 
+body.modal-open {
+  overflow: hidden;
+  position: relative;
+  z-index: 1000; /* Ajusta el z-index si es necesario */
+}
+
 // Estilos para el Modal
 .Modal {
   position: fixed;
@@ -7,11 +13,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000; // Asegúrate de que esté por encima de otros elementos
+  z-index: 2000; // Asegúrate de que esté por encima de otros elementos
+  overflow: hidden; // Evita el desbordamiento de elementos
 }
 
 .Overlay {
@@ -20,32 +26,59 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.63); // Fondo oscuro más tenue para el overlay
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 2000; // Asegúrate de que el overlay esté por encima de otros elementos
 }
 
-.modal-content {
-  background: #fff;
+.modal-wrapper {
+  background: #5f3756f0; 
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 20px; 
   position: relative;
   max-width: 80%;
   max-height: 80%;
-  overflow: auto;
+  overflow: hidden;
+    animation: fadeInUp 0.5s ease-out; // Animación de entrada
+  border: 1px solid #ff00aa; // Borde rosa para el contenedor
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: pulse 2s infinite; // Animación de pulso para el borde
+  z-index: 2001; // Asegúrate de que el contenedor del modal esté por encima del overlay
 }
 
-.modal-content img {
+.modal-content {
+  position: relative;
   width: 100%;
-  border-radius: 10px;
+  height: 100%;
 }
 
 .modal-close {
   position: absolute;
   top: 10px;
   right: 10px;
+  background-color: #ff0080e7; // Rosa claro para el botón de cierre
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 2002; // Asegúrate de que el botón esté por encima del contenido del modal
+}
+
+.modal-close:hover {
+  background-color: #af03c9; // Rosa oscuro al pasar el ratón
+
 }
 
 .modal-prev,
@@ -53,7 +86,18 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8); 
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  z-index: 2002; 
 }
 
 .modal-prev {
@@ -64,6 +108,12 @@
   right: 10px;
 }
 
+.modal-prev:hover,
+.modal-next:hover {
+  background-color: #ff69b4; // Rosa claro al pasar el ratón
+  color: #fff;
+}
+
 .objetoCentrado1 {
   display: flex;
   flex-direction: column;
@@ -71,21 +121,51 @@
 }
 
 .tituloImportante4 {
-  font-size: 1.2rem;
+  font-size: 1.5rem; // Tamaño de fuente más grande
   font-weight: bold;
-  margin: 10px 0;
+  color: #ff00bb; // Rosa para el texto
+  margin: 20px 0;
+  text-align: center; // Centrar el texto
 }
 
 .btn-primary {
-  background-color: #ff01a6;
+  background-color: #ff01a6; // Rosa vibrante
   border: none;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
+  color: #fff; // Color blanco para el texto del botón
+  padding: 12px 24px; // Padding más amplio
+  border-radius: 8px; // Bordes redondeados
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1rem; // Tamaño de fuente para el botón
 }
 
 .btn-primary:hover {
-  background-color: #d81b60;
+  background-color: #8a0d4a; // Rosa oscuro al pasar el ratón
+  transform: scale(1.05); // Escala al pasar el ratón
 }
+
+// Animación para la entrada del modal
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Animación para el borde del contenedor
+@keyframes pulse {
+  0% {
+    border-color: #ff69b4;
+  }
+  50% {
+    border-color: #f8bbd0;
+  }
+  100% {
+    border-color: #ff69b4;
+  }
+}
+

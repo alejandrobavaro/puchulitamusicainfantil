@@ -16,7 +16,18 @@ import Register from './componentes/SesionRegistrate';
 import Logout from './componentes/SesionLogout';
 import Musica from './componentes/Musica';
 import MainWhatsappIcon from './componentes/MainWhatsappIcon';
-import './assets/scss/_01-General/_BodyIndexApp.scss';
+
+// Importar los estilos de Bootstrap para aplicar el diseño y los componentes de Bootstrap en la aplicación.
+// `bootstrap.min.css` es la versión minimizada de los estilos de Bootstrap.
+import 'bootstrap/dist/css/bootstrap.min.css'; // Estilos de Bootstrap
+
+// Importar los íconos de Bootstrap. Esto permite usar los íconos de Bootstrap en los componentes.
+// Asegúrate de que los íconos de Bootstrap se usen correctamente en tu aplicación.
+import 'bootstrap-icons/font/bootstrap-icons.css'; // Íconos de Bootstrap
+
+// Importar tus estilos personalizados para aplicar diseño adicional o sobrescribir los estilos de Bootstrap.
+// Asegúrate de que este archivo contenga los estilos específicos de tu proyecto.
+import './assets/scss/_01-General/_BodyIndexApp.scss'; // Estilos personalizados
 
 function App() {
   const [cart, setCart] = useState([]);

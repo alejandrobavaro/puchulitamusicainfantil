@@ -6,39 +6,60 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.793); // Fondo lila claro con opacidad para un look más alegre
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  animation: fadeIn 0.3s ease; // Animación de 
+  
 }
 
 .modal-content {
   position: relative;
-  background: #fff;
+  // background: #ff0000; // Fondo blanco para el modal
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(255, 0, 149, 0.693); // Sombra suave y difusa
   max-width: 90%;
-  max-height: 80%;
+  max-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease; // Transiciones suaves
+  animation: scaleUp 0.3s ease; // Animación de escala
 }
 
 .modal-image {
   max-width: 100%;
-  max-height: 60vh;
-  border-radius: 8px;
+  max-height: 100%; // Ajuste del área visible de la imagen
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgb(255, 0, 149);
+  object-fit: cover;
+  transition: transform 0.3s ease; // Transición suave
+}
+
+.modal-image:hover {
+  transform: scale(1.05); // Zoom suave en la imagen al pasar el cursor
 }
 
 .close-button {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 2rem;
-  color: #333;
+  top: 15px;
+  right: 205px;
+  font-size: xx-large;
+  color: #ff00c3; // Rosa brillante para el botón
+  border: #f50057 2px solid;
+  border-radius: 10px;
+  padding: 5px;
   cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease; // Transiciones suaves
+}
+
+.close-button:hover {
+  color: #ff00e6; // Rosa más intenso al pasar el cursor
+  transform: rotate(90deg) scale(1.1); // Rotación y escala al pasar el cursor
 }
 
 .prev-button,
@@ -46,25 +67,58 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  box-shadow: 0 10px 20px rgb(255, 0, 149);
+  background: #ffffffb8; // Fondo rosa brillante
+  color: #ff00bb; // Texto blanco
   border: none;
-  border-radius: 50%;
-  padding: 10px;
+  border-radius: 20px;
+  padding: 25px;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: xx-large;
   z-index: 10;
-}
+  }
 
 .prev-button {
-  left: 10px;
+  left: 20px;
 }
 
 .next-button {
-  right: 10px;
+  right: 20px;
 }
 
 .prev-button:hover,
 .next-button:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+  background: #fceef8; // Fondo rosa más intenso al pasar el cursor
+  color: #ff00bb; // Texto blanco al pasar el cursor
+}
+
+// Animaciones
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
 }

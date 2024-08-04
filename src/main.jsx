@@ -19,5 +19,3 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 // ./assets/scss/estilo.scss: Archivo de estilos globales para la aplicación.
 // Montaje del componente raíz:
 
-// ReactDOM.createRoot(document.getElementById('root')): Crea un nodo raíz en el DOM, donde se montará la aplicación React.
-// render(...): Renderiza el componente App dentro del nodo raíz. El componente App se envuelve en React.StrictMode para ayudar a identificar problemas potenciales en el desarrollo.

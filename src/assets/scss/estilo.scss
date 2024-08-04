@@ -2,6 +2,12 @@
 
 @import "./_01-General/BodyIndexApp";
 
+@import "./_01-General/AlertsModalsMsjs";
+
+@import "./_01-General/SweetAlert";
+
+
+
 
 //----------DISEÑO GRAL------------//
 
@@ -17,7 +23,7 @@
 
 // @import "./_02-Diseño/GridEstructuras";
 
-@import "./_02-Diseño/Animaciones";
+// @import "./_02-Diseño/Animaciones";
 
 // @import "./_02-Diseño/Cards";
 
@@ -26,7 +32,7 @@
 
 //----------COMPONENTES------------------------//
 
-@import "./_03-Componentes/AlertsModalsMsjs";
+
 
 @import "./_03-Componentes/Contacto";
 
@@ -78,8 +84,6 @@
 
 @import "./_03-Componentes/TiendaOfertas";
 
-
-@import "./_03-Componentes/TiendaOfertasContext.scss";
 
 
 @import "./_03-Componentes/TiendaProductos";

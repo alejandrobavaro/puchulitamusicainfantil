@@ -1,5 +1,3 @@
-// src/assets/scss/_03-Componentes/_TiendaProductos.scss
-
 // Productos
 .productos-grid {
   display: grid;
@@ -52,31 +50,31 @@
 }
 
 .producto-button {
-  background-color: #ff01a6;
+  background-color: #ff01a6; // Rosa vibrante
   border: none;
-  color: #fff;
-  padding: 8px 12px;
-  border-radius: 5px;
+  color: #fff; // Color blanco para el texto del botón
+  padding: 8px 12px; // Padding ajustado
+  border-radius: 5px; // Bordes redondeados
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  font-size: 0.85rem; // Ajustado a un tamaño más pequeño
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 0.85rem; // Tamaño de fuente ajustado
 }
 
 .producto-button:hover {
-  background-color: #d81b60;
-  transform: scale(1.05);
+  background-color: #a7206a; // Rosa oscuro al pasar el ratón
+  transform: scale(1.05); // Escala al pasar el ratón
 }
 
 .oferta-tag {
-  position: absolute; /* O 'relative', 'fixed', o 'sticky' dependiendo de tu diseño */
+  position: absolute;
   top: 10px;
   right: 10px;
   background-color: #fb00ff;
   color: #fff;
   padding: 4px 8px;
   border-radius: 5px;
-  font-size: 0.75rem; /* Ajustado a un tamaño más pequeño */
+  font-size: 0.75rem;
   font-weight: 600;
-  text-transform: none; /* No uppercase */
-  z-index: 1000; /* Valor alto para asegurar que esté al frente */
+  text-transform: none;
+  z-index: 1000;
 }

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useAuth } from "./SesionAuthContext";
+import TiendaCarritoMini1 from "./TiendaCarritoMini1"; 
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "../assets/scss/_03-Componentes/_Header.scss";
 
@@ -20,16 +21,28 @@ const Header = ({ searchQuery, setSearchQuery }) => {
   const shouldShowSearchBar =
     location.pathname === "/tienda" || location.pathname === "/musica";
 
+  const cartItems = [
+    // Aquí irían los elementos del carrito; este es un ejemplo
+    { name: 'Producto 1', price: 10.0 },
+    { name: 'Producto 2', price: 20.0 },
+  ];
+
   return (
     <header className="header">
       <div className="containerHeader">
         <div className="header-topHeader">
+
+
+
           <div className="logo-and-search">
             <img
               src="/img/02-logos/puchulitamusicainfantil1.png"
               alt="Logo"
               className="logoHeader"
             />
+
+
+            
             <div className="search-bar-containerHeader">
               {shouldShowSearchBar && (
                 <>
@@ -50,6 +63,7 @@ const Header = ({ searchQuery, setSearchQuery }) => {
                 </>
               )}
             </div>
+
 
             <div className="auth-buttons-container-destop">
               {state.isAuthenticated ? (
@@ -82,7 +96,6 @@ const Header = ({ searchQuery, setSearchQuery }) => {
                 </>
               )}
             </div>
-
           </div>
           <button
             className="navbar-togglerHeader"
@@ -124,41 +137,10 @@ const Header = ({ searchQuery, setSearchQuery }) => {
             >
               <h2 className="textoMenu">TIENDA</h2>
             </Link>
-
-            {/* <div className=" auth-buttons-container-tablet-mobile">
-              {state.isAuthenticated ? (
-                <Link
-                  className="nav-linkHeader"
-                  to="/logout"
-                  onClick={() => {
-                    dispatch({ type: "LOGOUT" });
-                    handleCloseMobileMenu();
-                  }}
-                >
-                  <h2 className="textoMenu">CERRÁ SESIÓN</h2>
-                </Link>
-              ) : (
-                <>
-                  <Link
-                    className="nav-linkHeader"
-                    to="/login"
-                    onClick={handleCloseMobileMenu}
-                  >
-                    <h3 className="textoMenu2">INICIA SESIÓN</h3>
-                  </Link>
-                  <Link
-                    className="nav-linkHeader"
-                    to="/register"
-                    onClick={handleCloseMobileMenu}
-                  >
-                    <h3 className="textoMenu2">REGÍSTRATE</h3>
-                  </Link>
-                </>
-              )}
-            </div> */}
           </div>
         </nav>
       </div>
+    
     </header>
   );
 };

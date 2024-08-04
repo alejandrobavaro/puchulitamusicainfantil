@@ -1,21 +1,72 @@
 // src/assets/scss/_03-Componentes/_TiendaCarritoMini2.scss
 
-.mini-carrito {
+.mini-carrito2 {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  padding: 15px;
+  top: 10px;
+  right: 5px;
+  background: rgba(95, 14, 57, 0.784);
+  border: #ff01a6 1px solid;
+  box-shadow: 0 0 40px rgb(255, 0, 140);
+  border-radius: 10px;
+  padding: 20px;
   z-index: 1000;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all 0.3s ease;
+
+  &.minimized {
+    width: 100px;
+    height: 60px;
+    padding: 20px;
+    top: 10px;
+    right: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 50px rgb(255, 0, 140);
+
+    .flota-carrito-izquierda {
+      display: none;
+    }
+  }
+
+  &.compacto {
+    width: 250px; // Ajusta el tamaño según tus necesidades
+  }
+
+  .toggle-button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #ff01a6;
+    }
+  }
 }
 
-.compacto {
-  width: 250px; // Ajusta el tamaño según tus necesidades
+.boton-minimizar {
+  background-color: #ff01a6;
+  border: none;
+  color: #fff;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  top: -25px; // Ajusta la posición según sea necesario
+  right: 10px; // Ajusta la posición según sea necesario
+  transition: background-color 0.3s ease;
+}
+
+.boton-minimizar:hover {
+  background-color: #ff00ddce;
 }
 
 .flota-carrito-izquierda {
@@ -31,37 +82,39 @@
 }
 
 .texto-carrito {
-  font-size: 1.2rem;
-  color: #ff69b4; // Color rosa
+  font-size: small;
+  color: #ffffff; // Color rosa
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .tituloPrecioCarrito {
-  font-size: 1.5rem;
+  font-size: small;
   font-weight: bold;
-  color: #4caf50; // Color verde para el total
+  color: #00ffff; // Color verde para el total
   margin-bottom: 15px;
 }
 
 .botonComprar1 {
   background-color: #ff01a6;
   border: none;
-  color: #fff;
-  padding: 10px 20px;
+  color: #fff; // Color del texto en el botón, cambia a un color más oscuro si es necesario
+  padding: 2px 20px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .botonComprar1:hover {
-  background-color: #d81b60;
+  background-color: #ff00ddce;
 }
 
 .tituloImportante1 {
-  font-size: 1rem;
+  font-size: small;
 }
 
 .textoMovimiento {
   font-weight: bold;
 }
+
+

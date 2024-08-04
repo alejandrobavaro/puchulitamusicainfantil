@@ -87,8 +87,8 @@
   max-height: 500px; // Limitar la altura máxima del contenedor de publicidad
   overflow: hidden; // Asegurarse de que el contenido adicional no desborde
   position: absolute; // Fijar la posición
-  top: 10px; // Ajusta la distancia desde la parte superior
-  right: 30px; // Ajusta la distancia desde el lado derecho
+  top: 5px; // Ajusta la distancia desde la parte superior
+  left: 30px; // Ajusta la distancia desde el lado derecho
   width: 300px; // Ajusta el ancho según sea necesario
   height: auto;
   z-index: 1000; // Asegura que la publicidad esté sobre otros elementos
@@ -107,7 +107,7 @@
     align-items: center;
 
     .imagen-publicidad {
-      width: 100%;
+      width: 50%;
       height: auto;
       object-fit: contain;
       border-radius: 30px;
