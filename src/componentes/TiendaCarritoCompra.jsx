@@ -1,29 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import Swal from "sweetalert2";
-import '../assets/scss/_03-Componentes/_TiendaCarritoCompra.scss'; 
-import '../assets/scss/_01-General/_SweetAlert.scss'; 
+import "../assets/scss/_03-Componentes/_TiendaCarritoCompra.scss";
+import "../assets/scss/_01-General/_SweetAlert.scss";
 
-const TiendaCarritoCompra = ({ cart = [], removeFromCart, handlePagar }) => {
-  const total = cart.reduce((sum, product) => sum + (product.precio || 0), 0);
+const TiendaCarritoCompra = ({ cart = [], removeFromCart, handlePagar, updateProductQuantity }) => {
+  const [localCart, setLocalCart] = useState(cart);
+
+  const total = localCart.reduce((sum, product) => sum + (product.precio * (product.quantity || 1)), 0);
 
   const handleComprar = () => {
     handlePagar();
     Swal.fire({
-      title: 'Compra realizada!',
-      text: 'Tu compra ha sido procesada exitosamente.',
-      icon: 'success',
-      confirmButtonText: 'OK',
+      title: "Compra realizada!",
+      text: "Tu compra ha sido procesada exitosamente.",
+      icon: "success",
+      confirmButtonText: "OK",
       customClass: {
-        popup: 'sweetalert-popup',
-        title: 'sweetalert-title',
-        confirmButton: 'sweetalert-button',
-      }
+        popup: "sweetalert-popup",
+        title: "sweetalert-title",
+        confirmButton: "sweetalert-button",
+      },
     });
+  };
+
+  const handleQuantityChange = (id, delta) => {
+    setLocalCart(prevCart => {
+      return prevCart.map(product => 
+        product.id === id
+          ? { ...product, quantity: Math.max(1, (product.quantity || 1) + delta) }
+          : product
+      );
+    });
+    updateProductQuantity(id, (localCart.find(product => product.id === id)?.quantity || 1) + delta);
   };
 
   return (
     <div className="carrito-container">
-      {/* TITULO */}
       <section className="titulo-container">
         <h1 className="titulo">
           <i className="bi bi-cart" /> CARRITO DE COMPRAS <i className="bi bi-cart" />
@@ -31,73 +43,76 @@ const TiendaCarritoCompra = ({ cart = [], removeFromCart, handlePagar }) => {
       </section>
 
       <div className="carrito-content">
-        {/* RESUMEN DE COMPRA */}
         <div className="resumen-compra">
           <h3 className="resumen-titulo">RESUMEN DE LA COMPRA:</h3>
           <section className="pago-section">
-            <h4 className="pago-titulo">
+            <h3 className="pago-titulo">
               <i className="bi bi-activity" /> REALIZA TU PAGO <i className="bi bi-activity" />
-            </h4>
+            </h3>
           </section>
 
-          {/* CARRITO DE COMPRAS */}
           <div className="carrito-detalle">
             <div className="resumen-info">
-              <p className="total-text">
-                Total: ${total.toFixed(2)}
-              </p>
-              <p className="cantidad-text">
-                Cantidad de Productos: {cart.length}
-              </p>
+              <p className="total-text">Total: ${total.toFixed(2)}</p>
+              <p className="cantidad-text">Cantidad de Productos: {localCart.length}</p>
             </div>
 
-            <hr className="divider" />
-
             <ul className="producto-list">
-              {cart.map((product, index) => (
-                <li key={index} className="producto-item">
+              {localCart.map((product) => (
+                <li key={product.id} className="producto-item">
                   <img
-                    src={product.imagen}
+                    src={product.imagenes[0]}
                     alt={product.nombre}
                     className="producto-imagen"
                     onError={(e) => {
                       e.target.onerror = null;
-                      e.target.src = "path/to/default/image.jpg"; // Ruta de la imagen por defecto
+                      e.target.src = "/path/to/default/image.jpg"; 
                     }}
                   />
-                  <span className="producto-nombre">{product.nombre}</span>
-                  <span className="producto-precio">${(product.precio || 0).toFixed(2)}</span>
-                  <button
-                    className="btn-eliminar"
-                    onClick={() => removeFromCart(product.id)}
-                  >
+                  <div className="producto-info">
+                    <span className="producto-nombre">{product.nombre}</span>
+                    <div className="contenedorPrecioCantidad">
+                      <span className="producto-precio">${(product.precio || 0).toFixed(2)}</span>
+                      <div className="producto-cantidad">
+                        <button
+                          className="btn-quantity"
+                          onClick={() => handleQuantityChange(product.id, -1)}
+                        >
+                          -
+                        </button>
+                        <span className="quantity-display">
+                          {product.quantity || 1}
+                        </span>
+                        <button
+                          className="btn-quantity"
+                          onClick={() => handleQuantityChange(product.id, 1)}
+                        >
+                          +
+                        </button>
+                      </div>
+                    </div>
+                    <div className="producto-descripcion">
+                      {product.descripcion}
+                    </div>
+                  </div>
+                  <button className="btn-eliminar" onClick={() => removeFromCart(product.id)}>
                     <i className="bi bi-trash"></i>
                   </button>
                 </li>
               ))}
-              <p className="total-carrito">
-                Total: ${total.toFixed(2)}
-              </p>
             </ul>
 
+            <hr className="transparent-hr" />
+            
             <section className="acciones">
-              <button
-                className="btn btnVaciarCarrito"
-                onClick={() => removeFromCart(null)}
-              >
-                <i className="bi bi-shift-fill" /> VACIAR CARRITO <i className="bi bi-shift-fill" />
+              <button onClick={handleComprar} className="btn botonComprar">
+                <h3 className="compra-text">
+                  <i className="bi bi-shift-fill" /> Comprar
+                </h3>
               </button>
             </section>
           </div>
         </div>
-
-        <hr className="divider" />
-
-        <button onClick={handleComprar} className="btn botonComprar">
-          <h3 className="compra-text">
-            <i className="bi bi-paypal"></i> Comprar
-          </h3>
-        </button>
       </div>
     </div>
   );
