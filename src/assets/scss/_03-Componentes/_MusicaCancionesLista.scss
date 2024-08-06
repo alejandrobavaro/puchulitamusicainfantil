@@ -13,7 +13,9 @@
 
   &:hover {
     transform: scale(1.01);
-    box-shadow: 0 0 5px rgba(255, 0, 140, 0.702);
+    // box-shadow: 0 0 5px rgba(255, 0, 140, 0.702);
+    background-color: rgba(182, 152, 176, 0.511);
+    border-radius: 50px;
     cursor: pointer;
   }
 

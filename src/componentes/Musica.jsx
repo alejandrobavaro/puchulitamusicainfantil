@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Toastify from "toastify-js";
-import "toastify-js/src/toastify.css";
+import "toastify-js/src/toastify.css"; // Asegúrate de que esta línea esté presente
 import MusicaCancionesLista from "./MusicaCancionesLista";
 import ReproductorMusica from "./MusicaReproductor";
 import { useOfertas } from "./TiendaOfertasContext";
-import '../assets/scss/_03-Componentes/_Musica.scss';
+import '../assets/scss/_01-General/_Toastify.scss'; 
 
 function Musica({ cart, setCart, addToCart, removeFromCart, searchQuery, setSearchQuery }) {
   const [songs, setSongs] = useState([]);

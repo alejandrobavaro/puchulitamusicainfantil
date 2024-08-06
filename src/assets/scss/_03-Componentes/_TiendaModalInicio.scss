@@ -34,9 +34,9 @@ body.modal-open {
 }
 
 .modal-wrapper {
-  background: #540e40db; 
+  background: #610145e2;
   padding: 10px;
-  border-radius: 20px; 
+  border-radius: 20px;
   position: relative;
   max-width: 80%;
   max-height: 80%;
@@ -110,6 +110,10 @@ body.modal-open {
     font-weight: bold;
     /* Elimina cualquier sombra */
     box-shadow: none;
+  }
+  .detalleBlanco {
+    background-color: white;
+    color: rgb(255, 0, 149);
   }
 }
 

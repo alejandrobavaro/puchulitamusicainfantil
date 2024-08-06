@@ -166,11 +166,11 @@ function MusicaReproductor({ cart, removeFromCart, clearCart }) {
       ) : (
         <div className="no-songs-container">
           <p className="tituloReproductor1">
-            Agregalas a la lista
+            Agrega canciones
             <img className="imagen-publicidadReproductor" src="../../public/img/05-img-costados-larga/1a.png" alt="" />
           </p>
           <h2 className="tituloReproductor1">
-            <i className="bi bi-person-arms-up" /> Aqui <i className="bi bi-person-arms-up" />
+            <i className="bi bi-person-arms-up" />  a la lista
           </h2>
         </div>
       )}

@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Swal from "sweetalert2";
 import "../assets/scss/_03-Componentes/_TiendaCarritoCompra.scss";
 import "../assets/scss/_01-General/_SweetAlert.scss";
 
 const TiendaCarritoCompra = ({ cart = [], removeFromCart, handlePagar, updateProductQuantity }) => {
   const [localCart, setLocalCart] = useState(cart);
+
+  useEffect(() => {
+    setLocalCart(cart);
+  }, [cart]);
 
   const total = localCart.reduce((sum, product) => sum + (product.precio * (product.quantity || 1)), 0);
 
@@ -95,7 +99,13 @@ const TiendaCarritoCompra = ({ cart = [], removeFromCart, handlePagar, updatePro
                       {product.descripcion}
                     </div>
                   </div>
-                  <button className="btn-eliminar" onClick={() => removeFromCart(product.id)}>
+                  <button
+                    className="btn-eliminar"
+                    onClick={() => {
+                      console.log("Eliminando producto con id:", product.id);
+                      removeFromCart(product.id);
+                    }}
+                  >
                     <i className="bi bi-trash"></i>
                   </button>
                 </li>

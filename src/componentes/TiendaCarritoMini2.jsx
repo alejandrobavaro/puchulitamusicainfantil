@@ -1,21 +1,28 @@
-import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import swal from 'sweetalert';
-import { BsArrowsCollapse, BsArrowsExpand } from 'react-icons/bs';
-import '../assets/scss/_03-Componentes/_TiendaCarritoMini2.scss';
-import '../assets/scss/_01-General/_SweetAlert.scss';
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import swal from "sweetalert";
+import { BsArrowsCollapse, BsArrowsExpand, BsCart4 } from "react-icons/bs";
+import "../assets/scss/_03-Componentes/_TiendaCarritoMini2.scss";
+import "../assets/scss/_01-General/_SweetAlert.scss";
 
-const TiendaCarritoMini2 = ({ cart, removeFromCart, clearCart }) => {
+const TiendaCarritoMini2 = ({ cart, removeFromCart, clearCart, updateProductQuantity }) => {
   const [isMinimized, setIsMinimized] = useState(false);
+  const [localCart, setLocalCart] = useState(cart);
   const location = useLocation();
-  const total = cart.reduce((sum, product) => sum + product.precio, 0);
-  const showLeftCartLink = location.pathname.startsWith("/tienda");
+  const total = localCart.reduce(
+    (sum, product) => sum + product.precio * (product.quantity || 1),
+    0
+  );
+
+  useEffect(() => {
+    setLocalCart(cart);
+  }, [cart]);
 
   const handleAgregarAlCarritoClick = () => {
     swal({
       title: "Producto agregado",
       text: "El producto ha sido agregado a tu carrito de compras.",
-      icon: "../../public/img/02-logos/puchulitamusicainfantil1.png", 
+      icon: "../../public/img/02-logos/puchulitamusicainfantil1.png",
       button: {
         text: "Continuar",
         className: "sweetalert-button",
@@ -23,37 +30,46 @@ const TiendaCarritoMini2 = ({ cart, removeFromCart, clearCart }) => {
       className: "custom-swal",
     });
   };
-  
 
   return (
-    <div className={`mini-carrito2 ${isMinimized ? 'minimized' : ''}`}>
-      {showLeftCartLink && (
-        <div className="flota-carrito-izquierda">
-          <Link to="/carrito" className="link-carrito">
-            {!isMinimized && (
-              <>
-                <h6 className="texto-carrito">A Pagar</h6>
-                <div>
-                  <section className="tituloPrecioCarrito">
-                    ${total.toFixed(2)}
-                  </section>
-                </div>
+    <div className={`mini-carrito2 ${isMinimized ? "minimized" : ""}`}>
+      {location.pathname.startsWith("/tienda") && !isMinimized && (
+        <div className="flota-carrito-conteiner">
+          <div className="carrito-header">
+            <div className="header-total">
+              <span className="texto-total">Total</span>
+              <span className="tituloPrecioCarrito">${total.toFixed(2)}</span>
+            </div>
 
-                <div className="objetoCentrado1">
-                  <button className="botonComprar1" onClick={handleAgregarAlCarritoClick}>
-                    <h3 className="tituloImportante1 textoMovimiento">
-                      <i className="bi bi-shift-fill"></i> Comprar
-                    </h3>
-                  </button>
-                </div>
-              </>
-            )}
-          </Link>
+            <div className="header-text">
+              <BsCart4 className="icono-carrito" />
+              <h6 className="texto-carrito"> {localCart.length}</h6>
+            </div>
+          </div>
         </div>
       )}
-      <button className="toggle-button" onClick={() => setIsMinimized(prevState => !prevState)}>
-        {isMinimized ? <BsArrowsExpand /> : <BsArrowsCollapse />}
-      </button>
+      <div className="carrito-acciones">
+        <Link to="/carrito" className="link-carrito">
+          <button
+            className={`botonComprar1 ${isMinimized ? "minimized" : ""}`}
+            onClick={handleAgregarAlCarritoClick}
+          >
+            <h3
+              className={`tituloImportante1 ${
+                isMinimized ? "minimized" : ""
+              } textoMovimiento`}
+            >
+              <i className="bi bi-shift-fill"></i> Comprar
+            </h3>
+          </button>
+        </Link>
+        <button
+          className="toggle-button"
+          onClick={() => setIsMinimized((prevState) => !prevState)}
+        >
+          {isMinimized ? <BsArrowsExpand /> : <BsArrowsCollapse />}
+        </button>
+      </div>
     </div>
   );
 };

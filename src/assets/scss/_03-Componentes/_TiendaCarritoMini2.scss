@@ -1,5 +1,4 @@
-// src/assets/scss/_03-Componentes/_TiendaCarritoMini2.scss
-
+//src\assets\scss\_03-Componentes\_TiendaCarritoMini2.scss//
 .mini-carrito2 {
   position: fixed;
   top: 10px;
@@ -14,11 +13,12 @@
   flex-direction: column;
   align-items: center;
   transition: all 0.3s ease;
+  box-sizing: border-box;
 
   &.minimized {
-    width: 100px;
+    width: 120px;
     height: 60px;
-    padding: 20px;
+    padding: 10px;
     top: 10px;
     right: 10px;
     overflow: hidden;
@@ -27,94 +27,167 @@
     justify-content: center;
     box-shadow: 0 0 50px rgb(255, 0, 140);
 
-    .flota-carrito-izquierda {
-      display: none;
+    .carrito-acciones {
+      flex-direction: row;
+
+      .botonComprar1 {
+        padding: 2px 10px;
+        font-size: 0.8rem;
+
+        h3 {
+          font-size: 0.8rem;
+        }
+      }
     }
   }
 
-  &.compacto {
-    width: 250px; // Ajusta el tamaño según tus necesidades
+  .flota-carrito-conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box; // Incluye padding y border en el cálculo del ancho
+    margin: 0;
+    padding: 0;
   }
 
-  .toggle-button {
-    background: transparent;
-    border: none;
-    color: #fff;
-    font-size: 1.5rem;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: color 0.3s ease;
+  .carrito-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
 
-    &:hover {
-      color: #ff01a6;
+    .header-text, .header-total {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+    }
+
+    .header-text {
+      .texto-carrito {
+        font-size: small;
+        color: #00e1ff;
+        font-weight: bold;
+      }
+
+      .icono-carrito {
+        color: #ffff51;
+        font-size: large;
+      }
+    }
+
+    .header-total {
+      .texto-total {
+        font-size: medium;
+        color: #fff98c;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+
+      .tituloPrecioCarrito {
+        font-size: medium;
+        font-weight: bold;
+        color: #00ffff;
+      }
+    }
+  }
+
+  .carrito-acciones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    .botonComprar1 {
+      background-color: #ff01a6;
+      border: none;
+      color: #fff;
+      padding: 5px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #ff00ddce;
+      }
+
+      &:disabled {
+        background-color: #4c113557;
+        cursor: not-allowed; // Cambia el cursor cuando el botón está desactivado
+      }
+
+      .tituloImportante1 {
+        font-size: small;
+      }
+
+      .textoMovimiento {
+        font-weight: bold;
+      }
+
+      &.minimized {
+        padding: 2px 10px;
+        font-size: medium;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h3 {
+          font-size: xx-small;
+        }
+      }
+    }
+
+    .toggle-button {
+      background: transparent;
+      border: none;
+      color: #fff;
+      font-size: x-large;
+      cursor: pointer;
+      margin-left: 10px;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #ff01a6;
+      }
+    }
+  }
+
+  // Estilos responsivos
+  @media (max-width: 768px) { // Para tablet y móvil
+    .mini-carrito2 {
+      width: auto; // Permite que el ancho se ajuste automáticamente
+
+      .carrito-header, .carrito-acciones {
+        display: flex;
+        flex-direction: row;
+        width: 100%; // Asegura que el contenido tome el 100% del ancho disponible
+        justify-content: space-between; // Distribuye el espacio entre los elementos
+        align-items: center; // Alinea verticalmente
+      }
+
+      .flota-carrito-conteiner {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .carrito-acciones {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .toggle-button {
+          display: none; 
+        }
+      }
     }
   }
 }
-
-.boton-minimizar {
-  background-color: #ff01a6;
-  border: none;
-  color: #fff;
-  padding: 5px;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 20px;
-  position: absolute;
-  top: -25px; // Ajusta la posición según sea necesario
-  right: 10px; // Ajusta la posición según sea necesario
-  transition: background-color 0.3s ease;
-}
-
-.boton-minimizar:hover {
-  background-color: #ff00ddce;
-}
-
-.flota-carrito-izquierda {
-  text-align: center;
-}
-
-.link-carrito {
-  text-decoration: none;
-  color: inherit;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.texto-carrito {
-  font-size: small;
-  color: #ffffff; // Color rosa
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.tituloPrecioCarrito {
-  font-size: small;
-  font-weight: bold;
-  color: #00ffff; // Color verde para el total
-  margin-bottom: 15px;
-}
-
-.botonComprar1 {
-  background-color: #ff01a6;
-  border: none;
-  color: #fff; // Color del texto en el botón, cambia a un color más oscuro si es necesario
-  padding: 2px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.botonComprar1:hover {
-  background-color: #ff00ddce;
-}
-
-.tituloImportante1 {
-  font-size: small;
-}
-
-.textoMovimiento {
-  font-weight: bold;
-}
-
-

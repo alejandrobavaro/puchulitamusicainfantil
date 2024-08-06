@@ -19,16 +19,16 @@ const TiendaModalInicio = ({ showModal, closeModal }) => {
         </button>
         <div className="modal-content">
           <h2>PROMOS PUCHULITA!</h2>
-          <p className="tituloImportante4">Aprovechá los mejores beneficios!</p>
+          <p className="tituloImportante4">Aprovechá estos beneficios!</p>
           <div className="promo-list">
-            <div className="promo-item">Super Ofertas! - Super Ahorro!</div>
+            <div className="promo-item detalleBlanco">Super Ofertas!</div>
             <div className="promo-item">Camisetas 20% Off!</div>
-            <div className="promo-item">Envios Gratis a todo el país!</div>
-            <div className="promo-item">Premios sorpresa!</div>
+            <div className="promo-item">Envios a todo el país!</div>
+            <div className="promo-item detalleBlanco">Super Ahorro!!</div>
           </div>
-          
+          <hr />
           <button onClick={closeModal} className="btn-primary">
-            Lo Quiero!
+            Ver más!
           </button>
         </div>
       </div>
