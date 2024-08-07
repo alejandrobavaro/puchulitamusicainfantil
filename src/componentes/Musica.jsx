@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Toastify from "toastify-js";
-import "toastify-js/src/toastify.css"; // Asegúrate de que esta línea esté presente
+import "toastify-js/src/toastify.css";
 import MusicaCancionesLista from "./MusicaCancionesLista";
 import ReproductorMusica from "./MusicaReproductor";
 import { useOfertas } from "./TiendaOfertasContext";
@@ -8,8 +8,8 @@ import '../assets/scss/_01-General/_Toastify.scss';
 
 function Musica({ cart, setCart, addToCart, removeFromCart, searchQuery, setSearchQuery }) {
   const [songs, setSongs] = useState([]);
-  const [productos, setProductos] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("Todos");
+  const [isPlaying, setIsPlaying] = useState(false); // Para verificar si se está reproduciendo
   const { ofertas } = useOfertas();
 
   useEffect(() => {
@@ -24,20 +24,27 @@ function Musica({ cart, setCart, addToCart, removeFromCart, searchQuery, setSear
       }
     };
 
-    const cargarProductosDesdeJSON = async () => {
-      try {
-        const response = await fetch("/productos.json");
-        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-        const productosData = await response.json();
-        setProductos(productosData);
-      } catch (error) {
-        console.error("Error al cargar los productos:", error);
+    cargarCancionesDesdeJSON();
+  }, []);
+
+  useEffect(() => {
+    const handleBeforeUnload = (event) => {
+      if (isPlaying) {
+        const confirmationMessage = "¿Deseas seguir reproduciendo las canciones?";
+        // El mensaje de confirmación personalizado puede no mostrarse en todos los navegadores
+        // pero se debe establecer una propiedad en el evento para que el navegador muestre el diálogo predeterminado
+        event.preventDefault();
+        event.returnValue = confirmationMessage;
+        return confirmationMessage;
       }
     };
 
-    cargarCancionesDesdeJSON();
-    cargarProductosDesdeJSON();
-  }, []);
+    window.addEventListener("beforeunload", handleBeforeUnload);
+
+    return () => {
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+    };
+  }, [isPlaying]);
 
   const handleAddToCart = (item) => {
     addToCart(item);
@@ -100,13 +107,14 @@ function Musica({ cart, setCart, addToCart, removeFromCart, searchQuery, setSear
           searchQuery={searchQuery}
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
-          productos={productos} // Pasar los productos al componente
         />
       </div>
       <ReproductorMusica
         cart={cart}
         removeFromCart={removeFromCart}
         clearCart={handleClearCart}
+        isPlaying={isPlaying} // Pasar el estado isPlaying al reproductor
+        setIsPlaying={setIsPlaying} // Pasar el setter del estado isPlaying al reproductor
       />
     </div>
   );

@@ -1,3 +1,5 @@
+//src\assets\scss\_03-Componentes\_MusicaReproductor.scss//
+
 .reproductor-musica {
   background: rgba(95, 14, 57, 0.801);
   box-shadow: 0 0 40px rgba(255, 0, 140, 0.467);
@@ -18,16 +20,58 @@
     bottom: 10px;
     right: 10px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     .reproductor-card,
-    .controls-musica,
     .volume-controls,
     .rate-controls,
-    .progress-musica,
     .playlist {
       display: none;
     }
+
+    .minimized-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      .controls-musica {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        button {
+          font-size: 16px;
+        }
+      }
+
+      .progress-musica {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        input[type="range"] {
+          width: 80px;
+        }
+
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .toggle-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
+  // Los estilos de la versión expandida permanecen igual
   .reproductor-card {
     display: flex;
     align-items: center;
@@ -79,7 +123,7 @@
     justify-content: space-between;
     margin-bottom: 15px;
 
-    input[type='range'] {
+    input[type="range"] {
       width: 100px;
     }
 
@@ -117,7 +161,7 @@
         padding: 0px;
         font-size: x-small;
         border-bottom: 1px solid #00ffff;
-        
+
         &:hover {
           color: #f6ccf6;
         }
@@ -162,7 +206,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    
 
     .tituloReproductor1 {
       display: flex;
@@ -172,9 +215,8 @@
       margin: 0;
       color: white;
       padding: 0px;
-      white-space: nowrap; /* Evita el salto de línea en el texto */   
+      white-space: nowrap; /* Evita el salto de línea en el texto */
     }
-    
   }
 }
 

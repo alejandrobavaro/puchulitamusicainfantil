@@ -24,7 +24,6 @@ function MusicaCancionesLista({
   searchQuery,
   selectedCategory,
   setSelectedCategory,
-  productos,
 }) {
   const [isPublicidadVisible, setIsPublicidadVisible] = useState(true);
 
@@ -52,7 +51,7 @@ function MusicaCancionesLista({
         ))}
       </div>
 
-{/*       
+      {/* 
       {isPublicidadVisible && (
         <div className="musica-publicidad">
           <button className="close-btn" onClick={handleClosePublicidad}>
@@ -72,9 +71,8 @@ function MusicaCancionesLista({
             ))}
           </Slider>
         </div>
-      )} */}
-
-
+      )} 
+      */}
     </div>
   );
 }
@@ -86,7 +84,6 @@ MusicaCancionesLista.propTypes = {
   searchQuery: PropTypes.string.isRequired,
   selectedCategory: PropTypes.string.isRequired,
   setSelectedCategory: PropTypes.func.isRequired,
-  productos: PropTypes.array.isRequired,
 };
 
 export default MusicaCancionesLista;

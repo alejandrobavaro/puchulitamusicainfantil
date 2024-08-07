@@ -11,7 +11,7 @@ function TiendaCarritoMini1({ items, total }) {
         <>
           <ul>
             {items.slice(0, 3).map((item, index) => {
-              // Verifica si `item.precio` es un número antes de usar `toFixed()`
+            
               const price = typeof item.precio === 'number' ? item.precio.toFixed(2) : '0.00';
               
               return (

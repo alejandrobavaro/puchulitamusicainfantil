@@ -53,6 +53,7 @@ const TiendaCarritoMini2 = ({ cart, removeFromCart, clearCart, updateProductQuan
           <button
             className={`botonComprar1 ${isMinimized ? "minimized" : ""}`}
             onClick={handleAgregarAlCarritoClick}
+            disabled={localCart.length === 0} // Desactiva el botón si el carrito está vacío
           >
             <h3
               className={`tituloImportante1 ${
